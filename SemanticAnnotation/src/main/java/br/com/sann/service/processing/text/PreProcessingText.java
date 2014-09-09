@@ -1,0 +1,176 @@
+package br.com.sann.service.processing.text;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringReader;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+
+import org.annolab.tt4j.TokenHandler;
+import org.annolab.tt4j.TreeTaggerException;
+import org.annolab.tt4j.TreeTaggerWrapper;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.core.StopFilter;
+import org.apache.lucene.analysis.en.PorterStemFilter;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+import org.apache.lucene.util.Version;
+
+import br.com.sann.main.Main;
+
+/**
+ * Classe responsável por pré-processar um determinado texto.
+ * 
+ * @author Hamon
+ *
+ */
+public class PreProcessingText {
+	
+	private String pathTreeTagger = "";
+
+	/**
+	 * Método construtor.
+	 */
+	public PreProcessingText() {
+		loadPropertyTreeTagger();
+	}
+	
+	/**
+	 * Realiza o pré-processamento do texto passado como parâmetro.
+	 * @param text O texto a ser pré-processado.
+	 * @return O texto pré-processado.
+	 */
+	public List<String> preProcessing(String text) {
+		
+		List<String> tokens = tokenizing(text, Version.LUCENE_4_9);
+		return extractNounsAndAdjectives(tokens, pathTreeTagger);
+		
+	}
+	
+	/**
+	 * Método para carregar a propriedade que identifica a localização do
+	 * TreeTagger no sistema operaciona.
+	 */
+	private void loadPropertyTreeTagger() {
+		try {
+			InputStream in = new Main().getClass().getClassLoader().getResourceAsStream("config.properties");  
+			Properties props = new Properties();  
+			props.load(in);
+			in.close();
+			pathTreeTagger = props.getProperty("PATH_TREETAGGER");
+		} catch (IOException e) {
+			System.err.println("Não foi possíviel localizar a intalação do TreeTagger.");
+		}
+	}
+	
+	/**
+	 * Método que tokeniza o texto passado como parametro e retira as stopwords 
+	 * e realiza a operação de Stemming.
+	 * 
+	 * @param text O texto a ser tokenizado.
+	 * @param luceneVersion A versão do lucene.
+	 * @return Uma lista contendo o texto tokenizado.
+	 */
+	private List<String> tokenizing(String text, Version luceneVersion) {
+
+		StandardAnalyzer sa = new StandardAnalyzer(luceneVersion);
+		TokenStream tokenStream = new StandardTokenizer(luceneVersion, new StringReader(text));
+		List<String> tokens = new LinkedList<String>();
+		tokenStream = new StopFilter(luceneVersion, tokenStream, sa.getStopwordSet());
+		tokenStream = new PorterStemFilter(tokenStream);
+
+		CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
+		try {
+			tokenStream.reset();
+			while (tokenStream.incrementToken()) {
+				tokens.add(token.toString());
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return tokens;
+	}
+
+	/**
+	 * Método para extrair os sujeitos e os adjetivos da lista de tokens passada como parâmetro.
+	 * 
+	 * @param tokens Os tokens a serem filtrados.
+	 * @param pathTreeTagger O caminho da instalação do treeTagger.
+	 * @return A lista de tokens que são sujeitos e adjetivos.
+	 */
+	private List<String> extractNounsAndAdjectives(List<String> tokens, String pathTreeTagger) {
+		final List<String> nounsAndAdjectives = new LinkedList<String>();
+		System.setProperty("treetagger.home", pathTreeTagger);
+		TreeTaggerWrapper<String> tt = new TreeTaggerWrapper<String>();
+		try {
+			tt.setModel(pathTreeTagger + File.separator + "lib" + File.separator + "english-utf8.par");
+			tt.setHandler(new TokenHandler<String>() {
+				public void token(String token, String pos, String lemma) {
+					if (pos.startsWith("NN") || pos.startsWith("JJ") || pos.startsWith("NP")) {
+						nounsAndAdjectives.add(lemma);
+					}
+				}
+			});
+			tt.process(tokens);
+		} catch (IOException io) {
+			System.err.println("Não foi possíviel localizar a intalação do TreeTagger.");
+		} catch (TreeTaggerException e) {
+			System.err.println("Houve um problema no TreeTagger.");
+			e.printStackTrace();
+		} finally {
+			tt.destroy();
+		}
+		return nounsAndAdjectives;
+	}
+	
+	/**
+	 * Monta uma string com todos os tokens da lista separados por um espaço.
+	 * 
+	 * @param tokens Os tokens a serem impressos.
+	 * @return Uma string com os tokens da lista.
+	 */
+	public String tokensToString(Collection<String> tokens) {		
+		String tokenString = "";
+		for (String token : tokens) {
+			tokenString += token + " ";
+		}		
+		return tokenString.trim();
+	}
+	
+	/**
+	 * Método que quebra uma palavra que tenha pelo menos uma letra maiúscula no meio em duas ou mais palavras.
+	 * Ex.: SnowIce será quebrada em Snow e Ice.
+	 * @param text O texto a ser quebrado, caso possua um ou mais caracteres maiúsculos no meio.
+	 * @return Os tokens separados por espaço, caso possua um ou mais caracteres maiúsculos no meio.
+	 */
+	public String tokenizingTextWithUppercase(String text) {
+		if(!text.matches("[a-zA-Z][a-z]*[A-Z][a-zA-Z]*")) {
+			return text;
+		} else {			
+			String textReturn = text;
+			Set<String> tokens = new HashSet<String>();
+			if (text.length() > 1) {		
+				int inicio = 0;
+				for(int i = 1; i < text.length(); i++){
+					Character charac = text.charAt(i);
+					if(Character.isUpperCase(charac)){
+						String sFirst = text.substring(inicio, i);
+						textReturn = text.substring(i);
+						tokens.add(sFirst);
+						inicio = i;
+					}
+				}   
+				tokens.add(textReturn);
+			}
+			return tokensToString(tokens);
+		}
+	}
+
+}
