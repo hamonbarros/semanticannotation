@@ -38,6 +38,7 @@ public class Main {
 		mapedCategories(path);
 
 	}
+	
 
 	/**
 	 * Método que gera os arquivos contendo o mapeamento ou não dos serviços 
@@ -65,9 +66,9 @@ public class Main {
 
 			String previousTitle = "";
 			SearcherCategoriesDBPedia searcher = new SearcherCategoriesDBPedia();
-//			for (SpatialData spatialData : spatialDataList) {
-			for(int i=0; i<30; i++){
-				String title = spatialDataList.get(i).getTitle();
+			for (SpatialData spatialData : spatialDataList) {
+//			for(int i=0; i<30; i++){
+				String title = spatialData.getTitle();
 //				String title = "Annotation (1:250K)";
 				if (!title.equals(previousTitle)) {		
 					
@@ -75,13 +76,13 @@ public class Main {
 					
 					if(!classesOrCategoriesMap.isEmpty()) {
 						String titleToken = classesOrCategoriesMap.keySet().iterator().next();
-						Set<String> categories = classesOrCategoriesMap.get(titleToken);
-						if (!categories.isEmpty()) {
+						Set<String> classesOrCategories = classesOrCategoriesMap.get(titleToken);
+						if (!classesOrCategories.isEmpty()) {
 							for (String token : classesOrCategoriesMap.keySet()) {
-								categories = classesOrCategoriesMap.get(titleToken);
-								String line = title + "|" + token + "|";
-								for (String category : categories) {
-									line += category + "-";
+								classesOrCategories = classesOrCategoriesMap.get(titleToken);
+								String line = title + "|" + token;
+								for (String classOrCategory : classesOrCategories) {
+									line += "|" + classOrCategory;
 //							    System.out.println(line);
 								}
 								titlesCategorized.println(line);
