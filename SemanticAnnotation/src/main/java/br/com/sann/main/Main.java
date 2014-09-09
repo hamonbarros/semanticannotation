@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
+import java.util.zip.DataFormatException;
+
+import org.apache.log4j.Logger;
 
 import br.com.sann.domain.SpatialData;
 import br.com.sann.service.feature.FeatureService;
@@ -20,6 +23,7 @@ import br.com.sann.service.search.dbpedia.SearcherCategoriesDBPedia;
 
 public class Main {	
 
+	public static Logger log;
 	/**
 	 * Método principal.
 	 * 
@@ -28,6 +32,12 @@ public class Main {
 	 */
 	public static void main(String[] args) throws IOException {
 
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss");
+		
+		log = Logger.getLogger(Main.class);
+		log.info("Iniciando o processamento...");
+		log.info("Data Inicial: " + df.format(new Date()));
+		
 		InputStream in = new Main().getClass().getClassLoader()
 				.getResourceAsStream("config.properties");  
 		Properties props = new Properties();  
@@ -35,7 +45,10 @@ public class Main {
 		in.close();
 		String path = props.getProperty("PATH_TREETAGGER");
 
-		mapedCategories(path);
+		mapedClassesOrCategories(path);
+		
+		log.info("Fim do processamento!");
+		log.info("Data Final: " + df.format(new Date()));
 
 	}
 	
@@ -46,10 +59,12 @@ public class Main {
 	 * 
 	 * @param pathTreeTagger O caminho da instalação do treeTagger.
 	 */
-	private static void mapedCategories(String pathTreeTagger) {
+	private static void mapedClassesOrCategories(String pathTreeTagger) {
 
+		log.info("Realizando a leitura das feature types... ");
 		FeatureService service = new FeatureServiceImpl();
 		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
+		log.info("Leitura das feature types realizada com sucesso!");
 		PrintWriter titlesCategorized = null;
 		PrintWriter titleUncategorized = null;
 		try {
@@ -65,6 +80,7 @@ public class Main {
 			titleUncategorized.println("Title|Title Tokenizing");
 
 			String previousTitle = "";
+			log.info("Inicio da consulta das classes ou categorias na dbpedia...");
 			SearcherCategoriesDBPedia searcher = new SearcherCategoriesDBPedia();
 			for (SpatialData spatialData : spatialDataList) {
 //			for(int i=0; i<30; i++){
@@ -97,6 +113,8 @@ public class Main {
 				}
 								
 			}
+			log.info("Finalização da consulta das classes ou categorias na dbpedia!");
+			
 			titlesCategorized.flush();
 			titleUncategorized.flush();
 
