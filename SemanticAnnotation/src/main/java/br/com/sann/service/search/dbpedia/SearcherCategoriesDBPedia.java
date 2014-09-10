@@ -32,21 +32,24 @@ public class SearcherCategoriesDBPedia {
 		
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
 		String titleToken = preProcessing.tokensToString(nounsAndAdjectives);
-		titleToken = preProcessing.tokenizingTextWithUppercase(titleToken);
+		String titleTokenWithoutUppercase = preProcessing.tokenizingTextWithUppercase(titleToken);
 		
 		if (!nounsAndAdjectives.isEmpty()) {					
-			SearcherDBpediaLookup seacher = new SearcherDBpediaLookup(titleToken);
+			SearcherDBpediaLookup seacher = new SearcherDBpediaLookup(titleTokenWithoutUppercase);
 			if (!seacher.getClasses().isEmpty() || !seacher.getCategories().isEmpty()) {
 				if (!seacher.getClasses().isEmpty()) {
-					retorno.put(titleToken, seacher.getClasses());
+					retorno.put(titleTokenWithoutUppercase, seacher.getClasses());
 				} else {					
-					retorno.put(titleToken, seacher.getCategories());
+					retorno.put(titleTokenWithoutUppercase, seacher.getCategories());
 				}
 			} else {
 				int amountCombinationPossible = nounsAndAdjectives.size()-1;
-				retorno = searchCombination(titleToken, amountCombinationPossible);					
+				retorno = searchCombination(titleTokenWithoutUppercase, amountCombinationPossible);	
 				if (retorno.isEmpty()) {
-					retorno.put(titleToken, new LinkedHashSet<String>());
+					retorno = searchText(text);
+				}
+				if (retorno.isEmpty()) {
+					retorno.put(titleTokenWithoutUppercase, new LinkedHashSet<String>());
 				}
 			}
 		}
@@ -64,7 +67,7 @@ public class SearcherCategoriesDBPedia {
 	 */
 	public Map<String, Set<String>> searchCombination(String titleToken, int amountCombinationPossible) {
 		
-		Map<String, Set<String>> retorno = new HashMap<String, Set<String>>();
+		Map<String, Set<String>> mapReturn = new HashMap<String, Set<String>>();
 		
 		boolean find = false;
 		while (!find && amountCombinationPossible > 0) {
@@ -75,14 +78,38 @@ public class SearcherCategoriesDBPedia {
 				if(!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
 					find = true;
 					if (!searcher.getClasses().isEmpty()) {
-						retorno.put(comb, searcher.getClasses());
+						mapReturn.put(comb, searcher.getClasses());
 					} else {						
-						retorno.put(comb, searcher.getCategories());
+						mapReturn.put(comb, searcher.getCategories());
 					}
 				}
 			}
 			amountCombinationPossible--;
 		}	
-		return retorno;
+		return mapReturn;
 	}
+	
+	/**
+	 * Faz a busca na dbpedia pelos substantivos e adjetivos do texto.
+	 * @param text O texto a ser pesquisado.
+	 * @return O mapa do título e o cojunto de classes ou categorias da dbpedia.
+	 */
+	public Map<String, Set<String>> searchText(String text) {
+		
+		Map<String, Set<String>> mapReturn = new HashMap<String, Set<String>>();
+		List<String> tokens = preProcessing.tokenizingText(text);
+		List<String> nounsAndAjectives = preProcessing.extractNounsAndAdjectives(tokens);
+		String title = preProcessing.tokensToString(nounsAndAjectives);
+		
+		SearcherDBpediaLookup seacher = new SearcherDBpediaLookup(title);		
+		if (!seacher.getClasses().isEmpty() || !seacher.getCategories().isEmpty()) {
+			if (!seacher.getClasses().isEmpty()) {
+				mapReturn.put(title, seacher.getClasses());
+			} else {					
+				mapReturn.put(title, seacher.getCategories());
+			}
+		}		
+		return mapReturn;		
+	}
+	
 }

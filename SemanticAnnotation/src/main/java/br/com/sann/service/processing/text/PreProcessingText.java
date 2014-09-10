@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.StringReader;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -49,7 +50,7 @@ public class PreProcessingText {
 	public List<String> preProcessing(String text) {
 		
 		List<String> tokens = tokenizing(text, Version.LUCENE_4_9);
-		return extractNounsAndAdjectives(tokens, pathTreeTagger);
+		return extractNounsAndAdjectives(tokens);
 		
 	}
 	
@@ -105,7 +106,7 @@ public class PreProcessingText {
 	 * @param pathTreeTagger O caminho da instalação do treeTagger.
 	 * @return A lista de tokens que são sujeitos e adjetivos.
 	 */
-	private List<String> extractNounsAndAdjectives(List<String> tokens, String pathTreeTagger) {
+	public List<String> extractNounsAndAdjectives(List<String> tokens) { 
 		final List<String> nounsAndAdjectives = new LinkedList<String>();
 		System.setProperty("treetagger.home", pathTreeTagger);
 		TreeTaggerWrapper<String> tt = new TreeTaggerWrapper<String>();
@@ -155,7 +156,7 @@ public class PreProcessingText {
 			return text;
 		} else {			
 			String textReturn = text;
-			Set<String> tokens = new HashSet<String>();
+			Set<String> tokens = new LinkedHashSet<String>();
 			if (text.length() > 1) {		
 				int inicio = 0;
 				for(int i = 1; i < text.length(); i++){
@@ -171,6 +172,20 @@ public class PreProcessingText {
 			}
 			return tokensToString(tokens);
 		}
+	}
+	
+	/**
+	 * Insere os tokens separados por espaços de um texto em um lista de tokens.
+	 * @param text O texto a ser tokenizado.
+	 * @return Uma lista de tokens.
+	 */
+	public List<String> tokenizingText(String text) {
+		String[] tokens = text.split(" ");
+		List<String> listReturn = new LinkedList<String>();
+		for (String token : tokens) {
+			listReturn.add(token);
+		}
+		return listReturn;
 	}
 
 }

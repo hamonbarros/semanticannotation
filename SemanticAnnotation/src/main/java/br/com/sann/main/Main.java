@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-import java.util.zip.DataFormatException;
 
 import org.apache.log4j.Logger;
 
@@ -35,6 +34,7 @@ public class Main {
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss");
 		
 		log = Logger.getLogger(Main.class);
+		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		log.info("Iniciando o processamento...");
 		log.info("Data Inicial: " + df.format(new Date()));
 		
@@ -49,6 +49,7 @@ public class Main {
 		
 		log.info("Fim do processamento!");
 		log.info("Data Final: " + df.format(new Date()));
+		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
 	}
 	
@@ -85,7 +86,7 @@ public class Main {
 			for (SpatialData spatialData : spatialDataList) {
 //			for(int i=0; i<30; i++){
 				String title = spatialData.getTitle();
-//				String title = "Annotation (1:250K)";
+//				String title = "nrn:addressrange:addresssegment_01";
 				if (!title.equals(previousTitle)) {		
 					
 					Map<String, Set<String>> classesOrCategoriesMap = searcher.searchClassesOrCategories(title);
