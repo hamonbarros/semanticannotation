@@ -13,9 +13,12 @@ import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.GetMethod;
+import org.apache.log4j.Logger;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import br.com.sann.main.Main;
 
 /**
  * Classe para fazer a pesquisar termos no serviço da DBPedia.
@@ -35,6 +38,8 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 
 	public SearcherDBpediaLookup(String term) {
 
+		Logger log = Logger.getLogger(Main.class);
+		
 		categories = new LinkedHashSet<String>();
 		classes = new LinkedHashSet<String>();
 		HttpClient httpClient = new HttpClient();
@@ -50,13 +55,13 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 			SAXParser saxParser = factory.newSAXParser();
 			saxParser.parse(in, this);
 		} catch (HttpException he) {
-			System.err.println("Http error connecting to lookup.dbpedia.org");
+			log.error("Http error connecting to lookup.dbpedia.org");
 		} catch (IOException ioe) {
-			System.err.println("Unable to connect to lookup.dbpedia.org");
+			log.error("Unable to connect to lookup.dbpedia.org");
 		} catch (ParserConfigurationException pce) {
-			System.err.println("Do not was possible to read the return of the query to the term \"" + term + "\".");
+			log.error("Do not was possible to read the return of the query to the term \"" + term + "\".");
 		} catch (SAXException se) {
-			System.err.println("Do not was possible to instantiate the reader of the return.");
+			log.error("Do not was possible to instantiate the reader of the return.");
 		}
 		httpMethod.releaseConnection();
 	}

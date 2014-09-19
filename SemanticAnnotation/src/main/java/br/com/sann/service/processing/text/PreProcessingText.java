@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -49,6 +48,7 @@ public class PreProcessingText {
 	 */
 	public List<String> preProcessing(String text) {
 		
+		text = extractScale(text);
 		List<String> tokens = tokenizing(text, Version.LUCENE_4_9);
 		return extractNounsAndAdjectives(tokens);
 		
@@ -186,6 +186,17 @@ public class PreProcessingText {
 			listReturn.add(token);
 		}
 		return listReturn;
+	}
+
+	/**
+	 * Extrai as informações referentes a escala dos texto passado.
+	 * @param text Texto cujas informações de escala serão extraídas, caso exista.
+	 * @return O texto com as informações de escala extraídas, caso exista.
+	 */
+	public String extractScale(String text) {
+		String textReturn = text.replaceAll("\\(*[\\d]:([\\d]+[\\D])*[\\d]*\\)*[\\s]*", "");
+		textReturn = textReturn.replaceAll("[\\d]+[\\D][\\s]", "");
+		return textReturn;
 	}
 
 }
