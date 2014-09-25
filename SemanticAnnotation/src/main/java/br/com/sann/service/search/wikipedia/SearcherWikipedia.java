@@ -26,8 +26,12 @@ import br.com.sann.service.processing.text.PreProcessingText;
  */
 public class SearcherWikipedia extends DefaultHandler {
 
-	public static final String WIKIPEDIA_URL = "http://en.wikipedia.org/w/";
+	public static final String WIKIPEDIA_URL_SEARCH = "http://en.wikipedia.org/w/";
+	public static final String WIKIPEDIA_URL = "http://en.wikipedia.org/wiki/";
+	
 	private StringBuffer text;
+	private String url;
+	private String wikiUrl;
 	private PreProcessingText preProcessing;
 
 	public SearcherWikipedia(String title) {
@@ -38,9 +42,11 @@ public class SearcherWikipedia extends DefaultHandler {
 		
 		title = title.replaceAll(" ", "_");
 		HttpClient httpClient = new HttpClient();
-		String url = WIKIPEDIA_URL + 
-				"api.php?action=query&prop=revisions&rvprop=content&format=xml&redirects&titles=" + title;
-		HttpMethod httpMethod = new GetMethod(url);
+		setUrl(WIKIPEDIA_URL_SEARCH + 
+				"api.php?action=query&prop=revisions&rvprop=content&format=xml&redirects&titles=" + title);
+		setWikiUrl(WIKIPEDIA_URL + title);
+		
+		HttpMethod httpMethod = new GetMethod(getUrl());
 
 		try {
 			httpClient.executeMethod(httpMethod);
@@ -82,6 +88,38 @@ public class SearcherWikipedia extends DefaultHandler {
 		return preProcessing.tokensToString(nounsAndAdjectives).trim();
 	}
 	
+	/**
+	 * Recupera a url que está sendo consultada.
+	 * @return A url consultada.
+	 */
+	public String getUrl() {
+		return url;
+	}
+
+	/**
+	 * Define a url a ser consultada.
+	 * @param url A nova url.
+	 */
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	
+	/**
+	 * Recupera a URL da Wikipedia referente ao termo pesquisado.
+	 * @return A URL do termo pesquisado.
+	 */
+	public String getWikiUrl() {
+		return wikiUrl;
+	}
+
+	/**
+	 * Define a URL da Wikipedia referente ao termo pesquisado.
+	 * @param wikiUrl A nova URL do termo pesquisado.
+	 */
+	public void setWikiUrl(String wikiUrl) {
+		this.wikiUrl = wikiUrl;
+	}
+
 	public static void main(String[] args) {
 		SearcherWikipedia s = new SearcherWikipedia("military conflict");
 		System.out.println(s.getText().trim());

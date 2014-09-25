@@ -48,8 +48,8 @@ public class Main {
 		in.close();
 		String path = props.getProperty("PATH_TREETAGGER");
 
-		mapedClassesOrCategories(path);
-//		extractSimilarity(path);
+//		mapedClassesOrCategories(path);
+		extractSimilarity(path);
 		
 		log.info("Fim do processamento!");
 		log.info("Data Final: " + df.format(new Date()));
@@ -78,49 +78,48 @@ public class Main {
 			similarity = new PrintWriter(new FileWriter(new File(
 					"Similarity" + dateFormated + ".csv")));
 
-			similarity.println("Title|Title Tokenizing|Classe/Category|Cosine|Bag of Words|Wikipedia Text");
+			similarity.println("Title|Title Tokenizing|Classe/Category|Cosine|URL Wikipedia|URL Wikipedia Search|Bag of Words");
 
 			String previousTitle = "";
 			log.info("Inicio da consulta das classes ou categorias na dbpedia...");
-			SearcherCategoriesDBPedia searcherCategories = new SearcherCategoriesDBPedia();
-//			for (SpatialData spatialData : spatialDataList) {
-			for(int i=0; i<30; i++){
-				String title = spatialDataList.get(i).getTitle();
+			
+			StringBuffer storeBagsOfWords = new StringBuffer();
+			BagOfWords bw = null;
+			
+			for (SpatialData spatialData : spatialDataList) {
+//			for(int i=0; i<30; i++){
+				String title = spatialData.getTitle();
 //				String title = "Wetlands - Polygons (1:20K)";
-				if (!title.equals(previousTitle)) {		
-					BagOfWords bw = new BagOfWords(spatialDataList.get(i));
-					System.out.println(bw.extractWordList());
+
+				bw = new BagOfWords(spatialData);
+				
+				if (title.equals(previousTitle)) {
 					
-					Map<String, Set<String>> classesOrCategoriesMap = searcherCategories.searchClassesOrCategories(title);
+					storeBagsOfWords.append(" ");
+					storeBagsOfWords.append(bw.extractTextProperties());
 					
-					if(!classesOrCategoriesMap.isEmpty()) {
-						String titleToken = classesOrCategoriesMap.keySet().iterator().next();
-						Set<String> classesOrCategories = classesOrCategoriesMap.get(titleToken);
-						if (!classesOrCategories.isEmpty()) {
-							for (String token : classesOrCategoriesMap.keySet()) {
-								classesOrCategories = classesOrCategoriesMap.get(token);
-								for (String classOrCategory : classesOrCategories) {
-									if (!isClassDefault(classOrCategory)) {										
-										SearcherWikipedia searcherText = new SearcherWikipedia(classOrCategory);
-										String wikiText = searcherText.getText();
-										String bwText = bw.extractWordList();
-										double cosineSimilarity = 0.0;
-										if (bw != null && !bwText.isEmpty() && wikiText != null && !wikiText.isEmpty()) {
-											cosineSimilarity = CosineDocumentSimilarity
-													.getCosineSimilarity(bwText, wikiText);
-										}
-										String line = title + "|" + token + "|" + classOrCategory + "|" 
-												+ cosineSimilarity + "|" + bwText + "|" + wikiText; 
-										similarity.println(line);
-									}
-								}
-							}
-						}
-					}					
+				} else {
+					
+					if (previousTitle.equals("")) {
+						storeBagsOfWords.append(bw.extractTextProperties());
+						previousTitle = title;
+						continue;						
+					}
+					
+					executeSimilarity(title, bw, storeBagsOfWords.toString(), similarity);
+					
+					storeBagsOfWords = new StringBuffer();
+					storeBagsOfWords.append(bw.extractTextProperties());
 					previousTitle = title;
+
 				}
 								
 			}
+			
+			if (!previousTitle.isEmpty() && bw != null) {				
+				executeSimilarity(previousTitle, bw, storeBagsOfWords.toString(), similarity);
+			}
+			
 			log.info("Finalização da consulta das classes ou categorias na dbpedia!");
 			
 			similarity.flush();
@@ -128,6 +127,49 @@ public class Main {
 			similarity.close();
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Método que executa o processamento necessário para extrair a similaridade entre uma 
+	 * bagOfWords e um determinado texto.
+	 * 
+	 * @param title O título do feature typde.
+	 * @param bw A bagOfWords que contém os valores das propriedades texto do feature type.
+	 * @param text O texto a ser comparado com a bagOfWords.
+	 * @param out Arquivo onde estão sendo impressos os resultados.
+	 * @throws IOException Exceção lançada de ID.
+	 */
+	private static void executeSimilarity(String title, BagOfWords bw, String text, PrintWriter out) 
+			throws IOException {
+		
+		SearcherCategoriesDBPedia searcherCategories = new SearcherCategoriesDBPedia();
+		Map<String, Set<String>> classesOrCategoriesMap = searcherCategories.searchClassesOrCategories(title);
+		
+		if(!classesOrCategoriesMap.isEmpty()) {
+			String titleToken = classesOrCategoriesMap.keySet().iterator().next();
+			Set<String> classesOrCategories = classesOrCategoriesMap.get(titleToken);
+			if (!classesOrCategories.isEmpty()) {
+				for (String token : classesOrCategoriesMap.keySet()) {
+					classesOrCategories = classesOrCategoriesMap.get(token);
+					for (String classOrCategory : classesOrCategories) {
+						if (!isClassDefault(classOrCategory)) {										
+							SearcherWikipedia searcherText = new SearcherWikipedia(classOrCategory);
+							String wikiText = searcherText.getText();
+							String bwText = bw.extractWordList(text);
+							double cosineSimilarity = 0.0;
+							if (bw != null && !bwText.isEmpty() && wikiText != null && !wikiText.isEmpty()) {
+								cosineSimilarity = CosineDocumentSimilarity
+										.getCosineSimilarity(bwText, wikiText);
+							}
+							String line = title + "|" + token + "|" + classOrCategory + "|" 
+									+ cosineSimilarity + "|" + searcherText.getWikiUrl() + 
+									"|" + searcherText.getUrl() + "|" + bwText; 
+							out.println(line);
+						}
+					}
+				}
+			}
 		}
 	}
 	

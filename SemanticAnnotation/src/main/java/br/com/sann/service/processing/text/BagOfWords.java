@@ -1,6 +1,8 @@
 package br.com.sann.service.processing.text;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import br.com.sann.domain.Service;
 import br.com.sann.domain.SpatialData;
@@ -60,7 +62,26 @@ public class BagOfWords {
 		
 		PreProcessingText preProcessing = new PreProcessingText();
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(extractTextProperties());
-		return preProcessing.tokensToString(nounsAndAdjectives);
+		Set<String> tokenSet = new HashSet<String>();
+		tokenSet.addAll(nounsAndAdjectives);
+		return preProcessing.tokensToString(tokenSet);
+		
+	}
+	
+	/**
+	 * Retorna os nomes e os adjetivos exitentes em um determinado texto.
+	 * 
+	 * @param text O texto a ser processado.
+	 * @return A lista de substantivos e adjetivos do texto.
+	 */
+	public String extractWordList(String text) {
+		
+		PreProcessingText preProcessing = new PreProcessingText();
+		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
+		Set<String> tokenSet = new HashSet<String>();
+		tokenSet.addAll(nounsAndAdjectives);
+		return preProcessing.tokensToString(tokenSet);
+		
 	}
 
 }
