@@ -1,6 +1,5 @@
 package br.com.sann.service.search.dbpedia;
 
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -16,17 +15,17 @@ public class SearcherCategoriesDBPediaTest extends TestCase {
 	}
 
 	public void testSearchCategoriesSucess() {
-		Map<String, Set<String>> retorno = seacher.searchClassesOrCategories("Aboriginal Lands");
+		Map<String, Map<String, Set<String>>> retorno = seacher.searchClassesOrCategories("Aboriginal Lands");
 		assertFalse(retorno.isEmpty());
 	}
 	
 	public void testSearchCategoriesFail() {
-		Map<String, Set<String>> retorno = seacher.searchClassesOrCategories("Reeeerrrrewq");
+		Map<String, Map<String, Set<String>>> retorno = seacher.searchClassesOrCategories("Reeeerrrrewq");
 		assertTrue(retorno.get(retorno.keySet().iterator().next()).isEmpty());
 	}
 
 	public void testSearchCombination() {
-		Map<String, Set<String>> retorno = seacher.searchCombination("Aboriginal Lands Water", 2);
+		Map<String, Map<String, Set<String>>> retorno = seacher.searchCombination("Aboriginal Lands Water", 2);
 		assertFalse(retorno.isEmpty());
 	}
 
