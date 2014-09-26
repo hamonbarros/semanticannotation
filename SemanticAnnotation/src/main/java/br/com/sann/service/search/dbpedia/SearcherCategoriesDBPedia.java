@@ -11,6 +11,8 @@ import br.com.sann.util.Combination;
 
 public class SearcherCategoriesDBPedia {
 	
+	public static final String CATEGORY = "CATEGORY";
+	public static final String CLASS = "CLASS";
 	private PreProcessingText preProcessing;
 	
 	/**
@@ -21,27 +23,28 @@ public class SearcherCategoriesDBPedia {
 	}
 
 	/**
-	 * Realiza a busca de categorias referentes ao texto na dbpedia.
+	 * Realiza a busca de classes e categorias referentes ao texto na dbpedia.
 	 * 
 	 * @param text O texto a ser consultado.
-	 * @return O texto pré-processado e a lista de categorias referentes ao mesmo.
+	 * @return O texto pré-processado e a lista de classes e categorias referentes ao mesmo.
 	 */
-	public Map<String, Set<String>> searchClassesOrCategories(String text) {
+	public Map<String, Map<String, Set<String>>> searchClassesOrCategories(String text) {
 		
-		Map<String, Set<String>> retorno = new HashMap<String, Set<String>>();
+		Map<String, Map<String, Set<String>>> retorno = new HashMap<String, Map<String, Set<String>>>();
 		
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
 		String titleToken = preProcessing.tokensToString(nounsAndAdjectives);
 		String titleTokenWithoutUppercase = preProcessing.tokenizingTextWithUppercase(titleToken);
 		
 		if (!nounsAndAdjectives.isEmpty()) {					
-			SearcherDBpediaLookup seacher = new SearcherDBpediaLookup(titleTokenWithoutUppercase);
-			if (!seacher.getClasses().isEmpty() || !seacher.getCategories().isEmpty()) {
-				if (!seacher.getClasses().isEmpty()) {
-					retorno.put(titleTokenWithoutUppercase, seacher.getClasses());
-				} else {					
-					retorno.put(titleTokenWithoutUppercase, seacher.getCategories());
-				}
+			SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(titleTokenWithoutUppercase);
+			if (!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
+				
+				Map<String, Set<String>> classCatergoriesMap = new HashMap<String, Set<String>>();
+				classCatergoriesMap.put(CLASS, searcher.getClasses());
+				classCatergoriesMap.put(CATEGORY, searcher.getCategories());
+				retorno.put(titleTokenWithoutUppercase, classCatergoriesMap);
+				
 			} else {
 				int amountCombinationPossible = nounsAndAdjectives.size()-1;
 				retorno = searchCombination(titleTokenWithoutUppercase, amountCombinationPossible);	
@@ -49,7 +52,7 @@ public class SearcherCategoriesDBPedia {
 					retorno = searchText(text);
 				}
 				if (retorno.isEmpty()) {
-					retorno.put(titleTokenWithoutUppercase, new LinkedHashSet<String>());
+					retorno.put(titleTokenWithoutUppercase, new HashMap<String, Set<String>>());
 				}
 			}
 		}
@@ -58,16 +61,16 @@ public class SearcherCategoriesDBPedia {
 	}
 	
 	/**
-	 * Método que faz a busca das categorias na dbpedia a partir de combinações possíveis dos tokens 
-	 * até encontrar alguma categoria ou esgotar as possibilidades de combinações.
+	 * Método que faz a busca das classes e categorias na dbpedia a partir de combinações possíveis dos tokens 
+	 * até encontrar alguma ou esgotar as possibilidades de combinações.
 	 * 
 	 * @param titleToken O texto tokenizado.
 	 * @param amountCombinationPossible A quantidade de combinações possíveis.
-	 * @return Um mapa contento o texto tokenizado e as suas respectivas categorias.
+	 * @return Um mapa contento o texto tokenizado e as suas respectivas classes e categorias.
 	 */
-	public Map<String, Set<String>> searchCombination(String titleToken, int amountCombinationPossible) {
+	public Map<String, Map<String, Set<String>>> searchCombination(String titleToken, int amountCombinationPossible) {
 		
-		Map<String, Set<String>> mapReturn = new HashMap<String, Set<String>>();
+		Map<String, Map<String, Set<String>>> mapReturn = new HashMap<String, Map<String, Set<String>>>();
 		
 		boolean find = false;
 		while (!find && amountCombinationPossible > 0) {
@@ -77,11 +80,10 @@ public class SearcherCategoriesDBPedia {
 				SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(comb);
 				if(!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
 					find = true;
-					if (!searcher.getClasses().isEmpty()) {
-						mapReturn.put(comb, searcher.getClasses());
-					} else {						
-						mapReturn.put(comb, searcher.getCategories());
-					}
+					Map<String, Set<String>> classCatergoriesMap = new HashMap<String, Set<String>>();
+					classCatergoriesMap.put(CLASS, searcher.getClasses());
+					classCatergoriesMap.put(CATEGORY, searcher.getCategories());
+					mapReturn.put(comb, classCatergoriesMap);
 				}
 			}
 			amountCombinationPossible--;
@@ -92,22 +94,21 @@ public class SearcherCategoriesDBPedia {
 	/**
 	 * Faz a busca na dbpedia pelos substantivos e adjetivos do texto.
 	 * @param text O texto a ser pesquisado.
-	 * @return O mapa do título e o cojunto de classes ou categorias da dbpedia.
+	 * @return O mapa do título e o cojunto de classes e categorias da dbpedia.
 	 */
-	public Map<String, Set<String>> searchText(String text) {
+	public Map<String, Map<String, Set<String>>> searchText(String text) {
 		
-		Map<String, Set<String>> mapReturn = new HashMap<String, Set<String>>();
+		Map<String, Map<String, Set<String>>> mapReturn = new HashMap<String, Map<String, Set<String>>>();
 		List<String> tokens = preProcessing.tokenizingText(text);
 		List<String> nounsAndAjectives = preProcessing.extractNounsAndAdjectives(tokens);
 		String title = preProcessing.tokensToString(nounsAndAjectives);
 		
-		SearcherDBpediaLookup seacher = new SearcherDBpediaLookup(title);		
-		if (!seacher.getClasses().isEmpty() || !seacher.getCategories().isEmpty()) {
-			if (!seacher.getClasses().isEmpty()) {
-				mapReturn.put(title, seacher.getClasses());
-			} else {					
-				mapReturn.put(title, seacher.getCategories());
-			}
+		SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(title);		
+		if (!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
+			Map<String, Set<String>> classCatergoriesMap = new HashMap<String, Set<String>>();
+			classCatergoriesMap.put(CLASS, searcher.getClasses());
+			classCatergoriesMap.put(CATEGORY, searcher.getCategories());
+			mapReturn.put(title, classCatergoriesMap);
 		}		
 		return mapReturn;		
 	}

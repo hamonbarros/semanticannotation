@@ -94,12 +94,6 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	public void endElement(String uri, String localName, String currentName)
 			throws SAXException {
 		if (currentName.equalsIgnoreCase("result")) {
-			if (categories.isEmpty() && !tempCategories.isEmpty()) {
-				categories.add("%CATEGORY%");
-			}
-			if (classes.isEmpty() && !tempClasses.isEmpty()) {
-				classes.add("%CLASS%");
-			}
 			categories.addAll(tempCategories);
 			classes.addAll(tempClasses);
 		}

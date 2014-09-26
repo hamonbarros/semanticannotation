@@ -40,6 +40,7 @@ public class BagOfWords {
 		if (spatialData != null) {			
 			text += spatialData.getTitle() == null ? "" : spatialData.getTitle();
 			text += spatialData.getKeywords() == null ? "" : (" " + spatialData.getKeywords());
+			text += spatialData.getName() == null ? "" : (" " + spatialData.getName());
 			text += spatialData.getTextDescription() == null ? "" : (" " + spatialData.getTextDescription());
 			
 			Service serv = spatialData.getService();
