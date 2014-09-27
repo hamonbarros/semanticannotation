@@ -7,11 +7,11 @@ import junit.framework.TestCase;
 
 public class SearcherCategoriesDBPediaTest extends TestCase {
 	
-	private SearcherCategoriesDBPedia seacher;
+	private SearcherConceptysDBPedia seacher;
 	
 	public void setUp() throws Exception {
 		super.setUp();
-		seacher = new SearcherCategoriesDBPedia();
+		seacher = new SearcherConceptysDBPedia();
 	}
 
 	public void testSearchCategoriesSucess() {
