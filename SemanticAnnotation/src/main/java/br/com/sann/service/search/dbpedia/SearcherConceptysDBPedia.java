@@ -9,7 +9,7 @@ import java.util.Set;
 import br.com.sann.service.processing.text.PreProcessingText;
 import br.com.sann.util.Combination;
 
-public class SearcherCategoriesDBPedia {
+public class SearcherConceptysDBPedia {
 	
 	public static final String CATEGORY = "CATEGORY";
 	public static final String CLASS = "CLASS";
@@ -18,7 +18,7 @@ public class SearcherCategoriesDBPedia {
 	/**
 	 * Método construtor.
 	 */
-	public SearcherCategoriesDBPedia() {
+	public SearcherConceptysDBPedia() {
 		preProcessing = new PreProcessingText();
 	}
 

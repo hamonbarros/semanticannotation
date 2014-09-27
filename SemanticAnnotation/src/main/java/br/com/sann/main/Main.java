@@ -22,12 +22,13 @@ import br.com.sann.domain.SpatialData;
 import br.com.sann.service.feature.FeatureService;
 import br.com.sann.service.feature.impl.FeatureServiceImpl;
 import br.com.sann.service.processing.text.BagOfWords;
-import br.com.sann.service.search.dbpedia.SearcherCategoriesDBPedia;
+import br.com.sann.service.search.dbpedia.SearcherConceptysDBPedia;
 import br.com.sann.service.search.wikipedia.SearcherWikipedia;
 import br.com.sann.service.similarity.CosineDocumentSimilarity;
 
 public class Main {	
 
+	private static final double THRESHOLD_COSINE = 0.1;
 	public static Logger log;
 	/**
 	 * Método principal.
@@ -62,8 +63,8 @@ public class Main {
 	
 
 	/**
-	 * Método que gera os arquivos contendo o mapeamento ou não dos serviços 
-	 * de uma IDE com as respectivas categorias da wikipédia.
+	 * Método que extrai a similaridade entre os campos textuais das feature types de 
+	 * uma IDE e os textos da respectivas páginas da wikipédia.
 	 * 
 	 * @param pathTreeTagger O caminho da instalação do treeTagger.
 	 */
@@ -86,20 +87,20 @@ public class Main {
 			similarityConsolidated.println("Title|Title Tokenizing|Type|Concept|Cosine|URL Wikipedia|URL Wikipedia Search|Bag of Words");
 
 			String previousTitle = "";
-			log.info("Inicio da consulta das classes ou categorias na dbpedia...");
+			log.info("Inicio da consulta das classes e categorias na dbpedia que contenham relevância com os títulos...");
 			
 			StringBuffer storeBagsOfWords = new StringBuffer();
 			BagOfWords bw = null;
+			Integer countTitleWithoutConcepts = 0;
 			
-			for (SpatialData spatialData : spatialDataList) {
-//			for(int i=0; i<30; i++){
-				String title = spatialData.getTitle();
-//				String title = "Wetlands - Polygons (1:20K)";
-
-				bw = new BagOfWords(spatialData);
+//			for (SpatialData spatialData : spatialDataList) {
+			for(int i=0; i<30; i++){
+				String title = spatialDataList.get(i).getTitle();
 				
-				if (title.equals(previousTitle)) {
-					
+				bw = new BagOfWords(spatialDataList.get(i));
+				
+				// Tratamento necessário para o ínicio do processo. Quando a storeBagsOfWords ainda está vazia.
+				if (title.equals(previousTitle)) {					
 					storeBagsOfWords.append(" ");
 					storeBagsOfWords.append(bw.extractTextProperties());
 					
@@ -111,8 +112,10 @@ public class Main {
 						continue;						
 					}
 					
-					executeSimilarity(previousTitle, bw, storeBagsOfWords.toString(), similarityConsolidated, similarity);
+					countTitleWithoutConcepts += executeSimilarity(previousTitle, 
+							bw.extractWordList(storeBagsOfWords.toString()), similarityConsolidated, similarity);
 					
+					// Cria uma nova instância quando o título é diferente do anterior.
 					storeBagsOfWords = new StringBuffer();
 					storeBagsOfWords.append(bw.extractTextProperties());
 					previousTitle = title;
@@ -122,10 +125,16 @@ public class Main {
 			}
 			
 			if (!previousTitle.isEmpty() && bw != null) {				
-				executeSimilarity(previousTitle, bw, storeBagsOfWords.toString(), similarityConsolidated, similarity);
+				countTitleWithoutConcepts += executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
+						similarityConsolidated, similarity);
 			}
 			
-			log.info("Finalização da consulta das classes ou categorias na dbpedia!");
+			similarity.println("--------------------- SUMÁRIO ---------------------");
+			similarity.println("Títulos verificados:           " + spatialDataList.size());
+			similarity.println("Títulos conceitualizados:      " + (spatialDataList.size() - countTitleWithoutConcepts));
+			similarity.println("Títulos não conceitualizados:  " + countTitleWithoutConcepts);
+			
+			log.info("Finalização da consulta das classes e categorias na dbpedia que contenham relevância! com os títulos.");
 			
 			similarityConsolidated.flush();
 			similarity.flush();
@@ -139,71 +148,40 @@ public class Main {
 	}
 	
 	/**
-	 * Método que executa o processamento necessário para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
 	 * @param title O título do feature typde.
-	 * @param bw A bagOfWords que contém os valores das propriedades texto do feature type.
-	 * @param text O texto a ser comparado com a bagOfWords.
+	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
 	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
 	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
+	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	private static void executeSimilarity(String title, BagOfWords bw, String text, 
-			PrintWriter outConsolidated, PrintWriter out) 
+	private static Integer executeSimilarity(String title, String bagOfWords, PrintWriter outConsolidated, PrintWriter out) 
 			throws IOException {
 		
-		SearcherCategoriesDBPedia searcherCategories = new SearcherCategoriesDBPedia();
-		Map<String, Map<String, Set<String>>> tokensMap = searcherCategories.searchClassesOrCategories(title);
+		log.info("[INICIO] Início do processamento para o título: " + title);
+		
+		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
+		Map<String, Map<String, Set<String>>> tokensMap = searcherConceptys.searchClassesOrCategories(title);
+		List<String> classesUpThreshold = new LinkedList<String>();
+		List<String> categoriesUpThreshold = new LinkedList<String>();
 		
 		if(!tokensMap.isEmpty()) {
 			String titleToken = tokensMap.keySet().iterator().next();
 			Map<String, Set<String>> classesAndCategoriesMap = tokensMap.get(titleToken);
 			if (!classesAndCategoriesMap.isEmpty()) {
-				List<String> classesUpThreshold = new LinkedList<String>();
-				List<String> categoriesUpThreshold = new LinkedList<String>();
 				for (String token : tokensMap.keySet()) {
 					classesAndCategoriesMap = tokensMap.get(token);
-					Set<String> classes = classesAndCategoriesMap.get(SearcherCategoriesDBPedia.CLASS);
-					for (String clas : classes) {
-						if (!isClassDefault(clas)) {										
-							SearcherWikipedia searcherText = new SearcherWikipedia(clas);
-							String wikiText = searcherText.getText();
-							String bwText = bw.extractWordList(text);
-							double cosineSimilarity = 0.0;
-							if (bw != null && !bwText.isEmpty() && wikiText != null && !wikiText.isEmpty()) {
-								cosineSimilarity = CosineDocumentSimilarity
-										.getCosineSimilarity(bwText, wikiText);
-							}
-							String line = title + "|" + token + "|Class|" + clas + "|" 
-									+ cosineSimilarity + "|" + searcherText.getWikiUrl() + 
-									"|" + searcherText.getUrl() + "|" + bwText; 
-							outConsolidated.println(line);
-							if (cosineSimilarity >= 0.1) {
-								classesUpThreshold.add(clas + " (" + format(cosineSimilarity) + ")");
-							}
-						}
-					}
-					Set<String> categories = classesAndCategoriesMap.get(SearcherCategoriesDBPedia.CATEGORY);
-					for (String category : categories) {
-						if (!isClassDefault(category)) {										
-							SearcherWikipedia searcherText = new SearcherWikipedia(category);
-							String wikiText = searcherText.getText();
-							String bwText = bw.extractWordList(text);
-							double cosineSimilarity = 0.0;
-							if (bw != null && !bwText.isEmpty() && wikiText != null && !wikiText.isEmpty()) {
-								cosineSimilarity = CosineDocumentSimilarity
-										.getCosineSimilarity(bwText, wikiText);
-							}
-							String line = title + "|" + token + "|Category|" + category + "|" 
-									+ cosineSimilarity + "|" + searcherText.getWikiUrl() + 
-									"|" + searcherText.getUrl() + "|" + bwText; 
-							outConsolidated.println(line);
-							if (cosineSimilarity >= 0.1) {
-								categoriesUpThreshold.add(category + " (" + format(cosineSimilarity) + ")");
-							}
-						}
-					}
+					
+					Set<String> classes = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CLASS);
+					classesUpThreshold.addAll(executeCossineSimilarity(classes, SearcherConceptysDBPedia.CLASS, 
+							bagOfWords, titleToken, token, outConsolidated));
+
+					Set<String> categories = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CATEGORY);
+					categoriesUpThreshold.addAll(executeCossineSimilarity(categories, SearcherConceptysDBPedia.CATEGORY, 
+							bagOfWords, titleToken, token, outConsolidated));
 				}
 				out.println("Título do Feature Type: " + title);
 				out.println("Categorias: " + printStringList(categoriesUpThreshold));
@@ -211,9 +189,61 @@ public class Main {
 				out.println("");
 			}
 		}
+		
+		log.info("[FIM] Fim do processamento para o título: " + title);
+
+		if(categoriesUpThreshold.isEmpty() && classesUpThreshold.isEmpty()) {
+			return 1;
+		}
+		return 0;
+		
 	}
 	
-	public static String format(double x) {  
+	/**
+	 * Método para extrair a similaridade dos cossenos entre a bagofwords e a informação 
+	 * textual das páginas da wikipedia de cada um dos conceitos passados. Também é realizada
+	 * a filtragem dos conceitos relevantes a partir de um threshold sobre os cossenos.
+	 * 
+	 * @param concepts Os conceitos que serão acessados na wikipedia.
+	 * @param type O tipo do conceito (classe ou categoria).
+	 * @param bagOfWords A  bagofwords a ser comparada.
+	 * @param title O título do feature type a ser impresso no arquivo de saída.
+	 * @param token O token que foi realizada a busca na dbpedia.
+	 * @param outConsolidated O arquivo de saída a ser impressa as informações.
+	 * @return Uma lista contendo os conceitos que utrapassaram o threshold.
+	 * @throws IOException Exceção lançada caso haja algum problema na extração do cosseno.
+	 */
+	private static List<String> executeCossineSimilarity(Set<String> concepts, String type, 
+			String bagOfWords, String title, String token, PrintWriter outConsolidated) throws IOException {
+		
+		List<String> conceptsUpThreshold = new ArrayList<String>();
+		for (String concept : concepts) {
+			if (!isConceptDefault(concept)) {										
+				SearcherWikipedia searcherText = new SearcherWikipedia(concept);
+				String wikiText = searcherText.getText();
+				double cosineSimilarity = 0.0;
+				if (!bagOfWords.isEmpty() && wikiText != null && !wikiText.isEmpty()) {
+					cosineSimilarity = CosineDocumentSimilarity
+							.getCosineSimilarity(bagOfWords, wikiText);
+				}
+				String line = title + "|" + token + "|" + type + "|" + concept + "|" 
+						+ cosineSimilarity + "|" + searcherText.getWikiUrl() + 
+						"|" + searcherText.getUrl() + "|" + bagOfWords; 
+				outConsolidated.println(line);
+				if (cosineSimilarity >= THRESHOLD_COSINE) {
+					conceptsUpThreshold.add(concept + " (" + format(cosineSimilarity) + ")");
+				}
+			}
+		}
+		return conceptsUpThreshold;
+	}
+	
+	/**
+	 * Método utilitário para formatar um valor doble com 3 casas de precisão.
+	 * @param x O valor em double.
+	 * @return O double formatado.
+	 */
+	private static String format(double x) {  
 	    return String.format(Locale.ENGLISH, "%.3f", x);  
 	} 
 	
@@ -232,11 +262,11 @@ public class Main {
 	}
 	
 	/**
-	 * Método para identificar se o token passado corresponde a uma classe padrão.
+	 * Método para identificar se o token passado corresponde a um coceito padrão.
 	 * @param token O token a ser verificado.
 	 * @return True se corresponder, ou false, caso contrátio.
 	 */
-	private static boolean isClassDefault(String token) {
+	private static boolean isConceptDefault(String token) {
 		
 		if ("owl#Thing".equals(token)) {
 			return true;
@@ -244,9 +274,14 @@ public class Main {
 		return false;
 	}
 	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//TODO Métodos em desuso
+	
 	/**
-	 * Método que extrai a similaridade entre os campos textuais das feature types de 
-	 * uma IDE e os textos da respectivas páginas da wikipédia.
+	 * Método que gera os arquivos contendo o mapeamento ou não dos serviços 
+	 * de uma IDE com as respectivas categorias da dbpedia.
 	 * 
 	 * @param pathTreeTagger O caminho da instalação do treeTagger.
 	 */
@@ -272,13 +307,11 @@ public class Main {
 
 			String previousTitle = "";
 			log.info("Inicio da consulta das classes ou categorias na dbpedia...");
-			SearcherCategoriesDBPedia searcher = new SearcherCategoriesDBPedia();
-//			for (SpatialData spatialData : spatialDataList) {
-			for(int i=0; i<30; i++){
-				String title = spatialDataList.get(i).getTitle();
-//				String title = "Wetlands - Polygons (1:20K)";
+			SearcherConceptysDBPedia searcher = new SearcherConceptysDBPedia();
+			for (SpatialData spatialData : spatialDataList) {
+				String title = spatialData.getTitle();
 				if (!title.equals(previousTitle)) {		
-					BagOfWords bw = new BagOfWords(spatialDataList.get(i));
+					BagOfWords bw = new BagOfWords(spatialData);
 					System.out.println(bw.extractWordList());
 					
 					Map<String, Map<String, Set<String>>> tokensMap = searcher.searchClassesOrCategories(title);
@@ -290,7 +323,7 @@ public class Main {
 							for (String token : tokensMap.keySet()) {
 								classesAndCategoriesMap = tokensMap.get(token);
 								
-								Set<String> classes = classesAndCategoriesMap.get(SearcherCategoriesDBPedia.CLASS);
+								Set<String> classes = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CLASS);
 								if (!classes.isEmpty()) {									
 									String line = title + "|" + token;
 									for (String c : classes) {
@@ -299,7 +332,7 @@ public class Main {
 									titlesCategorized.println(line);
 								}
 								
-								Set<String> categories = classesAndCategoriesMap.get(SearcherCategoriesDBPedia.CATEGORY);
+								Set<String> categories = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CATEGORY);
 								if (!classes.isEmpty()) {									
 									String line = title + "|" + token;
 									for (String category : categories) {
@@ -310,7 +343,6 @@ public class Main {
 							}
 						} else {
 							String line = title + "|" + titleToken;
-//							System.out.println(line);
 							titleUncategorized.println(line);								
 						}
 					}					

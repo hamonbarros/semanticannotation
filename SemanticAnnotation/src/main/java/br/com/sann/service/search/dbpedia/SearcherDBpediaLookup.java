@@ -55,13 +55,13 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 			SAXParser saxParser = factory.newSAXParser();
 			saxParser.parse(in, this);
 		} catch (HttpException he) {
-			log.error("Http error connecting to lookup.dbpedia.org");
+			log.error("DBPedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
 		} catch (IOException ioe) {
-			log.error("Unable to connect to lookup.dbpedia.org");
+			log.error("DBPedia - Erro ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
 		} catch (ParserConfigurationException pce) {
-			log.error("Do not was possible to read the return of the query to the term \"" + term + "\".");
+			log.error("DBPedia - Não foi possível ler o retorno da consulta ao termo \"" + term + "\".");
 		} catch (SAXException se) {
-			log.error("Do not was possible to instantiate the reader of the return.");
+			log.error("DBPedia - Não foi possível instancia o leitor do retorno - Termo: " + term);
 		}
 		httpMethod.releaseConnection();
 	}

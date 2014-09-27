@@ -56,13 +56,13 @@ public class SearcherWikipedia extends DefaultHandler {
 			saxParser.parse(in, this);
 
 		} catch (HttpException he) {
-			log.error("Http error connecting to lookup.dbpedia.org");
+			log.error("Wikipedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Título: " + title);
 		} catch (IOException ioe) {
-			log.error("Unable to connect to lookup.dbpedia.org");
+			log.error("Wikipedia - Erro ao tentar conectar o lookup.dbpedia.org - Título: " + title);
 		} catch (ParserConfigurationException pce) {
-			log.error("Do not was possible to read the return of the query to the term \"" + title + "\".");
+			log.error("Wikipedia - Não foi possível ler o retorno da consulta ao título \"" + title + "\".");
 		} catch (SAXException se) {
-			log.error("Do not was possible to instantiate the reader of the return.");
+			log.error("Wikipedia - Não foi possível instancia o leitor do retorno - Título: " + title);
 		}
 	}
 
