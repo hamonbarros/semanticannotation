@@ -38,7 +38,7 @@ public class Main {
 	 */
 	public static void main(String[] args) throws IOException {
 
-		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss");
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
 		
 		log = Logger.getLogger(Main.class);
 		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -93,11 +93,11 @@ public class Main {
 			BagOfWords bw = null;
 			Integer countTitleWithoutConcepts = 0;
 			
-//			for (SpatialData spatialData : spatialDataList) {
-			for(int i=0; i<30; i++){
-				String title = spatialDataList.get(i).getTitle();
+			for (SpatialData spatialData : spatialDataList) {
+//			for(int i=0; i<30; i++){
+				String title = spatialData.getTitle();
 				
-				bw = new BagOfWords(spatialDataList.get(i));
+				bw = new BagOfWords(spatialData);
 				
 				// Tratamento necessário para o ínicio do processo. Quando a storeBagsOfWords ainda está vazia.
 				if (title.equals(previousTitle)) {					
@@ -177,11 +177,11 @@ public class Main {
 					
 					Set<String> classes = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CLASS);
 					classesUpThreshold.addAll(executeCossineSimilarity(classes, SearcherConceptysDBPedia.CLASS, 
-							bagOfWords, titleToken, token, outConsolidated));
+							bagOfWords, title, token, outConsolidated));
 
 					Set<String> categories = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CATEGORY);
 					categoriesUpThreshold.addAll(executeCossineSimilarity(categories, SearcherConceptysDBPedia.CATEGORY, 
-							bagOfWords, titleToken, token, outConsolidated));
+							bagOfWords, title, token, outConsolidated));
 				}
 				out.println("Título do Feature Type: " + title);
 				out.println("Categorias: " + printStringList(categoriesUpThreshold));
