@@ -1,4 +1,4 @@
-package br.com.sann.service.feature;
+package br.com.sann.service;
 
 import java.util.List;
 

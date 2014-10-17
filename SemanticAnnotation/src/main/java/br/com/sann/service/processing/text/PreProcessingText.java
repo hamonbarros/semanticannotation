@@ -199,4 +199,16 @@ public class PreProcessingText {
 		return textReturn;
 	}
 
+	/**
+	 * Método para normalizar um determinado texto colocando-o para minúsculo e 
+	 * separando as palavras compostas.
+	 * 
+	 * @param text O texto a ser normalizado.
+	 * @return O texto normalizado.
+	 */
+	public String normalizeText(String text) {
+
+		return tokenizingTextWithUppercase(text).toLowerCase();
+	}
+
 }

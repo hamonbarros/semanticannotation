@@ -18,9 +18,12 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import br.com.sann.domain.OntologyConcept;
 import br.com.sann.domain.SpatialData;
-import br.com.sann.service.feature.FeatureService;
-import br.com.sann.service.feature.impl.FeatureServiceImpl;
+import br.com.sann.service.FeatureService;
+import br.com.sann.service.OntologyConceptService;
+import br.com.sann.service.impl.FeatureServiceImpl;
+import br.com.sann.service.impl.OntologyConceptServiceImpl;
 import br.com.sann.service.processing.text.BagOfWords;
 import br.com.sann.service.search.dbpedia.SearcherConceptysDBPedia;
 import br.com.sann.service.search.wikipedia.SearcherWikipedia;
@@ -74,6 +77,10 @@ public class Main {
 		FeatureService service = new FeatureServiceImpl();
 		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
 		log.info("Leitura das feature types realizada com sucesso!");
+		log.info("Realizando a leitura dos conceitos ontológicos ... ");
+		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
+		List<OntologyConcept> concepts = conceptService.recoverAllOntologyConcept();
+		log.info("Leitura dos conceitos ontológicos realizada com sucesso!");
 		PrintWriter similarityConsolidated = null;
 		PrintWriter similarity = null;
 		try {
@@ -113,7 +120,7 @@ public class Main {
 					}
 					
 					countTitleWithoutConcepts += executeSimilarity(previousTitle, 
-							bw.extractWordList(storeBagsOfWords.toString()), similarityConsolidated, similarity);
+							bw.extractWordList(storeBagsOfWords.toString()), similarityConsolidated, similarity, concepts);
 					
 					// Cria uma nova instância quando o título é diferente do anterior.
 					storeBagsOfWords = new StringBuffer();
@@ -126,7 +133,7 @@ public class Main {
 			
 			if (!previousTitle.isEmpty() && bw != null) {				
 				countTitleWithoutConcepts += executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
-						similarityConsolidated, similarity);
+						similarityConsolidated, similarity, concepts);
 			}
 			
 			similarity.println("--------------------- SUMÁRIO ---------------------");
@@ -155,10 +162,11 @@ public class Main {
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
 	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
 	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
+	 * @param concepts 
 	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	private static Integer executeSimilarity(String title, String bagOfWords, PrintWriter outConsolidated, PrintWriter out) 
+	private static Integer executeSimilarity(String title, String bagOfWords, PrintWriter outConsolidated, PrintWriter out, List<OntologyConcept> ontologyConcepts) 
 			throws IOException {
 		
 		log.info("[INICIO] Início do processamento para o título: " + title);
@@ -169,23 +177,32 @@ public class Main {
 		List<String> categoriesUpThreshold = new LinkedList<String>();
 		
 		if(!tokensMap.isEmpty()) {
+			
 			String titleToken = tokensMap.keySet().iterator().next();
 			Map<String, Set<String>> classesAndCategoriesMap = tokensMap.get(titleToken);
 			if (!classesAndCategoriesMap.isEmpty()) {
+				out.println("Título do Feature Type: " + title);
 				for (String token : tokensMap.keySet()) {
 					classesAndCategoriesMap = tokensMap.get(token);
 					
 					Set<String> classes = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CLASS);
-					classesUpThreshold.addAll(executeCossineSimilarity(classes, SearcherConceptysDBPedia.CLASS, 
-							bagOfWords, title, token, outConsolidated));
+					List<String> classesCosineSimilarity = executeCossineSimilarity(classes, 
+							SearcherConceptysDBPedia.CLASS,	bagOfWords, title, token, outConsolidated);
+					classesUpThreshold.addAll(classesCosineSimilarity);
 
 					Set<String> categories = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CATEGORY);
-					categoriesUpThreshold.addAll(executeCossineSimilarity(categories, SearcherConceptysDBPedia.CATEGORY, 
-							bagOfWords, title, token, outConsolidated));
+					List<String> categoriesCosineSimilarity = executeCossineSimilarity(categories, 
+							SearcherConceptysDBPedia.CATEGORY, bagOfWords, title, token, outConsolidated);
+					categoriesUpThreshold.addAll(categoriesCosineSimilarity);
+					if (!classesCosineSimilarity.isEmpty() || !categoriesCosineSimilarity.isEmpty()) {
+						out.println("Token: " + token);
+						out.println("Categorias: " + printStringList(categoriesCosineSimilarity));
+						out.println("Categorias similares: " + printStringList(getSimilaryConcepts(ontologyConcepts, categoriesCosineSimilarity)));
+						out.println("Conceitos: " + printStringList(classesCosineSimilarity));
+						out.println("Conceitos similares: " + printStringList(getSimilaryConcepts(ontologyConcepts, classesCosineSimilarity)));
+						out.println("");
+					}
 				}
-				out.println("Título do Feature Type: " + title);
-				out.println("Categorias: " + printStringList(categoriesUpThreshold));
-				out.println("Conceitos: " + printStringList(classesUpThreshold));
 				out.println("");
 			}
 		}
@@ -231,7 +248,7 @@ public class Main {
 						"|" + searcherText.getUrl() + "|" + bagOfWords; 
 				outConsolidated.println(line);
 				if (cosineSimilarity >= THRESHOLD_COSINE) {
-					conceptsUpThreshold.add(concept + " (" + format(cosineSimilarity) + ")");
+					conceptsUpThreshold.add(concept);
 				}
 			}
 		}
@@ -274,6 +291,27 @@ public class Main {
 		return false;
 	}
 	
+	/**
+	 * Método para extrair os conceitos de ontologias cadastrados que são similares ao conceito passado.
+	 * 
+	 * @param concepts A lista de conceitos cadastrados.
+	 * @param concept O conceito a ser pesquisado.
+	 * @return A lista de conceitos compatíveis ao conceito passado.
+	 */
+	private static List<String> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, List<String> concepts) {
+		
+		List<String> similaryConcepts = new ArrayList<String>();
+		for (OntologyConcept ontologyConcept : ontologyConcepts) {
+			for (String concept : concepts) {				
+				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) || 
+						ontologyConcept.getConceptName().equalsIgnoreCase(concept)) {
+					similaryConcepts.add(ontologyConcept.getConcept());
+					break;
+				}
+			}
+		}
+		return similaryConcepts;
+	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -1,11 +1,11 @@
-package br.com.sann.service.feature.impl;
+package br.com.sann.service.impl;
 
 import java.util.List;
 
 import br.com.sann.criteria.dao.SpatialDataDAO;
 import br.com.sann.criteria.dao.impl.SpatialDataDAOImpl;
 import br.com.sann.domain.SpatialData;
-import br.com.sann.service.feature.FeatureService;
+import br.com.sann.service.FeatureService;
 
 /**
  * Classe de negócio relacionado com Feature Types.
