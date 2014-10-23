@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -51,6 +52,19 @@ public class PreProcessingText {
 		text = extractScale(text);
 		List<String> tokens = tokenizing(text, Version.LUCENE_4_9);
 		return extractNounsAndAdjectives(tokens);
+		
+	}
+	
+	/**
+	 * Realiza o pré-processamento do texto passado como parâmetro sem a
+	 * extração de escalas.
+	 * @param text O texto a ser pré-processado.
+	 * @return O texto pré-processado.
+	 */
+	public String preProcessingWithoutExtractScale(String text) {
+		
+		List<String> tokens = tokenizing(text, Version.LUCENE_4_9);
+		return tokensToString(extractNounsAndAdjectives(tokens));
 		
 	}
 	
@@ -186,6 +200,23 @@ public class PreProcessingText {
 			listReturn.add(token);
 		}
 		return listReturn;
+	}
+	
+	/**
+	 * Insere os tokens separados por espaços de uma lista de strings em um conjunto de tokens.
+	 * @param text O texto a ser tokenizado.
+	 * @return Um conjunto de tokens.
+	 */
+	public Set<String> tokenizingTextList(List<String> texts) {
+		
+		Set<String> setReturn = new HashSet<String>();
+		for (String text : texts) {
+			String[] tokens = text.split(" ");
+			for (String token : tokens) {				
+				setReturn.add(token);
+			}
+		}
+		return setReturn;
 	}
 
 	/**

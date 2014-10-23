@@ -1,11 +1,13 @@
 package br.com.sann.service.search.dbpedia;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import br.com.sann.domain.Extractor;
 import br.com.sann.service.processing.text.PreProcessingText;
 import br.com.sann.util.Combination;
 
@@ -28,36 +30,38 @@ public class SearcherConceptysDBPedia {
 	 * @param text O texto a ser consultado.
 	 * @return O texto pré-processado e a lista de classes e categorias referentes ao mesmo.
 	 */
-	public Map<String, Map<String, Set<String>>> searchClassesOrCategories(String text) {
+	public List<Extractor> searchClassesOrCategories(String text) {
 		
-		Map<String, Map<String, Set<String>>> retorno = new HashMap<String, Map<String, Set<String>>>();
+		List<Extractor> listReturn = new ArrayList<Extractor>();
 		
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
+		
 		String titleToken = preProcessing.tokensToString(nounsAndAdjectives);
 		String titleTokenWithoutUppercase = preProcessing.tokenizingTextWithUppercase(titleToken);
 		
 		if (!nounsAndAdjectives.isEmpty()) {					
 			SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(titleTokenWithoutUppercase);
 			if (!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
-				
-				Map<String, Set<String>> classCatergoriesMap = new HashMap<String, Set<String>>();
-				classCatergoriesMap.put(CLASS, searcher.getClasses());
-				classCatergoriesMap.put(CATEGORY, searcher.getCategories());
-				retorno.put(titleTokenWithoutUppercase, classCatergoriesMap);
+							
+				Extractor extractor = new Extractor();
+				extractor.setTitle(titleTokenWithoutUppercase);
+				extractor.setClasses(searcher.getClasses());
+				extractor.setCategories(searcher.getCategories());
+				listReturn.add(extractor);
 				
 			} else {
 				int amountCombinationPossible = nounsAndAdjectives.size()-1;
-				retorno = searchCombination(titleTokenWithoutUppercase, amountCombinationPossible);	
-				if (retorno.isEmpty()) {
-					retorno = searchText(text);
-				}
-				if (retorno.isEmpty()) {
-					retorno.put(titleTokenWithoutUppercase, new HashMap<String, Set<String>>());
+				listReturn = searchCombination(titleTokenWithoutUppercase, amountCombinationPossible);	
+				if (listReturn.isEmpty()) {
+					Extractor extractor = searchText(text);
+					if (extractor != null) {
+						listReturn.add(extractor);
+					}					
 				}
 			}
 		}
 		
-		return retorno;
+		return listReturn;
 	}
 	
 	/**
@@ -66,12 +70,12 @@ public class SearcherConceptysDBPedia {
 	 * 
 	 * @param titleToken O texto tokenizado.
 	 * @param amountCombinationPossible A quantidade de combinações possíveis.
-	 * @return Um mapa contento o texto tokenizado e as suas respectivas classes e categorias.
+	 * @return Um lista de extratores contento o texto tokenizado e as suas respectivas classes e categorias.
 	 */
-	public Map<String, Map<String, Set<String>>> searchCombination(String titleToken, int amountCombinationPossible) {
+	public List<Extractor> searchCombination(String titleToken, int amountCombinationPossible) {
 		
-		Map<String, Map<String, Set<String>>> mapReturn = new HashMap<String, Map<String, Set<String>>>();
-		
+		List<Extractor> listReturn = new ArrayList<Extractor>();
+			
 		boolean find = false;
 		while (!find && amountCombinationPossible > 0) {
 			Combination c = new Combination(titleToken.split(" "), amountCombinationPossible);
@@ -80,37 +84,89 @@ public class SearcherConceptysDBPedia {
 				SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(comb);
 				if(!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
 					find = true;
-					Map<String, Set<String>> classCatergoriesMap = new HashMap<String, Set<String>>();
-					classCatergoriesMap.put(CLASS, searcher.getClasses());
-					classCatergoriesMap.put(CATEGORY, searcher.getCategories());
-					mapReturn.put(comb, classCatergoriesMap);
+			
+					Extractor extractor = new Extractor();
+					extractor.setTitle(comb);
+					extractor.setCategories(searcher.getCategories());
+					extractor.setClasses(searcher.getClasses());
+					listReturn.add(extractor);
 				}
 			}
 			amountCombinationPossible--;
-		}	
-		return mapReturn;
+		}			
+//		if (find && amountCombinationPossible >= 1) {
+//			listReturn.addAll(searchRemainingTerms(titleToken, listReturn));
+//		}
+		
+		return listReturn;
 	}
 	
 	/**
+	 * Método para buscar os termos do título que ainda não foram resolvidos.
+	 * 
+	 * @param titleToken
+	 * @param listReturn
+	 * @return A lista de extratores recuperados.
+	 */
+	private List<Extractor> searchRemainingTerms(String title,
+			List<Extractor> listReturn) {
+
+		List<Extractor> extractors = new ArrayList<Extractor>();
+		
+		PreProcessingText preprocessing = new PreProcessingText();
+		List<String> titleTokens = preprocessing.tokenizingText(title);
+		Set<String> returnTokens = preprocessing.tokenizingTextList(getTitles(listReturn));
+		for (String token : titleTokens) {
+			if (!returnTokens.contains(token)) {
+				SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(token);
+				if(!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {			
+					Extractor extractor = new Extractor();
+					extractor.setTitle(token);
+					extractor.setCategories(searcher.getCategories());
+					extractor.setClasses(searcher.getClasses());
+					extractors.add(extractor);
+				}				
+			}
+		}
+		return extractors;
+	}
+
+	/**
+	 * Extrai os títulos dos extratores de uma lista.
+	 * 
+	 * @param extractors A lista de extratores.
+	 * @return A lista de títulos dos extratores.
+	 */
+	private List<String> getTitles(List<Extractor> extractors) {
+		
+		List<String> listResult = new ArrayList<String>();
+		for (Extractor extractor : extractors) {
+			listResult.add(extractor.getTitle());
+		}
+		
+		return listResult;
+	}
+
+	/**
 	 * Faz a busca na dbpedia pelos substantivos e adjetivos do texto.
 	 * @param text O texto a ser pesquisado.
-	 * @return O mapa do título e o cojunto de classes e categorias da dbpedia.
+	 * @return Um extrator contento o titulo passado e as suas respectivas classes/categorias.
 	 */
-	public Map<String, Map<String, Set<String>>> searchText(String text) {
+	public Extractor searchText(String text) {
 		
-		Map<String, Map<String, Set<String>>> mapReturn = new HashMap<String, Map<String, Set<String>>>();
 		List<String> tokens = preProcessing.tokenizingText(text);
 		List<String> nounsAndAjectives = preProcessing.extractNounsAndAdjectives(tokens);
 		String title = preProcessing.tokensToString(nounsAndAjectives);
 		
 		SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(title);		
-		if (!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
-			Map<String, Set<String>> classCatergoriesMap = new HashMap<String, Set<String>>();
-			classCatergoriesMap.put(CLASS, searcher.getClasses());
-			classCatergoriesMap.put(CATEGORY, searcher.getCategories());
-			mapReturn.put(title, classCatergoriesMap);
+		if (!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {		
+			Extractor extractor = new Extractor();
+			extractor.setTitle(title);
+			extractor.setClasses(searcher.getClasses());
+			extractor.setCategories(searcher.getCategories());
+			return extractor;
 		}		
-		return mapReturn;		
+		return null;		
 	}
 	
 }

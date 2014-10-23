@@ -9,6 +9,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
@@ -18,13 +19,16 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import br.com.sann.domain.Extractor;
 import br.com.sann.domain.OntologyConcept;
 import br.com.sann.domain.SpatialData;
+import br.com.sann.domain.Sumary;
 import br.com.sann.service.FeatureService;
 import br.com.sann.service.OntologyConceptService;
 import br.com.sann.service.impl.FeatureServiceImpl;
 import br.com.sann.service.impl.OntologyConceptServiceImpl;
 import br.com.sann.service.processing.text.BagOfWords;
+import br.com.sann.service.processing.text.PreProcessingText;
 import br.com.sann.service.search.dbpedia.SearcherConceptysDBPedia;
 import br.com.sann.service.search.wikipedia.SearcherWikipedia;
 import br.com.sann.service.similarity.CosineDocumentSimilarity;
@@ -81,17 +85,17 @@ public class Main {
 		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
 		List<OntologyConcept> concepts = conceptService.recoverAllOntologyConcept();
 		log.info("Leitura dos conceitos ontológicos realizada com sucesso!");
-		PrintWriter similarityConsolidated = null;
+//		PrintWriter similarityConsolidated = null;
 		PrintWriter similarity = null;
 		try {
 			DateFormat df = new SimpleDateFormat("YYYYMMddHHmm");
 			String dateFormated = df.format(new Date());
 
-			similarityConsolidated = new PrintWriter(new FileWriter(new File(
-					"Similarity_consolidated" + dateFormated + ".csv")));
+//			similarityConsolidated = new PrintWriter(new FileWriter(new File(
+//					"Similarity_consolidated" + dateFormated + ".csv")));
 			similarity = new PrintWriter(new FileWriter(new File("Similarity" + dateFormated + ".txt")));
 
-			similarityConsolidated.println("Title|Title Tokenizing|Type|Concept|Cosine|URL Wikipedia|URL Wikipedia Search|Bag of Words");
+//			similarityConsolidated.println("Title|Title Tokenizing|Type|Concept|Cosine|URL Wikipedia|URL Wikipedia Search|Bag of Words");
 
 			String previousTitle = "";
 			log.info("Inicio da consulta das classes e categorias na dbpedia que contenham relevância com os títulos...");
@@ -99,6 +103,7 @@ public class Main {
 			StringBuffer storeBagsOfWords = new StringBuffer();
 			BagOfWords bw = null;
 			Integer countTitleWithoutConcepts = 0;
+			Sumary sumary = new Sumary();
 			
 			for (SpatialData spatialData : spatialDataList) {
 //			for(int i=0; i<30; i++){
@@ -119,8 +124,8 @@ public class Main {
 						continue;						
 					}
 					
-					countTitleWithoutConcepts += executeSimilarity(previousTitle, 
-							bw.extractWordList(storeBagsOfWords.toString()), similarityConsolidated, similarity, concepts);
+					executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
+							/*similarityConsolidated, */similarity, concepts, sumary);
 					
 					// Cria uma nova instância quando o título é diferente do anterior.
 					storeBagsOfWords = new StringBuffer();
@@ -132,21 +137,18 @@ public class Main {
 			}
 			
 			if (!previousTitle.isEmpty() && bw != null) {				
-				countTitleWithoutConcepts += executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
-						similarityConsolidated, similarity, concepts);
+				executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
+						/*similarityConsolidated, */similarity, concepts, sumary);
 			}
 			
-			similarity.println("--------------------- SUMÁRIO ---------------------");
-			similarity.println("Títulos verificados:           " + spatialDataList.size());
-			similarity.println("Títulos conceitualizados:      " + (spatialDataList.size() - countTitleWithoutConcepts));
-			similarity.println("Títulos não conceitualizados:  " + countTitleWithoutConcepts);
+			similarity.println(sumary.toString());
 			
-			log.info("Finalização da consulta das classes e categorias na dbpedia que contenham relevância! com os títulos.");
+			log.info("Finalização da consulta das classes e categorias na dbpedia que contenham relevância com os títulos.");
 			
-			similarityConsolidated.flush();
+//			similarityConsolidated.flush();
 			similarity.flush();
 
-			similarityConsolidated.close();
+//			similarityConsolidated.close();
 			similarity.close();
 			
 		} catch (Exception e) {
@@ -162,60 +164,64 @@ public class Main {
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
 	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
 	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
+	 * @param sumary 
 	 * @param concepts 
 	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	private static Integer executeSimilarity(String title, String bagOfWords, PrintWriter outConsolidated, PrintWriter out, List<OntologyConcept> ontologyConcepts) 
+	private static void executeSimilarity(String title, String bagOfWords, /*PrintWriter outConsolidated, */PrintWriter out, List<OntologyConcept> ontologyConcepts, Sumary sumary) 
 			throws IOException {
 		
 		log.info("[INICIO] Início do processamento para o título: " + title);
 		
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
-		Map<String, Map<String, Set<String>>> tokensMap = searcherConceptys.searchClassesOrCategories(title);
+		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
 		List<String> classesUpThreshold = new LinkedList<String>();
 		List<String> categoriesUpThreshold = new LinkedList<String>();
 		
-		if(!tokensMap.isEmpty()) {
-			
-			String titleToken = tokensMap.keySet().iterator().next();
-			Map<String, Set<String>> classesAndCategoriesMap = tokensMap.get(titleToken);
-			if (!classesAndCategoriesMap.isEmpty()) {
-				out.println("Título do Feature Type: " + title);
-				for (String token : tokensMap.keySet()) {
-					classesAndCategoriesMap = tokensMap.get(token);
-					
-					Set<String> classes = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CLASS);
-					List<String> classesCosineSimilarity = executeCossineSimilarity(classes, 
-							SearcherConceptysDBPedia.CLASS,	bagOfWords, title, token, outConsolidated);
-					classesUpThreshold.addAll(classesCosineSimilarity);
+		if(!extractorList.isEmpty()) {
 
-					Set<String> categories = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CATEGORY);
-					List<String> categoriesCosineSimilarity = executeCossineSimilarity(categories, 
-							SearcherConceptysDBPedia.CATEGORY, bagOfWords, title, token, outConsolidated);
-					categoriesUpThreshold.addAll(categoriesCosineSimilarity);
-					if (!classesCosineSimilarity.isEmpty() || !categoriesCosineSimilarity.isEmpty()) {
-						out.println("Token: " + token);
-						out.println("Categorias: " + printStringList(categoriesCosineSimilarity));
-						out.println("Categorias similares: " + printStringList(getSimilaryConcepts(ontologyConcepts, categoriesCosineSimilarity)));
-						out.println("Conceitos: " + printStringList(classesCosineSimilarity));
-						out.println("Conceitos similares: " + printStringList(getSimilaryConcepts(ontologyConcepts, classesCosineSimilarity)));
-						out.println("");
-					}
+			out.println("Título do Feature Type: " + title);
+			boolean wasAnnotated = false;
+			for (Extractor extractor : extractorList) {
+
+				if (!extractor.getClasses().isEmpty()) {
+					extractor.setSimilarityClasses(executeCossineSimilarity(extractor.getClasses(), 
+						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()/*, outConsolidated*/));
+					extractor.setOntologyClasses(getSimilaryConcepts(ontologyConcepts, extractor.getSimilarityClasses()));
+					classesUpThreshold.addAll(extractor.getSimilarityClasses());
 				}
-				out.println("");
+				if (!extractor.getCategories().isEmpty()) {
+					extractor.setSimilarityCategories(executeCossineSimilarity(extractor.getCategories(), 
+						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()/*, outConsolidated*/));
+					extractor.setOntologyCategories(getSimilaryConcepts(ontologyConcepts, extractor.getSimilarityCategories()));
+					categoriesUpThreshold.addAll(extractor.getSimilarityCategories());
+				}
+				
+				if (!extractor.getSimilarityClasses().isEmpty() || !extractor.getSimilarityCategories().isEmpty()) {
+					out.println("Token: " + extractor.getTitle());
+					out.println("Categorias: " + printStringList(extractor.getSimilarityCategories()));
+					out.println("Categorias similares: " + printStringList(extractor.getOntologyCategories()));
+					out.println("Conceitos: " + printStringList(extractor.getSimilarityClasses()));
+					out.println("Conceitos similares: " + printStringList(extractor.getOntologyClasses()));
+					out.println("");
+				}
+				sumary.summarizeResults(extractor);
+				if(!extractor.getOntologyClasses().isEmpty() || !extractor.getOntologyCategories().isEmpty()) {
+					wasAnnotated = true;
+				}
 			}
+			sumary.setCountFeature(1);
+			if(!wasAnnotated) {
+				sumary.setCountFeatureNotAnnotated(1);
+			}
+			out.println("");
 		}
 		
 		log.info("[FIM] Fim do processamento para o título: " + title);
-
-		if(categoriesUpThreshold.isEmpty() && classesUpThreshold.isEmpty()) {
-			return 1;
-		}
-		return 0;
 		
 	}
-	
+
 	/**
 	 * Método para extrair a similaridade dos cossenos entre a bagofwords e a informação 
 	 * textual das páginas da wikipedia de cada um dos conceitos passados. Também é realizada
@@ -230,10 +236,10 @@ public class Main {
 	 * @return Uma lista contendo os conceitos que utrapassaram o threshold.
 	 * @throws IOException Exceção lançada caso haja algum problema na extração do cosseno.
 	 */
-	private static List<String> executeCossineSimilarity(Set<String> concepts, String type, 
-			String bagOfWords, String title, String token, PrintWriter outConsolidated) throws IOException {
+	private static Set<String> executeCossineSimilarity(Set<String> concepts, String type, 
+			String bagOfWords, String title, String token/*, PrintWriter outConsolidated*/) throws IOException {
 		
-		List<String> conceptsUpThreshold = new ArrayList<String>();
+		Set<String> conceptsUpThreshold = new HashSet<String>();
 		for (String concept : concepts) {
 			if (!isConceptDefault(concept)) {										
 				SearcherWikipedia searcherText = new SearcherWikipedia(concept);
@@ -243,10 +249,10 @@ public class Main {
 					cosineSimilarity = CosineDocumentSimilarity
 							.getCosineSimilarity(bagOfWords, wikiText);
 				}
-				String line = title + "|" + token + "|" + type + "|" + concept + "|" 
-						+ cosineSimilarity + "|" + searcherText.getWikiUrl() + 
-						"|" + searcherText.getUrl() + "|" + bagOfWords; 
-				outConsolidated.println(line);
+//				String line = title + "|" + token + "|" + type + "|" + concept + "|" 
+//						+ cosineSimilarity + "|" + searcherText.getWikiUrl() + 
+//						"|" + searcherText.getUrl() + "|" + bagOfWords; 
+//				outConsolidated.println(line);
 				if (cosineSimilarity >= THRESHOLD_COSINE) {
 					conceptsUpThreshold.add(concept);
 				}
@@ -265,17 +271,17 @@ public class Main {
 	} 
 	
 	/**
-	 * Imprime o toString de uma lista sem os parênteses.
-	 * @param list A lista a ser impressa.
-	 * @return Uma lista sem os parênteses.
+	 * Imprime o toString de um conjunto lista sem os parênteses.
+	 * @param set O conjunto a ser impresso.
+	 * @return A string do conjunto sem os parênteses.
 	 */
-	private static String printStringList(List<String> list) {
+	private static String printStringList(Set<String> set) {
 		
-		String listReturn = list.toString();
-		listReturn = listReturn.replace("[", "");
-		listReturn = listReturn.replace("]", "");
+		String setReturn = set.toString();
+		setReturn = setReturn.replace("[", "");
+		setReturn = setReturn.replace("]", "");
 		
-		return listReturn;		
+		return setReturn;		
 	}
 	
 	/**
@@ -295,14 +301,18 @@ public class Main {
 	 * Método para extrair os conceitos de ontologias cadastrados que são similares ao conceito passado.
 	 * 
 	 * @param concepts A lista de conceitos cadastrados.
-	 * @param concept O conceito a ser pesquisado.
-	 * @return A lista de conceitos compatíveis ao conceito passado.
+	 * @param concept Os conceitos a serem pesquisados.
+	 * @return O conjunto de conceitos compatíveis ao conceito passado.
 	 */
-	private static List<String> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, List<String> concepts) {
+	private static Set<String> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, Set<String> concepts) {
 		
-		List<String> similaryConcepts = new ArrayList<String>();
+		PreProcessingText preprocessing = new PreProcessingText();
+		Set<String> similaryConcepts = new HashSet<String>();
 		for (OntologyConcept ontologyConcept : ontologyConcepts) {
-			for (String concept : concepts) {				
+			for (String concept : concepts) {		
+//				String coveredConcept = preprocessing.preProcessingWithoutExtractScale(concept);
+//				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(coveredConcept) || 
+//						ontologyConcept.getConceptName().equalsIgnoreCase(coveredConcept)) {				
 				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) || 
 						ontologyConcept.getConceptName().equalsIgnoreCase(concept)) {
 					similaryConcepts.add(ontologyConcept.getConcept());
@@ -313,91 +323,4 @@ public class Main {
 		return similaryConcepts;
 	}
 	
-	////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	//TODO Métodos em desuso
-	
-	/**
-	 * Método que gera os arquivos contendo o mapeamento ou não dos serviços 
-	 * de uma IDE com as respectivas categorias da dbpedia.
-	 * 
-	 * @param pathTreeTagger O caminho da instalação do treeTagger.
-	 */
-	private static void mapedClassesOrCategories(String pathTreeTagger) {
-
-		log.info("Realizando a leitura das feature types... ");
-		FeatureService service = new FeatureServiceImpl();
-		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
-		log.info("Leitura das feature types realizada com sucesso!");
-		PrintWriter titlesCategorized = null;
-		PrintWriter titleUncategorized = null;
-		try {
-			DateFormat df = new SimpleDateFormat("YYYYMMddHHmm");
-			String dateFormated = df.format(new Date());
-
-			titlesCategorized = new PrintWriter(new FileWriter(new File(
-					"CategorizedTitles" + dateFormated + ".csv")));
-			titleUncategorized = new PrintWriter(new FileWriter(new File(
-					"UncategorizedTitles" + dateFormated + ".csv")));
-
-			titlesCategorized.println("Title|Title Tokenizing|Classe/Category");
-			titleUncategorized.println("Title|Title Tokenizing");
-
-			String previousTitle = "";
-			log.info("Inicio da consulta das classes ou categorias na dbpedia...");
-			SearcherConceptysDBPedia searcher = new SearcherConceptysDBPedia();
-			for (SpatialData spatialData : spatialDataList) {
-				String title = spatialData.getTitle();
-				if (!title.equals(previousTitle)) {		
-					BagOfWords bw = new BagOfWords(spatialData);
-					System.out.println(bw.extractWordList());
-					
-					Map<String, Map<String, Set<String>>> tokensMap = searcher.searchClassesOrCategories(title);
-					
-					if(!tokensMap.isEmpty()) {
-						String titleToken = tokensMap.keySet().iterator().next();
-						Map<String, Set<String>> classesAndCategoriesMap = tokensMap.get(titleToken);
-						if (!classesAndCategoriesMap.isEmpty()) {
-							for (String token : tokensMap.keySet()) {
-								classesAndCategoriesMap = tokensMap.get(token);
-								
-								Set<String> classes = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CLASS);
-								if (!classes.isEmpty()) {									
-									String line = title + "|" + token;
-									for (String c : classes) {
-										line += "|" + c;
-									}
-									titlesCategorized.println(line);
-								}
-								
-								Set<String> categories = classesAndCategoriesMap.get(SearcherConceptysDBPedia.CATEGORY);
-								if (!classes.isEmpty()) {									
-									String line = title + "|" + token;
-									for (String category : categories) {
-										line += "|" + category;
-									}
-									titlesCategorized.println(line);
-								}
-							}
-						} else {
-							String line = title + "|" + titleToken;
-							titleUncategorized.println(line);								
-						}
-					}					
-					previousTitle = title;
-				}
-								
-			}
-			log.info("Finalização da consulta das classes ou categorias na dbpedia!");
-			
-			titlesCategorized.flush();
-			titleUncategorized.flush();
-
-			titlesCategorized.close();
-			titleUncategorized.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 }

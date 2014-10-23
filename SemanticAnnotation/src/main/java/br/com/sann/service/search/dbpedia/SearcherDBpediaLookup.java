@@ -48,20 +48,34 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 		HttpMethod httpMethod = new GetMethod(
 				"http://lookup.dbpedia.org/api/search.asmx/PrefixSearch?QueryString="
 						+ dbpediaTerm);
-		try {
-			httpClient.executeMethod(httpMethod);
-			InputStream in = httpMethod.getResponseBodyAsStream();
-			SAXParserFactory factory = SAXParserFactory.newInstance();
-			SAXParser saxParser = factory.newSAXParser();
-			saxParser.parse(in, this);
-		} catch (HttpException he) {
-			log.error("DBPedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
-		} catch (IOException ioe) {
-			log.error("DBPedia - Erro ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
-		} catch (ParserConfigurationException pce) {
-			log.error("DBPedia - Não foi possível ler o retorno da consulta ao termo \"" + term + "\".");
-		} catch (SAXException se) {
-			log.error("DBPedia - Não foi possível instancia o leitor do retorno - Termo: " + term);
+		boolean searched = false;
+		while (!searched) {	
+			try {
+				httpClient.executeMethod(httpMethod);
+				InputStream in = httpMethod.getResponseBodyAsStream();
+				SAXParserFactory factory = SAXParserFactory.newInstance();
+				SAXParser saxParser = factory.newSAXParser();
+				saxParser.parse(in, this);
+				searched = true;
+			} catch (HttpException he) {
+				log.error("DBPedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
+				searched = true;
+			} catch (IOException ioe) {
+				log.error("DBPedia - Erro ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
+				searched = false;
+				try {
+					Thread.sleep(100000);
+				} catch (InterruptedException e) {
+					log.error("DBPedia - falha no temporizador da thread");
+					searched = true;
+				}
+			} catch (ParserConfigurationException pce) {
+				log.error("DBPedia - Não foi possível ler o retorno da consulta ao termo \"" + term + "\".");
+				searched = true;
+			} catch (SAXException se) {
+				log.error("DBPedia - Não foi possível instancia o leitor do retorno - Termo: " + term);
+				searched = true;
+			}
 		}
 		httpMethod.releaseConnection();
 	}
@@ -148,5 +162,5 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	public Set<String> getClasses() {
 		return this.classes;
 	}
-
+	
 }

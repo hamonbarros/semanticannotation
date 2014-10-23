@@ -48,21 +48,34 @@ public class SearcherWikipedia extends DefaultHandler {
 		
 		HttpMethod httpMethod = new GetMethod(getUrl());
 
-		try {
-			httpClient.executeMethod(httpMethod);
-			InputStream in = httpMethod.getResponseBodyAsStream();
-			SAXParserFactory factory = SAXParserFactory.newInstance();
-			SAXParser saxParser = factory.newSAXParser();
-			saxParser.parse(in, this);
-
-		} catch (HttpException he) {
-			log.error("Wikipedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Título: " + title);
-		} catch (IOException ioe) {
-			log.error("Wikipedia - Erro ao tentar conectar o lookup.dbpedia.org - Título: " + title);
-		} catch (ParserConfigurationException pce) {
-			log.error("Wikipedia - Não foi possível ler o retorno da consulta ao título \"" + title + "\".");
-		} catch (SAXException se) {
-			log.error("Wikipedia - Não foi possível instancia o leitor do retorno - Título: " + title);
+		boolean searched = false;
+		while (!searched) {	
+			try {
+				httpClient.executeMethod(httpMethod);
+				InputStream in = httpMethod.getResponseBodyAsStream();
+				SAXParserFactory factory = SAXParserFactory.newInstance();
+				SAXParser saxParser = factory.newSAXParser();
+				saxParser.parse(in, this);
+				searched = true;
+			} catch (HttpException he) {
+				log.error("Wikipedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Título: " + title);
+				searched = true;
+			} catch (IOException ioe) {
+				log.error("Wikipedia - Erro ao tentar conectar o lookup.dbpedia.org - Título: " + title);
+				searched = false;
+				try {
+					Thread.sleep(100000);
+				} catch (InterruptedException e) {
+					log.error("Wikipedia - falha no temporizador da thread");
+					searched = true;
+				}				
+			} catch (ParserConfigurationException pce) {
+				log.error("Wikipedia - Não foi possível ler o retorno da consulta ao título \"" + title + "\".");
+				searched = true;
+			} catch (SAXException se) {
+				log.error("Wikipedia - Não foi possível instancia o leitor do retorno - Título: " + title);
+				searched = true;
+			}
 		}
 	}
 
