@@ -169,7 +169,7 @@ public class Main {
 	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	private static void executeSimilarity(String title, String bagOfWords, /*PrintWriter outConsolidated, */PrintWriter out, List<OntologyConcept> ontologyConcepts, Sumary sumary) 
+	public static void executeSimilarity(String title, String bagOfWords, /*PrintWriter outConsolidated, */PrintWriter out, List<OntologyConcept> ontologyConcepts, Sumary sumary) 
 			throws IOException {
 		
 		log.info("[INICIO] Início do processamento para o título: " + title);
@@ -193,7 +193,7 @@ public class Main {
 				}
 				if (!extractor.getCategories().isEmpty()) {
 					extractor.setSimilarityCategories(executeCossineSimilarity(extractor.getCategories(), 
-						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()/*, outConsolidated*/));
+						SearcherConceptysDBPedia.CATEGORY,	bagOfWords, title, extractor.getTitle()/*, outConsolidated*/));
 					extractor.setOntologyCategories(getSimilaryConcepts(ontologyConcepts, extractor.getSimilarityCategories()));
 					categoriesUpThreshold.addAll(extractor.getSimilarityCategories());
 				}
@@ -219,6 +219,53 @@ public class Main {
 		}
 		
 		log.info("[FIM] Fim do processamento para o título: " + title);
+		
+	}
+	
+	/**
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
+	 * bagOfWords e um determinado texto.
+	 * 
+	 * @param title O título do feature typde.
+	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
+	 * @param ontologyConcepts 
+	 * @throws IOException Exceção lançada de ID.
+	 */
+	public static Set<String> executeSimilarity(String title, String bagOfWords, List<OntologyConcept> ontologyConcepts) 
+			throws IOException {
+		
+		if (log == null) {
+			log = Logger.getLogger(Main.class);
+		}
+		log.info("[INICIO] Início do processamento para o título: " + title);
+		
+		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
+		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
+		Set<String> concepts = new HashSet<String>();
+		
+		if(!extractorList.isEmpty()) {
+
+			for (Extractor extractor : extractorList) {
+
+				if (!extractor.getClasses().isEmpty()) {
+					extractor.setSimilarityClasses(executeCossineSimilarity(extractor.getClasses(), 
+						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()));
+					extractor.setOntologyClasses(getSimilaryConcepts(ontologyConcepts, extractor.getSimilarityClasses()));
+					concepts.addAll(extractor.getOntologyClasses());
+				}
+				if (!extractor.getCategories().isEmpty()) {
+					extractor.setSimilarityCategories(executeCossineSimilarity(extractor.getCategories(), 
+						SearcherConceptysDBPedia.CATEGORY,	bagOfWords, title, extractor.getTitle()));
+					extractor.setOntologyCategories(getSimilaryConcepts(ontologyConcepts, extractor.getSimilarityCategories()));
+					concepts.addAll(extractor.getOntologyCategories());
+				}
+				
+			}
+		}
+		
+		log.info("[FIM] Fim do processamento para o título: " + title);
+		
+		return concepts;
 		
 	}
 

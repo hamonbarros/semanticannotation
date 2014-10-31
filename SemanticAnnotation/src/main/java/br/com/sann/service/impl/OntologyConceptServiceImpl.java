@@ -41,4 +41,10 @@ public class OntologyConceptServiceImpl implements OntologyConceptService{
 		dao.saveOntologyConcepts(concepts);
 	}
 
+	@Override
+	public List<OntologyConcept> recoveryOntolgyConceptByIds(String[] idsOntology) {
+		
+		return dao.recoveryOntolgyConceptByIds(idsOntology);
+	}
+
 }

@@ -27,4 +27,10 @@ public interface OntologyConceptService {
 	 */
 	public void saveOntologyConcepts(List<OntologyConcept> concepts);
 
+	/**
+	 * Recupera os conceitos de ontologia através dos ids.
+	 * 
+	 * @param idsOntology Os ids dos conceitos a serem recuperados. 
+	 */
+	public List<OntologyConcept> recoveryOntolgyConceptByIds(String[] idsOntology);
 }

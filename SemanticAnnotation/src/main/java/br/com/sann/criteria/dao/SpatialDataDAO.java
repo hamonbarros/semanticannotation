@@ -19,4 +19,11 @@ public interface SpatialDataDAO {
 	 */
 	public List<SpatialData> recoverAllSpatialData();
 	
+	/**
+	 * Recupera o SpatialData a partir do seu título.
+	 * 
+	 * @param title O título a ser pesquisado.
+	 * @return O SpatialData referente ao título.
+	 */
+	public SpatialData recoverSpatialDataByTitle(String title);
 }

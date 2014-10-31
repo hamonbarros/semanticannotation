@@ -34,7 +34,7 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	private Set<String> tempClasses;
 	
 	private String elementName;
-	private String elementNamePai;
+	private String elementParentName;
 
 	public SearcherDBpediaLookup(String term) {
 
@@ -126,22 +126,22 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 		String s = new String(ch, start, length).trim();
 
 		if ("Category".equals(elementName)) {
-			elementNamePai = elementName;
+			elementParentName = elementName;
 		}
-		if ("Label".equals(elementName) && "Category".equals(elementNamePai)) {
+		if ("Label".equals(elementName) && "Category".equals(elementParentName)) {
 			if (s != null && !s.isEmpty()) {
 				tempCategories.add(s);
 			}
-			elementNamePai = "";
+			elementParentName = "";
 		}
 		if ("Class".equals(elementName)) {
-			elementNamePai = elementName;
+			elementParentName = elementName;
 		}
-		if ("Label".equals(elementName) && "Class".equals(elementNamePai)) {
+		if ("Label".equals(elementName) && "Class".equals(elementParentName)) {
 			if (s != null && !s.isEmpty()) {
 				tempClasses.add(s);
 			}
-			elementNamePai = "";
+			elementParentName = "";
 		}
 	}
 	

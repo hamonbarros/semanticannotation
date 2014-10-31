@@ -1,5 +1,6 @@
 package br.com.sann.criteria.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -15,9 +16,9 @@ import br.com.sann.domain.SpatialData;
  * Classe de persitência da entidade OntologyConcept.
  * 
  * @author Hamon
- *
+ * 
  */
-public class OntologyConceptDAOImpl implements OntologyConceptDAO{
+public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 
 	@Override
 	public List<OntologyConcept> recoverAllOntologyConcept() {
@@ -32,13 +33,27 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO{
 	public void saveOntologyConcepts(List<OntologyConcept> concepts) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
-		for (OntologyConcept ontologyConcept : concepts) {			
-			em.merge(ontologyConcept);		
+		for (OntologyConcept ontologyConcept : concepts) {
+			em.merge(ontologyConcept);
 			em.flush();
 		}
 		em.getTransaction().commit();
 		JPAUtil.closeEntityManager();
 	}
 
-	
+	@Override
+	public List<OntologyConcept> recoveryOntolgyConceptByIds(String[] idsOntology) {
+
+		EntityManager em = JPAUtil.getEntityManager();
+		List<OntologyConcept> concepts = new ArrayList<OntologyConcept>();
+		for (String id : idsOntology) {
+			OntologyConcept concept = em.find(OntologyConcept.class, Integer.parseInt(id.trim()));
+			if (concept != null) {
+				concepts.add(concept);
+			}
+		}
+		em.close();
+		return concepts;
+	}
+
 }

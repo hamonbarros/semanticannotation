@@ -31,4 +31,10 @@ public class FeatureServiceImpl implements FeatureService{
 		return dao.recoverAllSpatialData();
 	}
 
+	@Override
+	public SpatialData recoverSpatialDataByTitle(String title) {
+		
+		return dao.recoverSpatialDataByTitle(title);
+	}
+
 }
