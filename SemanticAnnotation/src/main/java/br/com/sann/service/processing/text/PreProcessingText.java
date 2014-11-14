@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -34,6 +35,7 @@ import br.com.sann.main.Main;
 public class PreProcessingText {
 	
 	private String pathTreeTagger = "";
+	private final String[] commonWords = {"area", "level", "point", "polygon", "line", "zoon"};
 
 	/**
 	 * Método construtor.
@@ -110,7 +112,7 @@ public class PreProcessingText {
 			e.printStackTrace();
 		}
 
-		return tokens;
+		return extractWordsDefault(tokens);
 	}
 
 	/**
@@ -230,6 +232,29 @@ public class PreProcessingText {
 		return textReturn;
 	}
 
+	/**
+	 * Extrai palavras referentes aos termos comuns da área de dados geográficos.
+	 * @param tokens Os tokens cujos termos comuns serão extraídos, caso exista.
+	 * @return Os tokens com os termos comuns extraídos, caso exista.
+	 */
+	public List<String> extractWordsDefault(List<String> tokens) {
+		
+		List<String> tokensResult = new ArrayList<String>();
+		for (String token : tokens) {
+			boolean find = false;
+			for (String commonWord : commonWords) {
+				if (token.equalsIgnoreCase(commonWord)) {
+					find = true;
+					break;
+				}
+			}
+			if (!find) {
+				tokensResult.add(token);
+			}
+		}
+		return tokensResult;
+	}
+	
 	/**
 	 * Método para normalizar um determinado texto colocando-o para minúsculo e 
 	 * separando as palavras compostas.

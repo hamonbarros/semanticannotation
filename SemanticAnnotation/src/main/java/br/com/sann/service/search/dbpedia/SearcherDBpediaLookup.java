@@ -3,6 +3,7 @@ package br.com.sann.service.search.dbpedia;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -18,6 +19,8 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import br.com.sann.domain.DBpediaCategory;
+import br.com.sann.domain.DBpediaClass;
 import br.com.sann.main.Main;
 
 /**
@@ -28,20 +31,22 @@ import br.com.sann.main.Main;
  */
 public class SearcherDBpediaLookup extends DefaultHandler {
 
-	private Set<String> categories;
-	private Set<String> tempCategories;
-	private Set<String> classes;
-	private Set<String> tempClasses;
+	private Set<DBpediaCategory> categories;
+	private Set<DBpediaCategory> tempCategories;
+	private Set<DBpediaClass> classes;
+	private Set<DBpediaClass> tempClasses;
 	
 	private String elementName;
+	private String elementBrotherName;
 	private String elementParentName;
+	private String elementBrotherValue;
 
 	public SearcherDBpediaLookup(String term) {
 
 		Logger log = Logger.getLogger(Main.class);
 		
-		categories = new LinkedHashSet<String>();
-		classes = new LinkedHashSet<String>();
+		categories = new LinkedHashSet<DBpediaCategory>();
+		classes = new LinkedHashSet<DBpediaClass>();
 		HttpClient httpClient = new HttpClient();
 
 		String dbpediaTerm = term.replaceAll(" ", "+"); 
@@ -91,8 +96,8 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	public void startElement(String uri, String localName, String currentName,
 			Attributes attributes) throws SAXException {
 		if (currentName.equalsIgnoreCase("result")) {
-			tempCategories = new LinkedHashSet<String>();
-			tempClasses = new LinkedHashSet<String>();
+			tempCategories = new LinkedHashSet<DBpediaCategory>();
+			tempClasses = new LinkedHashSet<DBpediaClass>();
 		}
 		elementName = currentName;
 	}
@@ -124,24 +129,57 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	public void characters(char[] ch, int start, int length)
 			throws SAXException {
 		String s = new String(ch, start, length).trim();
-
+		
+		if ("Result".equals(elementName)) {
+			elementParentName = elementName;
+		}
+		if ("Label".equals(elementName) && "Result".equals(elementParentName)) {
+			elementBrotherName = elementName;
+			if (s != null && !s.isEmpty()) {				
+				elementBrotherValue = s;
+			}
+		}
+		if ("URI".equals(elementName) && "Result".equals(elementParentName) && "Label".equals(elementBrotherName)) {
+			if (s != null && !s.isEmpty()) {
+				DBpediaClass clas = new DBpediaClass(elementBrotherValue, s);
+				tempClasses.add(clas);
+			}
+			elementParentName = "";
+			elementBrotherName = "";
+		}
 		if ("Category".equals(elementName)) {
 			elementParentName = elementName;
 		}
 		if ("Label".equals(elementName) && "Category".equals(elementParentName)) {
+			elementBrotherName = elementName;
+			if (s != null && !s.isEmpty()) {				
+				elementBrotherValue = s;
+			}
+		}
+		if ("URI".equals(elementName) && "Category".equals(elementParentName) && "Label".equals(elementBrotherName)) {
 			if (s != null && !s.isEmpty()) {
-				tempCategories.add(s);
+				DBpediaCategory cat = new DBpediaCategory(elementBrotherValue, s);
+				tempCategories.add(cat);
 			}
 			elementParentName = "";
+			elementBrotherName = "";
 		}
 		if ("Class".equals(elementName)) {
 			elementParentName = elementName;
 		}
 		if ("Label".equals(elementName) && "Class".equals(elementParentName)) {
+			elementBrotherName = elementName;
+			if (s != null && !s.isEmpty()) {				
+				elementBrotherValue = s;
+			}
+		}
+		if ("URI".equals(elementName) && "Class".equals(elementParentName) && "Label".equals(elementBrotherName)) {
 			if (s != null && !s.isEmpty()) {
-				tempClasses.add(s);
+				DBpediaClass clas = new DBpediaClass(elementBrotherValue, s);
+				tempClasses.add(clas);
 			}
 			elementParentName = "";
+			elementBrotherName = "";
 		}
 	}
 	
@@ -150,7 +188,7 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	 * 
 	 * @return  A lista de categorias recuperadas na DBPedia.
 	 */
-	public Set<String> getCategories() {
+	public Set<DBpediaCategory> getCategories() {
 		return this.categories;
 	}
 	
@@ -159,7 +197,7 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 	 * 
 	 * @return A lista de classes recuperadas na DBPedia.
 	 */
-	public Set<String> getClasses() {
+	public Set<DBpediaClass> getClasses() {
 		return this.classes;
 	}
 	

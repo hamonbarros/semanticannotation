@@ -20,10 +20,11 @@ public interface FeatureService {
 	public List<SpatialData> recoverAllSpatialData();
 
 	/**
-	 * Recupera o SpatialData a partir do seu título.
+	 * Recupera a bag of words construída a partir dos SpatialData com um 
+	 * determinado título.
 	 * 
 	 * @param title O título a ser pesquisado.
-	 * @return O SpatialData referente ao título.
+	 * @return A bag of words constuída com as informações textuais do SpatialData.
 	 */
-	public SpatialData recoverSpatialDataByTitle(String title);
+	public String recoverBagOfWordsByTitle(String title);
 }

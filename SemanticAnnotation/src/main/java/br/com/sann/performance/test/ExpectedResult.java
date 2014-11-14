@@ -15,7 +15,7 @@ import br.com.sann.domain.SpatialData;
 public class ExpectedResult {
 
 	private String title;
-	private SpatialData spatialData;
+	private String bagOfWords;
 
 	private List<OntologyConcept> relevantConcepts;
 	private Set<String> retrievedConcepts;
@@ -37,12 +37,12 @@ public class ExpectedResult {
 		this.relevantConcepts = relevantConcepts;
 	}
 
-	public SpatialData getSpatialData() {
-		return spatialData;
+	public String getBagOfWords() {
+		return bagOfWords;
 	}
-	
-	public void setSpatialData(SpatialData spatialData) {
-		this.spatialData = spatialData;
+
+	public void setBagOfWords(String bagOfWords) {
+		this.bagOfWords = bagOfWords;
 	}
 
 	public Set<String> getRetrievedConcepts() {
@@ -72,9 +72,6 @@ public class ExpectedResult {
 	
 	public String toString() {
 		String text = "Título: " + title + "\n";
-		if (spatialData != null) {
-			text += "Feature type: '" + spatialData.getTitle() + "' Nome: '" + spatialData.getName() + "'" + "\n";
-		}
 		if (relevantConcepts != null) {			
 			text += "Conceitos relevantes: " + getConcepts(relevantConcepts) + "\n";
 		}

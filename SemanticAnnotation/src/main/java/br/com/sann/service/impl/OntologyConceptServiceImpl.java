@@ -47,4 +47,10 @@ public class OntologyConceptServiceImpl implements OntologyConceptService{
 		return dao.recoveryOntolgyConceptByIds(idsOntology);
 	}
 
+	@Override
+	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term) {
+		
+		return dao.recoveryOntolgyConceptByTerm(term);
+	}
+
 }

@@ -16,6 +16,7 @@ import br.com.sann.domain.OntologyConcept;
 import br.com.sann.service.OntologyConceptService;
 import br.com.sann.service.impl.OntologyConceptServiceImpl;
 
+import com.hp.hpl.jena.ontology.ConversionException;
 import com.hp.hpl.jena.ontology.DatatypeProperty;
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.ObjectProperty;
@@ -94,7 +95,7 @@ public class OntologyParser {
 		while (classes.hasNext()) {
 			OntClass currentClass = classes.next();
 			if (currentClass.getLocalName() != null)
-				if (currentClass.getLocalName().equals(className)) {
+				if (currentClass.getLocalName().equalsIgnoreCase(className)) {
 					return currentClass;
 				}
 		}
@@ -385,21 +386,54 @@ public class OntologyParser {
 		return resource instanceof OntClass;
 	}
 
-	public void listSuperclasses(String concept)
+	public Set<String> listSuperclasses(String concept)
 			throws ResourceNotFoundException {
+		
+		Set<String> result = new HashSet<String>(); 
 		OntClass c = (OntClass) getResource(concept, OntClass.class);
-		Iterator<OntClass> it = c.listSuperClasses();
-		while (it.hasNext()) {
-			System.out.println("   " + it.next().getLocalName());
-
+		try {
+			Iterator<OntClass> it = c.listSuperClasses();
+			while (it.hasNext()) {
+				result.add(it.next().getLocalName());				
+			}			
+		} catch (ConversionException e) {
+			System.err.println("Não foi possível recuperar as superclasses de " + c.getLocalName());
 		}
-		it = c.listSubClasses();
-		while (it.hasNext()) {
-			System.out.println("   " + it.next().getLocalName());
-
+		try {
+			Iterator<OntClass> it = c.listSubClasses();
+			while (it.hasNext()) {
+				result.add(it.next().getLocalName());	
+			}
+		} catch (ConversionException e) {
+			System.err.println("Não foi possível recuperar as subclasses de " + c.getLocalName());
 		}
+		return result;
 	}
 
+	public Set<String> listSuperProperies(String concept)
+			throws ResourceNotFoundException {
+		
+		Set<String> result = new HashSet<String>(); 
+		ObjectProperty c = (ObjectProperty) getResource(concept, ObjectProperty.class);
+		try {
+			ExtendedIterator<ObjectProperty> it = (ExtendedIterator<ObjectProperty>) c.listSuperProperties();
+			while (it.hasNext()) {
+				result.add(it.next().getLocalName());				
+			}			
+		} catch (ConversionException e) {
+			System.err.println("Não foi possível recuperar as superclasses de " + c.getLocalName());
+		}
+		try {
+			Iterator<ObjectProperty> it = (ExtendedIterator<ObjectProperty>) c.listSubProperties();
+			while (it.hasNext()) {
+				result.add(it.next().getLocalName());	
+			}
+		} catch (ConversionException e) {
+			System.err.println("Não foi possível recuperar as subclasses de " + c.getLocalName());
+		}
+		return result;
+	}
+	
 	public static void main(String[] args) {
 
 		try {
@@ -408,15 +442,24 @@ public class OntologyParser {
 
 			OntologyParser parser = new OntologyParser(path,
 					OntologyParser.LOCAL_FILE_MODE, OntologyParser.SIMPLE_MODEL);
-			ExtendedIterator<OntClass> imports = parser.getModel()
-					.listNamedClasses();
-			System.out.println("Concepts");
-			int cont = 0;
-			while (imports.hasNext()) {
-				System.out.println("   " + imports.next());
-				cont++;
-			}
-			System.out.println("\nNumber of concepts: " + cont);
+//			ExtendedIterator<OntClass> imports = parser.getModel()
+//					.listNamedClasses();
+//			System.out.println("Concepts");
+//			int cont = 0;
+//			while (imports.hasNext()) {
+//				OntClass ontol = imports.next();
+//				System.out.println("   " + ontol);
+//				cont++;
+//				try {					
+//					System.out.println("    ---> " + ontol.getSuperClass());
+//					cont++;
+//				} catch (ConversionException e) {
+//					System.err.println("Não foi possível recuperar a superclasse de " + ontol.getLocalName());
+//				}
+//			}
+//			System.out.println("\nNumber of concepts: " + cont);
+			
+			System.out.println(parser.listSuperclasses("Island"));
 		}
 
 		catch (Exception e) {

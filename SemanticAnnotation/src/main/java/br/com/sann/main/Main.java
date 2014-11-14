@@ -3,18 +3,13 @@ package br.com.sann.main;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Properties;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
@@ -23,6 +18,7 @@ import br.com.sann.domain.Extractor;
 import br.com.sann.domain.OntologyConcept;
 import br.com.sann.domain.SpatialData;
 import br.com.sann.domain.Sumary;
+import br.com.sann.process.SpatialDataListProcess;
 import br.com.sann.service.FeatureService;
 import br.com.sann.service.OntologyConceptService;
 import br.com.sann.service.impl.FeatureServiceImpl;
@@ -44,27 +40,36 @@ public class Main {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-
-		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
 		
 		log = Logger.getLogger(Main.class);
-		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		log.info("Iniciando o processamento...");
-		log.info("Data Inicial: " + df.format(new Date()));
+		log.info("Realizando a leitura das feature types... ");
+		FeatureService service = new FeatureServiceImpl();
+		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
+		log.info("Leitura das feature types realizada com sucesso!");
 		
-		InputStream in = new Main().getClass().getClassLoader()
-				.getResourceAsStream("config.properties");  
-		Properties props = new Properties();  
-		props.load(in);
-		in.close();
-		String path = props.getProperty("PATH_TREETAGGER");
+		SpatialDataListProcess process = new SpatialDataListProcess();
+		process.execute(spatialDataList);
 
-//		mapedClassesOrCategories(path);
-		extractSimilarity(path);
-		
-		log.info("Fim do processamento!");
-		log.info("Data Final: " + df.format(new Date()));
-		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+//		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
+//		
+//		log = Logger.getLogger(Main.class);
+//		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+//		log.info("Iniciando o processamento...");
+//		log.info("Data Inicial: " + df.format(new Date()));
+//		
+//		InputStream in = new Main().getClass().getClassLoader()
+//				.getResourceAsStream("config.properties");  
+//		Properties props = new Properties();  
+//		props.load(in);
+//		in.close();
+//		String path = props.getProperty("PATH_TREETAGGER");
+//
+////		mapedClassesOrCategories(path);
+//		extractSimilarity(path);
+//		
+//		log.info("Fim do processamento!");
+//		log.info("Data Final: " + df.format(new Date()));
+//		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
 	}
 	
@@ -233,12 +238,7 @@ public class Main {
 	 */
 	public static Set<String> executeSimilarity(String title, String bagOfWords, List<OntologyConcept> ontologyConcepts) 
 			throws IOException {
-		
-		if (log == null) {
-			log = Logger.getLogger(Main.class);
-		}
-		log.info("[INICIO] Início do processamento para o título: " + title);
-		
+			
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
 		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
 		Set<String> concepts = new HashSet<String>();
@@ -262,9 +262,7 @@ public class Main {
 				
 			}
 		}
-		
-		log.info("[FIM] Fim do processamento para o título: " + title);
-		
+			
 		return concepts;
 		
 	}
@@ -309,15 +307,6 @@ public class Main {
 	}
 	
 	/**
-	 * Método utilitário para formatar um valor doble com 3 casas de precisão.
-	 * @param x O valor em double.
-	 * @return O double formatado.
-	 */
-	private static String format(double x) {  
-	    return String.format(Locale.ENGLISH, "%.3f", x);  
-	} 
-	
-	/**
 	 * Imprime o toString de um conjunto lista sem os parênteses.
 	 * @param set O conjunto a ser impresso.
 	 * @return A string do conjunto sem os parênteses.
@@ -355,13 +344,13 @@ public class Main {
 		
 		PreProcessingText preprocessing = new PreProcessingText();
 		Set<String> similaryConcepts = new HashSet<String>();
-		for (OntologyConcept ontologyConcept : ontologyConcepts) {
-			for (String concept : concepts) {		
-//				String coveredConcept = preprocessing.preProcessingWithoutExtractScale(concept);
-//				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(coveredConcept) || 
-//						ontologyConcept.getConceptName().equalsIgnoreCase(coveredConcept)) {				
-				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) || 
-						ontologyConcept.getConceptName().equalsIgnoreCase(concept)) {
+		for (String concept : concepts) {		
+			String coveredConcept = preprocessing.preProcessingWithoutExtractScale(concept);
+			for (OntologyConcept ontologyConcept : ontologyConcepts) {
+				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(coveredConcept) || 
+						ontologyConcept.getConceptName().equalsIgnoreCase(coveredConcept)) {				
+//				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) || 
+//						ontologyConcept.getConceptName().equalsIgnoreCase(concept)) {
 					similaryConcepts.add(ontologyConcept.getConcept());
 					break;
 				}

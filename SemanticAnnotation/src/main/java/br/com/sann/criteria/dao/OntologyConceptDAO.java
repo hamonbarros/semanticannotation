@@ -33,5 +33,12 @@ public interface OntologyConceptDAO {
 	 * @param idsOntology Os ids dos conceitos a serem recuperados. 
 	 */
 	public List<OntologyConcept> recoveryOntolgyConceptByIds(String[] idsOntology);
+
+	/**
+	 * Recupera os conceitos a partir de um tema.
+	 * 
+	 * @param term O tema a ser consultado. 
+	 */
+	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term);
 	
 }

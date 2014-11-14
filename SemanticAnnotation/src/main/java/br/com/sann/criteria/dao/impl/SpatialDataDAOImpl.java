@@ -8,6 +8,7 @@ import javax.persistence.Query;
 import br.com.sann.criteria.dao.SpatialDataDAO;
 import br.com.sann.criteria.util.JPAUtil;
 import br.com.sann.domain.SpatialData;
+import br.com.sann.service.processing.text.BagOfWords;
 
 /**
  * Classe de persitência da entidade SpatialData.
@@ -27,7 +28,7 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 	}
 
 	@Override
-	public SpatialData recoverSpatialDataByTitle(String title) {
+	public String recoverBagOfWordsByTitle(String title) {
 		
 		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = "SELECT n FROM SpatialData n WHERE n.title LIKE :title";
@@ -37,10 +38,18 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		List<SpatialData> spatialDatas = q.getResultList();
 		em.close();
 		
-		if (spatialDatas!= null && !spatialDatas.isEmpty()) {			
-			return spatialDatas.get(0);
+		if (spatialDatas!= null && !spatialDatas.isEmpty()) {	
+			
+			StringBuffer storeBagsOfWords = new StringBuffer();	
+			BagOfWords bw = null;
+			for (SpatialData spatialData : spatialDatas) {
+				bw = new BagOfWords(spatialData);
+				storeBagsOfWords.append(bw.extractTextProperties());
+				storeBagsOfWords.append(" ");
+			}			
+			return bw.extractWordList(storeBagsOfWords.toString());
 		}
-		return null;
+		return "";
 	}
 
 	

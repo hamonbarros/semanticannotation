@@ -23,7 +23,7 @@ import br.com.sann.main.Main;
 public class SearcherParentConcepts extends DefaultHandler {
 	
 	private Set<String> parentsCategories;
-	private Set<String> parentasClasses;
+	private Set<String> parentsClasses;
 	
 	private String elementName;
 	private String elementParentName;
@@ -67,23 +67,23 @@ public class SearcherParentConcepts extends DefaultHandler {
 		httpMethod.releaseConnection();
 	}
 	
-//	/**
-//	 * Método sobrescrito da superclasse que inicia a leitura do XML de retorno.
-//	 * 
-//	 * @param uri A URI.
-//	 * @param localName O nome local.
-//	 * @param currentName A tag atual sendo lida.
-//	 */
-//	@Override
-//	public void startElement(String uri, String localName, String currentName,
-//			Attributes attributes) throws SAXException {
-//		if (currentName.equalsIgnoreCase("html")) {			
-//			parentsCategories = new LinkedHashSet<String>();
-//			parentasClasses = new LinkedHashSet<String>();
-//		}
-//		elementName = currentName;
-//	}
-//
+	/**
+	 * Método sobrescrito da superclasse que inicia a leitura do XML de retorno.
+	 * 
+	 * @param uri A URI.
+	 * @param localName O nome local.
+	 * @param currentName A tag atual sendo lida.
+	 */
+	@Override
+	public void startElement(String uri, String localName, String currentName,
+			Attributes attributes) throws SAXException {
+		if (currentName.equalsIgnoreCase("html")) {			
+			parentsCategories = new LinkedHashSet<String>();
+			parentsClasses = new LinkedHashSet<String>();
+		}
+		elementName = currentName;
+	}
+
 //	/**
 //	 * Método sobrescrito da superclasse que finaliza a leitura do XML de retorno.
 //	 * 
@@ -107,30 +107,30 @@ public class SearcherParentConcepts extends DefaultHandler {
 	 * @param start O indice de início da leitura no array.
 	 * @param length O tamanho da palavra a ser lida.
 	 */
-//	@Override
-//	public void characters(char[] ch, int start, int length)
-//			throws SAXException {
-//		String s = new String(ch, start, length).trim();
-//
-//		if ("Category".equals(elementName)) {
-//			elementParentName = elementName;
-//		}
-//		if ("Label".equals(elementName) && "Category".equals(elementParentName)) {
-//			if (s != null && !s.isEmpty()) {
-//				tempCategories.add(s);
-//			}
-//			elementParentName = "";
-//		}
-//		if ("Class".equals(elementName)) {
-//			elementParentName = elementName;
-//		}
-//		if ("Label".equals(elementName) && "Class".equals(elementParentName)) {
-//			if (s != null && !s.isEmpty()) {
-//				tempClasses.add(s);
-//			}
-//			elementParentName = "";
-//		}
-//	}
+	@Override
+	public void characters(char[] ch, int start, int length)
+			throws SAXException {
+		String s = new String(ch, start, length).trim();
+
+		if ("Category".equals(elementName)) {
+			elementParentName = elementName;
+		}
+		if ("Label".equals(elementName) && "Category".equals(elementParentName)) {
+			if (s != null && !s.isEmpty()) {
+				parentsCategories.add(s);
+			}
+			elementParentName = "";
+		}
+		if ("Class".equals(elementName)) {
+			elementParentName = elementName;
+		}
+		if ("Label".equals(elementName) && "Class".equals(elementParentName)) {
+			if (s != null && !s.isEmpty()) {
+				parentsClasses.add(s);
+			}
+			elementParentName = "";
+		}
+	}
 	
 	/**
 	 * Recupera a lista de supercategorias recuperadas na DBPedia a partir da url consultada.
@@ -147,6 +147,12 @@ public class SearcherParentConcepts extends DefaultHandler {
 	 * @return A lista de superclasses recuperadas na DBPedia.
 	 */
 	public Set<String> getParentClasses() {
-		return this.parentasClasses;
+		return this.parentsClasses;
+	}
+	
+	public static void main(String[] args) {
+		SearcherParentConcepts s = new SearcherParentConcepts("http://dbpedia.org/resource/Category:Plants");
+		System.out.println("Categorias: " + s.getParentCategories());
+		System.out.println("Classes: " + s.getParentClasses());
 	}
 }

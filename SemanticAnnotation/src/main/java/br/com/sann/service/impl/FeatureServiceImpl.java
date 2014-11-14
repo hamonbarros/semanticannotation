@@ -32,9 +32,9 @@ public class FeatureServiceImpl implements FeatureService{
 	}
 
 	@Override
-	public SpatialData recoverSpatialDataByTitle(String title) {
+	public String recoverBagOfWordsByTitle(String title) {
 		
-		return dao.recoverSpatialDataByTitle(title);
+		return dao.recoverBagOfWordsByTitle(title);
 	}
 
 }

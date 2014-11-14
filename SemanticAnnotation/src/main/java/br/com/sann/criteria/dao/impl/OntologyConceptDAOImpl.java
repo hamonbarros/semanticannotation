@@ -56,4 +56,16 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		return concepts;
 	}
 
+	@Override
+	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term) {
+		EntityManager em = JPAUtil.getEntityManager();
+		String jpql = "SELECT n FROM OntologyConcept n " +
+					  "WHERE UPPER(n.conceptName) = UPPER('"+term+"') OR " +
+					  		"UPPER(n.normalizedName) = UPPER('"+term+"')";
+		Query q = em.createQuery(jpql);
+		List<OntologyConcept> concepts = q.getResultList();
+		em.close();
+		return concepts;
+	}
+
 }

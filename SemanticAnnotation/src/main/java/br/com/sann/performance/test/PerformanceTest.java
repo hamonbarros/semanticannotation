@@ -1,7 +1,6 @@
 package br.com.sann.performance.test;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -18,20 +17,19 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
-import br.com.sann.domain.Extractor;
 import br.com.sann.domain.OntologyConcept;
-import br.com.sann.domain.SpatialData;
 import br.com.sann.main.Main;
+import br.com.sann.process.ExpectedResultProcess;
 import br.com.sann.service.FeatureService;
 import br.com.sann.service.OntologyConceptService;
 import br.com.sann.service.impl.FeatureServiceImpl;
 import br.com.sann.service.impl.OntologyConceptServiceImpl;
-import br.com.sann.service.processing.text.BagOfWords;
 
 public class PerformanceTest {
 
 	private OntologyConceptService conceptService;
 	private FeatureService featureService;
+	public static Logger log;
 	
 	public PerformanceTest() {
 		conceptService = new OntologyConceptServiceImpl();
@@ -41,12 +39,7 @@ public class PerformanceTest {
 	public List<ExpectedResult> populatedExpectedResult() {
 		
 		List<ExpectedResult> expectedResult = new ArrayList<ExpectedResult>();
-		
-		Logger log = Logger.getLogger(PerformanceTest.class);
-		log.info("Realizando a leitura dos conceitos ontológicos ... ");
-		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
-		List<OntologyConcept> ontologyConcepts = conceptService.recoverAllOntologyConcept();
-		log.info("Leitura dos conceitos ontológicos realizada com sucesso!");
+
 		PrintWriter result = null;
 		
 		try {
@@ -59,21 +52,26 @@ public class PerformanceTest {
 			List<String> retrievedConceptsGeneral = new ArrayList<String>();
 			List<String> retrievedRelevantConceptsGeneral = new ArrayList<String>();
 			
+			ExpectedResultProcess process = new ExpectedResultProcess();
+			
 			Scanner scanner = new Scanner(new FileReader("Dados de Teste.txt"))
 				.useDelimiter("\\n");
 			String line = scanner.next();
+			int countConcepts = 0;
+			int countAnnotatedConcepts = 0;
 			while (scanner.hasNext()) {
 				  line = scanner.next();
 				  String[] lineSplit = line.split("\\|");
 				  String title = lineSplit[0];
+				  log.info("[INICIO] Início do processamento para o título: " + title);
 				  String[] idsOntology = lineSplit[1].split(",");
 				  List<OntologyConcept> relevantConcepts = recoveryOntolgyConcept(idsOntology);
 				  
 				  ExpectedResult eResult = new ExpectedResult();
 				  eResult.setTitle(title);
 				  eResult.setRelevantConcepts(relevantConcepts);
-				  eResult.setSpatialData(featureService.recoverSpatialDataByTitle(title));
-				  extractRetrievedConcepts(eResult, ontologyConcepts);
+				  eResult.setBagOfWords(featureService.recoverBagOfWordsByTitle(title));
+				  process.execute(eResult);
 				  extractRetrievedRelevantConcepts(eResult);
 				  expectedResult.add(eResult);		
 				  
@@ -81,15 +79,29 @@ public class PerformanceTest {
 				  retrievedConceptsGeneral.addAll(eResult.getRetrievedConcepts());
 				  retrievedRelevantConceptsGeneral.addAll(eResult.getRelevantRetrievedConcepts());
 				  
+				  countConcepts++;
+				  if (!eResult.getRelevantRetrievedConcepts().isEmpty()) {
+					  countAnnotatedConcepts++;
+				  }
+				  
 				  result.println("---------------------------------------------------");
 				  result.println("Título: " + title);
 				  result.println("Conceitos relevantes: " + eResult.getConcepts(relevantConcepts));
 				  result.println("Conceitos recuperados: " + eResult.getRetrievedConcepts());
 				  result.println("Conceitos relevantes recuperados: " + eResult.getRelevantRetrievedConcepts());				  
 				  result.println("---------------------------------------------------");
+				  
+				  log.info("[FIM] Fim do processamento para o título: " + title);
 			}
 			
 			extractMetrics(relevantConceptsGeneral, retrievedConceptsGeneral, retrievedRelevantConceptsGeneral, result);
+			
+			double percentual = 0.0;
+			if (countConcepts > 0) {
+				percentual = countAnnotatedConcepts/countConcepts;
+			}
+			result.println("Percentual anotado: " + percentual);
+			log.info("Percentual anotado: " + percentual);
 			
 			result.flush();
 			result.close();
@@ -105,20 +117,6 @@ public class PerformanceTest {
 	private List<OntologyConcept> recoveryOntolgyConcept(String[] idsOntology) {
 		
 		return conceptService.recoveryOntolgyConceptByIds(idsOntology);
-	}
-	
-	private void extractRetrievedConcepts(ExpectedResult eResult, List<OntologyConcept> ontologyConcepts) {
-		
-		BagOfWords bw = new BagOfWords(eResult.getSpatialData());
-		StringBuffer storeBagsOfWords = new StringBuffer();
-		storeBagsOfWords.append(bw.extractTextProperties());
-		try {
-			Set<String> retrievedConcepts = Main.executeSimilarity(eResult.getTitle(),
-					bw.extractWordList(storeBagsOfWords.toString()), ontologyConcepts);
-			eResult.setRetrievedConcepts(retrievedConcepts);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 	
 	private void extractRetrievedRelevantConcepts(ExpectedResult eResult) {
@@ -145,11 +143,25 @@ public class PerformanceTest {
 		}
 		result.println("Precisão: " + precision);
 		result.println("Cobertura: " + cobertura);
+		
+		log.info("Precisão: " + precision);
+		log.info("Cobertura: " + cobertura);
 	}
 	
 	public static void main(String[] args) {
 		
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
+		
+		log = Logger.getLogger(Main.class);
+		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		log.info("Iniciando o processamento...");
+		log.info("Data Inicial: " + df.format(new Date()));
+		
 		PerformanceTest performanceTest = new PerformanceTest();
 		performanceTest.populatedExpectedResult();
+		
+		log.info("Fim do processamento!");
+		log.info("Data Final: " + df.format(new Date()));
+		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 	}
 }
