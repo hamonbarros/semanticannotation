@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 import br.com.sann.domain.Extractor;
@@ -102,10 +103,11 @@ public class ParentProcess {
 		if(!extractorList.isEmpty()) {
 
 			for (Extractor extractor : extractorList) {
-
+			
 				if (!extractor.getClasses().isEmpty()) {
 					extractor.setSimilarityClasses(executeCossineSimilarity(extractor.getClasses(), 
 						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()));
+					extractor.getSimilarityClasses().add(title.replaceAll(" ", ""));
 					extractor.setOntologyClasses(getSimilaryConcepts(extractor.getSimilarityClasses(), 
 							extractor.getTitle()));
 					concepts.addAll(extractor.getOntologyClasses());
@@ -202,31 +204,42 @@ public class ParentProcess {
 		
 		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
 		
-		for (String concept : concepts) {		
-			List<String> tokensConcept = preprocessing.preProcessing(concept);
-			String coveredConcept = preprocessing.tokensToString(tokensConcept);
-			coveredConcept = coveredConcept.replaceAll("\'", "");
-			List<OntologyConcept> ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
-					coveredConcept);
-			
-			if ((ontologyConcepts == null || ontologyConcepts.isEmpty()) && tokensConcept.size() > 1) {
-				ontologyConcepts = recoveryOntologyConceptByToken(concept, conceptService);
-			}
-			
-			if (ontologyConcepts == null || ontologyConcepts.isEmpty()) {
-				ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
-						concept.replaceAll("\'", " ").replaceAll(" ", "%"));
-			}
-			
-			if (ontologyConcepts != null && !ontologyConcepts.isEmpty()) {				
-				for (OntologyConcept ontologyConcept : ontologyConcepts) {
-					if (ontologyConcept.getNormalizedName().equalsIgnoreCase(coveredConcept) || 
-							ontologyConcept.getConceptName().equalsIgnoreCase(coveredConcept) ||
-							ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) ||
-							ontologyConcept.getConceptName().equalsIgnoreCase(concept) ||
-							ontologyConcept.getConceptName().toLowerCase().startsWith(concept.toLowerCase()) ||
-							ontologyConcept.getNormalizedName().toLowerCase().startsWith(concept.toLowerCase())) {				
-						similaryConcepts.add(ontologyConcept.getConcept());
+		for (String concept : concepts) {	
+			if (!concept.equals("")) {				
+				String conceptWithoutSpace = concept.replaceAll("\'", "").replaceAll(" ", "");
+				List<String> tokensConcept = preprocessing.preProcessing(concept);
+				String coveredConcept = preprocessing.tokensToString(tokensConcept);
+				coveredConcept = coveredConcept.replaceAll("\'", "");
+				List<OntologyConcept> ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
+						coveredConcept);
+				
+				if (ontologyConcepts == null || ontologyConcepts.isEmpty()) {
+					ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
+							conceptWithoutSpace);
+				}
+				
+				if ((ontologyConcepts == null || ontologyConcepts.isEmpty()) && tokensConcept.size() > 1) {
+					ontologyConcepts = recoveryOntologyConceptByToken(concept, conceptService);
+				}
+				
+				if ((ontologyConcepts == null || ontologyConcepts.isEmpty()) && concept.charAt(concept.length()-1) == 's') {
+					String conceptWithoutS  = concept.substring(0, concept.length()-1);
+					ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
+							conceptWithoutS.replaceAll("\'", " "));
+				}
+				
+				if (ontologyConcepts != null && !ontologyConcepts.isEmpty()) {				
+					for (OntologyConcept ontologyConcept : ontologyConcepts) {
+						if (ontologyConcept.getNormalizedName().equalsIgnoreCase(coveredConcept) || 
+								ontologyConcept.getConceptName().equalsIgnoreCase(coveredConcept) ||
+								ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) ||
+								ontologyConcept.getConceptName().equalsIgnoreCase(concept) ||
+								ontologyConcept.getConceptName().toLowerCase().indexOf(concept.toLowerCase()) > 0 ||
+								ontologyConcept.getNormalizedName().toLowerCase().indexOf(concept.toLowerCase()) > 0 ||
+								conceptWithoutSpace.toLowerCase().indexOf(ontologyConcept.getConceptName().toLowerCase()) >= 0 ||
+								conceptWithoutSpace.toLowerCase().indexOf(ontologyConcept.getNormalizedName().toLowerCase()) >= 0) {				
+							similaryConcepts.add(ontologyConcept.getConcept());
+						}
 					}
 				}
 			}

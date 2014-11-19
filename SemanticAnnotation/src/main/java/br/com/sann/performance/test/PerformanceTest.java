@@ -9,9 +9,11 @@ import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -80,7 +82,7 @@ public class PerformanceTest {
 				  retrievedRelevantConceptsGeneral.addAll(eResult.getRelevantRetrievedConcepts());
 				  
 				  countConcepts++;
-				  if (!eResult.getRelevantRetrievedConcepts().isEmpty()) {
+				  if (!eResult.getRetrievedConcepts().isEmpty()) {
 					  countAnnotatedConcepts++;
 				  }
 				  
@@ -88,7 +90,9 @@ public class PerformanceTest {
 				  result.println("Título: " + title);
 				  result.println("Conceitos relevantes: " + eResult.getConcepts(relevantConcepts));
 				  result.println("Conceitos recuperados: " + eResult.getRetrievedConcepts());
-				  result.println("Conceitos relevantes recuperados: " + eResult.getRelevantRetrievedConcepts());				  
+				  result.println("Conceitos relevantes recuperados: " + eResult.getRelevantRetrievedConcepts());	
+				  result.println();
+				  extractMetrics(eResult.getRelevantConcepts(), eResult.getRetrievedConcepts(), eResult.getRelevantRetrievedConcepts(), result);
 				  result.println("---------------------------------------------------");
 				  
 				  log.info("[FIM] Fim do processamento para o título: " + title);
@@ -98,10 +102,10 @@ public class PerformanceTest {
 			
 			double percentual = 0.0;
 			if (countConcepts > 0) {
-				percentual = countAnnotatedConcepts/countConcepts;
+				percentual = (double) countAnnotatedConcepts/countConcepts;
 			}
-			result.println("Percentual anotado: " + percentual);
-			log.info("Percentual anotado: " + percentual);
+			result.println("Percentual anotado: " + String.format(Locale.ENGLISH, "%.2f", percentual));
+			log.info("Percentual anotado: " + String.format(Locale.ENGLISH, "%.2f", percentual));
 			
 			result.flush();
 			result.close();
@@ -131,8 +135,8 @@ public class PerformanceTest {
 		eResult.setRelevantRetrievedConcepts(retrievedRelevantConcepts);
 	}
 	
-	private void extractMetrics (List<OntologyConcept> relevantConcepts, List<String> retrievedConcepts, 
-			List<String> retrievedRelevantConcepts, PrintWriter result) {
+	private void extractMetrics (Collection<OntologyConcept> relevantConcepts, Collection<String> retrievedConcepts, 
+			Collection<String> retrievedRelevantConcepts, PrintWriter result) {
 		Double precision = 0.0;
 		if (retrievedConcepts.size() != 0) {
 			precision = Double.parseDouble(retrievedRelevantConcepts.size()+"")/Double.parseDouble(retrievedConcepts.size()+"");
