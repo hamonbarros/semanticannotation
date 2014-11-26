@@ -210,10 +210,13 @@ public class ParentProcess {
 				List<String> tokensConcept = preprocessing.preProcessing(concept);
 				String coveredConcept = preprocessing.tokensToString(tokensConcept);
 				coveredConcept = coveredConcept.replaceAll("\'", "");
-				List<OntologyConcept> ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
-						coveredConcept);
+				List<OntologyConcept> ontologyConcepts = null;
+				if (!coveredConcept.equals("")) {					
+					ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
+							coveredConcept);
+				}
 				
-				if (ontologyConcepts == null || ontologyConcepts.isEmpty()) {
+				if (ontologyConcepts == null || ontologyConcepts.isEmpty() && !conceptWithoutSpace.equals("")) {
 					ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
 							conceptWithoutSpace);
 				}
