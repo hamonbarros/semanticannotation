@@ -1,0 +1,22 @@
+TITULO|CONCEITOS
+Bare soil with cryptogam crust - frostboils|3127,879,771,5907,137,5829,2937,3500,1874,283,282,253,241
+Boundaries of Major Drainage Areas from Water Survey of Canada|3295,4206,1692,1692,6242,5813,4019,3356,3287,3286,3280,55,5829,3162,3262,697,245,256,4232,4169,137,879,915,1709,174
+British Columbia|225,5823,200,6136,6204
+Canadian and Foreign Landmass|3504,5829,6255,5814
+Capital cities in Canada 1:1,000,000 (Atlas of Canada)|5829,5814,202,5979,6181,6255
+Contours - Lines (1:250K)|2722,4141,4299,3768
+Dry graminoid prostrate dwarf shrub tundra|3117,771,5907,3043,3044,3903,3063,6008,465,6103,168,777,245,3088,3055
+Feature names|4271,6313,533,531
+Flow direction|1477,1958
+Geographical Names|4271,6313
+Grids|3655,3765,4289
+House number of National Road Network|5953,542,5805,5829,6255,3908,356,1529,5969,1978
+Hydro Junction|5829,588,6329,363
+Index of the National Topographic System of Canada|5829,5814,6255,2722,4124,334,282,3505,277,1978
+Inter-provincial/territorial boundaries: 1:100,000|225,5823,5913,4206,5829,202,5979,233,4277,5855,5814,4232
+International border and provincial/territorial boundaries at 1:1M scale (Atlas of Canada)|225,5823,5913,4206,2938,6335,5829,202,5979,233,4277,5855,5814,4232
+Land Form|3504
+Map number of NTS mapsheets 1:1,000,000|3768,4299,6255
+Named Roads|4271,6313,5953,356,1529
+Network Linear Flow|3908,3862,1477,1958,4087,3670,3831,3625
+Parks|3426,5973,5780,134,3425,18
