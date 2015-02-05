@@ -206,9 +206,9 @@ public class Main {
 				if (!extractor.getSimilarityClasses().isEmpty() || !extractor.getSimilarityCategories().isEmpty()) {
 					out.println("Token: " + extractor.getTitle());
 					out.println("Categorias: " + printStringList(extractor.getSimilarityCategories()));
-					out.println("Categorias similares: " + printStringList(extractor.getOntologyCategories()));
+					out.println("Categorias similares: " + printStringList(extractConceptNames(extractor.getOntologyCategories())));
 					out.println("Conceitos: " + printStringList(extractor.getSimilarityClasses()));
-					out.println("Conceitos similares: " + printStringList(extractor.getOntologyClasses()));
+					out.println("Conceitos similares: " + printStringList(extractConceptNames(extractor.getOntologyClasses())));
 					out.println("");
 				}
 				sumary.summarizeResults(extractor);
@@ -236,12 +236,12 @@ public class Main {
 	 * @param ontologyConcepts 
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	public static Set<String> executeSimilarity(String title, String bagOfWords, List<OntologyConcept> ontologyConcepts) 
+	public static Set<OntologyConcept> executeSimilarity(String title, String bagOfWords, List<OntologyConcept> ontologyConcepts) 
 			throws IOException {
 			
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
 		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
-		Set<String> concepts = new HashSet<String>();
+		Set<OntologyConcept> concepts = new HashSet<OntologyConcept>();
 		
 		if(!extractorList.isEmpty()) {
 
@@ -321,6 +321,21 @@ public class Main {
 	}
 	
 	/**
+	 * Extrai os nomes dos conceitos do conjunto de conceitos ontológicos.
+	 * @param concepts O conjunto dos conceitos ontológicos.
+	 * @return Os nomes dos conceitos.
+	 */
+	private static Set<String> extractConceptNames(Set<OntologyConcept> concepts) {
+		
+		Set<String> conceptNames = new HashSet<String>();
+		for (OntologyConcept concept : concepts) {
+			conceptNames.add(concept.getConcept());
+		}
+		
+		return conceptNames;		
+	}
+	
+	/**
 	 * Método para identificar se o token passado corresponde a um coceito padrão.
 	 * @param token O token a ser verificado.
 	 * @return True se corresponder, ou false, caso contrátio.
@@ -340,10 +355,10 @@ public class Main {
 	 * @param concept Os conceitos a serem pesquisados.
 	 * @return O conjunto de conceitos compatíveis ao conceito passado.
 	 */
-	private static Set<String> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, Set<String> concepts) {
+	private static Set<OntologyConcept> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, Set<String> concepts) {
 		
 		PreProcessingText preprocessing = new PreProcessingText();
-		Set<String> similaryConcepts = new HashSet<String>();
+		Set<OntologyConcept> similaryConcepts = new HashSet<OntologyConcept>();
 		for (String concept : concepts) {		
 			String coveredConcept = preprocessing.preProcessingWithoutExtractScale(concept);
 			for (OntologyConcept ontologyConcept : ontologyConcepts) {
@@ -351,7 +366,7 @@ public class Main {
 						ontologyConcept.getConceptName().equalsIgnoreCase(coveredConcept)) {				
 //				if (ontologyConcept.getNormalizedName().equalsIgnoreCase(concept) || 
 //						ontologyConcept.getConceptName().equalsIgnoreCase(concept)) {
-					similaryConcepts.add(ontologyConcept.getConcept());
+					similaryConcepts.add(ontologyConcept);
 					break;
 				}
 			}

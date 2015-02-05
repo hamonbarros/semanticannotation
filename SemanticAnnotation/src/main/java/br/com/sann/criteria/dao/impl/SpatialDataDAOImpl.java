@@ -21,7 +21,7 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 	public List<SpatialData> recoverAllSpatialData() {
 		
 		EntityManager em = JPAUtil.getEntityManager();
-		String jpql = "SELECT n FROM SpatialData n ORDER BY n.title";
+		String jpql = "SELECT n FROM SpatialData n WHERE n.annotated = FALSE ORDER BY n.title";
 		Query q = em.createQuery(jpql);
 		List<SpatialData> spatialDatas = q.getResultList();
 		return spatialDatas;
@@ -52,5 +52,16 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		return "";
 	}
 
+	@Override
+	public void updateSpatialDataList(List<SpatialData> list) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		for (SpatialData spatialData : list) {
+			em.merge(spatialData);
+			em.flush();
+		}
+		em.getTransaction().commit();
+		em.close();
+	}
 	
 }

@@ -37,4 +37,13 @@ public class FeatureServiceImpl implements FeatureService{
 		return dao.recoverBagOfWordsByTitle(title);
 	}
 
+	@Override
+	public void updateSpatialDataList(List<SpatialData> list) {
+		for (SpatialData spatialData : list) {
+			spatialData.setAnnotated(Boolean.TRUE);
+		}
+		dao.updateSpatialDataList(list);
+		
+	}
+
 }

@@ -27,4 +27,10 @@ public interface FeatureService {
 	 * @return A bag of words constuída com as informações textuais do SpatialData.
 	 */
 	public String recoverBagOfWordsByTitle(String title);
+	
+	/**
+	 * Atualiza a coluna "annotated" da lista de spatialdata na base de dados.
+	 * @param list A lista a ser atualizada.
+	 */
+	void updateSpatialDataList(List<SpatialData> list);
 }

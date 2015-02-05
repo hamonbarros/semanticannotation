@@ -11,9 +11,15 @@ import java.util.Set;
 
 import br.com.sann.domain.Extractor;
 import br.com.sann.domain.OntologyConcept;
+import br.com.sann.domain.SemanticAnnotation;
+import br.com.sann.domain.SpatialData;
 import br.com.sann.domain.Sumary;
+import br.com.sann.service.FeatureService;
 import br.com.sann.service.OntologyConceptService;
+import br.com.sann.service.SemanticAnnotationService;
+import br.com.sann.service.impl.FeatureServiceImpl;
 import br.com.sann.service.impl.OntologyConceptServiceImpl;
+import br.com.sann.service.impl.SemanticAnnotationServiceImpl;
 import br.com.sann.service.processing.text.PreProcessingText;
 import br.com.sann.service.search.dbpedia.SearcherConceptysDBPedia;
 import br.com.sann.service.search.wikipedia.SearcherWikipedia;
@@ -28,7 +34,8 @@ public class ParentProcess {
 	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
-	 * @param title O título do feature typde.
+	 * @param featureWithSameTitle Os feture type com o mesmo título.
+	 * @param title O título do feature type.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
 	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
 	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
@@ -37,13 +44,14 @@ public class ParentProcess {
 	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	public void executeSimilarity(String title, String bagOfWords, PrintWriter out, 
+	public void executeSimilarity(List<SpatialData> featureWithSameTitle, String title, String bagOfWords, PrintWriter out, 
 			Sumary sumary) throws IOException {
 		
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
 		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
 		List<String> classesUpThreshold = new LinkedList<String>();
 		List<String> categoriesUpThreshold = new LinkedList<String>();
+		FeatureService featureService = new FeatureServiceImpl();
 		
 		if(!extractorList.isEmpty()) {
 
@@ -53,38 +61,76 @@ public class ParentProcess {
 
 				if (!extractor.getClasses().isEmpty()) {
 					extractor.setSimilarityClasses(executeCossineSimilarity(extractor.getClasses(), 
-						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()/*, outConsolidated*/));
-					extractor.setOntologyClasses(getSimilaryConcepts(extractor.getSimilarityClasses(), extractor.getTitle()));
+						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()));
+					extractor.getSimilarityClasses().add(title.replaceAll(" ", ""));
+					extractor.setOntologyClasses(getSimilaryConcepts(extractor.getSimilarityClasses(), 
+							extractor.getTitle()));
 					classesUpThreshold.addAll(extractor.getSimilarityClasses());
 				}
 				if (!extractor.getCategories().isEmpty()) {
 					extractor.setSimilarityCategories(executeCossineSimilarity(extractor.getCategories(), 
-						SearcherConceptysDBPedia.CATEGORY,	bagOfWords, title, extractor.getTitle()/*, outConsolidated*/));
-					extractor.setOntologyCategories(getSimilaryConcepts(extractor.getSimilarityCategories(), extractor.getTitle()));
+						SearcherConceptysDBPedia.CATEGORY,	bagOfWords, title, extractor.getTitle()));
+					extractor.setOntologyCategories(getSimilaryConcepts(extractor.getSimilarityCategories(), 
+							extractor.getTitle()));
 					categoriesUpThreshold.addAll(extractor.getSimilarityCategories());
 				}
 				
 				if (!extractor.getSimilarityClasses().isEmpty() || !extractor.getSimilarityCategories().isEmpty()) {
 					out.println("Token: " + extractor.getTitle());
 					out.println("Categorias: " + printStringList(extractor.getSimilarityCategories()));
-					out.println("Categorias similares: " + printStringList(extractor.getOntologyCategories()));
+					out.println("Categorias similares: " + printStringList(extractConceptNames(extractor.getOntologyCategories())));
 					out.println("Conceitos: " + printStringList(extractor.getSimilarityClasses()));
-					out.println("Conceitos similares: " + printStringList(extractor.getOntologyClasses()));
+					out.println("Conceitos similares: " + printStringList(extractConceptNames(extractor.getOntologyClasses())));
 					out.println("");
 				}
 				sumary.summarizeResults(extractor);
 				if(!extractor.getOntologyClasses().isEmpty() || !extractor.getOntologyCategories().isEmpty()) {
+					annotatefeatures(extractor, featureWithSameTitle);
 					wasAnnotated = true;
 				}
 			}
-			sumary.setCountFeature(1);
+			sumary.setCountFeature(featureWithSameTitle.size());
 			if(!wasAnnotated) {
-				sumary.setCountFeatureNotAnnotated(1);
+				sumary.setCountFeatureNotAnnotated(featureWithSameTitle.size());
 			}
+			out.println("--------------------------------------");
+			out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
+			out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
+			out.println("--------------------------------------");
+			featureService.updateSpatialDataList(featureWithSameTitle);
+			featureWithSameTitle.clear();
 			out.println("");
+			out.flush();
 		}		
 	}	
 	
+	/**
+	 * Método para persistir as anotações semânticas construídas na base de dados.
+	 * @param extractor O extrator contendo as ontologias anotadas.
+	 * @param featureWithSameTitle Os features type com o mesmo título que estão sendo anotado.
+	 */
+	private void annotatefeatures(Extractor extractor, List<SpatialData> featureWithSameTitle) {
+		SemanticAnnotationServiceImpl service = new SemanticAnnotationServiceImpl();
+		Set<SemanticAnnotation> semanticAnnotations = new HashSet<SemanticAnnotation>();
+		if (extractor.getOntologyClasses() != null && !extractor.getOntologyClasses().isEmpty()) {
+			for (OntologyConcept concept : extractor.getOntologyClasses()) {
+				for(SpatialData spatialData : featureWithSameTitle) {					
+					SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
+					semanticAnnotations.add(sann);
+				}
+			}
+		}
+		if (extractor.getOntologyCategories() != null && !extractor.getOntologyCategories().isEmpty()) {
+			for (OntologyConcept concept : extractor.getOntologyCategories()) {
+				for(SpatialData spatialData : featureWithSameTitle) {					
+					SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
+					semanticAnnotations.add(sann);
+				}
+			}
+		}
+		service.saveSemanticAnnotations(semanticAnnotations);
+	}
+
 	/**
 	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
@@ -110,16 +156,15 @@ public class ParentProcess {
 					extractor.getSimilarityClasses().add(title.replaceAll(" ", ""));
 					extractor.setOntologyClasses(getSimilaryConcepts(extractor.getSimilarityClasses(), 
 							extractor.getTitle()));
-					concepts.addAll(extractor.getOntologyClasses());
+					concepts.addAll(extractConceptNames(extractor.getOntologyClasses()));
 				}
 				if (!extractor.getCategories().isEmpty()) {
 					extractor.setSimilarityCategories(executeCossineSimilarity(extractor.getCategories(), 
 						SearcherConceptysDBPedia.CATEGORY,	bagOfWords, title, extractor.getTitle()));
 					extractor.setOntologyCategories(getSimilaryConcepts(extractor.getSimilarityCategories(), 
 							extractor.getTitle()));
-					concepts.addAll(extractor.getOntologyCategories());
+					concepts.addAll(extractConceptNames(extractor.getOntologyCategories()));
 				}
-				
 			}
 		}
 			
@@ -163,6 +208,21 @@ public class ParentProcess {
 	}
 	
 	/**
+	 * Extrai os nomes dos conceitos do conjunto de conceitos ontológicos.
+	 * @param concepts O conjunto dos conceitos ontológicos.
+	 * @return Os nomes dos conceitos.
+	 */
+	private Set<String> extractConceptNames(Set<OntologyConcept> concepts) {
+		
+		Set<String> conceptNames = new HashSet<String>();
+		for (OntologyConcept concept : concepts) {
+			conceptNames.add(concept.getConcept());
+		}
+		
+		return conceptNames;		
+	}
+	
+	/**
 	 * Imprime o toString de um conjunto lista sem os parênteses.
 	 * @param set O conjunto a ser impresso.
 	 * @return A string do conjunto sem os parênteses.
@@ -196,10 +256,10 @@ public class ParentProcess {
 	 * @param title O título/token consultado.
 	 * @return O conjunto de conceitos compatíveis ao conceito passado.
 	 */
-	private Set<String> getSimilaryConcepts(Set<String> concepts, String title) {
+	private Set<OntologyConcept> getSimilaryConcepts(Set<String> concepts, String title) {
 		
 		PreProcessingText preprocessing = new PreProcessingText();
-		Set<String> similaryConcepts = new HashSet<String>();
+		Set<OntologyConcept> similaryConcepts = new HashSet<OntologyConcept>();
 		concepts.add(preprocessing.preProcessingWithoutExtractScale(title));
 		
 		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
@@ -241,7 +301,7 @@ public class ParentProcess {
 								ontologyConcept.getNormalizedName().toLowerCase().indexOf(concept.toLowerCase()) > 0 ||
 								conceptWithoutSpace.toLowerCase().indexOf(ontologyConcept.getConceptName().toLowerCase()) >= 0 ||
 								conceptWithoutSpace.toLowerCase().indexOf(ontologyConcept.getNormalizedName().toLowerCase()) >= 0) {				
-							similaryConcepts.add(ontologyConcept.getConcept());
+							similaryConcepts.add(ontologyConcept);
 						}
 					}
 				}

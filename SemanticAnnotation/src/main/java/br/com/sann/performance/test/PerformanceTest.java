@@ -94,6 +94,7 @@ public class PerformanceTest {
 				  result.println();
 				  extractMetrics(eResult.getRelevantConcepts(), eResult.getRetrievedConcepts(), eResult.getRelevantRetrievedConcepts(), result);
 				  result.println("---------------------------------------------------");
+				  result.flush();
 				  
 				  log.info("[FIM] Fim do processamento para o título: " + title);
 			}

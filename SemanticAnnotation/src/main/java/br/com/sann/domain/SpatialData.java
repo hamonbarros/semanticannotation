@@ -22,6 +22,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+
 /**
  * 
  * @author Fabio
@@ -70,6 +71,17 @@ public class SpatialData implements Serializable {
 
 	@Column(name = "keywords")
 	private String keywords;
+	
+	@Column(name = "annotated")
+	private Boolean annotated;
+	
+	public Boolean getAnnotated() {
+		return annotated;
+	}
+
+	public void setAnnotated(Boolean annotated) {
+		this.annotated = annotated;
+	}
 
 	@OneToMany(mappedBy = "featureType")
 	private Collection<SemanticAnnotation> semanticAnnotations;
@@ -278,4 +290,18 @@ public class SpatialData implements Serializable {
 		return containsAnnotation(concept.getConcept());
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof SpatialData) {
+			SpatialData other = (SpatialData) obj;
+			return this.id.equals(other.id);
+		} else {
+			return false;
+		}
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.title.hashCode();
+	}
 }

@@ -16,7 +16,8 @@ public class OntologyManager {
 	public static void main(String[] args) {
 
 		try {
-			
+
+			OntologyConceptService service = new OntologyConceptServiceImpl();
 			List<OntologyConcept> concepts = new ArrayList<OntologyConcept>();
 
 			PreProcessingText preProcessingText = new PreProcessingText();
@@ -36,12 +37,17 @@ public class OntologyManager {
 				concept.setConcept(conceptClass.getURI());
 				concept.setConceptName(conceptClass.getLocalName());
 				concept.setNormalizedName(preProcessingText.normalizeText(conceptClass.getLocalName()));
-				concepts.add(concept);
-				System.out.println(concept.getConceptName());
-				cont++;
+				List<OntologyConcept> persistedConepts = service.recoveryOntolgyConceptByTerm(concept.getConceptName());
+				if (persistedConepts == null || persistedConepts.isEmpty()) {
+					persistedConepts = service.recoveryOntolgyConceptByTerm(concept.getNormalizedName());
+					if (persistedConepts == null || persistedConepts.isEmpty()) {
+						concepts.add(concept);
+						System.out.println(concept.getConceptName());
+						cont++;						
+					}
+				}
 			}
 			System.out.println("\nNumber of concepts: " + cont);
-			OntologyConceptService service = new OntologyConceptServiceImpl();
 			service.saveOntologyConcepts(concepts);
 		}
 

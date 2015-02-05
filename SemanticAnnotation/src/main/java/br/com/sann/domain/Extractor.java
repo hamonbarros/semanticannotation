@@ -16,8 +16,8 @@ public class Extractor {
 	private Set<String> categories;
 	private Set<String> similarityClasses;
 	private Set<String> similarityCategories;
-	private Set<String> ontologyClasses;
-	private Set<String> ontologyCategories;
+	private Set<OntologyConcept> ontologyClasses;
+	private Set<OntologyConcept> ontologyCategories;
 	
 	public Extractor() {
 		
@@ -25,8 +25,8 @@ public class Extractor {
 		categories = new HashSet<String>();
 		similarityCategories = new HashSet<String>();;
 		similarityClasses = new HashSet<String>();
-		ontologyCategories = new HashSet<String>();
-		ontologyClasses = new HashSet<String>();
+		ontologyCategories = new HashSet<OntologyConcept>();
+		ontologyClasses = new HashSet<OntologyConcept>();
 		
 	}
 	
@@ -60,16 +60,16 @@ public class Extractor {
 	public void setSimilarityCategories(Set<String> similarityCategories) {
 		this.similarityCategories = similarityCategories;
 	}
-	public Set<String> getOntologyClasses() {
+	public Set<OntologyConcept> getOntologyClasses() {
 		return ontologyClasses;
 	}
-	public void setOntologyClasses(Set<String> ontologyClasses) {
+	public void setOntologyClasses(Set<OntologyConcept> ontologyClasses) {
 		this.ontologyClasses = ontologyClasses;
 	}
-	public Set<String> getOntologyCategories() {
+	public Set<OntologyConcept> getOntologyCategories() {
 		return ontologyCategories;
 	}
-	public void setOntologyCategories(Set<String> ontologyCategories) {
+	public void setOntologyCategories(Set<OntologyConcept> ontologyCategories) {
 		this.ontologyCategories = ontologyCategories;
 	}
 	

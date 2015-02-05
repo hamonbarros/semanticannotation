@@ -114,10 +114,21 @@ public class OntologyConcept implements Serializable {
 		return this.semanticExpertises;
 	}
 
-	public boolean equals(OntologyConcept other) {
-		return this.getConcept().equals(other.getConcept());
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof OntologyConcept) {
+			OntologyConcept other = (OntologyConcept) obj;
+			return this.id.equals(other.id);
+		} else {
+			return false;
+		}
 	}
 
+	@Override
+	public int hashCode() {
+		return this.concept.hashCode();
+	}
+	
 	public String getSimilarityConceptsAsString() {
 		String result = "(";
 		Iterator<ConceptSimilarity> it = this.getSimilaritiesAsQueryConcept()

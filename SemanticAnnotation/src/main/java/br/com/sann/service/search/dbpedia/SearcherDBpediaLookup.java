@@ -49,10 +49,10 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 		classes = new LinkedHashSet<DBpediaClass>();
 		HttpClient httpClient = new HttpClient();
 
+		String prefixSearchURL = "http://lookup.dbpedia.org/api/search.asmx/PrefixSearch?QueryString=";
+		String keywordSearchURL = "http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryString=";
 		String dbpediaTerm = term.replaceAll(" ", "+"); 
-		HttpMethod httpMethod = new GetMethod(
-				"http://lookup.dbpedia.org/api/search.asmx/PrefixSearch?QueryString="
-						+ dbpediaTerm);
+		HttpMethod httpMethod = new GetMethod(prefixSearchURL + dbpediaTerm);
 		boolean searched = false;
 		while (!searched) {	
 			try {
@@ -64,27 +64,31 @@ public class SearcherDBpediaLookup extends DefaultHandler {
 				searched = true;
 			} catch (HttpException he) {
 				log.error("DBPedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
-				searched = true;
+				executeTimer(log, searched);
 			} catch (IOException ioe) {
 				log.error("DBPedia - Erro ao tentar conectar o lookup.dbpedia.org - Termo: " + term);
-				searched = false;
-				try {
-					Thread.sleep(100000);
-				} catch (InterruptedException e) {
-					log.error("DBPedia - falha no temporizador da thread");
-					searched = true;
-				}
+				executeTimer(log, searched);
 			} catch (ParserConfigurationException pce) {
 				log.error("DBPedia - Não foi possível ler o retorno da consulta ao termo \"" + term + "\".");
-				searched = true;
+				executeTimer(log, searched);
 			} catch (SAXException se) {
 				log.error("DBPedia - Não foi possível instancia o leitor do retorno - Termo: " + term);
-				searched = true;
+				executeTimer(log, searched);
 			}
 		}
 		httpMethod.releaseConnection();
 	}
 
+	private void executeTimer(Logger log, boolean searched) {
+		searched = false;
+		try {
+			Thread.sleep(100000);
+		} catch (InterruptedException e) {
+			log.error("DBPedia - falha no temporizador da thread");
+			searched = true;
+		}
+	}
+	
 	/**
 	 * Método sobrescrito da superclasse que inicia a leitura do XML de retorno.
 	 * 

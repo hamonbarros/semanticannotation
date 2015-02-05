@@ -46,25 +46,29 @@ public class SearcherParentConcepts extends DefaultHandler {
 				searched = true;
 			} catch (HttpException he) {
 				log.error("DBPedia - Erro HTTP ao tentar conectar a url: " + url);
-				searched = true;
+				executeTimer(log, searched);
 			} catch (IOException ioe) {
 				log.error("DBPedia - Erro ao tentar conectar a url: " + url);
-				searched = false;
-				try {
-					Thread.sleep(100000);
-				} catch (InterruptedException e) {
-					log.error("DBPedia - falha no temporizador da thread");
-					searched = true;
-				}
+				executeTimer(log, searched);
 			} catch (ParserConfigurationException pce) {
 				log.error("DBPedia - Não foi possível ler o retorno da consulta a url \"" + url + "\".");
-				searched = true;
+				executeTimer(log, searched);
 			} catch (SAXException se) {
 				log.error("DBPedia - Não foi possível instancia o leitor do retorno da url: " + url);
-				searched = true;
+				executeTimer(log, searched);
 			}
 		}
 		httpMethod.releaseConnection();
+	}
+	
+	private void executeTimer(Logger log, boolean searched) {
+		searched = false;
+		try {
+			Thread.sleep(100000);
+		} catch (InterruptedException e) {
+			log.error("DBPedia - falha no temporizador da thread");
+			searched = true;
+		}
 	}
 	
 	/**

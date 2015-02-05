@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -28,12 +29,7 @@ public class SpatialDataListProcess extends ParentProcess{
 		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		log.info("Iniciando o processamento...");
 		log.info("Data Inicial: " + df.format(new Date()));
-		
-		log.info("Realizando a leitura dos conceitos ontológicos ... ");
-		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
-		List<OntologyConcept> concepts = conceptService.recoverAllOntologyConcept();
-		log.info("Leitura dos conceitos ontológicos realizada com sucesso!");
-		
+			
 		log.info("Inicio da consulta das classes e categorias na dbpedia que contenham relevância com os títulos...");
 		
 		PrintWriter similarity = null;
@@ -47,21 +43,27 @@ public class SpatialDataListProcess extends ParentProcess{
 			BagOfWords bw = null;
 			Sumary sumary = new Sumary();
 			
+			List<SpatialData> featureWithSameTitle = new ArrayList<SpatialData>();
+//			for(int i=0; i<10; i++) {
+//				SpatialData spatialData = spatialDataList.get(i);
 			for (SpatialData spatialData : spatialDataList) {
 				String title = spatialData.getTitle();				
 				bw = new BagOfWords(spatialData);
 				// Tratamento necessário para o ínicio do processo. Quando a storeBagsOfWords ainda está vazia.
 				if (title.equals(previousTitle)) {					
 					storeBagsOfWords.append(" ");
-					storeBagsOfWords.append(bw.extractTextProperties());					
+					storeBagsOfWords.append(bw.extractTextProperties());	
+					featureWithSameTitle.add(spatialData);
 				} else {					
 					if (previousTitle.equals("")) {
 						storeBagsOfWords.append(bw.extractTextProperties());
 						previousTitle = title;
+						featureWithSameTitle.add(spatialData);
 						continue;						
-					}					
+					}										
+					featureWithSameTitle.add(spatialData);
 					log.info("[INICIO] Início do processamento para o título: " + previousTitle);
-					executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
+					executeSimilarity(featureWithSameTitle, previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
 							similarity, sumary);
 					log.info("[FIM] Fim do processamento para o título: " + previousTitle);
 					
@@ -73,7 +75,7 @@ public class SpatialDataListProcess extends ParentProcess{
 			}			
 			if (!previousTitle.isEmpty() && bw != null) {			
 				log.info("[INICIO] Início do processamento para o título: " + previousTitle);
-				executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
+				executeSimilarity(featureWithSameTitle, previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
 						similarity, sumary);
 				log.info("[FIM] Fim do processamento para o título: " + previousTitle);
 			}

@@ -1,5 +1,7 @@
 package br.com.sann.domain;
 
+import java.util.Locale;
+
 /**
  * Classe para medir o desempenho da descoberta de conceitos.
  * 
@@ -108,6 +110,11 @@ public class Sumary {
 		String textResult = "--------------------- SUMÁRIO ---------------------\n";
 		textResult += "Quantidade de Títulos de Feature Types: " + countFeature + "\n";
 		textResult += "Quantidade de Títulos não anotados:     " + countFeatureNotAnnotated + "\n";
+		double percentual = 0.0;
+		if (countFeature > 0) {
+			percentual = (double) (countFeature - countFeatureNotAnnotated)/countFeature;
+		}
+		textResult += "Percentual anotado:                     " +  String.format(Locale.ENGLISH, "%.2f", percentual) + "\n";
 		textResult += "Quantidade de conceitos:                " + countConcepts + "\n";
 		textResult += "Quantidade de conceitos similares:      " + countConceptsSimilarity + "\n";
 		textResult += "Quantidade de conceitos anotados:       " + countConceptsAnnotated + "\n";

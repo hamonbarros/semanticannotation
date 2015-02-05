@@ -59,26 +59,30 @@ public class SearcherWikipedia extends DefaultHandler {
 				searched = true;
 			} catch (HttpException he) {
 				log.error("Wikipedia - Erro HTTP ao tentar conectar o lookup.dbpedia.org - Título: " + title);
-				searched = true;
+				executeTimer(log, searched);
 			} catch (IOException ioe) {
 				log.error("Wikipedia - Erro ao tentar conectar o lookup.dbpedia.org - Título: " + title);
-				searched = false;
-				try {
-					Thread.sleep(100000);
-				} catch (InterruptedException e) {
-					log.error("Wikipedia - falha no temporizador da thread");
-					searched = true;
-				}				
+				executeTimer(log, searched);
 			} catch (ParserConfigurationException pce) {
 				log.error("Wikipedia - Não foi possível ler o retorno da consulta ao título \"" + title + "\".");
-				searched = true;
+				executeTimer(log, searched);
 			} catch (SAXException se) {
 				log.error("Wikipedia - Não foi possível instancia o leitor do retorno - Título: " + title);
-				searched = true;
+				executeTimer(log, searched);
 			}
 		}
 	}
 
+	private void executeTimer(Logger log, boolean searched) {
+		searched = false;
+		try {
+			Thread.sleep(100000);
+		} catch (InterruptedException e) {
+			log.error("DBPedia - falha no temporizador da thread");
+			searched = true;
+		}
+	}
+	
 	/**
 	 * Método sobrescrito da superclasse que faz a leitura das tags do XML de retorno.
 	 * 

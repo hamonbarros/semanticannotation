@@ -70,5 +70,21 @@ public class SemanticAnnotation implements Serializable {
 	public void setFeaturetypeid(SpatialData featuretypeid) {
 		this.featureType = featuretypeid;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof SemanticAnnotation) {
+			SemanticAnnotation other = (SemanticAnnotation) obj;
+			return this.concept.equals(other.concept) &&
+				   this.featureType.equals(other.featureType);
+		} else {
+			return false;
+		}
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.concept.hashCode();
+	}
 
 }
