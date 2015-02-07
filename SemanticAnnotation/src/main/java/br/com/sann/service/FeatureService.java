@@ -33,4 +33,11 @@ public interface FeatureService {
 	 * @param list A lista a ser atualizada.
 	 */
 	void updateSpatialDataList(List<SpatialData> list);
+	
+	/**
+	 * Recupera os SpatialData a partir dos IDs passados.
+	 * @param ids IDs dos spatialData a serem recuperados.
+	 * @return Os SpatialData solicitados.
+	 */
+	public List<SpatialData> recoverySpatialDataByIDs(String ids);
 }

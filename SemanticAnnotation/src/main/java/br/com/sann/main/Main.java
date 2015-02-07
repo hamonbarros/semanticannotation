@@ -45,6 +45,8 @@ public class Main {
 		log.info("Realizando a leitura das feature types... ");
 		FeatureService service = new FeatureServiceImpl();
 		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
+//		String ids = "1082";
+//		List<SpatialData> spatialDataList = service.recoverySpatialDataByIDs(ids);
 		log.info("Leitura das feature types realizada com sucesso!");
 		
 		SpatialDataListProcess process = new SpatialDataListProcess();

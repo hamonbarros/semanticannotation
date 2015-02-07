@@ -46,4 +46,10 @@ public class FeatureServiceImpl implements FeatureService{
 		
 	}
 
+	@Override
+	public List<SpatialData> recoverySpatialDataByIDs(String ids) {
+		
+		return dao.recoverySpatialDataByIDs(ids);
+	}
+
 }

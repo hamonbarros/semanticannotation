@@ -1,5 +1,6 @@
 package br.com.sann.criteria.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -62,6 +63,26 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		}
 		em.getTransaction().commit();
 		em.close();
+	}
+
+	@Override
+	public List<SpatialData> recoverySpatialDataByIDs(String ids) {
+		
+		if (ids != null && !ids.isEmpty()) {
+			String[] idSplit = ids.split(",");
+			List<Integer> idsInteger = new ArrayList<Integer>();
+			for (String id : idSplit) {
+				idsInteger.add(Integer.valueOf(id));
+			}
+			
+			EntityManager em = JPAUtil.getEntityManager();
+			String jpql = "SELECT s FROM SpatialData s WHERE s.id in (:ids)";
+			Query q = em.createQuery(jpql);
+			q.setParameter("ids", idsInteger);
+			List<SpatialData> spatialDatas = q.getResultList();
+			return spatialDatas;				
+		}
+		return null;
 	}
 	
 }
