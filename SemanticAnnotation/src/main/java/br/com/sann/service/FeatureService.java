@@ -35,6 +35,12 @@ public interface FeatureService {
 	void updateSpatialDataList(List<SpatialData> list);
 	
 	/**
+	 * Atualiza a coluna "annotated" do spatialdata na base de dados.
+	 * @param spatialData O spatialData a ser atualizada.
+	 */
+	void updateSpatialData(SpatialData spatialData);
+	
+	/**
 	 * Recupera os SpatialData a partir dos IDs passados.
 	 * @param ids IDs dos spatialData a serem recuperados.
 	 * @return Os SpatialData solicitados.
