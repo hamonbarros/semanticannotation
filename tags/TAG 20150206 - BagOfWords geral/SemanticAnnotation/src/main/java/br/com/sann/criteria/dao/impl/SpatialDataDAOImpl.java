@@ -84,5 +84,16 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		}
 		return null;
 	}
+
+	@Override
+	public void updateSpatialData(SpatialData spatialData) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		em.merge(spatialData);
+		em.flush();
+		em.getTransaction().commit();
+		em.close();
+		
+	}
 	
 }

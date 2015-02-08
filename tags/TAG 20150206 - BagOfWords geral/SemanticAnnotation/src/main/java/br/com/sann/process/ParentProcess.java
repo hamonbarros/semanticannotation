@@ -34,7 +34,7 @@ public class ParentProcess {
 	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
-	 * @param featureWithSameTitle Os feture type com o mesmo título.
+	 * @param spatialData O feture type.
 	 * @param title O título do feature type.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
 	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
@@ -44,7 +44,7 @@ public class ParentProcess {
 	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de ID.
 	 */
-	public void executeSimilarity(List<SpatialData> featureWithSameTitle, String title, String bagOfWords, PrintWriter out, 
+	public void executeSimilarity(SpatialData spatialData, String title, String bagOfWords, PrintWriter out, 
 			Sumary sumary) throws IOException {
 		
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
@@ -85,20 +85,19 @@ public class ParentProcess {
 				}
 				sumary.summarizeResults(extractor);
 				if(!extractor.getOntologyClasses().isEmpty() || !extractor.getOntologyCategories().isEmpty()) {
-					annotatefeatures(extractor, featureWithSameTitle);
+					annotatefeatures(extractor, spatialData);
 					wasAnnotated = true;
 				}
 			}
-			sumary.setCountFeature(featureWithSameTitle.size());
+			sumary.setCountFeature(1);
 			if(!wasAnnotated) {
-				sumary.setCountFeatureNotAnnotated(featureWithSameTitle.size());
+				sumary.setCountFeatureNotAnnotated(1);
 			}
 			out.println("--------------------------------------");
 			out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
 			out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
 			out.println("--------------------------------------");
-			featureService.updateSpatialDataList(featureWithSameTitle);
-			featureWithSameTitle.clear();
+			featureService.updateSpatialData(spatialData);
 			out.println("");
 			out.flush();
 		}		
@@ -107,25 +106,21 @@ public class ParentProcess {
 	/**
 	 * Método para persistir as anotações semânticas construídas na base de dados.
 	 * @param extractor O extrator contendo as ontologias anotadas.
-	 * @param featureWithSameTitle Os features type com o mesmo título que estão sendo anotado.
+	 * @param spatialData O feature type que está sendo anotado.
 	 */
-	private void annotatefeatures(Extractor extractor, List<SpatialData> featureWithSameTitle) {
+	private void annotatefeatures(Extractor extractor, SpatialData spatialData) {
 		SemanticAnnotationServiceImpl service = new SemanticAnnotationServiceImpl();
 		Set<SemanticAnnotation> semanticAnnotations = new HashSet<SemanticAnnotation>();
 		if (extractor.getOntologyClasses() != null && !extractor.getOntologyClasses().isEmpty()) {
 			for (OntologyConcept concept : extractor.getOntologyClasses()) {
-				for(SpatialData spatialData : featureWithSameTitle) {					
-					SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
-					semanticAnnotations.add(sann);
-				}
+				SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
+				semanticAnnotations.add(sann);
 			}
 		}
 		if (extractor.getOntologyCategories() != null && !extractor.getOntologyCategories().isEmpty()) {
 			for (OntologyConcept concept : extractor.getOntologyCategories()) {
-				for(SpatialData spatialData : featureWithSameTitle) {					
-					SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
-					semanticAnnotations.add(sann);
-				}
+				SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
+				semanticAnnotations.add(sann);
 			}
 		}
 		service.saveSemanticAnnotations(semanticAnnotations);

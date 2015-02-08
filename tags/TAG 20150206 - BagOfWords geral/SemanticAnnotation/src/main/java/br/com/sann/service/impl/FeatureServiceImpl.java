@@ -52,4 +52,11 @@ public class FeatureServiceImpl implements FeatureService{
 		return dao.recoverySpatialDataByIDs(ids);
 	}
 
+	@Override
+	public void updateSpatialData(SpatialData spatialData) {
+		spatialData.setAnnotated(Boolean.TRUE);
+		dao.updateSpatialData(spatialData);
+		
+	}
+
 }

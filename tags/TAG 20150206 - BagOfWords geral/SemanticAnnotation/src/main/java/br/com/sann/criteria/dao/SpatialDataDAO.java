@@ -33,6 +33,12 @@ public interface SpatialDataDAO {
 	 * @param list A lista a ser atualizada.
 	 */
 	void updateSpatialDataList(List<SpatialData> list);
+	
+	/**
+	 * Atualiza a spatialdata na base de dados.
+	 * @param spatialData A spatialdata a ser atualizada.
+	 */
+	void updateSpatialData(SpatialData spatialData);
 
 	/**
 	 * Recupera os SpatialData a partir dos IDs passados.
