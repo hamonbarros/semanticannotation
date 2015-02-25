@@ -31,7 +31,7 @@ public class SearcherConceptysDBPedia {
 	 * Método construtor.
 	 */
 	public SearcherConceptysDBPedia() {
-		preProcessing = new PreProcessingText();
+		preProcessing = PreProcessingText.getInstance();
 		loadPropertyOwlDBPedia();
 	}
 
@@ -174,7 +174,7 @@ public class SearcherConceptysDBPedia {
 
 		List<Extractor> extractors = new ArrayList<Extractor>();
 		
-		PreProcessingText preprocessing = new PreProcessingText();
+		PreProcessingText preprocessing = PreProcessingText.getInstance();
 		List<String> titleTokens = preprocessing.tokenizingText(title);
 		Set<String> returnTokens = preprocessing.tokenizingTextList(getTitles(listReturn));
 		for (String token : titleTokens) {

@@ -20,7 +20,7 @@ public class OntologyManager {
 			OntologyConceptService service = new OntologyConceptServiceImpl();
 			List<OntologyConcept> concepts = new ArrayList<OntologyConcept>();
 
-			PreProcessingText preProcessingText = new PreProcessingText();
+			PreProcessingText preProcessingText = PreProcessingText.getInstance();
 			
 			String url = "http://www.daml.org/services/owl-s/1.0DL/Process.owl";
 			String path = "C:/dbpedia_2014.owl";

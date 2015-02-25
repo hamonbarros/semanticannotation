@@ -61,7 +61,7 @@ public class BagOfWords {
 	 */
 	public String extractWordList() {
 		
-		PreProcessingText preProcessing = new PreProcessingText();
+		PreProcessingText preProcessing = PreProcessingText.getInstance();
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(extractTextProperties());
 		Set<String> tokenSet = new HashSet<String>();
 		tokenSet.addAll(nounsAndAdjectives);
@@ -77,7 +77,7 @@ public class BagOfWords {
 	 */
 	public String extractWordList(String text) {
 		
-		PreProcessingText preProcessing = new PreProcessingText();
+		PreProcessingText preProcessing = PreProcessingText.getInstance();
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
 		Set<String> tokenSet = new HashSet<String>();
 		tokenSet.addAll(nounsAndAdjectives);

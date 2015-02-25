@@ -359,7 +359,7 @@ public class Main {
 	 */
 	private static Set<OntologyConcept> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, Set<String> concepts) {
 		
-		PreProcessingText preprocessing = new PreProcessingText();
+		PreProcessingText preprocessing = PreProcessingText.getInstance();
 		Set<OntologyConcept> similaryConcepts = new HashSet<OntologyConcept>();
 		for (String concept : concepts) {		
 			String coveredConcept = preprocessing.preProcessingWithoutExtractScale(concept);

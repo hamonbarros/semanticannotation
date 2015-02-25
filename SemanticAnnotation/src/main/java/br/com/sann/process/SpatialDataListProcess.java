@@ -38,6 +38,7 @@ public class SpatialDataListProcess extends ParentProcess{
 			BagOfWords bw = null;
 			Sumary sumary = new Sumary();
 			
+			int countGC = 0;
 //			for(int i=0; i<10; i++) {
 //				SpatialData spatialData = spatialDataList.get(i);
 			for (SpatialData spatialData : spatialDataList) {
@@ -50,6 +51,11 @@ public class SpatialDataListProcess extends ParentProcess{
 				log.info("[FIM] Fim do processamento para o título: " + title);
 					
 				storeBagsOfWords = new StringBuffer();
+				countGC++;
+				if (countGC == 25) {
+					System.gc();
+					countGC = 0;
+				}
 			}			
 			similarity.println(sumary.toString());			
 			log.info("Finalização da consulta das classes e categorias na dbpedia que contenham relevância com os títulos.");

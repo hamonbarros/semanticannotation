@@ -12,7 +12,7 @@ public class PreProcessingTextTest extends TestCase {
 	
 	protected void setUp() throws Exception {
 		super.setUp();
-		preProcessing = new PreProcessingText();
+		preProcessing = PreProcessingText.getInstance();
 		tokens = new LinkedList<String>();
 		tokens.add("Aborigin");
 		tokens.add("Land");
