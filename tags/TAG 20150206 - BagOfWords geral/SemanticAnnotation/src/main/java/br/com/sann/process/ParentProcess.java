@@ -253,7 +253,7 @@ public class ParentProcess {
 	 */
 	private Set<OntologyConcept> getSimilaryConcepts(Set<String> concepts, String title) {
 		
-		PreProcessingText preprocessing = new PreProcessingText();
+		PreProcessingText preprocessing = PreProcessingText.getInstance();
 		Set<OntologyConcept> similaryConcepts = new HashSet<OntologyConcept>();
 		concepts.add(preprocessing.preProcessingWithoutExtractScale(title));
 		
@@ -351,7 +351,7 @@ public class ParentProcess {
 
 		List<OntologyConcept> concepts = new ArrayList<OntologyConcept>();
 		
-		PreProcessingText preprocessing = new PreProcessingText();
+		PreProcessingText preprocessing = PreProcessingText.getInstance();
 		List<String> titleTokens = preprocessing.tokenizingText(title);
 		Set<String> returnTokens = preprocessing.tokenizingTextList(getTitles(listReturn));
 		for (String token : titleTokens) {

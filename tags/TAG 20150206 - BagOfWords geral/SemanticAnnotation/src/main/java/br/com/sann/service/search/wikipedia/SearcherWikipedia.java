@@ -38,7 +38,7 @@ public class SearcherWikipedia extends DefaultHandler {
 		
 		text = new StringBuffer();
 		Logger log = Logger.getLogger(Main.class);
-		preProcessing = new PreProcessingText();
+		preProcessing = PreProcessingText.getInstance();
 		
 		title = title.replaceAll(" ", "_");
 		HttpClient httpClient = new HttpClient();

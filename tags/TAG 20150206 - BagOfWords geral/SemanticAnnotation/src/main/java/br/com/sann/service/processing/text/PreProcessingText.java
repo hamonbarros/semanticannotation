@@ -34,14 +34,23 @@ import br.com.sann.main.Main;
  */
 public class PreProcessingText {
 	
+	private static PreProcessingText instance;
+	
 	private String pathTreeTagger = "";
 	private final String[] commonWords = {"area", "level", "point", "polygon", "line", "zoon"};
 
 	/**
-	 * Método construtor.
+	 * Método construtor privado.
 	 */
-	public PreProcessingText() {
+	private PreProcessingText() {
 		loadPropertyTreeTagger();
+	}
+	
+	public static synchronized PreProcessingText getInstance() {
+		if (instance == null) {
+			instance = new PreProcessingText();
+		}
+		return instance;
 	}
 	
 	/**
