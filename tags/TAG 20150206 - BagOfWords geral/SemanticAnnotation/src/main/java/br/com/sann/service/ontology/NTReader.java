@@ -33,7 +33,7 @@ public class NTReader {
 		log.info("Data Inicial: " + df.format(new Date()));
 		
 		OntologyConceptService service = new OntologyConceptServiceImpl();
-		PreProcessingText preProcessingText = new PreProcessingText();
+		PreProcessingText preProcessingText = PreProcessingText.getInstance();
 		
 		InputStream in = FileManager.get().open("C:/yago_en.nt");
 		if (in == null) {
