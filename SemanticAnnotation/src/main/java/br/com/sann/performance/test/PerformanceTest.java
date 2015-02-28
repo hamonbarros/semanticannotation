@@ -56,7 +56,7 @@ public class PerformanceTest {
 			
 			ExpectedResultProcess process = new ExpectedResultProcess();
 			
-			Scanner scanner = new Scanner(new FileReader("Dados de Teste.txt"))
+			Scanner scanner = new Scanner(new FileReader("Baseline.txt"))
 				.useDelimiter("\\n");
 			String line = scanner.next();
 			int countConcepts = 0;

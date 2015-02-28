@@ -53,4 +53,16 @@ public class OntologyConceptServiceImpl implements OntologyConceptService{
 		return dao.recoveryOntolgyConceptByTerm(term);
 	}
 
+	@Override
+	public void saveOntologyConcept(OntologyConcept concept) {
+		
+		dao.saveOntologyConcept(concept);		
+	}
+
+	@Override
+	public OntologyConcept recoveryOntologyByURI(String uri) {
+		
+		return dao.recoveryOntologyByURI(uri);
+	}
+
 }

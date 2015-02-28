@@ -40,5 +40,19 @@ public interface OntologyConceptDAO {
 	 * @param term O tema a ser consultado. 
 	 */
 	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term);
+
+	/**
+	 * Persiste um conceito de ontologia passado como parâmetro.
+	 * 
+	 * @param concept O conceito a ser persistido.
+	 */
+	public void saveOntologyConcept(OntologyConcept concept);
+
+	/**
+	 * Recupera um conceito ontologico a partir do sua URI.
+	 * @param uri URI do conceito.
+	 * @return O conceito ontológico ou null, caso não seja encontrado.
+	 */
+	public OntologyConcept recoveryOntologyByURI(String uri);
 	
 }
