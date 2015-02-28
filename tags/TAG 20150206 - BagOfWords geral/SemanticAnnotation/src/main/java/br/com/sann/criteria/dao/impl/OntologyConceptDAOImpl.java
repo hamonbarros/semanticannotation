@@ -26,6 +26,7 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		String jpql = "SELECT n FROM OntologyConcept n ORDER BY n.conceptName";
 		Query q = em.createQuery(jpql);
 		List<OntologyConcept> concepts = q.getResultList();
+		JPAUtil.closeEntityManager();
 		return concepts;
 	}
 
@@ -38,6 +39,7 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 			em.flush();
 		}
 		em.getTransaction().commit();
+		em.close();
 		JPAUtil.closeEntityManager();
 	}
 
@@ -53,6 +55,7 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 			}
 		}
 		em.close();
+		JPAUtil.closeEntityManager();
 		return concepts;
 	}
 
@@ -65,7 +68,36 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		Query q = em.createQuery(jpql);
 		List<OntologyConcept> concepts = q.getResultList();
 		em.close();
+		JPAUtil.closeEntityManager();
 		return concepts;
+	}
+
+	@Override
+	public void saveOntologyConcept(OntologyConcept concept) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		em.merge(concept);
+		em.flush();
+		em.getTransaction().commit();
+		em.close();
+		JPAUtil.closeEntityManager();	
+	}
+
+	@Override
+	public OntologyConcept recoveryOntologyByURI(String uri) {
+		
+		EntityManager em = JPAUtil.getEntityManager();
+		String jpql = "SELECT n FROM OntologyConcept n " +
+					  "WHERE concept like :uri";
+		Query q = em.createQuery(jpql);
+		q.setParameter("uri", uri);
+		List<OntologyConcept> concepts = q.getResultList();
+		em.close();
+		JPAUtil.closeEntityManager();
+		if (concepts != null && !concepts.isEmpty()) {
+			return concepts.get(0);
+		}
+		return null;
 	}
 
 }
