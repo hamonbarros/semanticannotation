@@ -1,0 +1,35 @@
+TITULO|CONCEITOS
+Aboriginal Lands|427,757,253,200,2937,3500,4266,4098
+Annual cropland|3038,137,26,37,73,51,593,771,3287,3292,3265
+Bare soil with cryptogam crust - frostboils|3127,879,771,137,2937,3500,1874,283,282,253,241
+Barren/Non-vegetated|3032,253,1436,3587,465
+Bathymetric|2695,267,2722
+BC Coastline - Lines (1:250K)|3314,3316,3318,3330,3331
+Boundaries of Drainage Areas|538,1692,3356,4206,1472,202,42,55,256,879,3162,3262,3287,915,245,4232,1709,4169
+Boundaries of Major Drainage Areas from Water Survey of Canada|3295,4206,1692,4019,3356,3287,3286,3280,55,3162,3262,697,245,256,4232,4169,137,879,915,1709,174
+British Columbia|225,200
+BroadLeaf - Dense|740,3043,3044,3903,785,786,2319,465,2519,245,769,1960
+Canadian and Foreign Landmass|3504
+Canadian Geopolitical Boundaries|1472,3000,4206,202,4232
+Capital cities in Canada 1:1,000,000 (Atlas of Canada)|202
+Cloud|887,972,973,975,979,983,985,986,989,990,992,993,994,1003,1004,1009,1011
+Common names of Municipalities (GDF Order-8)|200,4271
+Coniferous - Dense|742,3043,3044,3903,785,786,1960,465,2319,2519,245,769,3055
+Contours - Lines (1:250K)|2722,4141,4299,3768
+Cultivated agricultural land|135,26,51,253,2937,3500,4020
+Cultural Features|590,284
+Data Collections from GeoBase|3678,3679,4053,309,59
+Deciduous Forest|745,56,4268,135,3043,3044,740,3903,245,3040,134
+Dry graminoid prostrate dwarf shrub tundra|3117,771,3043,3044,3903,3063,465,168,777,245,3088,3055
+Elevation|2704,2722
+Exclusive economic zone of Canada 1:1,000,000|2319,246,214,4171
+Exposed Land|253,200,2937,3500
+Extents of Aboriginal Lands|76,427,757,253,200,143,2937,3500
+Feature names|4271,533,531
+Federal Parks|3425,3419,3418,3426,3429,134
+Flow direction|1477,1958
+Geographical Names|4271
+Geopolitical Boundaries|202,1472,4206,3132,3000,4232
+Grassland|3046,431,3050,756,3048
+Grids|3655,3765,4289
+Herb|1379,771
