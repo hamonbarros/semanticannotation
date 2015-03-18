@@ -8,7 +8,7 @@ import br.com.sann.domain.SpatialData;
 import br.com.sann.service.FeatureService;
 
 /**
- * Classe de negÛcio relacionado com Feature Types.
+ * Classe de neg√≥cio relacionado com Feature Types.
  * 
  * @author Hamon
  *
@@ -18,7 +18,7 @@ public class FeatureServiceImpl implements FeatureService{
 	private SpatialDataDAO dao;
 	
 	/**
-	 * Construtor padr„o.
+	 * Construtor padr√£o.
 	 */
 	public FeatureServiceImpl() {
 		

@@ -7,7 +7,7 @@ import br.com.sann.criteria.dao.impl.SemanticAnnotationDAOImpl;
 import br.com.sann.domain.SemanticAnnotation;
 
 /**
- * Classe de negócio relacionado com anotações semânticas.
+ * Classe de negï¿½cio relacionado com anotaï¿½ï¿½es semï¿½nticas.
  * 
  * @author Hamon
  *
@@ -17,7 +17,7 @@ public class SemanticAnnotationServiceImpl implements SemanticAnnotationDAO{
 	private SemanticAnnotationDAO dao;
 	
 	/**
-	 * Construtor padrão.
+	 * Construtor padrÃ£o.
 	 */
 	public SemanticAnnotationServiceImpl() {
 		

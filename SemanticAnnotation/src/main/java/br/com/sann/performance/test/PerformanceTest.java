@@ -48,7 +48,7 @@ public class PerformanceTest {
 			
 			DateFormat df = new SimpleDateFormat("YYYYMMddHHmm");
 			String dateFormated = df.format(new Date());
-			result = new PrintWriter(new FileWriter(new File("Result_" + dateFormated + ".txt")));
+			result = new PrintWriter(new FileWriter(new File("Result_Yago_" + dateFormated + ".txt")));
 			
 			List<OntologyConcept> relevantConceptsGeneral = new ArrayList<OntologyConcept>();
 			List<String> retrievedConceptsGeneral = new ArrayList<String>();
@@ -56,7 +56,7 @@ public class PerformanceTest {
 			
 			ExpectedResultProcess process = new ExpectedResultProcess();
 			
-			Scanner scanner = new Scanner(new FileReader("Baseline.txt"))
+			Scanner scanner = new Scanner(new FileReader("Baseline_yago.txt"))
 				.useDelimiter("\\n");
 			String line = scanner.next();
 			int countConcepts = 0;

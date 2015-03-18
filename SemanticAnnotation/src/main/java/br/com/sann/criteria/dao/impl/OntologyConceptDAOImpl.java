@@ -1,19 +1,18 @@
 package br.com.sann.criteria.dao.impl;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import br.com.sann.criteria.dao.OntologyConceptDAO;
-import br.com.sann.criteria.dao.SpatialDataDAO;
 import br.com.sann.criteria.util.JPAUtil;
 import br.com.sann.domain.OntologyConcept;
-import br.com.sann.domain.SpatialData;
 
 /**
- * Classe de persitência da entidade OntologyConcept.
+ * Classe de persitÃªncia da entidade OntologyConcept.
  * 
  * @author Hamon
  * 
@@ -98,6 +97,18 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 			return concepts.get(0);
 		}
 		return null;
+	}
+
+	@Override
+	public Collection<OntologyConcept> recoveryOntologiesByURIs(List<String> urls) {
+		List<OntologyConcept> concepts = new ArrayList<OntologyConcept>();
+		for (String url : urls) {
+			OntologyConcept concept = recoveryOntologyByURI(url);
+			if (concept != null) {
+				concepts.add(concept);
+			}
+		}
+		return concepts;
 	}
 
 }

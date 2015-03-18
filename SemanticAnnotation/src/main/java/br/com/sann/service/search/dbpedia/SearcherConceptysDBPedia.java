@@ -3,8 +3,10 @@ package br.com.sann.service.search.dbpedia;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
@@ -28,7 +30,7 @@ public class SearcherConceptysDBPedia {
 	private String pathOwlDBPedia = "";
 	
 	/**
-	 * Método construtor.
+	 * Mï¿½todo construtor.
 	 */
 	public SearcherConceptysDBPedia() {
 		preProcessing = PreProcessingText.getInstance();
@@ -39,7 +41,7 @@ public class SearcherConceptysDBPedia {
 	 * Realiza a busca de classes e categorias referentes ao texto na dbpedia.
 	 * 
 	 * @param text O texto a ser consultado.
-	 * @return O texto pré-processado e a lista de classes e categorias referentes ao mesmo.
+	 * @return O texto prï¿½-processado e a lista de classes e categorias referentes ao mesmo.
 	 */
 	public List<Extractor> searchClassesOrCategories(String text) {
 		
@@ -57,7 +59,9 @@ public class SearcherConceptysDBPedia {
 				Extractor extractor = new Extractor();
 				extractor.setTitle(titleTokenWithoutUppercase);
 				extractor.setClasses(extractLabelClass(searcher.getClasses()));
+				extractor.putAllURLs(extractURLClass(searcher.getClasses()));
 				extractor.setCategories(extractLabelCategory(searcher.getCategories()));
+				extractor.putExistingURLs(extractURLCategory(searcher.getCategories()));
 				associateClassesAndCategories(extractor);
 				listReturn.add(extractor);
 				
@@ -81,7 +85,7 @@ public class SearcherConceptysDBPedia {
 	 * Realiza a busca de super classes e super categorias referentes ao texto na dbpedia.
 	 * 
 	 * @param text O texto a ser consultado.
-	 * @return O texto pré-processado e a lista de super classes e super categorias referentes ao mesmo.
+	 * @return O texto prï¿½-processado e a lista de super classes e super categorias referentes ao mesmo.
 	 */
 	public List<Extractor> searchSuperClassesOrSuperCategories(String text) {
 		
@@ -130,40 +134,64 @@ public class SearcherConceptysDBPedia {
 	}
 	
 	/**
-	 * Método que faz a busca das classes e categorias na dbpedia a partir de combinações possíveis dos tokens 
-	 * até encontrar alguma ou esgotar as possibilidades de combinações.
+	 * Mï¿½todo que faz a busca das classes e categorias na dbpedia a partir de combinaï¿½ï¿½es possï¿½veis dos tokens 
+	 * atï¿½ encontrar alguma ou esgotar as possibilidades de combinaï¿½ï¿½es.
 	 * 
 	 * @param titleToken O texto tokenizado.
-	 * @param amountCombinationPossible A quantidade de combinações possíveis.
+	 * @param amountCombinationPossible A quantidade de combinaï¿½ï¿½es possï¿½veis.
 	 * @return Um lista de extratores contento o texto tokenizado e as suas respectivas classes e categorias.
 	 */
 	public List<Extractor> searchCombination(String titleToken, int amountCombinationPossible) {
 		
 		List<Extractor> listReturn = new ArrayList<Extractor>();
-			
-		while (amountCombinationPossible > 0) {
-			Combination c = new Combination(titleToken.split(" "), amountCombinationPossible);
-			List<String> combinations = c.combine();
+		String[] tokens = titleToken.split(" ");
+		while (amountCombinationPossible > 1) {
+			Combination c = new Combination(tokens, amountCombinationPossible);
+			List<String> combinations = c.combineVizinhos();
 			for (String comb : combinations) {
 				SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(comb);
 				if(!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
 			
 					Extractor extractor = new Extractor();
 					extractor.setTitle(comb);
-					extractor.setCategories(extractLabelCategory(searcher.getCategories()));
 					extractor.setClasses(extractLabelClass(searcher.getClasses()));
+					extractor.putAllURLs(extractURLClass(searcher.getClasses()));
+					extractor.setCategories(extractLabelCategory(searcher.getCategories()));					
+					extractor.putExistingURLs(extractURLCategory(searcher.getCategories()));
 					associateClassesAndCategories(extractor);
 					listReturn.add(extractor);
 				}
 			}
 			amountCombinationPossible--;
-		}			
+		}		
+		for (String token : tokens) {
+			boolean tokenResolved = false;
+			for (Extractor extractor : listReturn) {
+				if (extractor.getTitle().indexOf(token) >= 0) {
+					tokenResolved = true;
+					break;
+				}
+			}
+			if (!tokenResolved) {
+				SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(token);
+				if(!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {			
+					Extractor extractor = new Extractor();
+					extractor.setTitle(token);
+					extractor.setClasses(extractLabelClass(searcher.getClasses()));
+					extractor.putAllURLs(extractURLClass(searcher.getClasses()));
+					extractor.setCategories(extractLabelCategory(searcher.getCategories()));
+					extractor.putExistingURLs(extractURLCategory(searcher.getCategories()));					
+					associateClassesAndCategories(extractor);
+					listReturn.add(extractor);
+				}
+			}
+		}
 		
 		return listReturn;
 	}
 	
 	/**
-	 * Método para buscar os termos do título que ainda não foram resolvidos.
+	 * Mï¿½todo para buscar os termos do tï¿½tulo que ainda nï¿½o foram resolvidos.
 	 * 
 	 * @param titleToken
 	 * @param listReturn
@@ -194,10 +222,10 @@ public class SearcherConceptysDBPedia {
 	}
 
 	/**
-	 * Extrai os títulos dos extratores de uma lista.
+	 * Extrai os tï¿½tulos dos extratores de uma lista.
 	 * 
 	 * @param extractors A lista de extratores.
-	 * @return A lista de títulos dos extratores.
+	 * @return A lista de tï¿½tulos dos extratores.
 	 */
 	private List<String> getTitles(List<Extractor> extractors) {
 		
@@ -225,7 +253,9 @@ public class SearcherConceptysDBPedia {
 			Extractor extractor = new Extractor();
 			extractor.setTitle(title);
 			extractor.setClasses(extractLabelClass(searcher.getClasses()));
+			extractor.putAllURLs(extractURLClass(searcher.getClasses()));
 			extractor.setCategories(extractLabelCategory(searcher.getCategories()));
+			extractor.putExistingURLs(extractURLCategory(searcher.getCategories()));
 			associateClassesAndCategories(extractor);
 			return extractor;
 		}		
@@ -233,7 +263,7 @@ public class SearcherConceptysDBPedia {
 	}
 	
 	/**
-	 * Método para extrair os labels das categorias.
+	 * Mï¿½todo para extrair os labels das categorias.
 	 * @param categories As categoias a serem exploradas.
 	 * @return Os labels das categorias
 	 */
@@ -247,7 +277,45 @@ public class SearcherConceptysDBPedia {
 	}
 	
 	/**
-	 * Método para extrair os labels das classes.
+	 * MÃ©todo para extrair os labels e as url das classes.
+	 * @param classes As classes a serem exploradas.
+	 * @return Os labels e as urls das classes.
+	 */
+	private Map<String, List<String>> extractURLClass(Set<DBpediaClass> classes) {
+		
+		Map<String, List<String>> result = new HashMap<String, List<String>>();
+		for (DBpediaClass classe : classes) {		
+			List<String> existingClasses  = result.get(classe.getLabel());
+			if (existingClasses == null) {
+				existingClasses = new ArrayList<String>();
+			}
+			existingClasses.add(classe.getUrl());
+			result.put(classe.getLabel(), existingClasses);
+		}
+		return result;
+	}
+	
+	/**
+	 * MÃ©todo para extrair os labels e as url das categorias.
+	 * @param categories As categoias a serem exploradas.
+	 * @return Os labels e as urls das categorias
+	 */
+	private Map<String, List<String>> extractURLCategory(Set<DBpediaCategory> categories) {
+		
+		Map<String, List<String>> result = new HashMap<String, List<String>>();
+		for (DBpediaCategory category : categories) {		
+			List<String> existingCategory  = result.get(category.getLabel());
+			if (existingCategory == null) {
+				existingCategory = new ArrayList<String>();
+			}
+			existingCategory.add(category.getUrl());
+			result.put(category.getLabel(), existingCategory);
+		}
+		return result;
+	}	
+	
+	/**
+	 * Mï¿½todo para extrair os labels das classes.
 	 * @param categories As categoias a serem exploradas.
 	 * @return Os labels das categorias
 	 */
@@ -261,7 +329,7 @@ public class SearcherConceptysDBPedia {
 	}
 	
 	/**
-	 * Método para carregar a propriedade que identifica a localização do
+	 * Mï¿½todo para carregar a propriedade que identifica a localizaï¿½ï¿½o do
 	 * OWL da DBPedia.
 	 */
 	private void loadPropertyOwlDBPedia() {
@@ -272,7 +340,7 @@ public class SearcherConceptysDBPedia {
 			in.close();
 			pathOwlDBPedia = props.getProperty("PATH_OWL_DBPEDIA");
 		} catch (IOException e) {
-			System.err.println("Não foi possíviel localizar o OWL da DBPedia.");
+			System.err.println("Nï¿½o foi possï¿½viel localizar o OWL da DBPedia.");
 		}
 	}
 	
@@ -290,15 +358,15 @@ public class SearcherConceptysDBPedia {
 					OntologyParser.LOCAL_FILE_MODE, OntologyParser.SIMPLE_MODEL);
 			result.addAll(parser.listSuperclasses(concept));
 		} catch (InvalidOntologyPathException e) {
-			System.err.println("Não foi possível carregar o OWL da DBPedia.");;
+			System.err.println("Nï¿½o foi possï¿½vel carregar o OWL da DBPedia.");;
 		} catch (ResourceNotFoundException e) {
-			System.err.println("Não foi possível encontrar recursos referente ao conceito " + concept);
+			System.err.println("Nï¿½o foi possï¿½vel encontrar recursos referente ao conceito " + concept);
 		}
 		return result;
 	}
 	
 	/**
-	 * Método para acrescentar os conceitos associados ao conceitos.
+	 * Mï¿½todo para acrescentar os conceitos associados ao conceitos.
 	 * @param concepts Os conceitos.
 	 * @return Os conceitos e os seus respectivos associados.
 	 */
@@ -325,12 +393,12 @@ public class SearcherConceptysDBPedia {
 			WikipediaCategorySearcher searcher = new WikipediaCategorySearcher();
 			result.addAll(searcher.getCategoryPages(category));
 		} catch (Exception e) {
-			System.err.println("Não foi possível encontrar recursos referente à categoria " + category);
+			System.err.println("Nï¿½o foi possï¿½vel encontrar recursos referente ï¿½ categoria " + category);
 		}
 		return result;
 	}
 	/**
-	 * Método para acrescentar as categorias associadas às categorias recuperadas.
+	 * Mï¿½todo para acrescentar as categorias associadas ï¿½s categorias recuperadas.
 	 * @param concepts Os conceitos.
 	 * @return Os conceitos e os seus respectivos associados.
 	 */

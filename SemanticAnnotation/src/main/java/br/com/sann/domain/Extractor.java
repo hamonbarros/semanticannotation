@@ -1,11 +1,15 @@
 package br.com.sann.domain;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
- * Classe responsável por armazenar as informações semânticas extraídas
- * a partir de um título/token.
+ * Classe responsï¿½vel por armazenar as informaï¿½ï¿½es semï¿½nticas extraï¿½das
+ * a partir de um tï¿½tulo/token.
  * 
  * @author Hamon
  */
@@ -18,6 +22,7 @@ public class Extractor {
 	private Set<String> similarityCategories;
 	private Set<OntologyConcept> ontologyClasses;
 	private Set<OntologyConcept> ontologyCategories;
+	private Map<String, List<String>> classesAndCategoriesURL;
 	
 	public Extractor() {
 		
@@ -27,6 +32,7 @@ public class Extractor {
 		similarityClasses = new HashSet<String>();
 		ontologyCategories = new HashSet<OntologyConcept>();
 		ontologyClasses = new HashSet<OntologyConcept>();
+		classesAndCategoriesURL = new HashMap<String, List<String>>();
 		
 	}
 	
@@ -71,6 +77,40 @@ public class Extractor {
 	}
 	public void setOntologyCategories(Set<OntologyConcept> ontologyCategories) {
 		this.ontologyCategories = ontologyCategories;
+	}
+	
+	public Map<String, List<String>> getClassesAndCategoriesURL() {
+		return classesAndCategoriesURL;
+	}
+
+	public void setClassesAndCategoriesURL(Map<String, List<String>> classesAndCategoriesURL) {
+		this.classesAndCategoriesURL = classesAndCategoriesURL;
+	}
+	
+	public void putAllURLs(Map<String, List<String>> labelAndURLConcepts) {
+		this.classesAndCategoriesURL.putAll(labelAndURLConcepts);
+	}
+	
+	public void putExistingURLs(Map<String, List<String>> labelAndURLConcepts) {
+		for (String label : labelAndURLConcepts.keySet()) {			
+			List<String> urls = classesAndCategoriesURL.get(label);
+			if (urls == null) {
+				urls = new ArrayList<String>();
+			}
+			urls.addAll(labelAndURLConcepts.get(label));
+			classesAndCategoriesURL.put(label, urls);
+		}			
+	}
+	
+	public Set<String> getClassesAndCategories() {
+		Set<String> result = new HashSet<String>();
+		if (classes != null) {
+			result.addAll(classes);
+		}
+		if (categories != null) {
+			result.addAll(categories);
+		}
+		return result;
 	}
 	
 }
