@@ -116,4 +116,20 @@ public class Combination {
         return combinations;
 	}
 	
+	public List<String> combineVizinhos() {
+		List<String> combinations = new ArrayList<String>();
+		int inicio = 0;
+		int fim = amountCombinationPossible - 1;
+		while (fim <= valuesToBeCombined.length - 1) {
+			String s = "";
+			for (int i = inicio; i <= fim; i++) {
+				s += valuesToBeCombined[i] + " ";
+			}
+			combinations.add(s.trim());
+			inicio++;
+			fim++;
+		}
+		return combinations;
+	}
+	
 }

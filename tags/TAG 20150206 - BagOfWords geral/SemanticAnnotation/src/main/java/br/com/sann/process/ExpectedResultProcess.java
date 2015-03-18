@@ -13,8 +13,10 @@ public class ExpectedResultProcess extends ParentProcess {
 	public void execute(ExpectedResult eResult) {
 		
 		try {
-			Set<String> retrievedConcepts = executeSimilarity(eResult.getTitle(),
-					eResult.getBagOfWords());
+//			Set<String> retrievedConcepts = executeSimilarity(eResult.getTitle(),
+//					eResult.getBagOfWords());
+			Set<String> retrievedConcepts = executeSimilarityYago(eResult.getTitle(),
+					eResult.getBagOfWords());			
 			eResult.setRetrievedConcepts(retrievedConcepts);
 		} catch (IOException e) {
 			e.printStackTrace();

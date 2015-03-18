@@ -78,4 +78,31 @@ public class CombinationTest extends TestCase {
 		assertTrue(combs.containsAll(combinations));
 	}
 
+	/**
+	 * Testa o método combineVizinhos().
+	 */
+	public void testCombineVizinhos() {
+		String[] listStr = {"Boundary", "Major", "Drainag", "Water", "Survey", "Canada"};
+		combination = new Combination(listStr, 4);
+		List<String> combs = combination.combineVizinhos();
+		assertEquals(3, combs.size());
+		List<String> combinations = new LinkedList<String>();
+		combinations.add("Boundary Major Drainag Water");
+		combinations.add("Major Drainag Water Survey");
+		combinations.add("Drainag Water Survey Canada");
+		assertTrue(combs.containsAll(combinations));
+
+		combination = new Combination(listStr, 3);
+		combs = combination.combineVizinhos();
+		assertEquals(4, combs.size());
+
+		combination = new Combination(listStr, 2);
+		combs = combination.combineVizinhos();
+		assertEquals(5, combs.size());
+
+		combination = new Combination(listStr, 1);
+		combs = combination.combineVizinhos();
+		assertEquals(6, combs.size());
+
+	}
 }

@@ -1,12 +1,12 @@
 package br.com.sann.criteria.dao;
 
+import java.util.Collection;
 import java.util.List;
 
 import br.com.sann.domain.OntologyConcept;
-import br.com.sann.domain.SpatialData;
 
-/**
- * Interface de persitência da entidade OntologyConcept.
+/**	
+ * Interface de persitï¿½ncia da entidade OntologyConcept.
  * 
  * @author Hamon
  *
@@ -21,14 +21,14 @@ public interface OntologyConceptDAO {
 	public List<OntologyConcept> recoverAllOntologyConcept();
 	
 	/**
-	 * Persiste os conceitos de ontologias passados como parâmetro.
+	 * Persiste os conceitos de ontologias passados como parï¿½metro.
 	 * 
 	 * @param concepts Os conceitos a serem persistidos.
 	 */
 	public void saveOntologyConcepts(List<OntologyConcept> concepts);
 	
 	/**
-	 * Recupera os conceitos de ontologia através dos ids.
+	 * Recupera os conceitos de ontologia atravï¿½s dos ids.
 	 * 
 	 * @param idsOntology Os ids dos conceitos a serem recuperados. 
 	 */
@@ -42,7 +42,7 @@ public interface OntologyConceptDAO {
 	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term);
 
 	/**
-	 * Persiste um conceito de ontologia passado como parâmetro.
+	 * Persiste um conceito de ontologia passado como parï¿½metro.
 	 * 
 	 * @param concept O conceito a ser persistido.
 	 */
@@ -51,8 +51,15 @@ public interface OntologyConceptDAO {
 	/**
 	 * Recupera um conceito ontologico a partir do sua URI.
 	 * @param uri URI do conceito.
-	 * @return O conceito ontológico ou null, caso não seja encontrado.
+	 * @return O conceito ontolï¿½gico ou null, caso nï¿½o seja encontrado.
 	 */
 	public OntologyConcept recoveryOntologyByURI(String uri);
+
+	/**
+	 * Recupera os conceitos ontolÃ³gicos correspondentes as URL's passadas
+	 * @param urls As urls do conceitos.
+	 * @return Os conceitos ontolÃ³gicos.
+	 */
+	public Collection<OntologyConcept> recoveryOntologiesByURIs(List<String> urls);
 	
 }

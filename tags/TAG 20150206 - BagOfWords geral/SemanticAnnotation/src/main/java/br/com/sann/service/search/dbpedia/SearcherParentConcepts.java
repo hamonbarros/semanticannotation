@@ -51,10 +51,10 @@ public class SearcherParentConcepts extends DefaultHandler {
 				log.error("DBPedia - Erro ao tentar conectar a url: " + url);
 				executeTimer(log, searched);
 			} catch (ParserConfigurationException pce) {
-				log.error("DBPedia - Não foi possível ler o retorno da consulta a url \"" + url + "\".");
+				log.error("DBPedia - Nï¿½o foi possï¿½vel ler o retorno da consulta a url \"" + url + "\".");
 				executeTimer(log, searched);
 			} catch (SAXException se) {
-				log.error("DBPedia - Não foi possível instancia o leitor do retorno da url: " + url);
+				log.error("DBPedia - Nï¿½o foi possï¿½vel instancia o leitor do retorno da url: " + url);
 				executeTimer(log, searched);
 			}
 		}
@@ -72,7 +72,7 @@ public class SearcherParentConcepts extends DefaultHandler {
 	}
 	
 	/**
-	 * Método sobrescrito da superclasse que inicia a leitura do XML de retorno.
+	 * MÃ©todo sobrescrito da superclasse que inicia a leitura do XML de retorno.
 	 * 
 	 * @param uri A URI.
 	 * @param localName O nome local.
@@ -89,7 +89,7 @@ public class SearcherParentConcepts extends DefaultHandler {
 	}
 
 //	/**
-//	 * Método sobrescrito da superclasse que finaliza a leitura do XML de retorno.
+//	 * Mï¿½todo sobrescrito da superclasse que finaliza a leitura do XML de retorno.
 //	 * 
 //	 * @param uri A URI.
 //	 * @param localName O nome local.
@@ -105,10 +105,10 @@ public class SearcherParentConcepts extends DefaultHandler {
 //	}
 
 	/**
-	 * Método sobrescrito da superclasse que faz a leitura das tags do XML de retorno.
+	 * Mï¿½todo sobrescrito da superclasse que faz a leitura das tags do XML de retorno.
 	 * 
 	 * @param ch O array de caracteres do XML retornado.
-	 * @param start O indice de início da leitura no array.
+	 * @param start O indice de inï¿½cio da leitura no array.
 	 * @param length O tamanho da palavra a ser lida.
 	 */
 	@Override

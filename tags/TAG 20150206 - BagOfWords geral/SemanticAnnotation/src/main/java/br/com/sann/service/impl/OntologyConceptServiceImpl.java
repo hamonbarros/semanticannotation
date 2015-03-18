@@ -1,18 +1,15 @@
 package br.com.sann.service.impl;
 
+import java.util.Collection;
 import java.util.List;
 
 import br.com.sann.criteria.dao.OntologyConceptDAO;
-import br.com.sann.criteria.dao.SpatialDataDAO;
 import br.com.sann.criteria.dao.impl.OntologyConceptDAOImpl;
-import br.com.sann.criteria.dao.impl.SpatialDataDAOImpl;
 import br.com.sann.domain.OntologyConcept;
-import br.com.sann.domain.SpatialData;
-import br.com.sann.service.FeatureService;
 import br.com.sann.service.OntologyConceptService;
 
 /**
- * Classe de negÛcio relacionado com conceitos de ontologia.
+ * Classe de neg√≥cio relacionado com conceitos de ontologia.
  * 
  * @author Hamon
  *
@@ -22,7 +19,7 @@ public class OntologyConceptServiceImpl implements OntologyConceptService{
 	private OntologyConceptDAO dao;
 	
 	/**
-	 * Construtor padr„o.
+	 * Construtor padr√£o.
 	 */
 	public OntologyConceptServiceImpl() {
 		
@@ -63,6 +60,12 @@ public class OntologyConceptServiceImpl implements OntologyConceptService{
 	public OntologyConcept recoveryOntologyByURI(String uri) {
 		
 		return dao.recoveryOntologyByURI(uri);
+	}
+
+	@Override
+	public Collection<OntologyConcept> recoveryOntologiesByURIs(
+			List<String> urls) {
+		return dao.recoveryOntologiesByURIs(urls);
 	}
 
 }

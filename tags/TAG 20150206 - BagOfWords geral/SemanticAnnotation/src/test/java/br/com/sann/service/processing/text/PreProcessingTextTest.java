@@ -1,5 +1,6 @@
 package br.com.sann.service.processing.text;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,6 +28,40 @@ public class PreProcessingTextTest extends TestCase {
 	public void testTokensToString() {
 
 		assertEquals("Aborigin Land", preProcessing.tokensToString(tokens));
+	}
+	
+	public void testGetWordsWithYFinish() {
+		List<String> result = preProcessing.getWordsWithYFinish("boundaries germany river ocean survay");
+		assertEquals(3, result.size());
+		
+		result = preProcessing.getWordsWithYFinish("coastal England river ocean");
+		assertEquals(0, result.size());
+		
+		result = preProcessing.getWordsWithYFinish(null);
+		assertEquals(0, result.size());
+	}
+	
+	public void testReplaceSimilarWordWithYFinish() {
+		List<String> tokens = new ArrayList<String>();
+		tokens.add("boundari");
+		tokens.add("germani");
+		tokens.add("river");
+		tokens.add("ocean");
+		tokens.add("surva");
+		
+		String word = "boundary";
+		preProcessing.replaceSimilarWordWithYFinish(word, tokens);
+		assertEquals(word, tokens.get(0));
+		
+		word = "germany";
+		preProcessing.replaceSimilarWordWithYFinish(word, tokens);
+		assertEquals(word, tokens.get(1));		
+	
+		word = "survay";
+		preProcessing.replaceSimilarWordWithYFinish(word, tokens);
+		assertEquals(word, tokens.get(4));
+		
+		System.out.println(tokens);
 	}
 
 }

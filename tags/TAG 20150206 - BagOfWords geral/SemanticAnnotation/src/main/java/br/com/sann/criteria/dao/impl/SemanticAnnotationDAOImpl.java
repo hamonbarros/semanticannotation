@@ -9,7 +9,7 @@ import br.com.sann.criteria.util.JPAUtil;
 import br.com.sann.domain.SemanticAnnotation;
 
 /**
- * Classe de persitência da entidade SemanticAnnotation.
+ * Classe de persitÃªncia da entidade SemanticAnnotation.
  * 
  * @author Hamon
  * 

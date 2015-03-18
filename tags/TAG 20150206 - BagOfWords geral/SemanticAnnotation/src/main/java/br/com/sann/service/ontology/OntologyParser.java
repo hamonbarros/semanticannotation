@@ -33,7 +33,7 @@ import com.hp.hpl.jena.reasoner.ReasonerRegistry;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 /**
- * Classe responsável por realizar a leitura de uma ontologia.
+ * Classe responsï¿½vel por realizar a leitura de uma ontologia.
  * 
  * @author Fabio
  * @author Hamon
@@ -294,10 +294,10 @@ public class OntologyParser {
 		OntClass desiredClass = (OntClass) this
 				.getResource(uri, OntClass.class);
 
-		Collection<String> result = new Vector();
+		Collection<String> result = new Vector<String>();
 		Iterator<OntClass> it = desiredClass.listSuperClasses();
 
-		Collection<String> equivalentClasses = new ArrayList();
+		Collection<String> equivalentClasses = new ArrayList<String>();
 		it = desiredClass.listEquivalentClasses();
 		while (it.hasNext()) {
 			equivalentClasses.add(it.next().getLocalName());
@@ -397,7 +397,7 @@ public class OntologyParser {
 				result.add(it.next().getLocalName());				
 			}			
 		} catch (ConversionException e) {
-			System.err.println("Não foi possível recuperar as superclasses de " + c.getLocalName());
+			System.err.println("Nï¿½o foi possï¿½vel recuperar as superclasses de " + c.getLocalName());
 		}
 		try {
 			Iterator<OntClass> it = c.listSubClasses();
@@ -405,7 +405,7 @@ public class OntologyParser {
 				result.add(it.next().getLocalName());	
 			}
 		} catch (ConversionException e) {
-			System.err.println("Não foi possível recuperar as subclasses de " + c.getLocalName());
+			System.err.println("Nï¿½o foi possï¿½vel recuperar as subclasses de " + c.getLocalName());
 		}
 		return result;
 	}
@@ -421,7 +421,7 @@ public class OntologyParser {
 				result.add(it.next().getLocalName());				
 			}			
 		} catch (ConversionException e) {
-			System.err.println("Não foi possível recuperar as superclasses de " + c.getLocalName());
+			System.err.println("Nï¿½o foi possï¿½vel recuperar as superclasses de " + c.getLocalName());
 		}
 		try {
 			Iterator<ObjectProperty> it = (ExtendedIterator<ObjectProperty>) c.listSubProperties();
@@ -429,7 +429,7 @@ public class OntologyParser {
 				result.add(it.next().getLocalName());	
 			}
 		} catch (ConversionException e) {
-			System.err.println("Não foi possível recuperar as subclasses de " + c.getLocalName());
+			System.err.println("Nï¿½o foi possï¿½vel recuperar as subclasses de " + c.getLocalName());
 		}
 		return result;
 	}
@@ -454,7 +454,7 @@ public class OntologyParser {
 //					System.out.println("    ---> " + ontol.getSuperClass());
 //					cont++;
 //				} catch (ConversionException e) {
-//					System.err.println("Não foi possível recuperar a superclasse de " + ontol.getLocalName());
+//					System.err.println("Nï¿½o foi possï¿½vel recuperar a superclasse de " + ontol.getLocalName());
 //				}
 //			}
 //			System.out.println("\nNumber of concepts: " + cont);

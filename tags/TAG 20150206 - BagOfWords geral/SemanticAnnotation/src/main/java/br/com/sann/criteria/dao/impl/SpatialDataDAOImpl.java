@@ -12,7 +12,7 @@ import br.com.sann.domain.SpatialData;
 import br.com.sann.service.processing.text.BagOfWords;
 
 /**
- * Classe de persitência da entidade SpatialData.
+ * Classe de persitï¿½ncia da entidade SpatialData.
  * 
  * @author Hamon
  *
