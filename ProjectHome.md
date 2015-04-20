@@ -1,0 +1,1 @@
+Este projeto se trata da implementação de um modelo para anotar semanticamente um determinado texto.
