@@ -8,7 +8,7 @@ import br.com.sann.domain.SpatialData;
 import br.com.sann.service.FeatureService;
 
 /**
- * Classe de neg√≥cio relacionado com Feature Types.
+ * Classe de negÛcio relacionado com Feature Types.
  * 
  * @author Hamon
  *
@@ -18,45 +18,47 @@ public class FeatureServiceImpl implements FeatureService{
 	private SpatialDataDAO dao;
 	
 	/**
-	 * Construtor padr√£o.
+	 * Construtor padr„o.
 	 */
 	public FeatureServiceImpl() {
 		
 		dao = new SpatialDataDAOImpl();
 	}
 
-	@Override
 	public List<SpatialData> recoverAllSpatialData() {
 		
 		return dao.recoverAllSpatialData();
 	}
+	
+	public List<SpatialData> recoverAllSpatialDataNotAnnotated() {
+		
+		return dao.recoverAllSpatialDataNotAnnotated();
+	}
 
-	@Override
 	public String recoverBagOfWordsByTitle(String title) {
 		
 		return dao.recoverBagOfWordsByTitle(title);
 	}
-
-	@Override
+	
 	public void updateSpatialDataList(List<SpatialData> list) {
-		for (SpatialData spatialData : list) {
-			spatialData.setAnnotated(Boolean.TRUE);
-		}
 		dao.updateSpatialDataList(list);
 		
 	}
 
-	@Override
 	public List<SpatialData> recoverySpatialDataByIDs(String ids) {
 		
 		return dao.recoverySpatialDataByIDs(ids);
 	}
 
-	@Override
-	public void updateSpatialData(SpatialData spatialData) {
-		spatialData.setAnnotated(Boolean.TRUE);
+	public void updateSpatialData(SpatialData spatialData) {		
 		dao.updateSpatialData(spatialData);
 		
+	}
+
+	@Override
+	public List<SpatialData> recoverySpatialDataByTextInfo(String name,
+			String title, String textDescription, String keywords) {
+		return dao.recoverySpatialDataByTextInfo(name, title, textDescription, keywords);
 	}
 
 }

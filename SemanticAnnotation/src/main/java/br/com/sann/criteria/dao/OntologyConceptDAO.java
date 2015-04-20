@@ -2,6 +2,7 @@ package br.com.sann.criteria.dao;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 import br.com.sann.domain.OntologyConcept;
 
@@ -60,6 +61,6 @@ public interface OntologyConceptDAO {
 	 * @param urls As urls do conceitos.
 	 * @return Os conceitos ontológicos.
 	 */
-	public Collection<OntologyConcept> recoveryOntologiesByURIs(List<String> urls);
+	public Collection<OntologyConcept> recoveryOntologiesByURIs(Set<String> urls);
 	
 }

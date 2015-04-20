@@ -134,11 +134,11 @@ public class SearcherConceptysDBPedia {
 	}
 	
 	/**
-	 * Mï¿½todo que faz a busca das classes e categorias na dbpedia a partir de combinaï¿½ï¿½es possï¿½veis dos tokens 
-	 * atï¿½ encontrar alguma ou esgotar as possibilidades de combinaï¿½ï¿½es.
+	 * Método que faz a busca das classes e categorias na dbpedia a partir de combinações possíveis dos tokens 
+	 * até encontrar alguma ou esgotar as possibilidades de combinações.
 	 * 
 	 * @param titleToken O texto tokenizado.
-	 * @param amountCombinationPossible A quantidade de combinaï¿½ï¿½es possï¿½veis.
+	 * @param amountCombinationPossible A quantidade de combinações possíveis.
 	 * @return Um lista de extratores contento o texto tokenizado e as suas respectivas classes e categorias.
 	 */
 	public List<Extractor> searchCombination(String titleToken, int amountCombinationPossible) {
@@ -340,7 +340,7 @@ public class SearcherConceptysDBPedia {
 			in.close();
 			pathOwlDBPedia = props.getProperty("PATH_OWL_DBPEDIA");
 		} catch (IOException e) {
-			System.err.println("Nï¿½o foi possï¿½viel localizar o OWL da DBPedia.");
+			System.err.println("Não foi possíviel localizar o OWL da DBPedia.");
 		}
 	}
 	
@@ -358,9 +358,9 @@ public class SearcherConceptysDBPedia {
 					OntologyParser.LOCAL_FILE_MODE, OntologyParser.SIMPLE_MODEL);
 			result.addAll(parser.listSuperclasses(concept));
 		} catch (InvalidOntologyPathException e) {
-			System.err.println("Nï¿½o foi possï¿½vel carregar o OWL da DBPedia.");;
+			System.err.println("Não foi possível carregar o OWL da DBPedia.");;
 		} catch (ResourceNotFoundException e) {
-			System.err.println("Nï¿½o foi possï¿½vel encontrar recursos referente ao conceito " + concept);
+			System.err.println("Não foi possível encontrar recursos referente ao conceito " + concept);
 		}
 		return result;
 	}

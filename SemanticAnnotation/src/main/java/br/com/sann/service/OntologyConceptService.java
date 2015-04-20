@@ -2,12 +2,13 @@ package br.com.sann.service;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 import br.com.sann.domain.OntologyConcept;
 import br.com.sann.domain.SpatialData;
 
 /**
- * Interface de negï¿½cio relacionada com conceitos de ontologia.
+ * Interface de negócio relacionada com conceitos de ontologia.
  * 
  * @author Hamon
  *
@@ -22,14 +23,14 @@ public interface OntologyConceptService {
 	public List<OntologyConcept> recoverAllOntologyConcept();
 	
 	/**
-	 * Persiste os conceitos de ontologias passados como parï¿½metro.
+	 * Persiste os conceitos de ontologias passados como parâmetro.
 	 * 
 	 * @param concepts Os conceitos a serem persistidos.
 	 */
 	public void saveOntologyConcepts(List<OntologyConcept> concepts);
 
 	/**
-	 * Recupera os conceitos de ontologia atravï¿½s dos ids.
+	 * Recupera os conceitos de ontologia através dos ids.
 	 * 
 	 * @param idsOntology Os ids dos conceitos a serem recuperados. 
 	 */
@@ -43,7 +44,7 @@ public interface OntologyConceptService {
 	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term);
 	
 	/**
-	 * Persiste um conceito de ontologia passado como parï¿½metro.
+	 * Persiste um conceito de ontologia passado como parâmetro.
 	 * 
 	 * @param concept O conceito a ser persistido.
 	 */
@@ -52,14 +53,14 @@ public interface OntologyConceptService {
 	/**
 	 * Recupera um conceito ontologico a partir do sua URI.
 	 * @param uri URI do conceito.
-	 * @return O conceito ontolï¿½gico ou null, caso nï¿½o seja encontrado.
+	 * @return O conceito ontológico ou null, caso não seja encontrado.
 	 */
 	public OntologyConcept recoveryOntologyByURI(String uri);
 
 	/**
-	 * Recupera os conceitos ontolÃ³gicos correspondentes as URL's passadas
-	 * @param urls As urls do conceitos.
-	 * @return Os conceitos ontolÃ³gicos.
+	 * Recupera os conceitos ontológicos correspondentes as URL's passadas
+	 * @param urlYago As urls do conceitos.
+	 * @return Os conceitos ontológicos.
 	 */
-	public Collection<OntologyConcept> recoveryOntologiesByURIs(List<String> urls);
+	public Collection<OntologyConcept> recoveryOntologiesByURIs(Set<String> urlYago);
 }

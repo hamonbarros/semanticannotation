@@ -78,6 +78,9 @@ public class BagOfWords {
 	public String extractWordList(String text) {
 		
 		PreProcessingText preProcessing = PreProcessingText.getInstance();
+		text = preProcessing.extractUnderline(text);
+		text = preProcessing.tokenizingTextWithUppercase(text);
+		text = preProcessing.extractPunctuation(text);
 		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
 		Set<String> tokenSet = new HashSet<String>();
 		tokenSet.addAll(nounsAndAdjectives);

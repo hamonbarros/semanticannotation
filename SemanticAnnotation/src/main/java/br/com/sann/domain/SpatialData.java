@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Vector;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
@@ -75,13 +76,8 @@ public class SpatialData implements Serializable {
 	@Column(name = "annotated")
 	private Boolean annotated;
 	
-	public Boolean getAnnotated() {
-		return annotated;
-	}
-
-	public void setAnnotated(Boolean annotated) {
-		this.annotated = annotated;
-	}
+	@OneToMany(mappedBy = "spatialData", cascade = { CascadeType.ALL })
+	private Collection<AttributeSpatialData> attributesService;	
 
 	@OneToMany(mappedBy = "featureType")
 	private Collection<SemanticAnnotation> semanticAnnotations;
@@ -225,6 +221,22 @@ public class SpatialData implements Serializable {
 	 */
 	public String getKeywords() {
 		return keywords;
+	}
+
+	public Boolean getAnnotated() {
+		return annotated;
+	}
+
+	public void setAnnotated(Boolean annotated) {
+		this.annotated = annotated;
+	}
+	
+	public Collection<AttributeSpatialData> getAttributesService() {
+		return attributesService;
+	}
+
+	public void setAttributesService(Collection<AttributeSpatialData> attributesService) {
+		this.attributesService = attributesService;
 	}
 
 	/**

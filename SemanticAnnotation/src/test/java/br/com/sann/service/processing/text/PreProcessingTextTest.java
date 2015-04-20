@@ -64,4 +64,35 @@ public class PreProcessingTextTest extends TestCase {
 		System.out.println(tokens);
 	}
 
+	public void testTokenizingTextWithUppercase() {
+		String text = "GeologicFormationURI";
+		assertEquals("Geologic Formation URI", preProcessing.tokenizingTextWithUppercase(text));
+		
+		text = "GeologicFormationURITest";
+		assertEquals("Geologic Formation URI Test", preProcessing.tokenizingTextWithUppercase(text));
+		
+		text = "geologicFormationType";
+		assertEquals("geologic Formation Type", preProcessing.tokenizingTextWithUppercase(text));
+		
+		text = "geo";
+		assertEquals("geo", preProcessing.tokenizingTextWithUppercase(text));
+		
+		text = "";
+		assertEquals("", preProcessing.tokenizingTextWithUppercase(text));
+		
+		text = null;
+		assertEquals(null, preProcessing.tokenizingTextWithUppercase(text));
+	}
+	
+	public void testStemming() {
+		String text = "Area del contorno del embalse";
+		assertEquals("Area del contorno del embals", preProcessing.stemming(text));
+		
+		text = "Corrected Value";
+		assertEquals("Correct Valu", preProcessing.stemming(text));
+		
+		text = "Diameter";
+		assertEquals("Diamet", preProcessing.stemming(text));
+	}
+
 }

@@ -22,13 +22,21 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 	public List<SpatialData> recoverAllSpatialData() {
 		
 		EntityManager em = JPAUtil.getEntityManager();
+		String jpql = "SELECT n FROM SpatialData n ORDER BY n.title";
+		Query q = em.createQuery(jpql);
+		List<SpatialData> spatialDatas = q.getResultList();
+		return spatialDatas;
+	}
+	
+	public List<SpatialData> recoverAllSpatialDataNotAnnotated() {
+		
+		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = "SELECT n FROM SpatialData n WHERE n.annotated = FALSE ORDER BY n.title";
 		Query q = em.createQuery(jpql);
 		List<SpatialData> spatialDatas = q.getResultList();
 		return spatialDatas;
 	}
 
-	@Override
 	public String recoverBagOfWordsByTitle(String title) {
 		
 		EntityManager em = JPAUtil.getEntityManager();
@@ -53,7 +61,6 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		return "";
 	}
 
-	@Override
 	public void updateSpatialDataList(List<SpatialData> list) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
@@ -65,7 +72,6 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		em.close();
 	}
 
-	@Override
 	public List<SpatialData> recoverySpatialDataByIDs(String ids) {
 		
 		if (ids != null && !ids.isEmpty()) {
@@ -85,15 +91,44 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		return null;
 	}
 
-	@Override
 	public void updateSpatialData(SpatialData spatialData) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
 		em.merge(spatialData);
 		em.flush();
 		em.getTransaction().commit();
-		em.close();
+		em.close();		
+	}
+
+	@Override
+	public void insertSpatialData(SpatialData spatialData) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		em.persist(spatialData);
+		em.flush();
+		em.getTransaction().commit();
+		em.close();		
+	}
+
+	@Override
+	public List<SpatialData> recoverySpatialDataByTextInfo(String name,
+			String title, String textDescription, String keywords) {
 		
+		EntityManager em = JPAUtil.getEntityManager();
+		String jpql = "SELECT n FROM SpatialData n " +
+				"      WHERE n.title LIKE :title " +
+				"			 AND n.name LIKE :name " +
+				"			 AND n.textDescription LIKE :textDescription " +
+				"			 AND n.keywords LIKE :keywords ";
+		Query q = em.createQuery(jpql);
+		q.setParameter("title", title);
+		q.setParameter("name", name);
+		q.setParameter("textDescription", textDescription);
+		q.setParameter("keywords", keywords);
+		
+		List<SpatialData> spatialDatas = q.getResultList();
+		em.close();
+		return spatialDatas;
 	}
 	
 }

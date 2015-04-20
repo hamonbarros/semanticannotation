@@ -9,9 +9,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import br.com.sann.domain.AttributeSpatialData;
 import br.com.sann.domain.Extractor;
 import br.com.sann.domain.OntologyConcept;
 import br.com.sann.domain.SemanticAnnotation;
+import br.com.sann.domain.SemanticAnnotationAttribute;
 import br.com.sann.domain.SpatialData;
 import br.com.sann.domain.Sumary;
 import br.com.sann.service.FeatureService;
@@ -24,24 +26,33 @@ import br.com.sann.service.search.dbpedia.SearcherConceptysDBPedia;
 import br.com.sann.service.search.wikipedia.SearcherWikipedia;
 import br.com.sann.service.similarity.CosineDocumentSimilarity;
 import br.com.sann.util.Combination;
+import br.com.sann.util.ParserHtml;
+import br.com.sann.util.ParserHtmlException;
 
 public class ParentProcess {
 
+	private static final String TERM_YAGO = "yago";
 	private static final double THRESHOLD_COSINE = 0.1;
 	
+	private PreProcessingText preprocessing;
+	
+	public ParentProcess() {
+		preprocessing = PreProcessingText.getInstance();
+	}
+	
 	/**
-	 * MÃ©todo que faz o processamento necessÃ¡rio para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
 	 * @param spatialData O feture type.
-	 * @param title O tï¿½tulo do feature type.
+	 * @param title O título do feature type.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
-	 * @param outConsolidated Arquivo onde estÃ£o sendo impressos os resultados consolidados.
-	 * @param out Arquivo onde estÃ£o sendo impressos os resultados resumidos.
+	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
+	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
 	 * @param sumary 
 	 * @param concepts 
-	 * @return 1 se o titulo nÃ£o possuir nenhum conceito relevante, ou 0, caso contrÃ¡rio.
-	 * @throws IOException ExceÃ§Ã£o lanÃ§ada de ID.
+	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
+	 * @throws IOException Exceção lançada de IO.
 	 */
 	public void executeSimilarity(SpatialData spatialData, String title, String bagOfWords, PrintWriter out, 
 			Sumary sumary) throws IOException {
@@ -54,7 +65,7 @@ public class ParentProcess {
 		
 		if(!extractorList.isEmpty()) {
 
-			out.println("TÃ­tulo do Feature Type: " + title);
+			out.println("Título do Feature Type: " + title);
 			boolean wasAnnotated = false;
 			for (Extractor extractor : extractorList) {
 
@@ -91,36 +102,36 @@ public class ParentProcess {
 			sumary.setCountFeature(1);
 			if(!wasAnnotated) {
 				sumary.setCountFeatureNotAnnotated(1);
+			} else {
+				spatialData.setAnnotated(Boolean.TRUE);
+				featureService.updateSpatialData(spatialData);				
 			}
 			out.println("--------------------------------------");
 			out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
-			out.println("Features nï¿½o anotados: " + sumary.getCountFeatureNotAnnotated());
+			out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
 			out.println("--------------------------------------");
-			featureService.updateSpatialData(spatialData);
 			out.println("");
 			out.flush();
 		}		
 	}	
 	
 	/**
-	 * MÃ©todo que faz o processamento necessÃ¡rio para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
 	 * @param spatialData O feture type.
-	 * @param title O tï¿½tulo do feature type.
+	 * @param title O título do feature type.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
-	 * @param outConsolidated Arquivo onde estÃ£o sendo impressos os resultados consolidados.
-	 * @param out Arquivo onde estÃ£o sendo impressos os resultados resumidos.
+	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
+	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
 	 * @param sumary 
 	 * @param concepts 
-	 * @return 1 se o titulo nÃ£o possuir nenhum conceito relevante, ou 0, caso contrï¿½rio.
-	 * @throws IOException ExceÃ§Ã£o lanÃ§ada de IO.
+	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
+	 * @throws IOException Exceção lançada de IO.
 	 */
 	public void executeSimilarityYago(SpatialData spatialData, String title, String bagOfWords, PrintWriter out, 
 			Sumary sumary) throws IOException {
-		
-		PreProcessingText preProcessing = PreProcessingText.getInstance();
-		
+			
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
 		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
 		List<String> classesUpThreshold = new LinkedList<String>();
@@ -129,15 +140,13 @@ public class ParentProcess {
 		
 		if(!extractorList.isEmpty()) {
 
-			out.println("TÃ­tulo do Feature Type: " + title);
+			out.println("Título do Feature Type: " + title);
 			boolean wasAnnotated = false;
 			for (Extractor extractor : extractorList) {
 
 				if (!extractor.getClasses().isEmpty()) {
 					extractor.setSimilarityClasses(executeCossineSimilarity(extractor.getClasses(), 
 						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()));
-					extractor.getSimilarityClasses().add(title.replaceAll(" ", ""));
-					extractor.getSimilarityClasses().add(preProcessing.extractNounsAndAdjectivesWithoutStem(title));
 					extractor.setOntologyClasses(getSimilaryConceptsYago(extractor.getSimilarityClasses(), 
 							extractor.getClassesAndCategoriesURL()));
 					classesUpThreshold.addAll(extractor.getSimilarityClasses());
@@ -167,33 +176,32 @@ public class ParentProcess {
 			sumary.setCountFeature(1);
 			if(!wasAnnotated) {
 				sumary.setCountFeatureNotAnnotated(1);
+			} else {
+				spatialData.setAnnotated(Boolean.TRUE);
+				featureService.updateSpatialData(spatialData);				
 			}
 			out.println("--------------------------------------");
 			out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
-			out.println("Features nï¿½o anotados: " + sumary.getCountFeatureNotAnnotated());
+			out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
 			out.println("--------------------------------------");
-			featureService.updateSpatialData(spatialData);
 			out.println("");
 			out.flush();
 		}		
 	}
 	
 	/**
-	 * Mï¿½todo para persistir as anotaï¿½ï¿½es semï¿½nticas construï¿½das na base de dados.
+	 * Método para persistir as anotações semânticas construídas na base de dados.
 	 * @param extractor O extrator contendo as ontologias anotadas.
-	 * @param spatialData O feature type que estï¿½ sendo anotado.
+	 * @param spatialData O feature type que está sendo anotado.
 	 */
 	private void annotatefeatures(Extractor extractor, SpatialData spatialData) {
 		SemanticAnnotationServiceImpl service = new SemanticAnnotationServiceImpl();
 		Set<SemanticAnnotation> semanticAnnotations = new HashSet<SemanticAnnotation>();
-		if (extractor.getOntologyClasses() != null && !extractor.getOntologyClasses().isEmpty()) {
-			for (OntologyConcept concept : extractor.getOntologyClasses()) {
-				SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
-				semanticAnnotations.add(sann);
-			}
-		}
-		if (extractor.getOntologyCategories() != null && !extractor.getOntologyCategories().isEmpty()) {
-			for (OntologyConcept concept : extractor.getOntologyCategories()) {
+		Set<OntologyConcept> concepts = new HashSet<OntologyConcept>();
+		concepts.addAll(extractor.getOntologyClasses());
+		concepts.addAll(extractor.getOntologyCategories());
+		if (!concepts.isEmpty()) {
+			for (OntologyConcept concept : concepts) {
 				SemanticAnnotation sann = new SemanticAnnotation(spatialData, concept);
 				semanticAnnotations.add(sann);
 			}
@@ -202,12 +210,12 @@ public class ParentProcess {
 	}
 
 	/**
-	 * Mï¿½todo que faz o processamento necessï¿½rio para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
-	 * @param title O tï¿½tulo do feature typde.
+	 * @param title O título do feature typde.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
-	 * @throws IOException Exceï¿½ï¿½o lanï¿½ada de ID.
+	 * @throws IOException Exceçã£o lançada de IO.
 	 */
 	public Set<String> executeSimilarity(String title, String bagOfWords) 
 			throws IOException {
@@ -243,12 +251,12 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Mï¿½todo que faz o processamento necessï¿½rio para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
-	 * @param title O tï¿½tulo do feature typde.
+	 * @param title O título do feature typde.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
-	 * @throws IOException Exceï¿½ï¿½o lanï¿½ada de ID.
+	 * @throws IOException Exceção lançada de IO.
 	 */
 	public Set<String> executeSimilarityYago(String title, String bagOfWords) 
 			throws IOException {
@@ -283,18 +291,18 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Mï¿½todo para extrair a similaridade dos cossenos entre a bagofwords e a informaï¿½ï¿½o 
-	 * textual das pï¿½ginas da wikipedia de cada um dos conceitos passados. Tambï¿½m ï¿½ realizada
+	 * Método para extrair a similaridade dos cossenos entre a bagofwords e a informação 
+	 * textual das páginas da wikipedia de cada um dos conceitos passados. Também é realizada
 	 * a filtragem dos conceitos relevantes a partir de um threshold sobre os cossenos.
 	 * 
-	 * @param concepts Os conceitos que serï¿½o acessados na wikipedia.
+	 * @param concepts Os conceitos que serão acessados na wikipedia.
 	 * @param type O tipo do conceito (classe ou categoria).
 	 * @param bagOfWords A  bagofwords a ser comparada.
-	 * @param title O tï¿½tulo do feature type a ser impresso no arquivo de saï¿½da.
+	 * @param title O título do feature type a ser impresso no arquivo de saída.
 	 * @param token O token que foi realizada a busca na dbpedia.
-	 * @param outConsolidated O arquivo de saï¿½da a ser impressa as informaï¿½ï¿½es.
+	 * @param outConsolidated O arquivo de saída a ser impressa as informações.
 	 * @return Uma lista contendo os conceitos que utrapassaram o threshold.
-	 * @throws IOException Exceï¿½ï¿½o lanï¿½ada caso haja algum problema na extraï¿½ï¿½o do cosseno.
+	 * @throws IOException Exceção lançada caso haja algum problema na extração do cosseno.
 	 */
 	private Set<String> executeCossineSimilarity(Set<String> concepts, String type, 
 			String bagOfWords, String title, String token) throws IOException {
@@ -318,8 +326,8 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Extrai os nomes dos conceitos do conjunto de conceitos ontolï¿½gicos.
-	 * @param concepts O conjunto dos conceitos ontolï¿½gicos.
+	 * Extrai os nomes dos conceitos do conjunto de conceitos ontológicos.
+	 * @param concepts O conjunto dos conceitos ontológicos.
 	 * @return Os nomes dos conceitos.
 	 */
 	private Set<String> extractConceptNames(Set<OntologyConcept> concepts) {
@@ -333,9 +341,9 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Imprime o toString de um conjunto lista sem os parï¿½nteses.
+	 * Imprime o toString de um conjunto lista sem os parênteses.
 	 * @param set O conjunto a ser impresso.
-	 * @return A string do conjunto sem os parï¿½nteses.
+	 * @return A string do conjunto sem os parênteses.
 	 */
 	private String printStringList(Set<String> set) {
 		
@@ -347,9 +355,9 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Mï¿½todo para identificar se o token passado corresponde a um coceito padrï¿½o.
+	 * Método para identificar se o token passado corresponde a um coceito padrão.
 	 * @param token O token a ser verificado.
-	 * @return True se corresponder, ou false, caso contrï¿½tio.
+	 * @return True se corresponder, ou false, caso contrário.
 	 */
 	private boolean isConceptDefault(String token) {
 		
@@ -360,11 +368,11 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Mï¿½todo para extrair os conceitos de ontologias cadastrados que sï¿½o similares ao conceito passado.
+	 * Método para extrair os conceitos de ontologias cadastrados que são similares ao conceito passado.
 	 * 
 	 * @param concept Os conceitos a serem pesquisados.
-	 * @param title O tï¿½tulo/token consultado.
-	 * @return O conjunto de conceitos compatï¿½veis ao conceito passado.
+	 * @param title O título/token consultado.
+	 * @return O conjunto de conceitos compatíveis ao conceito passado.
 	 */
 	private Set<OntologyConcept> getSimilaryConcepts(Set<String> concepts, String title) {
 		
@@ -421,11 +429,11 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * MÃ©ttodo para extrair os conceitos de ontologias cadastrados que sÃ£o similares ao conceito passado.
+	 * Método para extrair os conceitos de ontologias cadastrados que são similares ao conceito passado.
 	 * 
 	 * @param concepts Os conceitos a serem pesquisados.
 	 * @param classesAndCategorisURL O mapa das urls dos conceitos a serem pesquisados.
-	 * @return O conjunto de conceitos compatÃ­veis ao conceito passado.
+	 * @return O conjunto de conceitos compatíveis ao conceito passado.
 	 */
 	private Set<OntologyConcept> getSimilaryConceptsYago(Set<String> concepts, Map<String, 
 			List<String>> classesAndCategorisURL) {
@@ -439,7 +447,7 @@ public class ParentProcess {
 				List<String> urlsDbPedia = classesAndCategorisURL.get(concept);
 				if (urlsDbPedia != null) {
 					for (String urlDbPedia : urlsDbPedia) {
-						List<String> urlYago = extractUrlsYago(urlDbPedia);
+						Set<String> urlYago = extractUrlsYago(urlDbPedia);
 						similaryConcepts.addAll(conceptService.recoveryOntologiesByURIs(urlYago));
 					}
 				}
@@ -500,16 +508,21 @@ public class ParentProcess {
 		return similaryConcepts;
 	}	
 
-	private List<String> extractUrlsYago(String urlDbPedia) {
-		// TODO Auto-generated method stub
-		return null;
+	private Set<String> extractUrlsYago(String urlDbPedia) {
+		try {
+			ParserHtml parser = new ParserHtml();
+			parser.readUrl(urlDbPedia);
+			return parser.getUrlsDbpediaWithTerm(TERM_YAGO);
+		} catch (ParserHtmlException e) {
+			return new HashSet<String>();
+		}
 	}
 
 	/**
-	 * Mï¿½todo para tentar localizar algum conceito ontolï¿½gico a partir dos token
-	 * de um tï¿½tulo composto por mais de uma palavra.
+	 * Método para tentar localizar algum conceito ontológico a partir dos token
+	 * de um título composto por mais de uma palavra.
 	 * 
-	 * @param tokensConcept A lista de token que compï¿½e o tï¿½tulo.
+	 * @param tokensConcept A lista de token que compõe o título.
 	 * @return Os conceitos ontologicos que foram encontrados.
 	 */
 	private List<OntologyConcept> recoveryOntologyConceptByToken(
@@ -540,11 +553,11 @@ public class ParentProcess {
 	}
 	
 	/**
-	 * Mï¿½todo para buscar os termos do tï¿½tulo que ainda nï¿½o foram associados a nenhum conceito.
+	 * Método para buscar os termos do título que ainda não foram associados a nenhum conceito.
 	 * 
-	 * @param titleToken O tï¿½tulo a ser verificado.
-	 * @param listReturn A lista de tokens que jï¿½ possuem conceitos associados.
-	 * @return A lista de conceitos associados aos tokens que ainda nï¿½o tinham sido recuperados.
+	 * @param titleToken O título a ser verificado.
+	 * @param listReturn A lista de tokens que já possuem conceitos associados.
+	 * @return A lista de conceitos associados aos tokens que ainda não tinham sido recuperados.
 	 */
 	private List<OntologyConcept> recoveryRemainingTerms(String title,
 			List<OntologyConcept> listReturn, OntologyConceptService conceptService) {
@@ -567,9 +580,9 @@ public class ParentProcess {
 	}
 
 	/**
-	 * Extrai os nomes dos conceitos ontolï¿½gicos de uma lista.
+	 * Extrai os nomes dos conceitos ontológicos de uma lista.
 	 * 
-	 * @param listReturn A lista de conceitos ontolï¿½gicos.
+	 * @param listReturn A lista de conceitos ontológicos.
 	 * @return A lista de nomes dos conceitos.
 	 */
 	private List<String> getTitles(List<OntologyConcept> listReturn) {
@@ -579,6 +592,93 @@ public class ParentProcess {
 			listResult.add(concept.getConceptName());
 		}		
 		return listResult;
+	}
+
+	// ATRIBUTOS
+	
+	/**
+	 * Método para extrair os conceitos de ontologias cadastrados que representam o atributo de um serviço.
+	 * 
+	 * @param attributeService O atributo do serviço.
+	 * @return O conjunto de conceitos compatíveis ao atributo passado.
+	 */
+	public Set<OntologyConcept> getSimilaryConcepts(AttributeSpatialData attributeService) {
+		
+		Set<OntologyConcept> similaryConcepts = new HashSet<OntologyConcept>();
+		PreProcessingText preprocessing = PreProcessingText.getInstance();
+		String nameAttr = attributeService.getName().replaceAll("_", " ");		
+		String nameAttrProcessing = preprocessing.tokenizingTextWithUppercase(nameAttr);
+		
+		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
+		
+		if (!nameAttr.equals("")) {				
+			List<OntologyConcept> ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(nameAttr);
+			
+			if ((ontologyConcepts == null || ontologyConcepts.isEmpty()) && !nameAttr.equals(nameAttrProcessing)) {
+				ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(nameAttrProcessing);
+			}
+			
+			if ((ontologyConcepts == null || ontologyConcepts.isEmpty())) {
+				ontologyConcepts = recoveryOntologyConceptByAttribute(nameAttrProcessing, conceptService);
+			}
+			
+			if (ontologyConcepts != null && !ontologyConcepts.isEmpty()) {						
+				similaryConcepts.addAll(ontologyConcepts);
+			}
+		}
+		return similaryConcepts;
+	}
+
+	/**
+	 * Método para tentar localizar algum conceito ontológico a partir dos token
+	 * do nome de um atributo composto por mais de uma palavra.
+	 * 
+	 * @param nameAttribute O nome do atributo.
+	 * @return Os conceitos ontologicos que foram encontrados.
+	 */
+	private List<OntologyConcept> recoveryOntologyConceptByAttribute(String nameAttribute, 
+			OntologyConceptService conceptService) {
+
+		List<OntologyConcept> ontologyConceptsReturn = new ArrayList<OntologyConcept>();
+		String[] tokens = nameAttribute.split(" ");
+		int amountCombinationPossible = tokens.length - 1;
+		boolean find = false;
+		while (!find && amountCombinationPossible > 0) {
+			Combination c = new Combination(tokens, amountCombinationPossible);
+			List<String> combinations = c.combine();
+			for (String comb : combinations) {
+				if (comb.length() > 2) {					
+					List<OntologyConcept> ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(comb);
+					if (ontologyConcepts == null) {
+						ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(preprocessing.stemming(comb));
+					}
+					if(ontologyConcepts != null && !ontologyConcepts.isEmpty()) {
+						find = true;
+						ontologyConceptsReturn.addAll(ontologyConcepts);
+					}
+				}
+			}
+			amountCombinationPossible--;
+		}			
+		return ontologyConceptsReturn;
+	}
+	
+	/**
+	 * Popula o conjunto de anotações semânticas dos atributos dos serviços com os conceitos similares.
+	 * @param attribute O atributo anotado.
+	 * @param concepts Os conceitos similares.
+	 * @return O conjunto de anotações semânticas dos atributos.
+	 */
+	public Set<SemanticAnnotationAttribute> setSemanticAnnotationAttr(AttributeSpatialData attribute, 
+			Set<OntologyConcept> concepts) {
+		Set<SemanticAnnotationAttribute> sanns = new HashSet<SemanticAnnotationAttribute>();
+		for (OntologyConcept concept : concepts) {
+			SemanticAnnotationAttribute sann = new SemanticAnnotationAttribute();
+			sann.setAttributeService(attribute);
+			sann.setOntologyConcept(concept);
+			sanns.add(sann);
+		}
+		return sanns;
 	}
 	
 	public static void main(String[] args) {

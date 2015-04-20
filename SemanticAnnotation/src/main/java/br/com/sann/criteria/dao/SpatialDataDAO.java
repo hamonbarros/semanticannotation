@@ -20,6 +20,13 @@ public interface SpatialDataDAO {
 	public List<SpatialData> recoverAllSpatialData();
 	
 	/**
+	 * Recupera todos os SpatialData cadastrados não anotados.
+	 * 
+	 * @return Os SpatialData cadastrados não anotados.
+	 */
+	public List<SpatialData> recoverAllSpatialDataNotAnnotated();
+	
+	/**
 	 * Recupera a bag of words construída a partir dos SpatialData com um 
 	 * determinado título.
 	 * 
@@ -46,4 +53,21 @@ public interface SpatialDataDAO {
 	 * @return Os SpatialData solicitados.
 	 */
 	public List<SpatialData> recoverySpatialDataByIDs(String ids);
+	
+	/**
+	 * Insere a spatialdata na base de dados.
+	 * @param spatialData A spatialdata a ser inserida.
+	 */
+	void insertSpatialData(SpatialData spatialData);
+
+	/**
+	 * Recupera um SpatialData a partir do nome, titulo, descrição e keywords do FT.
+	 * @param name O nome do FT.
+	 * @param title O titulo do FT.
+	 * @param textDescription A descrição do FT.
+	 * @param keywords As palavras chaves do FT.
+	 * @return Os feature types recuperados.
+	 */
+	public List<SpatialData> recoverySpatialDataByTextInfo(String name, String title, 
+			String textDescription, String keywords);
 }
