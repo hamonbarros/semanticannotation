@@ -155,7 +155,7 @@ public class SearcherParentConcepts extends DefaultHandler {
 	}
 	
 	public static void main(String[] args) {
-		SearcherParentConcepts s = new SearcherParentConcepts("http://dbpedia.org/resource/Category:Plants");
+		SearcherParentConcepts s = new SearcherParentConcepts("http://dbpedia.org/page/Berlin");
 		System.out.println("Categorias: " + s.getParentCategories());
 		System.out.println("Classes: " + s.getParentClasses());
 	}

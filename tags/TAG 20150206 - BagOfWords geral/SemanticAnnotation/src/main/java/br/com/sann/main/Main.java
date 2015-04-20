@@ -35,7 +35,7 @@ public class Main {
 	private static final double THRESHOLD_COSINE = 0.1;
 	public static Logger log;
 	/**
-	 * MÃ©todo principal.
+	 * Método principal.
 	 * 
 	 * @param args Os argumentos de entrada.
 	 * @throws IOException 
@@ -45,7 +45,7 @@ public class Main {
 		log = Logger.getLogger(Main.class);
 		log.info("Realizando a leitura das feature types... ");
 		FeatureService service = new FeatureServiceImpl();
-		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
+		List<SpatialData> spatialDataList = service.recoverAllSpatialDataNotAnnotated();
 //		String ids = "1082";
 //		List<SpatialData> spatialDataList = service.recoverySpatialDataByIDs(ids);
 		log.info("Leitura das feature types realizada com sucesso!");
@@ -79,21 +79,21 @@ public class Main {
 	
 
 	/**
-	 * Mï¿½todo que extrai a similaridade entre os campos textuais das feature types de 
-	 * uma IDE e os textos da respectivas pï¿½ginas da wikipï¿½dia.
+	 * Método que extrai a similaridade entre os campos textuais das feature types de 
+	 * uma IDE e os textos da respectivas páginas da wikipédia.
 	 * 
-	 * @param pathTreeTagger O caminho da instalaï¿½ï¿½o do treeTagger.
+	 * @param pathTreeTagger O caminho da instalação do treeTagger.
 	 */
 	private static void extractSimilarity(String pathTreeTagger) {
 
 		log.info("Realizando a leitura das feature types... ");
 		FeatureService service = new FeatureServiceImpl();
-		List<SpatialData> spatialDataList = service.recoverAllSpatialData();
+		List<SpatialData> spatialDataList = service.recoverAllSpatialDataNotAnnotated();
 		log.info("Leitura das feature types realizada com sucesso!");
-		log.info("Realizando a leitura dos conceitos ontolï¿½gicos ... ");
+		log.info("Realizando a leitura dos conceitos ontológicos ... ");
 		OntologyConceptService conceptService = new OntologyConceptServiceImpl();
 		List<OntologyConcept> concepts = conceptService.recoverAllOntologyConcept();
-		log.info("Leitura dos conceitos ontolï¿½gicos realizada com sucesso!");
+		log.info("Leitura dos conceitos ontológicos realizada com sucesso!");
 //		PrintWriter similarityConsolidated = null;
 		PrintWriter similarity = null;
 		try {
@@ -107,7 +107,7 @@ public class Main {
 //			similarityConsolidated.println("Title|Title Tokenizing|Type|Concept|Cosine|URL Wikipedia|URL Wikipedia Search|Bag of Words");
 
 			String previousTitle = "";
-			log.info("Inicio da consulta das classes e categorias na dbpedia que contenham relevï¿½ncia com os tï¿½tulos...");
+			log.info("Inicio da consulta das classes e categorias na dbpedia que contenham relevância com os títulos...");
 			
 			StringBuffer storeBagsOfWords = new StringBuffer();
 			BagOfWords bw = null;
@@ -120,7 +120,7 @@ public class Main {
 				
 				bw = new BagOfWords(spatialData);
 				
-				// Tratamento necessï¿½rio para o ï¿½nicio do processo. Quando a storeBagsOfWords ainda estï¿½ vazia.
+				// Tratamento necessário para o inicio do processo. Quando a storeBagsOfWords ainda está vazia.
 				if (title.equals(previousTitle)) {					
 					storeBagsOfWords.append(" ");
 					storeBagsOfWords.append(bw.extractTextProperties());
@@ -136,7 +136,7 @@ public class Main {
 					executeSimilarity(previousTitle, bw.extractWordList(storeBagsOfWords.toString()), 
 							/*similarityConsolidated, */similarity, concepts, sumary);
 					
-					// Cria uma nova instï¿½ncia quando o tï¿½tulo ï¿½ diferente do anterior.
+					// Cria uma nova instância quando o título é diferente do anterior.
 					storeBagsOfWords = new StringBuffer();
 					storeBagsOfWords.append(bw.extractTextProperties());
 					previousTitle = title;
@@ -152,7 +152,7 @@ public class Main {
 			
 			similarity.println(sumary.toString());
 			
-			log.info("Finalizaï¿½ï¿½o da consulta das classes e categorias na dbpedia que contenham relevï¿½ncia com os tï¿½tulos.");
+			log.info("Finalização da consulta das classes e categorias na dbpedia que contenham relevância com os títulos.");
 			
 //			similarityConsolidated.flush();
 			similarity.flush();
@@ -166,22 +166,22 @@ public class Main {
 	}
 	
 	/**
-	 * Mï¿½todo que faz o processamento necessï¿½rio para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
-	 * @param title O tï¿½tulo do feature typde.
+	 * @param title O título do feature typde.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
-	 * @param outConsolidated Arquivo onde estï¿½o sendo impressos os resultados consolidados.
-	 * @param out Arquivo onde estï¿½o sendo impressos os resultados resumidos.
+	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
+	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
 	 * @param sumary 
 	 * @param concepts 
-	 * @return 1 se o titulo nï¿½o possuir nenhum conceito relevante, ou 0, caso contrï¿½rio.
-	 * @throws IOException Exceï¿½ï¿½o lanï¿½ada de ID.
+	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
+	 * @throws IOException Exceção lançada de IO.
 	 */
 	public static void executeSimilarity(String title, String bagOfWords, /*PrintWriter outConsolidated, */PrintWriter out, List<OntologyConcept> ontologyConcepts, Sumary sumary) 
 			throws IOException {
 		
-		log.info("[INICIO] Inï¿½cio do processamento para o tï¿½tulo: " + title);
+		log.info("[INICIO] Início do processamento para o título: " + title);
 		
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
 		List<Extractor> extractorList = searcherConceptys.searchClassesOrCategories(title);
@@ -190,7 +190,7 @@ public class Main {
 		
 		if(!extractorList.isEmpty()) {
 
-			out.println("Tï¿½tulo do Feature Type: " + title);
+			out.println("Título do Feature Type: " + title);
 			boolean wasAnnotated = false;
 			for (Extractor extractor : extractorList) {
 
@@ -227,18 +227,18 @@ public class Main {
 			out.println("");
 		}
 		
-		log.info("[FIM] Fim do processamento para o tï¿½tulo: " + title);
+		log.info("[FIM] Fim do processamento para o título: " + title);
 		
 	}
 	
 	/**
-	 * Mï¿½todo que faz o processamento necessï¿½rio para extrair a similaridade entre uma 
+	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
-	 * @param title O tï¿½tulo do feature typde.
+	 * @param title O título do feature typde.
 	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
 	 * @param ontologyConcepts 
-	 * @throws IOException Exceï¿½ï¿½o lanï¿½ada de ID.
+	 * @throws IOException Exceção lançada de IO.
 	 */
 	public static Set<OntologyConcept> executeSimilarity(String title, String bagOfWords, List<OntologyConcept> ontologyConcepts) 
 			throws IOException {
@@ -272,18 +272,18 @@ public class Main {
 	}
 
 	/**
-	 * Mï¿½todo para extrair a similaridade dos cossenos entre a bagofwords e a informaï¿½ï¿½o 
-	 * textual das pï¿½ginas da wikipedia de cada um dos conceitos passados. Tambï¿½m ï¿½ realizada
+	 * Método para extrair a similaridade dos cossenos entre a bagofwords e a informação 
+	 * textual das páginas da wikipedia de cada um dos conceitos passados. Também é realizada
 	 * a filtragem dos conceitos relevantes a partir de um threshold sobre os cossenos.
 	 * 
-	 * @param concepts Os conceitos que serï¿½o acessados na wikipedia.
+	 * @param concepts Os conceitos que serão acessados na wikipedia.
 	 * @param type O tipo do conceito (classe ou categoria).
 	 * @param bagOfWords A  bagofwords a ser comparada.
-	 * @param title O tï¿½tulo do feature type a ser impresso no arquivo de saï¿½da.
+	 * @param title O título do feature type a ser impresso no arquivo de saída.
 	 * @param token O token que foi realizada a busca na dbpedia.
-	 * @param outConsolidated O arquivo de saï¿½da a ser impressa as informaï¿½ï¿½es.
+	 * @param outConsolidated O arquivo de saída a ser impressa as informações.
 	 * @return Uma lista contendo os conceitos que utrapassaram o threshold.
-	 * @throws IOException Exceï¿½ï¿½o lanï¿½ada caso haja algum problema na extraï¿½ï¿½o do cosseno.
+	 * @throws IOException Exceção lançada caso haja algum problema na extração do cosseno.
 	 */
 	private static Set<String> executeCossineSimilarity(Set<String> concepts, String type, 
 			String bagOfWords, String title, String token/*, PrintWriter outConsolidated*/) throws IOException {
@@ -311,9 +311,9 @@ public class Main {
 	}
 	
 	/**
-	 * Imprime o toString de um conjunto lista sem os parï¿½nteses.
+	 * Imprime o toString de um conjunto lista sem os parênteses.
 	 * @param set O conjunto a ser impresso.
-	 * @return A string do conjunto sem os parï¿½nteses.
+	 * @return A string do conjunto sem os parênteses.
 	 */
 	private static String printStringList(Set<String> set) {
 		
@@ -325,8 +325,8 @@ public class Main {
 	}
 	
 	/**
-	 * Extrai os nomes dos conceitos do conjunto de conceitos ontolï¿½gicos.
-	 * @param concepts O conjunto dos conceitos ontolï¿½gicos.
+	 * Extrai os nomes dos conceitos do conjunto de conceitos ontológicos.
+	 * @param concepts O conjunto dos conceitos ontológicos.
 	 * @return Os nomes dos conceitos.
 	 */
 	private static Set<String> extractConceptNames(Set<OntologyConcept> concepts) {
@@ -340,9 +340,9 @@ public class Main {
 	}
 	
 	/**
-	 * Mï¿½todo para identificar se o token passado corresponde a um coceito padrï¿½o.
+	 * Método para identificar se o token passado corresponde a um coceito padrão.
 	 * @param token O token a ser verificado.
-	 * @return True se corresponder, ou false, caso contrï¿½tio.
+	 * @return True se corresponder, ou false, caso contrário.
 	 */
 	private static boolean isConceptDefault(String token) {
 		
@@ -353,11 +353,11 @@ public class Main {
 	}
 	
 	/**
-	 * Mï¿½todo para extrair os conceitos de ontologias cadastrados que sï¿½o similares ao conceito passado.
+	 * Método para extrair os conceitos de ontologias cadastrados que são similares ao conceito passado.
 	 * 
 	 * @param concepts A lista de conceitos cadastrados.
 	 * @param concept Os conceitos a serem pesquisados.
-	 * @return O conjunto de conceitos compatï¿½veis ao conceito passado.
+	 * @return O conjunto de conceitos compatíveis ao conceito passado.
 	 */
 	private static Set<OntologyConcept> getSimilaryConcepts(List<OntologyConcept> ontologyConcepts, Set<String> concepts) {
 		

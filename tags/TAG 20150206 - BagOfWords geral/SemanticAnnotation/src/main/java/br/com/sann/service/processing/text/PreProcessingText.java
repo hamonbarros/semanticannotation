@@ -26,7 +26,7 @@ import org.apache.lucene.util.Version;
 import br.com.sann.main.Main;
 
 /**
- * Classe responsÃ¡vel por prÃ©-processar um determinado texto.
+ * Classe responsável por pré-processar um determinado texto.
  * 
  * @author Hamon
  *
@@ -39,7 +39,7 @@ public class PreProcessingText {
 	private final String[] commonWords = {"area", "level", "point", "polygon", "line", "zoon"};
 
 	/**
-	 * Mï¿½todo construtor privado.
+	 * Método construtor privado.
 	 */
 	private PreProcessingText() {
 		loadPropertyTreeTagger();
@@ -53,9 +53,9 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Realiza o prï¿½-processamento do texto passado como parï¿½metro.
-	 * @param text O texto a ser prï¿½-processado.
-	 * @return O texto prï¿½-processado.
+	 * Realiza o pré-processamento do texto passado como parâmetro.
+	 * @param text O texto a ser pré-processado.
+	 * @return O texto pré-processado.
 	 */
 	public List<String> preProcessing(String text) {
 		
@@ -66,10 +66,10 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Realiza o prï¿½-processamento do texto passado como parï¿½metro sem a
-	 * extraï¿½ï¿½o de escalas.
-	 * @param text O texto a ser prï¿½-processado.
-	 * @return O texto prï¿½-processado.
+	 * Realiza o pré-processamento do texto passado como parâmetro sem a
+	 * extração de escalas.
+	 * @param text O texto a ser pré-processado.
+	 * @return O texto pré-processado.
 	 */
 	public String preProcessingWithoutExtractScale(String text) {
 		
@@ -79,9 +79,9 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Realiza a extraï¿½ï¿½o dos substantivos e adjetivos de um texto
+	 * Realiza a extração dos substantivos e adjetivos de um texto
 	 * sem fazer uso de stem.
-	 * @param text O texto a ser prï¿½-processado.
+	 * @param text O texto a ser pré-processado.
 	 * @return Os substantivos e adjetivos do texto.
 	 */
 	public String extractNounsAndAdjectivesWithoutStem(String text) {
@@ -92,7 +92,7 @@ public class PreProcessingText {
 		
 	}
 	/**
-	 * Mï¿½todo para carregar a propriedade que identifica a localizaï¿½ï¿½o do
+	 * Método para carregar a propriedade que identifica a localização do
 	 * TreeTagger no sistema operaciona.
 	 */
 	private void loadPropertyTreeTagger() {
@@ -108,11 +108,11 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Mï¿½todo que tokeniza o texto passado como parametro e retira as stopwords 
-	 * e realiza a operaï¿½ï¿½o de Stemming.
+	 * Método que tokeniza o texto passado como parametro e retira as stopwords 
+	 * e realiza a operação de Stemming.
 	 * 
 	 * @param text O texto a ser tokenizado.
-	 * @param luceneVersion A versï¿½o do lucene.
+	 * @param luceneVersion A versão do lucene.
 	 * @return Uma lista contendo o texto tokenizado.
 	 */
 	private List<String> tokenizing(String text, Version luceneVersion) {
@@ -143,6 +143,32 @@ public class PreProcessingText {
 		return extractWordsDefault(tokens);
 	}
 
+	
+	/**
+	 * Método que realiza operação de stemming no texto passado como parametro. 
+	 * 
+	 * @param text O texto a ser realizada a operação de stemming.
+	 * @return O texto com stemming.
+	 */
+	public String stemming(String text) {
+
+		String result = "";			
+		TokenStream tokenStream = new StandardTokenizer(Version.LUCENE_4_9, new StringReader(text));
+		tokenStream = new PorterStemFilter(tokenStream);
+		CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
+
+		try {
+			tokenStream.reset();
+			while (tokenStream.incrementToken()) {
+				result += token.toString() + " ";
+			}
+			tokenStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}	
+		return result.trim();
+	}
+
 	/**
 	 * Recupera as palavras de um texto que terminam com y ou ies.
 	 * @param text O texto a ser verificado.
@@ -166,8 +192,8 @@ public class PreProcessingText {
 	
 	/**
 	 * Substitui uma palavra em uma lista que contenha o mesmo radical de outra palavra com y no final.
-	 * @param word A palavra terminada com y cujo radical serï¿½ pesquisado na lista.
-	 * @param tokens A lista de palavras que serï¿½ pesquisada.
+	 * @param word A palavra terminada com y cujo radical será pesquisado na lista.
+	 * @param tokens A lista de palavras que será pesquisada.
 	 */
 	protected void replaceSimilarWordWithYFinish(String word, List<String> tokens) {
 		if (word != null && word.length() > 3 && tokens != null) {			
@@ -182,11 +208,11 @@ public class PreProcessingText {
 	
 
 	/**
-	 * Mï¿½todo para extrair os sujeitos e os adjetivos da lista de tokens passada como parï¿½metro.
+	 * Método para extrair os sujeitos e os adjetivos da lista de tokens passada como parâmetro.
 	 * 
 	 * @param tokens Os tokens a serem filtrados.
-	 * @param pathTreeTagger O caminho da instalaï¿½ï¿½o do treeTagger.
-	 * @return A lista de tokens que sï¿½o sujeitos e adjetivos.
+	 * @param pathTreeTagger O caminho da instalação do treeTagger.
+	 * @return A lista de tokens que são sujeitos e adjetivos.
 	 */
 	public List<String> extractNounsAndAdjectives(List<String> tokens) { 
 		final List<String> nounsAndAdjectives = new ArrayList<String>();
@@ -203,7 +229,7 @@ public class PreProcessingText {
 			});
 			tt.process(tokens);
 		} catch (IOException io) {
-			System.err.println("Nï¿½o foi possï¿½viel localizar a intalaï¿½ï¿½o do TreeTagger.");
+			System.err.println("Não foi possível localizar a intalação do TreeTagger.");
 		} catch (TreeTaggerException e) {
 			System.err.println("Houve um problema no TreeTagger.");
 			e.printStackTrace();
@@ -214,7 +240,7 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Monta uma string com todos os tokens da lista separados por um espaï¿½o.
+	 * Monta uma string com todos os tokens da lista separados por um espaço.
 	 * 
 	 * @param tokens Os tokens a serem impressos.
 	 * @return Uma string com os tokens da lista.
@@ -228,12 +254,15 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Mï¿½todo que quebra uma palavra que tenha pelo menos uma letra maiï¿½scula no meio em duas ou mais palavras.
-	 * Ex.: SnowIce serï¿½ quebrada em Snow e Ice.
-	 * @param text O texto a ser quebrado, caso possua um ou mais caracteres maiï¿½sculos no meio.
-	 * @return Os tokens separados por espaï¿½o, caso possua um ou mais caracteres maiï¿½sculos no meio.
+	 * Método que quebra uma palavra que tenha pelo menos uma letra maiúscula no meio em duas ou mais palavras.
+	 * Ex.: SnowIce será quebrada em Snow e Ice.
+	 * @param text O texto a ser quebrado, caso possua um ou mais caracteres maiúsculos no meio.
+	 * @return Os tokens separados por espaço, caso possua um ou mais caracteres maiúsculos no meio.
 	 */
 	public String tokenizingTextWithUppercase(String text) {
+		if (text == null) {
+			return null;
+		}
 		if(!text.matches("[a-zA-Z][a-z]*[A-Z][a-zA-Z]*")) {
 			return text;
 		} else {			
@@ -241,13 +270,34 @@ public class PreProcessingText {
 			Set<String> tokens = new LinkedHashSet<String>();
 			if (text.length() > 1) {		
 				int inicio = 0;
+				boolean isUpperCaseSequence = false;
+				String sigla = ""; 
+				Character charInicio = text.charAt(inicio);
+				if (Character.isUpperCase(charInicio)) {
+					isUpperCaseSequence = true;
+					sigla += charInicio;
+				}
 				for(int i = 1; i < text.length(); i++){
 					Character charac = text.charAt(i);
 					if(Character.isUpperCase(charac)){
-						String sFirst = text.substring(inicio, i);
-						textReturn = text.substring(i);
-						tokens.add(sFirst);
-						inicio = i;
+						if (isUpperCaseSequence) {
+							sigla += charac;
+						} else {							
+							String sFirst = text.substring(inicio, i);
+							textReturn = text.substring(i);
+							tokens.add(sFirst);
+							inicio = i;
+							isUpperCaseSequence = true;
+							sigla = charac.toString();
+						}
+					} else {
+						if (!sigla.isEmpty() && sigla.length() > 1) {
+							textReturn = text.substring(i-1);
+							tokens.add(sigla.substring(0, sigla.length()- 1));
+							inicio = i;
+							sigla = "";
+						}
+						isUpperCaseSequence = false;
 					}
 				}   
 				tokens.add(textReturn);
@@ -257,7 +307,7 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Insere os tokens separados por espaï¿½os de um texto em um lista de tokens.
+	 * Insere os tokens separados por espaços de um texto em um lista de tokens.
 	 * @param text O texto a ser tokenizado.
 	 * @return Uma lista de tokens.
 	 */
@@ -271,7 +321,7 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Insere os tokens separados por espaï¿½os de uma lista de strings em um conjunto de tokens.
+	 * Insere os tokens separados por espaços de uma lista de strings em um conjunto de tokens.
 	 * @param text O texto a ser tokenizado.
 	 * @return Um conjunto de tokens.
 	 */
@@ -288,9 +338,9 @@ public class PreProcessingText {
 	}
 
 	/**
-	 * Extrai as informaï¿½ï¿½es referentes a escala dos texto passado.
-	 * @param text Texto cujas informaï¿½ï¿½es de escala serï¿½o extraï¿½das, caso exista.
-	 * @return O texto com as informaï¿½ï¿½es de escala extraï¿½das, caso exista.
+	 * Extrai as informações referentes a escala dos texto passado.
+	 * @param text Texto cujas informações de escala serão extraídas, caso exista.
+	 * @return O texto com as informações de escala extraídas, caso exista.
 	 */
 	public String extractScale(String text) {
 		String textReturn = text.replaceAll("\\(*[\\d]:([\\d]+[\\D])*[\\d]*\\)*[\\s]*", "");
@@ -299,9 +349,9 @@ public class PreProcessingText {
 	}
 
 	/**
-	 * Extrai palavras referentes aos termos comuns da ï¿½rea de dados geogrï¿½ficos.
-	 * @param tokens Os tokens cujos termos comuns serï¿½o extraï¿½dos, caso exista.
-	 * @return Os tokens com os termos comuns extraï¿½dos, caso exista.
+	 * Extrai palavras referentes aos termos comuns da área de dados geográficos.
+	 * @param tokens Os tokens cujos termos comuns serão extraídos, caso exista.
+	 * @return Os tokens com os termos comuns extraídos, caso exista.
 	 */
 	public List<String> extractWordsDefault(List<String> tokens) {
 		
@@ -322,7 +372,7 @@ public class PreProcessingText {
 	}
 	
 	/**
-	 * Mï¿½todo para normalizar um determinado texto colocando-o para minï¿½sculo e 
+	 * Método para normalizar um determinado texto colocando-o para minúsculo e 
 	 * separando as palavras compostas.
 	 * 
 	 * @param text O texto a ser normalizado.
@@ -331,6 +381,55 @@ public class PreProcessingText {
 	public String normalizeText(String text) {
 
 		return tokenizingTextWithUppercase(text).toLowerCase();
+	}
+
+	/**
+	 * Método que verifica se o texto é composto de underline. Se for, ele substitui
+	 * o underline por um espaço em branco.
+	 * @param text O texto a ser verificado.
+	 * @return O texto alterado, caso possua algum underline.
+	 */
+	public String extractUnderline(String text) {
+		return replaceSubstring(text, "_", " ");
+	}
+	
+	/**
+	 * Método que verifica se o texto é composto de sinais de pontuação. Se for, ele substitui
+	 * o sinal por um espaço em branco.
+	 * @param text O texto a ser verificado.
+	 * @return O texto alterado, caso possua algum sinal de pontuação.
+	 */
+	public String extractPunctuation(String text) {
+		text = replaceSubstring(text, ":", " ");
+		text = replaceSubstring(text, ".", " ");
+		text = replaceSubstring(text, ",", " ");
+		text = replaceSubstring(text, ";", " ");
+		text = replaceSubstring(text, "(", " ");
+		text = replaceSubstring(text, ")", " ");
+		text = replaceSubstring(text, "[", " ");
+		text = replaceSubstring(text, "]", " ");
+		text = replaceSubstring(text, "{", " ");
+		text = replaceSubstring(text, "}", " ");
+		return text;
+	}
+	
+	/**
+	 * Substitui os trechos que contêm uma determinada palavra em um texto por
+	 * um novo valor.
+	 * 
+	 * @param text
+	 *            O texto a ser verificado.
+	 * @param substring
+	 *            A palavra a ser substituida.
+	 * @param value
+	 *            O valor a substituir.
+	 * @return O texto alterado, caso exista alguma palavra a ser substituida.
+	 */
+	private String replaceSubstring(String text, String substring, String value) {
+		if(text.indexOf(substring) >= 0) {
+			text = text.replaceAll(substring, value);
+		}
+		return text;
 	}
 
 }

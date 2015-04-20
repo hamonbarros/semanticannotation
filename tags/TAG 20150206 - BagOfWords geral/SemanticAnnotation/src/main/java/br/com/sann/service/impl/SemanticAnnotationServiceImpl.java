@@ -1,33 +1,40 @@
 package br.com.sann.service.impl;
 
+import java.util.List;
 import java.util.Set;
 
 import br.com.sann.criteria.dao.SemanticAnnotationDAO;
 import br.com.sann.criteria.dao.impl.SemanticAnnotationDAOImpl;
 import br.com.sann.domain.SemanticAnnotation;
+import br.com.sann.service.SemanticAnnotationService;
 
 /**
- * Classe de negï¿½cio relacionado com anotaï¿½ï¿½es semï¿½nticas.
+ * Classe de negócio relacionado com anotações semânticas.
  * 
  * @author Hamon
  *
  */
-public class SemanticAnnotationServiceImpl implements SemanticAnnotationDAO{
+public class SemanticAnnotationServiceImpl implements SemanticAnnotationService{
 	
 	private SemanticAnnotationDAO dao;
 	
 	/**
-	 * Construtor padrÃ£o.
+	 * Construtor padrão.
 	 */
 	public SemanticAnnotationServiceImpl() {
 		
 		dao = new SemanticAnnotationDAOImpl();
 	}
-
+	
 	@Override
 	public void saveSemanticAnnotations(Set<SemanticAnnotation> semanticAnnotations) {
-		
 		dao.saveSemanticAnnotations(semanticAnnotations);
+		
+	}
+
+	@Override
+	public List<SemanticAnnotation> recoveryAnnotations(Integer idSpatialData) {
+		return dao.recoveryAnnotations(idSpatialData);
 	}
 
 }

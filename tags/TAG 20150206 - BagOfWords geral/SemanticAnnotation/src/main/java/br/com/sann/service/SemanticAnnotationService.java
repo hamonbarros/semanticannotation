@@ -1,10 +1,9 @@
 package br.com.sann.service;
 
 import java.util.List;
+import java.util.Set;
 
-import br.com.sann.domain.OntologyConcept;
 import br.com.sann.domain.SemanticAnnotation;
-import br.com.sann.domain.SpatialData;
 
 /**
  * Interface de negócio relacionada com anotações semânticas.
@@ -20,6 +19,15 @@ public interface SemanticAnnotationService {
 	 * 
 	 * @param semanticAnnotations As anotações semânticas a serem persistidos.
 	 */
-	public void saveSemanticAnnotations(List<SemanticAnnotation> semanticAnnotations);
+	public void saveSemanticAnnotations(Set<SemanticAnnotation> semanticAnnotations);
+	
+	/**
+	 * Recupera as anotações de um feature type.
+	 * 
+	 * @param idSpatialData
+	 *            Id do feature type a ser recuperado.
+	 * @return As anotações semânticas de um feature type.
+	 */
+	public List<SemanticAnnotation> recoveryAnnotations(Integer idSpatialData);
 
 }

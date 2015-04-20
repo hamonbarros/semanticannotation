@@ -3,6 +3,7 @@ package br.com.sann.criteria.dao.impl;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -12,14 +13,13 @@ import br.com.sann.criteria.util.JPAUtil;
 import br.com.sann.domain.OntologyConcept;
 
 /**
- * Classe de persitÃªncia da entidade OntologyConcept.
+ * Classe de persitência da entidade OntologyConcept.
  * 
  * @author Hamon
  * 
  */
 public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 
-	@Override
 	public List<OntologyConcept> recoverAllOntologyConcept() {
 		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = "SELECT n FROM OntologyConcept n ORDER BY n.conceptName";
@@ -29,7 +29,6 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		return concepts;
 	}
 
-	@Override
 	public void saveOntologyConcepts(List<OntologyConcept> concepts) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
@@ -42,7 +41,6 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		JPAUtil.closeEntityManager();
 	}
 
-	@Override
 	public List<OntologyConcept> recoveryOntolgyConceptByIds(String[] idsOntology) {
 
 		EntityManager em = JPAUtil.getEntityManager();
@@ -58,7 +56,6 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		return concepts;
 	}
 
-	@Override
 	public List<OntologyConcept> recoveryOntolgyConceptByTerm(String term) {
 		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = "SELECT n FROM OntologyConcept n " +
@@ -71,7 +68,6 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		return concepts;
 	}
 
-	@Override
 	public void saveOntologyConcept(OntologyConcept concept) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
@@ -82,7 +78,6 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		JPAUtil.closeEntityManager();	
 	}
 
-	@Override
 	public OntologyConcept recoveryOntologyByURI(String uri) {
 		
 		EntityManager em = JPAUtil.getEntityManager();
@@ -99,8 +94,7 @@ public class OntologyConceptDAOImpl implements OntologyConceptDAO {
 		return null;
 	}
 
-	@Override
-	public Collection<OntologyConcept> recoveryOntologiesByURIs(List<String> urls) {
+	public Collection<OntologyConcept> recoveryOntologiesByURIs(Set<String> urls) {
 		List<OntologyConcept> concepts = new ArrayList<OntologyConcept>();
 		for (String url : urls) {
 			OntologyConcept concept = recoveryOntologyByURI(url);

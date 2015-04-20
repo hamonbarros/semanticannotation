@@ -81,6 +81,9 @@ public class Service implements Serializable {
 
 	@Column(name = "metadataIdentifier")
 	protected String metadataIdentifier;
+	
+	@Column(name = "processed")
+	private Boolean processed;
 
 	@Transient
 	private boolean isFilled = false;
@@ -243,6 +246,14 @@ public class Service implements Serializable {
 
 	public void setKeywords(String keywords) {
 		this.keywords = keywords;
+	}
+	
+	public Boolean getProcessed() {
+		return processed;
+	}
+
+	public void setProcessed(Boolean processed) {
+		this.processed = processed;
 	}
 
 }

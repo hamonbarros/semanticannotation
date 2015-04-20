@@ -7,13 +7,14 @@
         http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         
 	<persistence-unit name="sann" transaction-type="RESOURCE_LOCAL">
+	    
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="validate" />
 			<property name="hibernate.show_sql" value="false" />
 			<property name="hibernate.format_sql" value="false" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/yago" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/wfs" />
 			<property name="javax.persistence.jdbc.user" value="postgres" />
 			<property name="javax.persistence.jdbc.password" value="admin" />
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />

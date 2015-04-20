@@ -1,9 +1,11 @@
 package br.com.sann.service.ontology;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -13,9 +15,8 @@ import java.util.Set;
 import java.util.Vector;
 
 import br.com.sann.domain.OntologyConcept;
-import br.com.sann.service.OntologyConceptService;
-import br.com.sann.service.impl.OntologyConceptServiceImpl;
 
+import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.ontology.ConversionException;
 import com.hp.hpl.jena.ontology.DatatypeProperty;
 import com.hp.hpl.jena.ontology.Individual;
@@ -25,11 +26,12 @@ import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.ontology.OntProperty;
 import com.hp.hpl.jena.ontology.OntResource;
-import com.hp.hpl.jena.ontology.Ontology;
 import com.hp.hpl.jena.rdf.model.InfModel;
+import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.reasoner.ReasonerRegistry;
+import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 /**
@@ -436,12 +438,22 @@ public class OntologyParser {
 	
 	public static void main(String[] args) {
 
-		try {
-			String url = "http://www.daml.org/services/owl-s/1.0DL/Process.owl";
-			String path = "C:/dbpedia_2014.owl";
+	    String fileNameOrUri = "C:/yago_en.nt";
+	    Model model = ModelFactory.createDefaultModel();
+	    InputStream is = FileManager.get().open(fileNameOrUri);
+	    if (is != null) {
+	        model.read(is, null, "N-TRIPLE");
+	        model.write(System.out, "TURTLE");
+	    } else {
+	        System.err.println("cannot read " + fileNameOrUri);;
+	    }			
 
-			OntologyParser parser = new OntologyParser(path,
-					OntologyParser.LOCAL_FILE_MODE, OntologyParser.SIMPLE_MODEL);
+//		try {
+//			String url = "http://www.daml.org/services/owl-s/1.0DL/Process.owl";
+//			String path = "C:/dbpedia_2014.owl";
+//
+//			OntologyParser parser = new OntologyParser(path,
+//					OntologyParser.LOCAL_FILE_MODE, OntologyParser.SIMPLE_MODEL);
 //			ExtendedIterator<OntClass> imports = parser.getModel()
 //					.listNamedClasses();
 //			System.out.println("Concepts");
@@ -459,12 +471,12 @@ public class OntologyParser {
 //			}
 //			System.out.println("\nNumber of concepts: " + cont);
 			
-			System.out.println(parser.listSuperclasses("Island"));
-		}
-
-		catch (Exception e) {
-			e.printStackTrace();
-		}
+//			System.out.println(parser.listSuperclasses("Island"));
+//		}
+//
+//		catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 
 }
