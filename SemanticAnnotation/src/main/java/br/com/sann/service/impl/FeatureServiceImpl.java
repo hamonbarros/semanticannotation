@@ -55,7 +55,6 @@ public class FeatureServiceImpl implements FeatureService{
 		
 	}
 
-	@Override
 	public List<SpatialData> recoverySpatialDataByTextInfo(String name,
 			String title, String textDescription, String keywords) {
 		return dao.recoverySpatialDataByTextInfo(name, title, textDescription, keywords);

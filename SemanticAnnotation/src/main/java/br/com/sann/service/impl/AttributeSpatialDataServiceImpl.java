@@ -30,13 +30,11 @@ public class AttributeSpatialDataServiceImpl implements AttributeSpatialDataServ
 		spatialDataDao = new SpatialDataDAOImpl();
 	}
 
-	@Override
 	public List<AttributeSpatialData> recoverAllAttributes() {
 
 		return dao.recoverAllAttributeService();
 	}
 
-	@Override
 	public void insertAttributesServiceList(List<SpatialData> list) {
 		for (SpatialData spatialData : list) {
 			spatialDataDao.insertSpatialData(spatialData);			
@@ -44,12 +42,10 @@ public class AttributeSpatialDataServiceImpl implements AttributeSpatialDataServ
 		}
 	}
 
-	@Override
 	public void updateAttributeService(AttributeSpatialData attributeService) {
 		dao.updateAttributeService(attributeService);
 	}
 
-	@Override
 	public List<AttributeSpatialData> recoverAttributesBySpatialData(
 			Integer idSpatialData) {
 		return dao.recoverAttributesBySpatialData(idSpatialData);

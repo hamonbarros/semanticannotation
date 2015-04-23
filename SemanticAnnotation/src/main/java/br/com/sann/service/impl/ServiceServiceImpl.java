@@ -29,7 +29,6 @@ public class ServiceServiceImpl implements ServiceService{
 		dao = new ServiceDAOImpl();
 	}
 
-	@Override
 	public List<Service> recoverAllServices() {
 		
 		return dao.recoverAllServices();

@@ -26,17 +26,14 @@ public class SemanticAnnotationAttrServiceImpl implements SemanticAnnotationAttr
 		dao = new SemanticAnnotationAttributeDAOImpl();
 	}
 	
-	@Override
 	public void saveSemanticAnnotationsAttrs(Set<SemanticAnnotationAttribute> semanticAnnotations) {
 		dao.saveSemanticAnnotationsAttrs(semanticAnnotations);		
 	}
 
-	@Override
 	public List<Object[]> executeQuery(String query) {
 		return dao.executeQuery(query);
 	}
 
-	@Override
 	public List<SemanticAnnotationAttribute> recoveryAnnotations(
 			Integer idAttribute) {
 		return dao.recoveryAnnotations(idAttribute);

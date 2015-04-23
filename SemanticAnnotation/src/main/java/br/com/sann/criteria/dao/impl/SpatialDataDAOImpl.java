@@ -100,7 +100,6 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		em.close();		
 	}
 
-	@Override
 	public void insertSpatialData(SpatialData spatialData) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
@@ -110,7 +109,6 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		em.close();		
 	}
 
-	@Override
 	public List<SpatialData> recoverySpatialDataByTextInfo(String name,
 			String title, String textDescription, String keywords) {
 		

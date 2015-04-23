@@ -26,13 +26,11 @@ public class SemanticAnnotationServiceImpl implements SemanticAnnotationService{
 		dao = new SemanticAnnotationDAOImpl();
 	}
 	
-	@Override
 	public void saveSemanticAnnotations(Set<SemanticAnnotation> semanticAnnotations) {
 		dao.saveSemanticAnnotations(semanticAnnotations);
 		
 	}
 
-	@Override
 	public List<SemanticAnnotation> recoveryAnnotations(Integer idSpatialData) {
 		return dao.recoveryAnnotations(idSpatialData);
 	}

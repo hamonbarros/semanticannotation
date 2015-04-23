@@ -21,7 +21,6 @@ import br.com.sann.domain.SemanticAnnotationAttribute;
  */
 public class SemanticAnnotationAttributeDAOImpl implements SemanticAnnotationAttributeDAO {
 
-	@Override
 	public void saveSemanticAnnotationsAttrs(Set<SemanticAnnotationAttribute> semanticAnnotations) {
 		EntityManager em = JPAUtil.getEntityManager();
 		em.getTransaction().begin();
@@ -33,7 +32,6 @@ public class SemanticAnnotationAttributeDAOImpl implements SemanticAnnotationAtt
 		JPAUtil.closeEntityManager();
 	}
 	
-	@Override
 	public List<Object[]> executeQuery(String query) {
 		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = query;
@@ -41,7 +39,6 @@ public class SemanticAnnotationAttributeDAOImpl implements SemanticAnnotationAtt
 		return q.getResultList();
 	}
 
-	@Override
 	public List<SemanticAnnotationAttribute> recoveryAnnotations(Integer idAttribute) {
 		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = "SELECT n FROM SemanticAnnotationAttribute n WHERE n.attributeService.id = :idAttribute";
