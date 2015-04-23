@@ -17,7 +17,6 @@ import br.com.sann.domain.Service;
  */
 public class ServiceDAOImpl implements ServiceDAO{
 
-	@Override
 	public List<Service> recoverAllServices() {
 
 		EntityManager em = JPAUtil.getEntityManager();

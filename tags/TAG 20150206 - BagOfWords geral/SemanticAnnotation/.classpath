@@ -4,7 +4,6 @@
 	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
 	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
 	<classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="var" path="M2_REPO/org/geonetwork/jeeves/1.0.0/jeeves-1.0.0.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.8.1/jsoup-1.8.1.jar"/>
 	<classpathentry kind="var" path="M2_REPO/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar"/>
@@ -106,5 +105,10 @@
 	<classpathentry kind="lib" path="E:/Dados/Hamon/Mestrado/workspace/SemanticAnnotation/lib/common-2.1.0.jar"/>
 	<classpathentry kind="lib" path="E:/Dados/Hamon/Mestrado/workspace/SemanticAnnotation/lib/xsd-2.1.1.jar"/>
 	<classpathentry kind="lib" path="E:/Dados/Hamon/Mestrado/workspace/SemanticAnnotation/lib/picocontainer-3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_11">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

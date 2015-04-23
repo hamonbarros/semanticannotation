@@ -29,7 +29,6 @@ public class SemanticAnnotationDAOImpl implements SemanticAnnotationDAO {
 		JPAUtil.closeEntityManager();
 	}
 
-	@Override
 	public List<SemanticAnnotation> recoveryAnnotations(Integer idSpatialData) {
 		EntityManager em = JPAUtil.getEntityManager();
 		String jpql = "SELECT n FROM SemanticAnnotation n WHERE n.featureType.id = :idSpatialData";
