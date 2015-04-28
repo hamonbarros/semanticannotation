@@ -100,9 +100,19 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.jena</groupId>
-			<artifactId>jena-core</artifactId>
+			<artifactId>apache-jena-libs</artifactId>
 			<version>2.12.1</version>
 		</dependency>
+	    <dependency>
+		    <groupId>org.apache.jena</groupId>
+		    <artifactId>jena-tdb</artifactId>
+		    <version>1.1.2</version>
+	    </dependency>		
+		<dependency>
+		    <groupId>org.apache.jena</groupId>
+		    <artifactId>jena-sdb</artifactId>
+		    <version>1.5.2</version>
+		</dependency>	    
 		<dependency>
 		    <groupId>xml-apis</groupId>
 		    <artifactId>xml-apis</artifactId>

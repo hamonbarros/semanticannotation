@@ -1,0 +1,141 @@
+26/04/15 22:47 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
+26/04/15 22:48 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
+26/04/15 22:49 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
+26/04/15 22:58 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
+26/04/15 22:58 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
+26/04/15 22:59 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
+27/04/15 01:07 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - (line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:10 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <NT>
+27/04/15 01:10 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/NT(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:10 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <N-TRIPLE>
+27/04/15 01:10 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/N-TRIPLE(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:11 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <RDF/XML>
+27/04/15 01:11 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/RDF/XML(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:11 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - (line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:12 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - (line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:12 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <N-TRIPLES>
+27/04/15 01:12 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/N-TRIPLES(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 2 column 68): {W136} Relative URIs are not permitted in RDF: specifically <lang>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 2 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 4 column 19): {E202} Expecting XML start or end element(s). String data "DBpedia : " not allowed. Maybe there should be an rdf:parseType='Literal' for embedding mixed XML content in RDF. Maybe a striping error.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 5 column 37): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W136} Relative URIs are not permitted in RDF: specifically <name>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W136} Relative URIs are not permitted in RDF: specifically <content>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 6 column 40): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W136} Relative URIs are not permitted in RDF: specifically <name>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W136} Relative URIs are not permitted in RDF: specifically <content>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 7 column 39): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W136} Relative URIs are not permitted in RDF: specifically <name>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W136} Relative URIs are not permitted in RDF: specifically <content>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 8 column 76): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W136} Relative URIs are not permitted in RDF: specifically <http-equiv>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W136} Relative URIs are not permitted in RDF: specifically <content>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 10 column 105): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 11 column 117): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W136} Relative URIs are not permitted in RDF: specifically <media>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 12 column 114): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 13 column 68): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W136} Relative URIs are not permitted in RDF: specifically <title>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 14 column 124): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W136} Relative URIs are not permitted in RDF: specifically <title>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 15 column 126): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W136} Relative URIs are not permitted in RDF: specifically <title>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 16 column 139): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W136} Relative URIs are not permitted in RDF: specifically <rel>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W136} Relative URIs are not permitted in RDF: specifically <title>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 18 column 77): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 18 column 77): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 18 column 77): {W136} Relative URIs are not permitted in RDF: specifically <src>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 18 column 77): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 19 column 77): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 19 column 77): {W102} unqualified use of rdf:type is deprecated.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 19 column 77): {W136} Relative URIs are not permitted in RDF: specifically <src>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 19 column 77): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 22 column 28): {W136} Relative URIs are not permitted in RDF: specifically <onload>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 22 column 28): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 23 column 1): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 23 column 23): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 24 column 2): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 24 column 19): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 25 column 3): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 25 column 25): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 26 column 4): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 26 column 25): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 27 column 4): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 27 column 126): {E201} XML element <img> inside an empty property element, whose attributes prohibit any content.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 28 column 23): {W136} Relative URIs are not permitted in RDF: specifically <class>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 28 column 23): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 28 column 32): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 29 column 19): {W136} Relative URIs are not permitted in RDF: specifically <id>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 29 column 19): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W136} Relative URIs are not permitted in RDF: specifically <shape>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 31 column 63): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 32 column 5): {E201} Multiple children of property element
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W136} Relative URIs are not permitted in RDF: specifically <href>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W136} Relative URIs are not permitted in RDF: specifically <shape>
+27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
+27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 32 column 64): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
+27/04/15 02:25 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
+27/04/15 02:25 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
+27/04/15 02:25 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
+27/04/15 02:26 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
+27/04/15 02:26 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
+27/04/15 02:26 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
+27/04/15 02:27 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
+27/04/15 02:27 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
+27/04/15 02:27 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
+27/04/15 23:19 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
+27/04/15 23:19 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
+27/04/15 23:19 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
+28/04/15 00:15 [main]  WARN org.apache.jena.info:184 - Transaction already ended
+28/04/15 00:18 [main]  WARN org.apache.jena.info:184 - Transaction already ended

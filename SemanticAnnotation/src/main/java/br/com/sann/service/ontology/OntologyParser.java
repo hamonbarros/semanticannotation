@@ -438,22 +438,23 @@ public class OntologyParser {
 	
 	public static void main(String[] args) {
 
-	    String fileNameOrUri = "C:/yago_en.nt";
-	    Model model = ModelFactory.createDefaultModel();
-	    InputStream is = FileManager.get().open(fileNameOrUri);
-	    if (is != null) {
-	        model.read(is, null, "N-TRIPLE");
-	        model.write(System.out, "TURTLE");
-	    } else {
-	        System.err.println("cannot read " + fileNameOrUri);;
-	    }			
+//	    String fileNameOrUri = "C:/yago_en.nt";
+//	    Model model = ModelFactory.createDefaultModel();
+//	    InputStream is = FileManager.get().open(fileNameOrUri);
+//	    if (is != null) {
+//	        model.read(is, null, "N-TRIPLE");
+//	        model.write(System.out, "TURTLE");
+//	    } else {
+//	        System.err.println("cannot read " + fileNameOrUri);;
+//	    }			
 
 //		try {
 //			String url = "http://www.daml.org/services/owl-s/1.0DL/Process.owl";
+//			String url = "http://dbpedia.org/sparql";
 //			String path = "C:/dbpedia_2014.owl";
 //
-//			OntologyParser parser = new OntologyParser(path,
-//					OntologyParser.LOCAL_FILE_MODE, OntologyParser.SIMPLE_MODEL);
+//			OntologyParser parser = new OntologyParser(url,
+//					OntologyParser.HTTP_URL_MODE, OntologyParser.SIMPLE_MODEL);
 //			ExtendedIterator<OntClass> imports = parser.getModel()
 //					.listNamedClasses();
 //			System.out.println("Concepts");
@@ -470,8 +471,8 @@ public class OntologyParser {
 //				}
 //			}
 //			System.out.println("\nNumber of concepts: " + cont);
-			
-//			System.out.println(parser.listSuperclasses("Island"));
+//			System.out.println(parser.getOntClass("http://dbpedia.org/ontology/Agent"));
+//			System.out.println(parser.listSuperclasses("http://dbpedia.org/ontology/Agent"));
 //		}
 //
 //		catch (Exception e) {

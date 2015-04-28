@@ -1,0 +1,230 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FEATURE TYPE: AIR EMEP Monitoring Sites
+CONCEITOS ANOTADOS PARA O FEATURE TYPE:
+ * air - http://dbpedia.org/class/yago/Air108653314
+ * air - http://dbpedia.org/class/yago/Air114842703
+ * air - http://dbpedia.org/class/yago/Atmosphere108499057
+ * air - http://dbpedia.org/class/yago/Air114841267
+ * air - http://dbpedia.org/class/yago/Air104727214
+ * monitor - http://dbpedia.org/class/yago/Monitor103781787
+ * monitor - http://dbpedia.org/class/yago/UnitedStatesNavyMonitors
+ * monitor - http://dbpedia.org/class/yago/Monitor101694709
+ * monitor - http://dbpedia.org/class/yago/Monitor103782006
+ * monitor - http://dbpedia.org/class/yago/Admonisher109771855
+ * monitor - http://dbpedia.org/class/yago/Monitor103782190
+ * monitor - http://dbpedia.org/class/yago/AbercrombieClassMonitors
+ * monitor - http://dbpedia.org/class/yago/RoyalNavyMonitors
+ * monitor - http://dbpedia.org/class/yago/Proctor110478960
+ * site - http://dbpedia.org/class/yago/WorldWarIISites
+ * site - http://dbpedia.org/class/yago/MixtecSites
+ * site - http://dbpedia.org/class/yago/VietnamWarSites
+ * site - http://dbpedia.org/class/yago/MayaSites
+ * site - http://dbpedia.org/class/yago/IndianaStateHistoricSites
+ * site - http://dbpedia.org/class/yago/RocketLaunchSites
+ * site - http://dbpedia.org/class/yago/IndusValleySites
+ * site - http://dbpedia.org/class/yago/KurdishHistoricalSites
+ * site - http://dbpedia.org/class/yago/ArchaeologicalSites
+ * site - http://dbpedia.org/class/yago/CentralAsianBuddhistSites
+ * site - http://dbpedia.org/class/yago/BlackSites
+ * site - http://dbpedia.org/class/yago/HellenisticSites
+ * site - http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites
+ * site - http://dbpedia.org/class/yago/OlmecSites
+ * site - http://dbpedia.org/class/yago/ShockSites
+ * site - http://dbpedia.org/class/yago/DiveSites
+ * site - http://dbpedia.org/class/yago/HinduPilgrimageSites
+ * site - http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites
+ * site - http://dbpedia.org/class/yago/RamsarSites
+ * site - http://dbpedia.org/class/yago/SuperfundSites
+ * site - http://dbpedia.org/class/yago/EtruscanSites
+ * site - http://dbpedia.org/class/yago/WeaponsTestSites
+ * site - http://dbpedia.org/class/yago/AmericanCivilWarSites
+ * site - http://dbpedia.org/class/yago/MesoamericanSites
+ * site - http://dbpedia.org/class/yago/IllinoisHistoricSites
+ * site - http://dbpedia.org/class/yago/TotonacSites
+ * site - http://dbpedia.org/class/yago/ZapotecSites
+ * site - http://dbpedia.org/class/yago/AmarnaSites
+ * site - http://dbpedia.org/class/yago/NuclearTestSites
+ * site - http://dbpedia.org/class/yago/BronzeAgeSites
+ * site - http://dbpedia.org/class/yago/SAGESites
+ * site - http://dbpedia.org/class/yago/AztecSites
+ * site - http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites
+ * site - http://dbpedia.org/class/yago/NewYorkStateHistoricSites
+ * site - http://dbpedia.org/class/yago/WorldWarISites
+ * site - http://dbpedia.org/class/yago/TanzanianArcheologicalSites
+ * site - http://dbpedia.org/class/yago/PaleontologicalSites
+ * site - http://dbpedia.org/class/yago/IronAgeSites
+ * site - http://dbpedia.org/class/yago/ExecutionSites
+ * site - http://dbpedia.org/class/yago/CatholicPilgrimageSites
+ * site - http://dbpedia.org/class/yago/AngkorianSites
+ * site - http://dbpedia.org/class/yago/ThracianSites
+ * site - http://dbpedia.org/class/yago/SupercomputerSites
+ * site - http://dbpedia.org/class/yago/AbydosSites
+ * site - http://dbpedia.org/class/yago/WorldHeritageSites
+ * site - http://dbpedia.org/class/yago/NeanderthalSites
+ * site - http://dbpedia.org/class/yago/Click-to-donateSites
+ * site - http://dbpedia.org/class/yago/StoneAgeSites
+ * site - http://dbpedia.org/class/yago/UKTransmitterSites
+ * site - http://dbpedia.org/class/yago/NatureConservationReviewSites
+ATRIBUTOS:
+ # EMEP_REF - Conceitos anotados: ref
+ # SITE_NAME - Conceitos anotados: site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, name, name, site, site, name, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, site, name, site, name, site, site, name, site, site, site, site
+ # OBJECTID - Conceitos anotados: 
+ # EASTING - Conceitos anotados: 
+ # NORTHING - Conceitos anotados: 
+ # STATUS - Conceitos anotados: status
+ # STATUS_YR - Conceitos anotados: status
+ # ALTITUDE_M - Conceitos anotados: altitude, altitude
+ # LATITUDE - Conceitos anotados: latitude, latitude, latitude
+ # LONGITUDE - Conceitos anotados: longitude
+ # Shape - Conceitos anotados: shape, shape, shape, shape, shape, shape, shape, shape
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FEATURE TYPE: Air Monitoring Sites
+CONCEITOS ANOTADOS PARA O FEATURE TYPE:
+ * monitor - http://dbpedia.org/class/yago/Monitor103781787
+ * monitor - http://dbpedia.org/class/yago/UnitedStatesNavyMonitors
+ * monitor - http://dbpedia.org/class/yago/Monitor101694709
+ * air - http://dbpedia.org/class/yago/Air108653314
+ * air - http://dbpedia.org/class/yago/Atmosphere108499057
+ * air - http://dbpedia.org/class/yago/Air114842703
+ * monitor - http://dbpedia.org/class/yago/Admonisher109771855
+ * monitor - http://dbpedia.org/class/yago/Monitor103782006
+ * monitor - http://dbpedia.org/class/yago/Monitor103782190
+ * air - http://dbpedia.org/class/yago/Air114841267
+ * air - http://dbpedia.org/class/yago/Air104727214
+ * monitor - http://dbpedia.org/class/yago/AbercrombieClassMonitors
+ * monitor - http://dbpedia.org/class/yago/RoyalNavyMonitors
+ * monitor - http://dbpedia.org/class/yago/Proctor110478960
+ * site - http://dbpedia.org/class/yago/WorldWarIISites
+ * site - http://dbpedia.org/class/yago/MixtecSites
+ * site - http://dbpedia.org/class/yago/VietnamWarSites
+ * site - http://dbpedia.org/class/yago/MayaSites
+ * site - http://dbpedia.org/class/yago/IndianaStateHistoricSites
+ * site - http://dbpedia.org/class/yago/RocketLaunchSites
+ * site - http://dbpedia.org/class/yago/IndusValleySites
+ * site - http://dbpedia.org/class/yago/KurdishHistoricalSites
+ * site - http://dbpedia.org/class/yago/ArchaeologicalSites
+ * site - http://dbpedia.org/class/yago/CentralAsianBuddhistSites
+ * site - http://dbpedia.org/class/yago/BlackSites
+ * site - http://dbpedia.org/class/yago/HellenisticSites
+ * site - http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites
+ * site - http://dbpedia.org/class/yago/OlmecSites
+ * site - http://dbpedia.org/class/yago/ShockSites
+ * site - http://dbpedia.org/class/yago/DiveSites
+ * site - http://dbpedia.org/class/yago/HinduPilgrimageSites
+ * site - http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites
+ * site - http://dbpedia.org/class/yago/RamsarSites
+ * site - http://dbpedia.org/class/yago/SuperfundSites
+ * site - http://dbpedia.org/class/yago/EtruscanSites
+ * site - http://dbpedia.org/class/yago/WeaponsTestSites
+ * site - http://dbpedia.org/class/yago/AmericanCivilWarSites
+ * site - http://dbpedia.org/class/yago/MesoamericanSites
+ * site - http://dbpedia.org/class/yago/IllinoisHistoricSites
+ * site - http://dbpedia.org/class/yago/TotonacSites
+ * site - http://dbpedia.org/class/yago/ZapotecSites
+ * site - http://dbpedia.org/class/yago/AmarnaSites
+ * site - http://dbpedia.org/class/yago/NuclearTestSites
+ * site - http://dbpedia.org/class/yago/BronzeAgeSites
+ * site - http://dbpedia.org/class/yago/SAGESites
+ * site - http://dbpedia.org/class/yago/AztecSites
+ * site - http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites
+ * site - http://dbpedia.org/class/yago/NewYorkStateHistoricSites
+ * site - http://dbpedia.org/class/yago/WorldWarISites
+ * site - http://dbpedia.org/class/yago/TanzanianArcheologicalSites
+ * site - http://dbpedia.org/class/yago/PaleontologicalSites
+ * site - http://dbpedia.org/class/yago/IronAgeSites
+ * site - http://dbpedia.org/class/yago/ExecutionSites
+ * site - http://dbpedia.org/class/yago/CatholicPilgrimageSites
+ * site - http://dbpedia.org/class/yago/AngkorianSites
+ * site - http://dbpedia.org/class/yago/ThracianSites
+ * site - http://dbpedia.org/class/yago/SupercomputerSites
+ * site - http://dbpedia.org/class/yago/AbydosSites
+ * site - http://dbpedia.org/class/yago/WorldHeritageSites
+ * site - http://dbpedia.org/class/yago/NeanderthalSites
+ * site - http://dbpedia.org/class/yago/Click-to-donateSites
+ * site - http://dbpedia.org/class/yago/StoneAgeSites
+ * site - http://dbpedia.org/class/yago/UKTransmitterSites
+ * site - http://dbpedia.org/class/yago/NatureConservationReviewSites
+ATRIBUTOS:
+ # OBJECTID - Conceitos anotados: 
+ # EASTING - Conceitos anotados: 
+ # NORTHING - Conceitos anotados: 
+ # ADDRESS1 - Conceitos anotados: 
+ # ADDRESS2 - Conceitos anotados: 
+ # PAR1 - Conceitos anotados: 
+ # PAR2 - Conceitos anotados: 
+ # PAR3 - Conceitos anotados: 
+ # PAR4 - Conceitos anotados: 
+ # PAR5 - Conceitos anotados: 
+ # PAR6 - Conceitos anotados: 
+ # PAR7 - Conceitos anotados: 
+ # PAR8 - Conceitos anotados: 
+ # WEBLINK - Conceitos anotados: 
+ # CODE - Conceitos anotados: code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code
+ # NAME - Conceitos anotados: name, name, name, name, name, name
+ # LOCATION - Conceitos anotados: location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location
+ # TYPE - Conceitos anotados: type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type
+ # COVERAGE - Conceitos anotados: coverage
+ # OPERATOR - Conceitos anotados: operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator
+ # START_DATE - Conceitos anotados: date, date, start, date, date, date, date, start, date, start, date, date
+ # FINISH_DAT - Conceitos anotados: finish, DAT, finish, finish
+ # Shape - Conceitos anotados: shape, shape, shape, shape, shape, shape, shape, shape
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FEATURE TYPE: Air Zones
+CONCEITOS ANOTADOS PARA O FEATURE TYPE:
+ * air - http://dbpedia.org/class/yago/Air108653314
+ * air - http://dbpedia.org/class/yago/Air114842703
+ * air - http://dbpedia.org/class/yago/Atmosphere108499057
+ * air - http://dbpedia.org/class/yago/Air114841267
+ * air - http://dbpedia.org/class/yago/Air104727214
+ * zone - http://dbpedia.org/class/yago/SpecialEconomicZones
+ * zone - http://dbpedia.org/class/yago/EconomicZones
+ * zone - http://dbpedia.org/class/yago/LosAngelesHistoricPreservationOverlayZones
+ * zone - http://dbpedia.org/class/yago/Zone108688247
+ * zone - http://dbpedia.org/class/yago/Nuclear-freeZones
+ * zone - http://dbpedia.org/class/yago/Zones
+ * zone - http://dbpedia.org/class/yago/MarylandEnterpriseZones
+ * zone - http://dbpedia.org/class/yago/Zone108509442
+ * zone - http://dbpedia.org/class/yago/TimeZones
+ATRIBUTOS:
+ # OBJECTID - Conceitos anotados: 
+ # AirZone - Conceitos anotados: zone, zone, zone, air, zone, zone, air, air, air, zone, air, zone, zone, zone
+ # Name - Conceitos anotados: name, name, name, name, name, name
+ # LOCATION - Conceitos anotados: location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location
+ # Shape - Conceitos anotados: shape, shape, shape, shape, shape, shape, shape, shape
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FEATURE TYPE: AIR_MONITORINGSITES_4326
+CONCEITOS ANOTADOS PARA O FEATURE TYPE:
+ * air - http://dbpedia.org/class/yago/Air108653314
+ * air - http://dbpedia.org/class/yago/Air114842703
+ * air - http://dbpedia.org/class/yago/Atmosphere108499057
+ * air - http://dbpedia.org/class/yago/Air114841267
+ * air - http://dbpedia.org/class/yago/Air104727214
+ATRIBUTOS:
+ # LOCATION - Conceitos anotados: location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location, location
+ # EASTING - Conceitos anotados: 
+ # NORTHING - Conceitos anotados: 
+ # ADDRESS1 - Conceitos anotados: 
+ # ADDRESS2 - Conceitos anotados: 
+ # PAR1 - Conceitos anotados: 
+ # PAR2 - Conceitos anotados: 
+ # PAR3 - Conceitos anotados: 
+ # PAR4 - Conceitos anotados: 
+ # PAR5 - Conceitos anotados: 
+ # PAR6 - Conceitos anotados: 
+ # PAR7 - Conceitos anotados: 
+ # PAR8 - Conceitos anotados: 
+ # WEBLINK - Conceitos anotados: 
+ # AQIH - Conceitos anotados: 
+ # AQIHTEXT - Conceitos anotados: 
+ # AQIHLASTKNOWN - Conceitos anotados: 
+ # OPERATIONAL - Conceitos anotados: 
+ # EIONETCODE - Conceitos anotados: 
+ # Shape - Conceitos anotados: shape, shape, shape, shape, shape, shape, shape, shape
+ # CODE - Conceitos anotados: code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code, code
+ # NAME - Conceitos anotados: name, name, name, name, name, name
+ # TYPE - Conceitos anotados: type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type, type
+ # COVERAGE - Conceitos anotados: coverage
+ # OPERATOR - Conceitos anotados: operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator, operator
+ # START_DATE - Conceitos anotados: date, date, date, start, date, start, date, date, date, date, date, start
+ # FINISH_DAT - Conceitos anotados: finish, finish, DAT, finish
+ # REGION - Conceitos anotados: region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region, region
