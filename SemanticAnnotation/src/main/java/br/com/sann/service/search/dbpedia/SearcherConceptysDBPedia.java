@@ -14,7 +14,6 @@ import br.com.sann.domain.DBpediaCategory;
 import br.com.sann.domain.DBpediaClass;
 import br.com.sann.domain.Extractor;
 import br.com.sann.main.Main;
-import br.com.sann.performance.test.ExpectedResult;
 import br.com.sann.service.ontology.InvalidOntologyPathException;
 import br.com.sann.service.ontology.OntologyParser;
 import br.com.sann.service.ontology.ResourceNotFoundException;
@@ -41,17 +40,20 @@ public class SearcherConceptysDBPedia {
 	 * Realiza a busca de classes e categorias referentes ao texto na dbpedia.
 	 * 
 	 * @param text O texto a ser consultado.
-	 * @return O texto prï¿½-processado e a lista de classes e categorias referentes ao mesmo.
+	 * @return O texto pré-processado e a lista de classes e categorias referentes ao mesmo.
 	 */
 	public List<Extractor> searchClassesOrCategories(String text) {
 		
 		List<Extractor> listReturn = new ArrayList<Extractor>();
 		
-		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
+		Set<String> wordsTitle = preProcessing.tokenizingTextLower(text);
+		Set<String> nounsAndAdjectives = preProcessing.preProcessing(text);
+		nounsAndAdjectives.addAll(wordsTitle);
 		
 		String titleToken = preProcessing.tokensToString(nounsAndAdjectives);
 		String titleTokenWithoutUppercase = preProcessing.tokenizingTextWithUppercase(titleToken);
-		
+		titleTokenWithoutUppercase = preProcessing.extractWordsDefault(titleTokenWithoutUppercase);
+				
 		if (!nounsAndAdjectives.isEmpty()) {					
 			SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(titleTokenWithoutUppercase);
 			if (!searcher.getClasses().isEmpty() || !searcher.getCategories().isEmpty()) {
@@ -85,13 +87,13 @@ public class SearcherConceptysDBPedia {
 	 * Realiza a busca de super classes e super categorias referentes ao texto na dbpedia.
 	 * 
 	 * @param text O texto a ser consultado.
-	 * @return O texto prï¿½-processado e a lista de super classes e super categorias referentes ao mesmo.
+	 * @return O texto pré-processado e a lista de super classes e super categorias referentes ao mesmo.
 	 */
 	public List<Extractor> searchSuperClassesOrSuperCategories(String text) {
 		
 		List<Extractor> listReturn = new ArrayList<Extractor>();
 		
-		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
+		Set<String> nounsAndAdjectives = preProcessing.preProcessing(text);
 		
 		String titleToken = preProcessing.tokensToString(nounsAndAdjectives);
 		String titleTokenWithoutUppercase = preProcessing.tokenizingTextWithUppercase(titleToken);
@@ -245,7 +247,7 @@ public class SearcherConceptysDBPedia {
 	public Extractor searchText(String text) {
 		
 		List<String> tokens = preProcessing.tokenizingText(text);
-		List<String> nounsAndAjectives = preProcessing.extractNounsAndAdjectives(tokens);
+		Set<String> nounsAndAjectives = preProcessing.extractNounsAndAdjectives(tokens);
 		String title = preProcessing.tokensToString(nounsAndAjectives);
 		
 		SearcherDBpediaLookup searcher = new SearcherDBpediaLookup(title);		

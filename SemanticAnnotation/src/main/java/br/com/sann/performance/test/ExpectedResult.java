@@ -15,6 +15,7 @@ import br.com.sann.domain.SpatialData;
 public class ExpectedResult {
 
 	private String title;
+	private String annotationType;
 	private String bagOfWords;
 
 	private List<OntologyConcept> relevantConcepts;
@@ -61,11 +62,38 @@ public class ExpectedResult {
 		this.relevantRetrievedConcepts = relevantRetrievedConcepts;
 	}
 
+	public String getAnnotationType() {
+		return annotationType;
+	}
+
+	public void setAnnotationType(String annotationType) {
+		this.annotationType = annotationType;
+	}
+	
+	public void convertAnnotationType(Integer typeAnnotation) {
+		if (typeAnnotation != null && typeAnnotation.equals(SpatialData.SANN_LOD)) {
+			setAnnotationType("Anotação via LOD");
+		} else if (typeAnnotation != null && typeAnnotation.equals(SpatialData.SANN_WORDS)) {
+			setAnnotationType("Anotação via Casamento de Strings");
+		} else {
+			setAnnotationType("Não anotado");
+		}
+	}
+
 	public List<String> getConcepts(List<OntologyConcept> ontologyConcepts) {
 		
 		List<String> concepts = new ArrayList<String>();
 		for (OntologyConcept concept : ontologyConcepts) {
 			concepts.add(concept.getConcept());
+		}
+		return concepts;
+	}
+	
+	public List<String> getConceptNames(List<OntologyConcept> ontologyConcepts) {
+		
+		List<String> concepts = new ArrayList<String>();
+		for (OntologyConcept concept : ontologyConcepts) {
+			concepts.add(concept.getConceptName() + "-" + concept.getId());
 		}
 		return concepts;
 	}

@@ -3,6 +3,7 @@ package br.com.sann.service.search.wikipedia;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -101,7 +102,7 @@ public class SearcherWikipedia extends DefaultHandler {
 	 * @return O texto existente na página da wikipedia.
 	 */
 	public String getText() {
-		List<String> nounsAndAdjectives = preProcessing.preProcessing(text.toString());
+		Set<String> nounsAndAdjectives = preProcessing.preProcessing(text.toString());
 		return preProcessing.tokensToString(nounsAndAdjectives).trim();
 	}
 	

@@ -29,4 +29,12 @@ public interface SemanticAnnotationDAO {
 	 */
 	public List<SemanticAnnotation> recoveryAnnotations(Integer idSpatialData);
 	
+	/**
+	 * Remove as anotações de um feature type.
+	 * 
+	 * @param idSpatialData
+	 *            Id do feature type cujas anotações serão removidas.
+	 */
+	public void removeAnnotations(Integer idSpatialData);
+	
 }

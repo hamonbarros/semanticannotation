@@ -36,7 +36,7 @@ public class PreProcessingText {
 	private static PreProcessingText instance;
 	
 	private String pathTreeTagger = "";
-	private final String[] commonWords = {"area", "level", "point", "polygon", "line", "zoon"};
+	private final String[] commonWords = {"area", "areas", "level", "levels", "point", "points", "polygon", "line", "lines", "zoon"};
 
 	/**
 	 * Método construtor privado.
@@ -57,7 +57,7 @@ public class PreProcessingText {
 	 * @param text O texto a ser pré-processado.
 	 * @return O texto pré-processado.
 	 */
-	public List<String> preProcessing(String text) {
+	public Set<String> preProcessing(String text) {
 		
 		text = extractScale(text);
 		List<String> tokens = tokenizing(text, Version.LUCENE_4_9);
@@ -103,7 +103,7 @@ public class PreProcessingText {
 			in.close();
 			pathTreeTagger = props.getProperty("PATH_TREETAGGER");
 		} catch (IOException e) {
-			System.err.println("Nï¿½o foi possï¿½viel localizar a intalaï¿½ï¿½o do TreeTagger.");
+			System.err.println("Não foi possível localizar a instalação do TreeTagger.");
 		}
 	}
 	
@@ -214,8 +214,8 @@ public class PreProcessingText {
 	 * @param pathTreeTagger O caminho da instalação do treeTagger.
 	 * @return A lista de tokens que são sujeitos e adjetivos.
 	 */
-	public List<String> extractNounsAndAdjectives(List<String> tokens) { 
-		final List<String> nounsAndAdjectives = new ArrayList<String>();
+	public Set<String> extractNounsAndAdjectives(List<String> tokens) { 
+		final Set<String> nounsAndAdjectives = new HashSet<String>();
 		System.setProperty("treetagger.home", pathTreeTagger);
 		TreeTaggerWrapper<String> tt = new TreeTaggerWrapper<String>();
 		try {
@@ -372,6 +372,32 @@ public class PreProcessingText {
 	}
 	
 	/**
+	 * Extrai palavras referentes aos termos comuns da área de dados geográficos.
+	 * @param text O texto cujos termos comuns serão extraídos, caso exista.
+	 * @return O texto com os termos comuns extraídos, caso exista.
+	 */
+	public String extractWordsDefault(String text) {
+		
+		StringBuffer result = new StringBuffer();
+		if (text != null) {
+			String[] tokens = text.split(" ");
+			for (String token : tokens) {
+				boolean find = false;
+				for (String commonWord : commonWords) {
+					if (token.equalsIgnoreCase(commonWord)) {
+						find = true;
+						break;
+					}
+				}
+				if (!find) {
+					result.append(token + " ");
+				}
+			}
+		}
+		return result.toString().trim();
+	}
+	
+	/**
 	 * Método para normalizar um determinado texto colocando-o para minúsculo e 
 	 * separando as palavras compostas.
 	 * 
@@ -390,7 +416,7 @@ public class PreProcessingText {
 	 * @return O texto alterado, caso possua algum underline.
 	 */
 	public String extractUnderline(String text) {
-		return replaceSubstring(text, "_", " ");
+		return text.replace('_', ' ');
 	}
 	
 	/**
@@ -400,36 +426,63 @@ public class PreProcessingText {
 	 * @return O texto alterado, caso possua algum sinal de pontuação.
 	 */
 	public String extractPunctuation(String text) {
-		text = replaceSubstring(text, ":", " ");
-		text = replaceSubstring(text, ".", " ");
-		text = replaceSubstring(text, ",", " ");
-		text = replaceSubstring(text, ";", " ");
-		text = replaceSubstring(text, "(", " ");
-		text = replaceSubstring(text, ")", " ");
-		text = replaceSubstring(text, "[", " ");
-		text = replaceSubstring(text, "]", " ");
-		text = replaceSubstring(text, "{", " ");
-		text = replaceSubstring(text, "}", " ");
-		return text;
+		text = text.replace(':', ' ');
+		text = text.replace('.', ' ');
+		text = text.replace(',', ' ');
+		text = text.replace(';', ' ');
+		text = text.replace('(', ' ');
+		text = text.replace(')', ' ');
+		text = text.replace('[', ' ');
+		text = text.replace(']', ' ');
+		text = text.replace('{', ' ');
+		text = text.replace('}', ' ');
+		return removeExcessSpace(text);
+	}
+	
+	private String removeExcessSpace(String text) {
+		String[] tokens = text.split(" ");
+		StringBuilder result = new StringBuilder();
+		for (String token : tokens) {
+			if (!token.isEmpty()) {				
+				result.append(" ").append(token);
+			}
+		}
+		return result.toString().trim();
 	}
 	
 	/**
-	 * Substitui os trechos que contêm uma determinada palavra em um texto por
-	 * um novo valor.
-	 * 
-	 * @param text
-	 *            O texto a ser verificado.
-	 * @param substring
-	 *            A palavra a ser substituida.
-	 * @param value
-	 *            O valor a substituir.
-	 * @return O texto alterado, caso exista alguma palavra a ser substituida.
+	 * Recupera todas as palavras de um texto que terminam com um determinado sufixo.
+	 * @param text O texto a ser analisado.
+	 * @param suffix O sufixo a ser procurado.
+	 * @return As palavras que terminam com o sufixo separadas por espaço.
 	 */
-	private String replaceSubstring(String text, String substring, String value) {
-		if(text.indexOf(substring) >= 0) {
-			text = text.replaceAll(substring, value);
+	public Set<String> findWordsEndsWith(String text, String suffix) {
+		Set<String> result = new HashSet<String>();
+		String[] tokens = text.split(" ");
+		for (String token : tokens) {
+			if (token.toLowerCase().endsWith(suffix)) {
+				result.add(token.toLowerCase());
+			}
 		}
-		return text;
+		return result;
 	}
+	
+	/**
+	 * Retorna as palavras de um texto em minusculo detro de um conjunto.
+	 * @param text O texto a ser transformado.
+	 * @return As palavras de um texto em um conjunto.
+	 */
+	public Set<String> tokenizingTextLower(String text) {
+		Set<String> result = new HashSet<String>();
+		String[] tokens = text.split(" ");
+		for (String token : tokens) {
+			result.add(token);
+		}
+		return result;
+	}
+	
+	public static void main(String[] args) {
 
+		System.out.println(PreProcessingText.getInstance().preProcessingWithoutExtractScale("Point Water Features location Radiation"));
+	}
 }

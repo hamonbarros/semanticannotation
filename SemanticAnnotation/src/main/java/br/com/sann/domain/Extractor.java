@@ -99,6 +99,9 @@ public class Extractor {
 			}
 			urls.addAll(labelAndURLConcepts.get(label));
 			classesAndCategoriesURL.put(label, urls);
+			if (!label.toCharArray().equals(label)) {
+				classesAndCategoriesURL.put(label.toLowerCase(), urls);
+			}
 		}			
 	}
 	

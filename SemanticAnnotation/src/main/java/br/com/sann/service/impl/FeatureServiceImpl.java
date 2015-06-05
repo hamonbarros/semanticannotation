@@ -59,5 +59,9 @@ public class FeatureServiceImpl implements FeatureService{
 			String title, String textDescription, String keywords) {
 		return dao.recoverySpatialDataByTextInfo(name, title, textDescription, keywords);
 	}
+	
+	public List<SpatialData> recoverySpatialDataByTitle(String title) {
+		return dao.recoverySpatialDataByTitle(title);
+	}
 
 }

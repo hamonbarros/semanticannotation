@@ -21,7 +21,8 @@ public class PreProcessingTextTest extends TestCase {
 
 	public void testPreProcessing() {
 
-		assertEquals(tokens, preProcessing.preProcessing("Aboriginal Lands"));
+		assertTrue(tokens.containsAll(preProcessing.preProcessing("Aboriginal Lands")));
+		System.out.println(preProcessing.preProcessing("Conservation Areas"));
 		
 	}
 
@@ -95,4 +96,8 @@ public class PreProcessingTextTest extends TestCase {
 		assertEquals("Diamet", preProcessing.stemming(text));
 	}
 
+	public void testExtractPunctuation() {
+		String text = "Area:, (del.) [contorno]];., {{del: (embalse.) [Area del] contorno;. {del} embals,}";
+		assertEquals("Area del contorno del embalse Area del contorno del embals", preProcessing.extractPunctuation(text));
+	}
 }

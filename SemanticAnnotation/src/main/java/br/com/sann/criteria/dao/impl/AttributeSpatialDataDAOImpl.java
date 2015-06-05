@@ -32,6 +32,7 @@ public class AttributeSpatialDataDAOImpl implements AttributeSpatialDataDAO{
 		String jpql = "SELECT n FROM AttributeSpatialData n WHERE n.spatialData.id = " + idSpatialData;
 		Query q = em.createQuery(jpql);
 		List<AttributeSpatialData> attributes = q.getResultList();
+		em.close();
 		return attributes;
 	}
 

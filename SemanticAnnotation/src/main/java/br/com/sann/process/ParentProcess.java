@@ -41,6 +41,76 @@ public class ParentProcess {
 	}
 	
 	/**
+	 * Método que faz o processamento necessário realizar a anotação semântica via casamento
+	 * de strings.
+	 * 
+	 * @param spatialData O feture type.
+	 * @param title O título do feature type.
+	 * @param bagOfWords O texto a ser comparado com a bagOfWords.
+	 * @param outConsolidated Arquivo onde estão sendo impressos os resultados consolidados.
+	 * @param out Arquivo onde estão sendo impressos os resultados resumidos.
+	 * @param sumary 
+	 * @param concepts 
+	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
+	 * @throws IOException Exceção lançada de IO.
+	 */
+	public void executeSannWords(List<Extractor> extractorList, SpatialData spatialData, String title, PrintWriter out, 
+			Sumary sumary) throws IOException {
+		
+		List<String> classesUpThreshold = new LinkedList<String>();
+		List<String> categoriesUpThreshold = new LinkedList<String>();
+		FeatureService featureService = new FeatureServiceImpl();
+		
+		if(!extractorList.isEmpty()) {
+			out.println("------------------------------------------------------------------------------------");
+			out.println("Título do Feature Type: " + title);
+			out.println();
+			boolean wasAnnotated = false;
+			for (Extractor extractor : extractorList) {
+
+				if (!extractor.getSimilarityClasses().isEmpty()) {
+					extractor.setOntologyClasses(getSimilaryConcepts(extractor.getSimilarityClasses(), 
+							extractor.getTitle()));
+					classesUpThreshold.addAll(extractor.getSimilarityClasses());
+				}
+				if (!extractor.getSimilarityCategories().isEmpty()) {
+					extractor.setOntologyCategories(getSimilaryConcepts(extractor.getSimilarityCategories(), 
+							extractor.getTitle()));
+					categoriesUpThreshold.addAll(extractor.getSimilarityCategories());
+				}
+				
+				if (!extractor.getSimilarityClasses().isEmpty() || !extractor.getSimilarityCategories().isEmpty()) {
+					out.println("Token: " + extractor.getTitle());
+					out.println("Categorias: " + printStringList(extractor.getSimilarityCategories()));
+					out.println("Categorias similares: " + printStringList(extractConceptNames(extractor.getOntologyCategories())));
+					out.println("Conceitos: " + printStringList(extractor.getSimilarityClasses()));
+					out.println("Conceitos similares: " + printStringList(extractConceptNames(extractor.getOntologyClasses())));
+					out.println("");
+				}
+				sumary.summarizeResults(extractor);
+				if(!extractor.getOntologyClasses().isEmpty() || !extractor.getOntologyCategories().isEmpty()) {
+					annotatefeatures(extractor, spatialData);
+					wasAnnotated = true;
+				}
+			}
+			sumary.setCountFeature(1);
+			if(!wasAnnotated) {
+				sumary.setCountFeatureNotAnnotated(1);
+			} else {
+				spatialData.setAnnotated(Boolean.TRUE);
+				spatialData.setTypeAnnotation(SpatialData.SANN_WORDS);
+				featureService.updateSpatialData(spatialData);				
+			}
+			out.println("--------------------------------------");
+			out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
+			out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
+			out.println("--------------------------------------");
+			out.println("");
+			out.flush();
+		}		
+	}	
+	
+	/**
 	 * Método que faz o processamento necessário para extrair a similaridade entre uma 
 	 * bagOfWords e um determinado texto.
 	 * 
@@ -64,8 +134,9 @@ public class ParentProcess {
 		FeatureService featureService = new FeatureServiceImpl();
 		
 		if(!extractorList.isEmpty()) {
-
+			out.println("------------------------------------------------------------------------------------");
 			out.println("Título do Feature Type: " + title);
+			out.println();
 			boolean wasAnnotated = false;
 			for (Extractor extractor : extractorList) {
 
@@ -104,6 +175,7 @@ public class ParentProcess {
 				sumary.setCountFeatureNotAnnotated(1);
 			} else {
 				spatialData.setAnnotated(Boolean.TRUE);
+				spatialData.setTypeAnnotation(SpatialData.SANN_WORDS);
 				featureService.updateSpatialData(spatialData);				
 			}
 			out.println("--------------------------------------");
@@ -129,7 +201,7 @@ public class ParentProcess {
 	 * @return 1 se o titulo não possuir nenhum conceito relevante, ou 0, caso contrário.
 	 * @throws IOException Exceção lançada de IO.
 	 */
-	public void executeSimilarityYago(SpatialData spatialData, String title, String bagOfWords, PrintWriter out, 
+	public List<Extractor> executeSimilarityYago(SpatialData spatialData, String title, String bagOfWords, PrintWriter out, 
 			Sumary sumary) throws IOException {
 			
 		SearcherConceptysDBPedia searcherConceptys = new SearcherConceptysDBPedia();
@@ -140,13 +212,16 @@ public class ParentProcess {
 		
 		if(!extractorList.isEmpty()) {
 
+			out.println("------------------------------------------------------------------------------------");
 			out.println("Título do Feature Type: " + title);
+			out.println();
 			boolean wasAnnotated = false;
 			for (Extractor extractor : extractorList) {
 
 				if (!extractor.getClasses().isEmpty()) {
 					extractor.setSimilarityClasses(executeCossineSimilarity(extractor.getClasses(), 
 						SearcherConceptysDBPedia.CLASS,	bagOfWords, title, extractor.getTitle()));
+					extractor.getSimilarityClasses().add(extractor.getTitle());
 					extractor.setOntologyClasses(getSimilaryConceptsYago(extractor.getSimilarityClasses(), 
 							extractor.getClassesAndCategoriesURL()));
 					classesUpThreshold.addAll(extractor.getSimilarityClasses());
@@ -173,20 +248,20 @@ public class ParentProcess {
 					wasAnnotated = true;
 				}
 			}
-			sumary.setCountFeature(1);
-			if(!wasAnnotated) {
-				sumary.setCountFeatureNotAnnotated(1);
-			} else {
+			if(wasAnnotated) {
+				sumary.setCountFeature(1);
 				spatialData.setAnnotated(Boolean.TRUE);
+				spatialData.setTypeAnnotation(SpatialData.SANN_LOD);
 				featureService.updateSpatialData(spatialData);				
+				out.println("--------------------------------------");
+				out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
+				out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
+				out.println("--------------------------------------");
+				out.println("");
 			}
-			out.println("--------------------------------------");
-			out.println("Features anotados: " + (sumary.getCountFeature() - sumary.getCountFeatureNotAnnotated()));
-			out.println("Features não anotados: " + sumary.getCountFeatureNotAnnotated());
-			out.println("--------------------------------------");
-			out.println("");
 			out.flush();
 		}		
+		return extractorList;
 	}
 	
 	/**
@@ -312,6 +387,10 @@ public class ParentProcess {
 			if (!isConceptDefault(concept)) {										
 				SearcherWikipedia searcherText = new SearcherWikipedia(concept);
 				String wikiText = searcherText.getText();
+				if (concept.endsWith("s") && (wikiText == null || wikiText.isEmpty())) {
+					String conceptWithoutS = concept.substring(0, concept.length()-1);
+					searcherText = new SearcherWikipedia(conceptWithoutS);
+				}
 				double cosineSimilarity = 0.0;
 				if (!bagOfWords.isEmpty() && wikiText != null && !wikiText.isEmpty()) {
 					cosineSimilarity = CosineDocumentSimilarity
@@ -384,8 +463,9 @@ public class ParentProcess {
 		
 		for (String concept : concepts) {	
 			if (!concept.equals("")) {				
-				String conceptWithoutSpace = concept.replaceAll("\'", "").replaceAll(" ", "");
-				List<String> tokensConcept = preprocessing.preProcessing(concept);
+				String conceptWithoutSpace = concept.replaceAll("\'", "").replaceAll(" ", "");		
+				List<String> tokens = preprocessing.tokenizingText(concept);
+				Set<String> tokensConcept = preprocessing.preProcessing(concept);
 				String coveredConcept = preprocessing.tokensToString(tokensConcept);
 				coveredConcept = coveredConcept.replaceAll("\'", "");
 				List<OntologyConcept> ontologyConcepts = null;
@@ -399,7 +479,7 @@ public class ParentProcess {
 							conceptWithoutSpace);
 				}
 				
-				if ((ontologyConcepts == null || ontologyConcepts.isEmpty()) && tokensConcept.size() > 1) {
+				if ((ontologyConcepts == null || ontologyConcepts.isEmpty()) && tokens.size() > 1) {
 					ontologyConcepts = recoveryOntologyConceptByToken(concept, conceptService);
 				}
 				
@@ -541,6 +621,14 @@ public class ParentProcess {
 				if(ontologyConcepts != null && !ontologyConcepts.isEmpty()) {
 					find = true;
 					ontologyConceptsReturn.addAll(ontologyConcepts);
+				} else if (comb.endsWith("s")) {
+					comb = comb.substring(0, comb.length()-1);
+					ontologyConcepts = conceptService.recoveryOntolgyConceptByTerm(
+							comb.replaceAll("\'", " "));
+					if(ontologyConcepts != null && !ontologyConcepts.isEmpty()) {
+						find = true;
+						ontologyConceptsReturn.addAll(ontologyConcepts);
+					}
 				}
 			}
 			amountCombinationPossible--;

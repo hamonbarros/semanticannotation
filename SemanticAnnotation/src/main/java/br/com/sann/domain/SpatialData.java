@@ -35,6 +35,9 @@ import javax.persistence.Transient;
 @DiscriminatorColumn(name = "dataType", discriminatorType = DiscriminatorType.STRING)
 public class SpatialData implements Serializable {
 
+	public static Integer SANN_LOD = 1;
+	public static Integer SANN_WORDS = 2;
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -75,6 +78,9 @@ public class SpatialData implements Serializable {
 	
 	@Column(name = "annotated")
 	private Boolean annotated;
+	
+	@Column(name = "typeAnnotation")
+	private Integer typeAnnotation;
 	
 	@OneToMany(mappedBy = "spatialData", cascade = { CascadeType.ALL })
 	private Collection<AttributeSpatialData> attributesService;	
@@ -237,6 +243,14 @@ public class SpatialData implements Serializable {
 
 	public void setAttributesService(Collection<AttributeSpatialData> attributesService) {
 		this.attributesService = attributesService;
+	}
+
+	public Integer getTypeAnnotation() {
+		return typeAnnotation;
+	}
+
+	public void setTypeAnnotation(Integer typeAnnotation) {
+		this.typeAnnotation = typeAnnotation;
 	}
 
 	/**

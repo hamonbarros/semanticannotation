@@ -29,6 +29,7 @@ public class SemanticAnnotationAttributeDAOImpl implements SemanticAnnotationAtt
 			em.flush();
 		}
 		em.getTransaction().commit();
+		em.close();
 		JPAUtil.closeEntityManager();
 	}
 	
@@ -48,6 +49,19 @@ public class SemanticAnnotationAttributeDAOImpl implements SemanticAnnotationAtt
 		em.close();
 		JPAUtil.closeEntityManager();
 		return sann;
+	}
+
+	public void removeAnnotations(Integer idAttribute) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		String jpql = "DELETE FROM SemanticAnnotationAttribute n WHERE n.attributeService.id = :idAttribute";
+		Query q = em.createQuery(jpql);
+		q.setParameter("idAttribute", idAttribute);	
+		q.executeUpdate();
+		em.flush();
+		em.getTransaction().commit();
+		em.close();
+		JPAUtil.closeEntityManager();			
 	}
 
 }

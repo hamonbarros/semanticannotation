@@ -1,141 +1,633 @@
-26/04/15 22:47 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
-26/04/15 22:48 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
-26/04/15 22:49 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
-26/04/15 22:58 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
-26/04/15 22:58 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
-26/04/15 22:59 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <ont-policy.rdf>
-27/04/15 01:07 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - (line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:10 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <NT>
-27/04/15 01:10 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/NT(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:10 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <N-TRIPLE>
-27/04/15 01:10 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/N-TRIPLE(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:11 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <RDF/XML>
-27/04/15 01:11 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/RDF/XML(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:11 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - (line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:12 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - (line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:12 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - unknown-source: {W136} Relative URIs are not permitted in RDF: specifically <N-TRIPLES>
-27/04/15 01:12 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:57 - file:///C:/Users/Hamon/git/semanticannotation/SemanticAnnotation/N-TRIPLES(line 1 column 7): Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 2 column 68): {W136} Relative URIs are not permitted in RDF: specifically <lang>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 2 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 4 column 19): {E202} Expecting XML start or end element(s). String data "DBpedia : " not allowed. Maybe there should be an rdf:parseType='Literal' for embedding mixed XML content in RDF. Maybe a striping error.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 5 column 37): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W136} Relative URIs are not permitted in RDF: specifically <name>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W136} Relative URIs are not permitted in RDF: specifically <content>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 5 column 37): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 6 column 40): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W136} Relative URIs are not permitted in RDF: specifically <name>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W136} Relative URIs are not permitted in RDF: specifically <content>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 6 column 40): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 7 column 39): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W136} Relative URIs are not permitted in RDF: specifically <name>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W136} Relative URIs are not permitted in RDF: specifically <content>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 7 column 39): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 8 column 76): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W136} Relative URIs are not permitted in RDF: specifically <http-equiv>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W136} Relative URIs are not permitted in RDF: specifically <content>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 8 column 76): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 10 column 105): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 10 column 105): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 11 column 117): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W136} Relative URIs are not permitted in RDF: specifically <media>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 11 column 117): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 12 column 114): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 12 column 114): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 13 column 68): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W136} Relative URIs are not permitted in RDF: specifically <title>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 13 column 68): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 14 column 124): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W136} Relative URIs are not permitted in RDF: specifically <title>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 14 column 124): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 15 column 126): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W136} Relative URIs are not permitted in RDF: specifically <title>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 15 column 126): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 16 column 139): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W136} Relative URIs are not permitted in RDF: specifically <rel>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W136} Relative URIs are not permitted in RDF: specifically <title>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 16 column 139): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 18 column 77): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 18 column 77): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 18 column 77): {W136} Relative URIs are not permitted in RDF: specifically <src>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 18 column 77): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 19 column 77): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 19 column 77): {W102} unqualified use of rdf:type is deprecated.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 19 column 77): {W136} Relative URIs are not permitted in RDF: specifically <src>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 19 column 77): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 22 column 28): {W136} Relative URIs are not permitted in RDF: specifically <onload>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 22 column 28): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 23 column 1): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 23 column 23): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 24 column 2): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 24 column 19): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 25 column 3): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 25 column 25): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 26 column 4): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 26 column 25): {E201} XML element <div> inside an empty property element, whose attributes prohibit any content.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 27 column 4): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 27 column 126): {E201} XML element <img> inside an empty property element, whose attributes prohibit any content.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 28 column 23): {W136} Relative URIs are not permitted in RDF: specifically <class>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 28 column 23): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 28 column 32): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 29 column 19): {W136} Relative URIs are not permitted in RDF: specifically <id>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 29 column 19): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W136} Relative URIs are not permitted in RDF: specifically <shape>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 31 column 58): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 31 column 63): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 32 column 5): {E201} Multiple children of property element
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W136} Relative URIs are not permitted in RDF: specifically <href>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W136} Relative URIs are not permitted in RDF: specifically <shape>
-27/04/15 01:28 [main]  WARN com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:47 - http://dbpedia.org(line 32 column 52): {W102} Unqualified property attributes are not allowed. Property treated as a relative URI.
-27/04/15 01:28 [main] ERROR com.hp.hpl.jena.rdf.model.impl.RDFDefaultErrorHandler:52 - http://dbpedia.org(line 32 column 64): {E201} The attributes on this property element, are not permitted with any content; expecting end element tag.
-27/04/15 02:25 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
-27/04/15 02:25 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
-27/04/15 02:25 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
-27/04/15 02:26 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
-27/04/15 02:26 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
-27/04/15 02:26 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
-27/04/15 02:27 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
-27/04/15 02:27 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
-27/04/15 02:27 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
-27/04/15 23:19 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - java-jsonld classes not on the classpath - JSON-LD input-output not available.
-27/04/15 23:19 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
-27/04/15 23:19 [main]  WARN org.apache.jena.riot.RDFLanguages:78 - If using a Jena distribution, put all jars in the lib/ directory on the classpath
-28/04/15 00:15 [main]  WARN org.apache.jena.info:184 - Transaction already ended
-28/04/15 00:18 [main]  WARN org.apache.jena.info:184 - Transaction already ended
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Subsoils
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Transitional waterbodies
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Transitional waterbodies
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Analyses (Summer)
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Analyses (Summer)
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Analyses (Winter)
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Analyses (Winter)
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Areas
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Areas
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Management Units
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Management Units
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Zone of Subsidence
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Zone of Subsidence
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Napier City Council Election Wards
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.25
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2857142857142857
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Napier City Council Election Wards
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncil1mContours
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncil1mContours
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilAddressPoints
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.14285714285714285
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilAddressPoints
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilCadastralParcels
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.1
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilCadastralParcels
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilCarParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilCarParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilDogExerciseAreas
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.09090909090909091
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilDogExerciseAreas
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilHeritageBuildingDatabase
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.14285714285714285
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilHeritageBuildingDatabase
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilLeasedParking
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilLeasedParking
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilLiquorBan
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.1
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilLiquorBan
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilMobilityParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilMobilityParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilMotorcycleParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilMotorcycleParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilOnStreetParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilOnStreetParks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilOperativePlanZones
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.1111111111111111
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilOperativePlanZones
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilPayandDisplayCarparks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.09090909090909091
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilPayandDisplayCarparks
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilSubdivisionApplications
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilSubdivisionApplications
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilTitleParcels
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.1
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilTitleParcels
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: ne_50m_boundary_lines_land
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: ne_50m_boundary_lines_land
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: ne_50m_coastline
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: ne_50m_coastline
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.711864406779661
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.315
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:114 - Percentual anotado: 0.96
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:191 - Fim do processamento!
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:192 - Data Final: 03/06/2015 - 21:43:20
+03/06/15 21:43 [main]  INFO br.com.sann.main.Main:193 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 00:21 [main]  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper:145 - SQL Error: 0, SQLState: 53300
+04/06/15 00:21 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper:147 - FATAL: desculpe, muitos clientes conectados
+04/06/15 16:28 [main]  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper:145 - SQL Error: 0, SQLState: 53300
+04/06/15 16:28 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper:147 - FATAL: desculpe, muitos clientes conectados
+04/06/15 16:34 [main]  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper:145 - SQL Error: 0, SQLState: 53300
+04/06/15 16:34 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper:147 - FATAL: desculpe, muitos clientes conectados
+04/06/15 17:49 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:30 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:49 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:31 - [INICIO] Iniciando o processamento...
+04/06/15 17:49 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:32 - Data Inicial: 04/06/2015 - 17:49:59
+04/06/15 17:49 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:33 - Realizando a leitura das feature types... 
+04/06/15 17:50 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:38 - Leitura das feature types realizada com sucesso!
+04/06/15 17:50 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:28 - [INICIO] Inicio da execução do processo de anotação semântica...
+04/06/15 17:50 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:52 - [INICIO] Início do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 17:50 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:54 - [INICIO] Início da anotação semântica via LOD
+04/06/15 17:51 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:56 - [FIM] Fim da anotação semântica via LOD
+04/06/15 17:51 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:59 - -------->>>>>>> Não encontrou conceitos via LOD!
+04/06/15 17:51 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:60 - [INICIO] Início da anotação semântica via casamento de Strings
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:65 - RESULTADO: ANOTADO!
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:67 - [FIM] Fim da anotação semântica via casamento de Strings
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:69 - [INICIO] Início da anotação semântica dos atributos
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:26 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:27 - Iniciando o processamento...
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:28 - Data Inicial: 04/06/2015 - 17:52:11
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: EMEP_REF
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: EMEP_REF
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: SITE_NAME
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: SITE_NAME
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: OBJECTID
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: OBJECTID
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: EASTING
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: EASTING
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: NORTHING
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: NORTHING
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: STATUS
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: STATUS
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: STATUS_YR
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: STATUS_YR
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: ALTITUDE_M
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: ALTITUDE_M
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LATITUDE
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LATITUDE
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LONGITUDE
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LONGITUDE
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Shape
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Shape
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:56 - Fim do processamento!
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:57 - Data Final: 04/06/2015 - 17:52:21
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:58 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:73 - [FIM] Fim da anotação semântica dos atributos
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:74 - [FIM] Fim do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:52 - [INICIO] Início do processamento para o título: AQINDEXREGIONS 4326
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:54 - [INICIO] Início da anotação semântica via LOD
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:56 - [FIM] Fim da anotação semântica via LOD
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:59 - -------->>>>>>> Não encontrou conceitos via LOD!
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:60 - [INICIO] Início da anotação semântica via casamento de Strings
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:63 - RESULTADO: NÃO ANOTADO!
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:67 - [FIM] Fim da anotação semântica via casamento de Strings
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:69 - [INICIO] Início da anotação semântica dos atributos
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:26 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:27 - Iniciando o processamento...
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:28 - Data Inicial: 04/06/2015 - 17:52:26
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LOCATION
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LOCATION
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Region
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Region
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: ZoneId
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: ZoneId
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Geometry
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Geometry
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: aqihText
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: aqihText
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: aqihLastKnown
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: aqihLastKnown
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Version
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Version
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Name
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Name
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: aqih
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: aqih
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: DateCreate
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: DateCreate
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:56 - Fim do processamento!
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:57 - Data Final: 04/06/2015 - 17:52:42
+04/06/15 17:52 [main]  INFO br.com.sann.main.Main:58 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:73 - [FIM] Fim da anotação semântica dos atributos
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:74 - [FIM] Fim do processamento para o título: AQINDEXREGIONS 4326
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:52 - [INICIO] Início do processamento para o título: Coastal waterbodies
+04/06/15 17:52 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:54 - [INICIO] Início da anotação semântica via LOD
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:30 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:31 - [INICIO] Iniciando o processamento...
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:32 - Data Inicial: 04/06/2015 - 17:54:07
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:33 - Realizando a leitura das feature types... 
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:38 - Leitura das feature types realizada com sucesso!
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:28 - [INICIO] Inicio da execução do processo de anotação semântica...
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:52 - [INICIO] Início do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 17:54 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:54 - [INICIO] Início da anotação semântica via LOD
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:56 - [FIM] Fim da anotação semântica via LOD
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:69 - [INICIO] Início da anotação semântica dos atributos
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:26 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:27 - Iniciando o processamento...
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:28 - Data Inicial: 04/06/2015 - 17:56:01
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: EMEP_REF
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: EMEP_REF
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: SITE_NAME
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: SITE_NAME
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: OBJECTID
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: OBJECTID
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: EASTING
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: EASTING
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: NORTHING
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: NORTHING
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LONGITUDE
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LONGITUDE
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Shape
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Shape
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: STATUS
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: STATUS
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: STATUS_YR
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: STATUS_YR
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: ALTITUDE_M
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: ALTITUDE_M
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LATITUDE
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LATITUDE
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:56 - Fim do processamento!
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:57 - Data Final: 04/06/2015 - 17:56:12
+04/06/15 17:56 [main]  INFO br.com.sann.main.Main:58 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:73 - [FIM] Fim da anotação semântica dos atributos
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:74 - [FIM] Fim do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:89 - [FIM] Fim da execução do processo de anotação semântica.
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:43 - [FIM] Fim do processamento!
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:44 - Data Final: 04/06/2015 - 17:56:12
+04/06/15 17:56 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:45 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:30 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:31 - [INICIO] Iniciando o processamento...
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:32 - Data Inicial: 04/06/2015 - 20:39:32
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:33 - Realizando a leitura das feature types... 
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:38 - Leitura das feature types realizada com sucesso!
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:28 - [INICIO] Inicio da execução do processo de anotação semântica...
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:52 - [INICIO] Início do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 20:39 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:54 - [INICIO] Início da anotação semântica via LOD
+04/06/15 20:41 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:56 - [FIM] Fim da anotação semântica via LOD
+04/06/15 20:41 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:59 - -------->>>>>>> Não encontrou conceitos via LOD!
+04/06/15 20:41 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:60 - [INICIO] Início da anotação semântica via casamento de Strings
+04/06/15 20:41 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:65 - RESULTADO: ANOTADO!
+04/06/15 20:41 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:67 - [FIM] Fim da anotação semântica via casamento de Strings
+04/06/15 20:41 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:69 - [INICIO] Início da anotação semântica dos atributos
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:26 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:27 - Iniciando o processamento...
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:28 - Data Inicial: 04/06/2015 - 20:41:54
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: EMEP_REF
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: EMEP_REF
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: SITE_NAME
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: SITE_NAME
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: OBJECTID
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: OBJECTID
+04/06/15 20:41 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: EASTING
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: EASTING
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: NORTHING
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: NORTHING
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LONGITUDE
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LONGITUDE
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: Shape
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: Shape
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: STATUS
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: STATUS
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: STATUS_YR
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: STATUS_YR
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: ALTITUDE_M
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: ALTITUDE_M
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:35 - [INICIO] Início do processamento para o atributo: LATITUDE
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:44 - [FIM] Fim do processamento para o atributo: LATITUDE
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:56 - Fim do processamento!
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:57 - Data Final: 04/06/2015 - 20:42:06
+04/06/15 20:42 [main]  INFO br.com.sann.main.Main:58 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 20:42 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:73 - [FIM] Fim da anotação semântica dos atributos
+04/06/15 20:42 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:74 - [FIM] Fim do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 20:42 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:89 - [FIM] Fim da execução do processo de anotação semântica.
+04/06/15 20:42 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:43 - [FIM] Fim do processamento!
+04/06/15 20:42 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:44 - Data Final: 04/06/2015 - 20:42:06
+04/06/15 20:42 [main]  INFO br.com.sann.main.MainAnnotationFTAttrs:45 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 20:54 [main]  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper:145 - SQL Error: 0, SQLState: 23505
+04/06/15 20:54 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper:147 - ERRO: duplicar valor da chave viola a restrição de unicidade "pk_semanticannotationattr"
+  Detalhe: Chave (id)=(285119) já existe.
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:184 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:185 - Iniciando o processamento...
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:186 - Data Inicial: 04/06/2015 - 21:16:11
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Allotment Locations
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Allotment Locations
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Community Council Boundaries
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Community Council Boundaries
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Conservation Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Conservation Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Core Path Network
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Core Path Network
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Defined Policy Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Defined Policy Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Development Proposals Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Development Proposals Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Development Proposals Line
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Development Proposals Line
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Employment Land Audit
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Employment Land Audit
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Fife Common Good Land
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.6
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Fife Common Good Land
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Fife Primary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.4
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Fife Primary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Fife RC Primary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.4
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Fife RC Primary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Fife RC Secondary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.4
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Fife RC Secondary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Fife Secondary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.2222222222222222
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.4
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Fife Secondary School Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Housing Land Audit 2014
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Housing Land Audit 2014
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Listed Buildings
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Listed Buildings
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Local Landscape Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Local Landscape Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Natural Heritage Sites
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.6
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.375
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Natural Heritage Sites
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Polling Districts
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.125
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Polling Districts
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Polling Places
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.16666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Polling Places
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Tree Preservation Order Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Tree Preservation Order Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Tree Preservation Order Points
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Tree Preservation Order Points
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Vacant And Derelict Land
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Vacant And Derelict Land
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Wind Turbines
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Wind Turbines
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Windfarm Broad Area Of Search
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Windfarm Broad Area Of Search
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2857142857142857
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: AIR EMEP Monitoring Sites
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Air Monitoring Sites
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2857142857142857
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Air Monitoring Sites
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Air Zones
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Air Zones
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Bathing Water Quality
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.4
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Bathing Water Quality
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Coal Restricted Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Coal Restricted Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Coastal waterbodies
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Coastal waterbodies
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: EPA Offices
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: EPA Offices
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Geological Linear Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Geological Linear Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Ground waterbodies
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Ground waterbodies
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Historical Groundwater Quality
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Historical Groundwater Quality
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Large Towns
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Large Towns
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Licenced IPPC Facilities
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Licenced IPPC Facilities
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Licenced Waste Facilities
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.75
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Licenced Waste Facilities
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Linear Mine Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Linear Mine Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Linear Waste Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Linear Waste Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Medium Towns
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Medium Towns
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Mine District
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Mine District
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Mine Site Boundaries
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Mine Site Boundaries
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Mine Site Location
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Mine Site Location
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Other Waste Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Other Waste Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Point Mine Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Point Mine Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Point Waste Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Point Waste Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Radiation Monitoring
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Radiation Monitoring
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Radon Map
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Radon Map
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: River Basin District
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: River Basin District
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: River Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: River Catchments
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: River Sub Basins
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: River Sub Basins
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: SAC CO Habitats - Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.16666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: SAC CO Habitats - Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: SAC CO Species - Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: SAC CO Species - Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: SPA CO Habitats - Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: SPA CO Habitats - Area
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Site Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Site Features
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Small Towns
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Small Towns
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Solid Waste Analyses
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.7272727272727273
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Solid Waste Analyses
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Solid Waste Heaps
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Solid Waste Heaps
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Stream Sediment Analyses
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.3076923076923077
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Stream Sediment Analyses
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Subsoils
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Subsoils
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Transitional waterbodies
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Transitional waterbodies
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Analyses (Summer)
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Analyses (Summer)
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Analyses (Winter)
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.14285714285714285
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Analyses (Winter)
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Areas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Water Management Units
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Water Management Units
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Zone of Subsidence
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Zone of Subsidence
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: Napier City Council Election Wards
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2857142857142857
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: Napier City Council Election Wards
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncil1mContours
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncil1mContours
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilAddressPoints
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.42857142857142855
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilAddressPoints
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilCadastralParcels
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilCadastralParcels
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilCarParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilCarParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilDogExerciseAreas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2727272727272727
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilDogExerciseAreas
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilHeritageBuildingDatabase
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.14285714285714285
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilHeritageBuildingDatabase
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilLeasedParking
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.6666666666666666
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.25
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilLeasedParking
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilLiquorBan
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.2
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilLiquorBan
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilMobilityParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.375
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilMobilityParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilMotorcycleParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilMotorcycleParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilOnStreetParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilOnStreetParks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilOperativePlanZones
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilOperativePlanZones
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilPayandDisplayCarparks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5454545454545454
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilPayandDisplayCarparks
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilSubdivisionApplications
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilSubdivisionApplications
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: NapierCityCouncilTitleParcels
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.3333333333333333
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.3
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: NapierCityCouncilTitleParcels
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: ne_50m_boundary_lines_land
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.5
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: ne_50m_boundary_lines_land
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:70 - [INICIO] Início do processamento para o título: ne_50m_coastline
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 1.0
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:104 - [FIM] Fim do processamento para o título: ne_50m_coastline
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:175 - Precisão: 0.675
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:176 - Cobertura: 0.4725
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:114 - Percentual anotado: 0.96
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:191 - Fim do processamento!
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:192 - Data Final: 04/06/2015 - 21:16:16
+04/06/15 21:16 [main]  INFO br.com.sann.main.Main:193 - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

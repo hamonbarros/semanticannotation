@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import br.com.sann.domain.SemanticAnnotation;
+import br.com.sann.domain.SpatialData;
 
 /**
  * Interface de negócio relacionada com anotações semânticas.
@@ -29,5 +30,20 @@ public interface SemanticAnnotationService {
 	 * @return As anotações semânticas de um feature type.
 	 */
 	public List<SemanticAnnotation> recoveryAnnotations(Integer idSpatialData);
+	
+	/**
+	 * Remove as anotações de um feature type.
+	 * 
+	 * @param idSpatialData
+	 *            Id do feature type cujas anotações serão removidas.
+	 */
+	public void removeAnnotations(Integer idSpatialData);
 
+	/**
+	 * Persiste as anotações semânticas entre o featureType e o conceitos.
+	 * @param featureType O feature type.
+	 * @param concepts Os conceitos associados.
+	 */
+	public void saveSemanticAnnotations(SpatialData featureType, Set<String> concepts);
+	
 }

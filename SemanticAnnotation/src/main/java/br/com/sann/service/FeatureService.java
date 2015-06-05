@@ -64,4 +64,11 @@ public interface FeatureService {
 	 */
 	public List<SpatialData> recoverySpatialDataByTextInfo(String name, String title, 
 			String textDescription, String keywords);
+	
+	/**
+	 * Recupera os SpatialData a partir do título.
+	 * @param title O título dos spatialData a serem recuperados.
+	 * @return Os SpatialData solicitados.
+	 */
+	public List<SpatialData> recoverySpatialDataByTitle(String title);
 }

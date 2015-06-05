@@ -62,10 +62,8 @@ public class BagOfWords {
 	public String extractWordList() {
 		
 		PreProcessingText preProcessing = PreProcessingText.getInstance();
-		List<String> nounsAndAdjectives = preProcessing.preProcessing(extractTextProperties());
-		Set<String> tokenSet = new HashSet<String>();
-		tokenSet.addAll(nounsAndAdjectives);
-		return preProcessing.tokensToString(tokenSet);
+		Set<String> nounsAndAdjectives = preProcessing.preProcessing(extractTextProperties());
+		return preProcessing.tokensToString(nounsAndAdjectives);
 		
 	}
 	
@@ -78,13 +76,13 @@ public class BagOfWords {
 	public String extractWordList(String text) {
 		
 		PreProcessingText preProcessing = PreProcessingText.getInstance();
+		Set<String> wordsEndsWithTion = preProcessing.findWordsEndsWith(text, "tion");
 		text = preProcessing.extractUnderline(text);
 		text = preProcessing.tokenizingTextWithUppercase(text);
 		text = preProcessing.extractPunctuation(text);
-		List<String> nounsAndAdjectives = preProcessing.preProcessing(text);
-		Set<String> tokenSet = new HashSet<String>();
-		tokenSet.addAll(nounsAndAdjectives);
-		return preProcessing.tokensToString(tokenSet);
+		Set<String> nounsAndAdjectives = preProcessing.preProcessing(text);
+		nounsAndAdjectives.addAll(wordsEndsWithTion);
+		return preProcessing.tokensToString(nounsAndAdjectives);
 		
 	}
 

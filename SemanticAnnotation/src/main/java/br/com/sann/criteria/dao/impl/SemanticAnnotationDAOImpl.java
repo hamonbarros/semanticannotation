@@ -26,6 +26,7 @@ public class SemanticAnnotationDAOImpl implements SemanticAnnotationDAO {
 			em.flush();
 		}
 		em.getTransaction().commit();
+		em.close();
 		JPAUtil.closeEntityManager();
 	}
 
@@ -38,6 +39,19 @@ public class SemanticAnnotationDAOImpl implements SemanticAnnotationDAO {
 		em.close();
 		JPAUtil.closeEntityManager();
 		return sann;
+	}
+
+	public void removeAnnotations(Integer idSpatialData) {
+		EntityManager em = JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		String jpql = "DELETE FROM SemanticAnnotation n WHERE n.featureType.id = :idSpatialData";
+		Query q = em.createQuery(jpql);
+		q.setParameter("idSpatialData", idSpatialData);	
+		q.executeUpdate();
+		em.flush();
+		em.getTransaction().commit();
+		em.close();
+		JPAUtil.closeEntityManager();		
 	}
 
 }

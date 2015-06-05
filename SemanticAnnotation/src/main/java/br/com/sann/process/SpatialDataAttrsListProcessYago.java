@@ -12,9 +12,10 @@ import org.apache.log4j.Logger;
 
 import br.com.sann.attribute.process.AttributeListProcess;
 import br.com.sann.domain.AttributeSpatialData;
+import br.com.sann.domain.Extractor;
 import br.com.sann.domain.SpatialData;
 import br.com.sann.domain.Sumary;
-import br.com.sann.main.Main;
+import br.com.sann.main.MainAnnotationFTAttrs;
 import br.com.sann.service.impl.AttributeSpatialDataServiceImpl;
 import br.com.sann.service.processing.text.BagOfWords;
 import br.com.sann.service.processing.text.PreProcessingText;
@@ -23,48 +24,53 @@ public class SpatialDataAttrsListProcessYago extends ParentProcess{
 	
 	public void execute(List<SpatialData> spatialDataList) {
 		
+		Logger log = Logger.getLogger(MainAnnotationFTAttrs.class);
+		log.info("[INICIO] Inicio da execução do processo de anotação semântica...");
+
 		PreProcessingText preprocessing = PreProcessingText.getInstance();
 		AttributeSpatialDataServiceImpl attributeSDService = new AttributeSpatialDataServiceImpl();
-		AttributeListProcess attributeProcess = new AttributeListProcess();
-		DateFormat df = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
+		AttributeListProcess attributeProcess = new AttributeListProcess();	
 		
-		Logger log = Logger.getLogger(Main.class);
-		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		log.info("Iniciando o processamento...");
-		log.info("Data Inicial: " + df.format(new Date()));
-			
-		log.info("Inicio da consulta das classes e categorias na dbpedia que contenham relevância com os títulos...");
-		
-		PrintWriter similarity = null;
+		PrintWriter resultSannFTAttrs = null;
 		try {
 			DateFormat dformat = new SimpleDateFormat("YYYYMMddHHmm");
 			String dateFormated = dformat.format(new Date());
 
-			similarity = new PrintWriter(new FileWriter(new File("Similarity" + dateFormated + ".txt")));
+			resultSannFTAttrs = new PrintWriter(new FileWriter(new File("ResultSannFTAttrs" + dateFormated + ".txt")));
 			StringBuffer storeBagsOfWords = new StringBuffer();
 			BagOfWords bw = null;
 			Sumary sumary = new Sumary();
 			
 			int countGC = 0;
-//			for(int i=0; i<1; i++) {
-//				SpatialData spatialData = spatialDataList.get(i);
 			for (SpatialData spatialData : spatialDataList) {
 				String title = spatialData.getTitle();			
 				title = preprocessing.extractUnderline(title);
 				title = preprocessing.tokenizingTextWithUppercase(title);
+				title = preprocessing.extractWordsDefault(title);
 				bw = new BagOfWords(spatialData);
 				storeBagsOfWords.append(bw.extractTextProperties());	
 				log.info("[INICIO] Início do processamento para o título: " + title);
-				String bagOfWords = bw.extractWordList(storeBagsOfWords.toString());
-				executeSimilarityYago(spatialData, title, bagOfWords, similarity, sumary);
+				String bagOfWords = bw.extractWordList(storeBagsOfWords.toString()) + title;				
+				log.info("[INICIO] Início da anotação semântica via LOD");
+				List<Extractor> extractorList = executeSimilarityYago(spatialData, title, bagOfWords, resultSannFTAttrs, sumary);
+				log.info("[FIM] Fim da anotação semântica via LOD");
 				if (!spatialData.getAnnotated()) {
-					executeSimilarity(spatialData, title, bagOfWords, similarity, sumary);
+					resultSannFTAttrs.println("------ NÃO ENCONTROU CONCEITOS VIA LOD! -----");
+					log.info("-------->>>>>>> Não encontrou conceitos via LOD!");
+					log.info("[INICIO] Início da anotação semântica via casamento de Strings");
+					executeSannWords(extractorList, spatialData, title, resultSannFTAttrs, sumary);
+					if (!spatialData.getAnnotated()) {
+						log.info("RESULTADO: NÃO ANOTADO!");
+					} else {
+						log.info("RESULTADO: ANOTADO!");
+					}
+					log.info("[FIM] Fim da anotação semântica via casamento de Strings");
 				}
-				// Lista os atributos persistidos
+				log.info("[INICIO] Início da anotação semântica dos atributos");
 				List<AttributeSpatialData> attributes = attributeSDService
 						.recoverAttributesBySpatialData(spatialData.getId()); 				
-				// Pesquisa os conceitos da ontologia que representam os atributos
 				attributeProcess.execute(attributes);
+				log.info("[FIM] Fim da anotação semântica dos atributos");
 				log.info("[FIM] Fim do processamento para o título: " + title);
 					
 				storeBagsOfWords = new StringBuffer();
@@ -74,19 +80,13 @@ public class SpatialDataAttrsListProcessYago extends ParentProcess{
 					countGC = 0;
 				}
 			}			
-			similarity.println(sumary.toString());			
-			log.info("Finalização da consulta das classes e categorias na dbpedia que contenham relevância com os títulos.");
-			
-			similarity.flush();
-			similarity.close();			
+			resultSannFTAttrs.println(sumary.toString());						
+			resultSannFTAttrs.flush();
+			resultSannFTAttrs.close();			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		log.info("Fim do processamento!");
-		log.info("Data Final: " + df.format(new Date()));
-		log.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-
+		log.info("[FIM] Fim da execução do processo de anotação semântica.");
 	}	
 	
 }

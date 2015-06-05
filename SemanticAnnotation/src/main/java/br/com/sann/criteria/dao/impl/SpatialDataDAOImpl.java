@@ -128,5 +128,18 @@ public class SpatialDataDAOImpl implements SpatialDataDAO{
 		em.close();
 		return spatialDatas;
 	}
+
+	public List<SpatialData> recoverySpatialDataByTitle(String title) {
+		
+		EntityManager em = JPAUtil.getEntityManager();
+		String jpql = "SELECT n FROM SpatialData n " +
+				"      WHERE n.title LIKE :title ";
+		Query q = em.createQuery(jpql);
+		q.setParameter("title", title);
+
+		List<SpatialData> spatialDatas = q.getResultList();
+		em.close();
+		return spatialDatas;
+	}
 	
 }

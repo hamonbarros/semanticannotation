@@ -38,5 +38,13 @@ public interface SemanticAnnotationAttributeDAO {
 	 * @return As anotações semânticas de um atributo.
 	 */
 	public List<SemanticAnnotationAttribute> recoveryAnnotations(Integer idAttribute);
+
+	/**
+	 * Remove as anotações semânticas de um determinado atributo.
+	 * 
+	 * @param idAttribute
+	 *            Id do atributo cujas anotações serão removidas.
+	 */
+	public void removeAnnotations(Integer idAttribute);
 	
 }

@@ -2,7 +2,9 @@ package br.com.sann.loader.ontology;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.jena.riot.Lang;
@@ -53,29 +55,60 @@ public class LoaderOntology {
 	 *            A uri do conceito a ser pesquisado.
 	 * @return As superclasses do conceito.
 	 */
-	public static Set<RDFNode> getSuperClasses(String pathDisk, String uri) {
-		Set<RDFNode> superClasses = new HashSet<RDFNode>();
-		Dataset dataset = TDBFactory.createDataset(pathDisk);
+	public static Set<String> getSuperClasses(String uri) {
+		Set<String> superClasses = new HashSet<String>();
+		Dataset dataset = TDBFactory.createDataset(PATH_TDB);
 		dataset.begin(ReadWrite.READ);
 		Model model = dataset.getDefaultModel();
 		Resource resource = model.getResource(uri);
 		StmtIterator stmts = model.listStatements(resource, RDFS.subClassOf, (RDFNode) null);
 		while (stmts.hasNext()) {
 			Statement stmt = stmts.next();
-			superClasses.add(stmt.getObject());
+			superClasses.add(stmt.getObject().toString());
+		}
+		dataset.end();
+		return superClasses;
+	}
+	
+	/**
+	 * Recupera os conceitos de um determinado tema no conjunto de dados
+	 * indexado e persistido em disco.
+	 * 
+	 * @param pathDisk
+	 *            O diretório onde o conjunto de dados indexado está persistido.
+	 * @param thema
+	 *            Um tema a ser pesquisado.
+	 * @return Os conceitos referentes ao tema pesquisado.
+	 */
+	public static Set<RDFNode> getConcepts(String thema) {
+		Set<RDFNode> superClasses = new HashSet<RDFNode>();
+		Dataset dataset = TDBFactory.createDataset(PATH_TDB);
+		dataset.begin(ReadWrite.READ);
+		Model model = dataset.getDefaultModel();
+		
+		StmtIterator stmts = model.listStatements((Resource) null, RDFS.label, thema);
+		while (stmts.hasNext()) {
+			Statement stmt = stmts.next();
+			superClasses.add(stmt.getSubject());
 		}
 		dataset.end();
 		return superClasses;
 	}
 	
 	public static void main(String[] args) {
+
+//		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name106333653"));
+//		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name114438788"));
+//		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name107972279"));
+//		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name110344443"));
+//		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name101139636"));
+//		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name106720964"));
+		System.out.println(getSuperClasses("[http://dbpedia.org/class/yago/Group100031264"));
 		
-		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name106333653"));
-		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name114438788"));
-		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name107972279"));
-		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name110344443"));
-		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name101139636"));
-		System.out.println(getSuperClasses(PATH_TDB, "http://dbpedia.org/class/yago/Name106720964"));
+//		for(RDFNode node : getConcepts(PATH_TDB, "group")) {
+//			System.out.println(getSuperClasses(PATH_TDB, node.toString()));
+//		}
+		
 		
 		//TODO Faz a carga de um arquivo NT para o conjunto de dados indexado em disco.
 //		try {
