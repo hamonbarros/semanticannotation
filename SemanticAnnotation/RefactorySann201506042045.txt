@@ -1,0 +1,66 @@
+###############################################################################
+FEATURE TYPE: AIR EMEP Monitoring Sites
+
+   NOME DO CONCEITO: site
+   OCORRENCIAS: 100
+   URLS: [http://dbpedia.org/class/yago/WorldWarIISites, http://dbpedia.org/class/yago/VietnamWarSites, http://dbpedia.org/class/yago/MixtecSites, http://dbpedia.org/class/yago/RocketLaunchSites, http://dbpedia.org/class/yago/IndusValleySites, http://dbpedia.org/class/yago/BlackSites, http://dbpedia.org/class/yago/HellenisticSites, http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites, http://dbpedia.org/class/yago/EtruscanSites, http://dbpedia.org/class/yago/MesoamericanSites, http://dbpedia.org/class/yago/ZapotecSites, http://dbpedia.org/class/yago/TotonacSites, http://dbpedia.org/class/yago/IllinoisHistoricSites, http://dbpedia.org/class/yago/AmarnaSites, http://dbpedia.org/class/yago/BronzeAgeSites, http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites, http://dbpedia.org/class/yago/NewYorkStateHistoricSites, http://dbpedia.org/class/yago/WorldWarISites, http://dbpedia.org/class/yago/SupercomputerSites, http://dbpedia.org/class/yago/AbydosSites, http://dbpedia.org/class/yago/WorldHeritageSites, http://dbpedia.org/class/yago/StoneAgeSites, http://dbpedia.org/class/yago/NatureConservationReviewSites, http://dbpedia.org/class/yago/MayaSites, http://dbpedia.org/class/yago/IndianaStateHistoricSites, http://dbpedia.org/class/yago/ArchaeologicalSites, http://dbpedia.org/class/yago/KurdishHistoricalSites, http://dbpedia.org/class/yago/CentralAsianBuddhistSites, http://dbpedia.org/class/yago/OlmecSites, http://dbpedia.org/class/yago/HinduPilgrimageSites, http://dbpedia.org/class/yago/DiveSites, http://dbpedia.org/class/yago/ShockSites, http://dbpedia.org/class/yago/RamsarSites, http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites, http://dbpedia.org/class/yago/SuperfundSites, http://dbpedia.org/class/yago/AmericanCivilWarSites, http://dbpedia.org/class/yago/WeaponsTestSites, http://dbpedia.org/class/yago/NuclearTestSites, http://dbpedia.org/class/yago/SAGESites, http://dbpedia.org/class/yago/AztecSites, http://dbpedia.org/class/yago/TanzanianArcheologicalSites, http://dbpedia.org/class/yago/PaleontologicalSites, http://dbpedia.org/class/yago/ExecutionSites, http://dbpedia.org/class/yago/IronAgeSites, http://dbpedia.org/class/yago/CatholicPilgrimageSites, http://dbpedia.org/class/yago/ThracianSites, http://dbpedia.org/class/yago/AngkorianSites, http://dbpedia.org/class/yago/Click-to-donateSites, http://dbpedia.org/class/yago/NeanderthalSites, http://dbpedia.org/class/yago/UKTransmitterSites, http://dbpedia.org/class/yago/WorldWarIISites, http://dbpedia.org/class/yago/MixtecSites, http://dbpedia.org/class/yago/VietnamWarSites, http://dbpedia.org/class/yago/MayaSites, http://dbpedia.org/class/yago/IndianaStateHistoricSites, http://dbpedia.org/class/yago/RocketLaunchSites, http://dbpedia.org/class/yago/IndusValleySites, http://dbpedia.org/class/yago/KurdishHistoricalSites, http://dbpedia.org/class/yago/ArchaeologicalSites, http://dbpedia.org/class/yago/CentralAsianBuddhistSites, http://dbpedia.org/class/yago/BlackSites, http://dbpedia.org/class/yago/HellenisticSites, http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites, http://dbpedia.org/class/yago/OlmecSites, http://dbpedia.org/class/yago/ShockSites, http://dbpedia.org/class/yago/DiveSites, http://dbpedia.org/class/yago/HinduPilgrimageSites, http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites, http://dbpedia.org/class/yago/RamsarSites, http://dbpedia.org/class/yago/SuperfundSites, http://dbpedia.org/class/yago/EtruscanSites, http://dbpedia.org/class/yago/WeaponsTestSites, http://dbpedia.org/class/yago/AmericanCivilWarSites, http://dbpedia.org/class/yago/MesoamericanSites, http://dbpedia.org/class/yago/IllinoisHistoricSites, http://dbpedia.org/class/yago/TotonacSites, http://dbpedia.org/class/yago/ZapotecSites, http://dbpedia.org/class/yago/AmarnaSites, http://dbpedia.org/class/yago/NuclearTestSites, http://dbpedia.org/class/yago/BronzeAgeSites, http://dbpedia.org/class/yago/SAGESites, http://dbpedia.org/class/yago/AztecSites, http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites, http://dbpedia.org/class/yago/NewYorkStateHistoricSites, http://dbpedia.org/class/yago/WorldWarISites, http://dbpedia.org/class/yago/TanzanianArcheologicalSites, http://dbpedia.org/class/yago/PaleontologicalSites, http://dbpedia.org/class/yago/IronAgeSites, http://dbpedia.org/class/yago/ExecutionSites, http://dbpedia.org/class/yago/CatholicPilgrimageSites, http://dbpedia.org/class/yago/AngkorianSites, http://dbpedia.org/class/yago/ThracianSites, http://dbpedia.org/class/yago/SupercomputerSites, http://dbpedia.org/class/yago/AbydosSites, http://dbpedia.org/class/yago/WorldHeritageSites, http://dbpedia.org/class/yago/NeanderthalSites, http://dbpedia.org/class/yago/Click-to-donateSites, http://dbpedia.org/class/yago/StoneAgeSites, http://dbpedia.org/class/yago/UKTransmitterSites, http://dbpedia.org/class/yago/NatureConservationReviewSites]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Site108651247]
+
+   NOME DO CONCEITO: monitoring
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Monitoring100880046]
+
+   NOME DO CONCEITO: monitor
+   OCORRENCIAS: 18
+   URLS: [http://dbpedia.org/class/yago/Monitor103782006, http://dbpedia.org/class/yago/UnitedStatesNavyMonitors, http://dbpedia.org/class/yago/Admonisher109771855, http://dbpedia.org/class/yago/Monitor101694709, http://dbpedia.org/class/yago/AbercrombieClassMonitors, http://dbpedia.org/class/yago/Proctor110478960, http://dbpedia.org/class/yago/Monitor103781787, http://dbpedia.org/class/yago/Monitor103782190, http://dbpedia.org/class/yago/RoyalNavyMonitors, http://dbpedia.org/class/yago/UnitedStatesNavyMonitors, http://dbpedia.org/class/yago/Monitor103781787, http://dbpedia.org/class/yago/Monitor101694709, http://dbpedia.org/class/yago/Admonisher109771855, http://dbpedia.org/class/yago/Monitor103782006, http://dbpedia.org/class/yago/Monitor103782190, http://dbpedia.org/class/yago/AbercrombieClassMonitors, http://dbpedia.org/class/yago/RoyalNavyMonitors, http://dbpedia.org/class/yago/Proctor110478960]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Proctor110478960]
+
+   NOME DO CONCEITO: air
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Atmosphere108499057, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214, http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Atmosphere108499057, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Region108630039]
+
+   	NOME DO ATRIBUTO: ref
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Referee110514429]
+
+   	NOME DO ATRIBUTO: site
+   	OCORRENCIAS: 50
+   	URLS: [http://dbpedia.org/class/yago/UKTransmitterSites, http://dbpedia.org/class/yago/CatholicPilgrimageSites, http://dbpedia.org/class/yago/IndusValleySites, http://dbpedia.org/class/yago/SupercomputerSites, http://dbpedia.org/class/yago/SuperfundSites, http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites, http://dbpedia.org/class/yago/WorldWarISites, http://dbpedia.org/class/yago/WorldHeritageSites, http://dbpedia.org/class/yago/ShockSites, http://dbpedia.org/class/yago/WorldWarIISites, http://dbpedia.org/class/yago/AngkorianSites, http://dbpedia.org/class/yago/BronzeAgeSites, http://dbpedia.org/class/yago/DiveSites, http://dbpedia.org/class/yago/TanzanianArcheologicalSites, http://dbpedia.org/class/yago/CentralAsianBuddhistSites, http://dbpedia.org/class/yago/SAGESites, http://dbpedia.org/class/yago/MayaSites, http://dbpedia.org/class/yago/NuclearTestSites, http://dbpedia.org/class/yago/IndianaStateHistoricSites, http://dbpedia.org/class/yago/OlmecSites, http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites, http://dbpedia.org/class/yago/ZapotecSites, http://dbpedia.org/class/yago/IronAgeSites, http://dbpedia.org/class/yago/VietnamWarSites, http://dbpedia.org/class/yago/AbydosSites, http://dbpedia.org/class/yago/NewYorkStateHistoricSites, http://dbpedia.org/class/yago/NeanderthalSites, http://dbpedia.org/class/yago/StoneAgeSites, http://dbpedia.org/class/yago/EtruscanSites, http://dbpedia.org/class/yago/BlackSites, http://dbpedia.org/class/yago/Click-to-donateSites, http://dbpedia.org/class/yago/HinduPilgrimageSites, http://dbpedia.org/class/yago/RamsarSites, http://dbpedia.org/class/yago/MixtecSites, http://dbpedia.org/class/yago/NatureConservationReviewSites, http://dbpedia.org/class/yago/IllinoisHistoricSites, http://dbpedia.org/class/yago/AmarnaSites, http://dbpedia.org/class/yago/HellenisticSites, http://dbpedia.org/class/yago/KurdishHistoricalSites, http://dbpedia.org/class/yago/RocketLaunchSites, http://dbpedia.org/class/yago/ArchaeologicalSites, http://dbpedia.org/class/yago/MesoamericanSites, http://dbpedia.org/class/yago/ThracianSites, http://dbpedia.org/class/yago/PaleontologicalSites, http://dbpedia.org/class/yago/TotonacSites, http://dbpedia.org/class/yago/AztecSites, http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites, http://dbpedia.org/class/yago/WeaponsTestSites, http://dbpedia.org/class/yago/AmericanCivilWarSites, http://dbpedia.org/class/yago/ExecutionSites]
+   	OCORRENCIAS CONCEITOS GERAIS: 1
+   	URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Site108651247]
+
+   	NOME DO ATRIBUTO: name
+   	OCORRENCIAS: 6
+   	URLS: [http://dbpedia.org/class/yago/Name106333653, http://dbpedia.org/class/yago/Name110344443, http://dbpedia.org/class/yago/Name107972279, http://dbpedia.org/class/yago/Name106720964, http://dbpedia.org/class/yago/Name101139636, http://dbpedia.org/class/yago/Name114438788]
+   	OCORRENCIAS CONCEITOS GERAIS: 6
+   	URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Name114438788, http://dbpedia.org/class/yago/Name106720964, http://dbpedia.org/class/yago/Name106333653, http://dbpedia.org/class/yago/Name101139636, http://dbpedia.org/class/yago/Name107972279, http://dbpedia.org/class/yago/Name110344443]
+
+   	NOME DO ATRIBUTO: status
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Condition113920835]
+
+   	NOME DO ATRIBUTO: altitude
+   	OCORRENCIAS: 2
+   	URLS: [http://dbpedia.org/class/yago/Altitude105131647, http://dbpedia.org/class/yago/Altitude113897657]
+
+   	NOME DO ATRIBUTO: latitude
+   	OCORRENCIAS: 3
+   	URLS: [http://dbpedia.org/class/yago/Latitude108595531, http://dbpedia.org/class/yago/Latitude105127640, http://dbpedia.org/class/yago/Latitude113995148]
+
+   	NOME DO ATRIBUTO: longitude
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Longitude108596668]
+
+   	NOME DO ATRIBUTO: shape
+   	OCORRENCIAS: 8
+   	URLS: [http://dbpedia.org/class/yago/BatteryShapes, http://dbpedia.org/class/yago/Shape100027807, http://dbpedia.org/class/yago/Form104677514, http://dbpedia.org/class/yago/GeometricShapes, http://dbpedia.org/class/yago/Form105930736, http://dbpedia.org/class/yago/AncientGreekPotShapes, http://dbpedia.org/class/yago/Shape105064037, http://dbpedia.org/class/yago/Condition114546227]
+   	OCORRENCIAS CONCEITOS GERAIS: 1
+   	URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Shape105064037]
+
+   	NOME DO ATRIBUTO: status
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Condition113920835]

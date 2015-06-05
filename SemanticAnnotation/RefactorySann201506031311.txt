@@ -1,0 +1,1338 @@
+###############################################################################
+FEATURE TYPE: AIR EMEP Monitoring Sites
+
+   NOME DO CONCEITO: region
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Region108630039]
+###############################################################################
+FEATURE TYPE: Air Monitoring Sites
+
+   NOME DO CONCEITO: region
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Region108630039]
+###############################################################################
+FEATURE TYPE: Air Zones
+
+   NOME DO CONCEITO: zone
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Zone108688247]
+###############################################################################
+FEATURE TYPE: AIR_MONITORINGSITES_4326
+
+   NOME DO CONCEITO: region
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Region108630039]
+###############################################################################
+FEATURE TYPE: Allotment Locations
+
+   NOME DO CONCEITO: location
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Location100027167]
+###############################################################################
+FEATURE TYPE: Bathing Water Quality
+
+   NOME DO CONCEITO: bath
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Bath102806530]
+###############################################################################
+FEATURE TYPE: Coal Restricted Areas
+
+   NOME DO CONCEITO: coal
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Coal114814616, http://dbpedia.org/class/yago/Ember109273130]
+###############################################################################
+FEATURE TYPE: Community Council Boundaries
+
+   NOME DO CONCEITO: council
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Council108310949]
+###############################################################################
+FEATURE TYPE: Conservation Areas
+
+   NOME DO CONCEITO: conservation
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Conservation100819274, http://dbpedia.org/class/yago/Conservation106104073]
+###############################################################################
+FEATURE TYPE: Core Path Network
+
+   NOME DO CONCEITO: web
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Network108434259]
+###############################################################################
+FEATURE TYPE: Corine 1990
+
+   NOME DO CONCEITO: card
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Card102962545]
+###############################################################################
+FEATURE TYPE: Corine 2000
+
+   NOME DO CONCEITO: card
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Card102962545]
+###############################################################################
+FEATURE TYPE: Corine 2006
+
+   NOME DO CONCEITO: card
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Card102962545]
+###############################################################################
+FEATURE TYPE: Corine Change 1990 - 2000
+
+   NOME DO CONCEITO: hard cash
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Cash113386614]
+###############################################################################
+FEATURE TYPE: Corine Change 2000 - 2006
+
+   NOME DO CONCEITO: hard cash
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Cash113386614]
+###############################################################################
+FEATURE TYPE: Defined Policy Areas
+
+   NOME DO CONCEITO: policy
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Policy105901508]
+###############################################################################
+FEATURE TYPE: Development Proposals Area
+
+   NOME DO CONCEITO: development
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Development100250259]
+###############################################################################
+FEATURE TYPE: Development Proposals Line
+
+   NOME DO CONCEITO: development
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Development100250259]
+###############################################################################
+FEATURE TYPE: Employment Land Audit
+
+   NOME DO CONCEITO: land
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Land113250048]
+###############################################################################
+FEATURE TYPE: EPA Offices
+
+   NOME DO CONCEITO: administration
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Administration101135952]
+###############################################################################
+FEATURE TYPE: Fife Common Good Land
+
+   NOME DO CONCEITO: property
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Property113244109]
+###############################################################################
+FEATURE TYPE: Fife Primary School Catchments
+
+   NOME DO CONCEITO: primary election
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Primary100182571]
+###############################################################################
+FEATURE TYPE: Fife RC Primary School Catchments
+
+   NOME DO CONCEITO: primary election
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Primary100182571]
+###############################################################################
+FEATURE TYPE: Fife RC Secondary School Catchments
+
+   NOME DO CONCEITO: teacher
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Teacher110694258]
+###############################################################################
+FEATURE TYPE: Fife Secondary School Catchments
+
+   NOME DO CONCEITO: teacher
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Teacher110694258]
+###############################################################################
+FEATURE TYPE: Geological Linear Features
+
+   NOME DO CONCEITO: characteristic
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Feature105849789]
+###############################################################################
+FEATURE TYPE: Ground waterbodies
+
+   NOME DO CONCEITO: solid ground
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Land109334396]
+###############################################################################
+FEATURE TYPE: Historical Groundwater Quality
+
+   NOME DO CONCEITO: quality
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Quality113948026, http://dbpedia.org/class/yago/Quality104728068, http://dbpedia.org/class/yago/Quality104723816]
+###############################################################################
+FEATURE TYPE: Housing Land Audit 2014
+
+   NOME DO CONCEITO: entity
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Entity100001740]
+###############################################################################
+FEATURE TYPE: Hydrometric Gauges
+
+   NOME DO CONCEITO: gauge
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Gauge105130028, http://dbpedia.org/class/yago/Gauge105103430, http://dbpedia.org/class/yago/WireGauges, http://dbpedia.org/class/yago/PressureGauges]
+###############################################################################
+FEATURE TYPE: Large Towns
+
+   NOME DO CONCEITO: town
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Town108665504]
+###############################################################################
+FEATURE TYPE: Licenced Waste Facilities
+
+   NOME DO CONCEITO: waste
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+###############################################################################
+FEATURE TYPE: Linear Mine Features
+
+   NOME DO CONCEITO: mine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Mine103768346]
+###############################################################################
+FEATURE TYPE: Linear Waste Features
+
+   NOME DO CONCEITO: characteristic
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Feature105849789]
+###############################################################################
+FEATURE TYPE: Listed Buildings
+
+   NOME DO CONCEITO: edifice
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Building102913152]
+###############################################################################
+FEATURE TYPE: Local Landscape Areas
+
+   NOME DO CONCEITO: landscape
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Landscape108646902]
+###############################################################################
+FEATURE TYPE: Medium Towns
+
+   NOME DO CONCEITO: medium
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Medium106254669]
+###############################################################################
+FEATURE TYPE: Mine District
+
+   NOME DO CONCEITO: territory
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/District108552138]
+###############################################################################
+FEATURE TYPE: Mine Site Boundaries
+
+   NOME DO CONCEITO: mine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Mine103768346]
+###############################################################################
+FEATURE TYPE: Mine Site Location
+
+   NOME DO CONCEITO: mine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Mine103768346]
+###############################################################################
+FEATURE TYPE: Napier City Council Election Wards
+
+   NOME DO CONCEITO: unit
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Whole100003553]
+
+   NOME DO CONCEITO: physical object
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Object100002684]
+
+   NOME DO CONCEITO: animate thing
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/LivingThing100004258]
+
+   NOME DO CONCEITO: mortal
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Person100007846]
+
+   NOME DO CONCEITO: ward
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Ward110767020]
+
+   NOME DO CONCEITO: physical entity
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/PhysicalEntity100001930]
+
+   NOME DO CONCEITO: causal agent
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/CausalAgent100007347]
+
+   NOME DO CONCEITO: organism
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Organism100004475]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilAddressPoints
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilCadastralParcels
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilCarParks
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilDogExerciseAreas
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilHeritageBuildingDatabase
+
+   NOME DO CONCEITO: region
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Region108630985, http://dbpedia.org/class/yago/Region108630985, http://dbpedia.org/class/yago/Region108630985, http://dbpedia.org/class/yago/Region108630985]
+
+   NOME DO CONCEITO: physical object
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Object100002684, http://dbpedia.org/class/yago/Object100002684, http://dbpedia.org/class/yago/Object100002684, http://dbpedia.org/class/yago/Object100002684]
+
+   NOME DO CONCEITO: territory
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/District108552138, http://dbpedia.org/class/yago/District108552138, http://dbpedia.org/class/yago/District108552138, http://dbpedia.org/class/yago/District108552138]
+
+   NOME DO CONCEITO: location
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Location100027167, http://dbpedia.org/class/yago/Location100027167, http://dbpedia.org/class/yago/Location100027167, http://dbpedia.org/class/yago/Location100027167]
+
+   NOME DO CONCEITO: municipality
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Municipality108626283, http://dbpedia.org/class/yago/Municipality108626283]
+
+   NOME DO CONCEITO: aircraft engine
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/AircraftEngine102687423, http://dbpedia.org/class/yago/AircraftEngine102687423]
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/City108524735]
+
+   NOME DO CONCEITO: organization
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Organization108008335, http://dbpedia.org/class/yago/Organization108008335]
+
+   NOME DO CONCEITO: instrumentality
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Instrumentality103575240, http://dbpedia.org/class/yago/Instrumentality103575240]
+
+   NOME DO CONCEITO: social group
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/SocialGroup107950920, http://dbpedia.org/class/yago/SocialGroup107950920]
+
+   NOME DO CONCEITO: physical entity
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/PhysicalEntity100001930, http://dbpedia.org/class/yago/PhysicalEntity100001930, http://dbpedia.org/class/yago/PhysicalEntity100001930, http://dbpedia.org/class/yago/PhysicalEntity100001930]
+
+   NOME DO CONCEITO: motor
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Motor103789946, http://dbpedia.org/class/yago/Motor103789946]
+
+   NOME DO CONCEITO: city in New Zealand
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/PortCitiesInNewZealand, http://dbpedia.org/class/yago/PortCitiesInNewZealand]
+
+   NOME DO CONCEITO: district
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/HistoricDistricts, http://dbpedia.org/class/yago/HistoricDistricts]
+
+   NOME DO CONCEITO: institution
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Institution108053576, http://dbpedia.org/class/yago/Institution108053576]
+
+   NOME DO CONCEITO: geographic region
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/GeographicalArea108574314, http://dbpedia.org/class/yago/GeographicalArea108574314]
+
+   NOME DO CONCEITO: university
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/University108286569, http://dbpedia.org/class/yago/University108286569]
+
+   NOME DO CONCEITO: engine
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Engine103287733, http://dbpedia.org/class/yago/Engine103287733]
+
+   NOME DO CONCEITO: urban area
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/UrbanArea108675967, http://dbpedia.org/class/yago/UrbanArea108675967]
+
+   NOME DO CONCEITO: machine
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Machine103699975, http://dbpedia.org/class/yago/Machine103699975]
+
+   NOME DO CONCEITO: institution established in 1964
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/EducationalInstitutionsEstablishedIn1964, http://dbpedia.org/class/yago/EducationalInstitutionsEstablishedIn1964]
+
+   NOME DO CONCEITO: unit
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Whole100003553, http://dbpedia.org/class/yago/Whole100003553]
+
+   NOME DO CONCEITO: artifact
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Artifact100021939, http://dbpedia.org/class/yago/Artifact100021939]
+
+   NOME DO CONCEITO: administrative division
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/AdministrativeDistrict108491826, http://dbpedia.org/class/yago/AdministrativeDistrict108491826]
+
+   NOME DO CONCEITO: abstraction
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Abstraction100002137, http://dbpedia.org/class/yago/Abstraction100002137]
+
+   NOME DO CONCEITO: device
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Device103183080, http://dbpedia.org/class/yago/Device103183080]
+
+   NOME DO CONCEITO: educational institution
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/EducationalInstitution108276342, http://dbpedia.org/class/yago/EducationalInstitution108276342]
+
+   NOME DO CONCEITO: group
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Group100031264, http://dbpedia.org/class/yago/Group100031264]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilLeasedParking
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilLiquorBan
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilMobilityParks
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilMotorcycleParks
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilOnStreetParks
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilOperativePlanZones
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilPayandDisplayCarparks
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilSubdivisionApplications
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: NapierCityCouncilTitleParcels
+
+   NOME DO CONCEITO: parcel
+   OCORRENCIAS: 8
+   URLS: [http://dbpedia.org/class/yago/Tract108673395, http://dbpedia.org/class/yago/Package103871083, http://dbpedia.org/class/yago/Package108008017, http://dbpedia.org/class/yago/Parcel101085098, http://dbpedia.org/class/yago/Tract108673395, http://dbpedia.org/class/yago/Package103871083, http://dbpedia.org/class/yago/Package108008017, http://dbpedia.org/class/yago/Parcel101085098]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Parcel101085098]
+
+   NOME DO CONCEITO: title
+   OCORRENCIAS: 9
+   URLS: [http://dbpedia.org/class/yago/Title105181199, http://dbpedia.org/class/yago/Title106343117, http://dbpedia.org/class/yago/Championship113948912, http://dbpedia.org/class/yago/Title106346461, http://dbpedia.org/class/yago/Title106345993, http://dbpedia.org/class/yago/Title106346220, http://dbpedia.org/class/yago/Deed106545137, http://dbpedia.org/class/yago/Claim105175904, http://dbpedia.org/class/yago/Title106343520]
+   OCORRENCIAS CONCEITOS GERAIS: 6
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Title105181199, http://dbpedia.org/class/yago/Title106343117, http://dbpedia.org/class/yago/Title106346461, http://dbpedia.org/class/yago/Title106345993, http://dbpedia.org/class/yago/Title106346220, http://dbpedia.org/class/yago/Title106343520]
+
+   NOME DO CONCEITO: council
+   OCORRENCIAS: 21
+   URLS: [http://dbpedia.org/class/yago/EasternOrthodoxChurchCouncils, http://dbpedia.org/class/yago/PontificalCouncils, http://dbpedia.org/class/yago/SevenEcumenicalChurchCouncils, http://dbpedia.org/class/yago/PrivyCouncils, http://dbpedia.org/class/yago/CanadianCityCouncils, http://dbpedia.org/class/yago/UnitedStatesCityCouncils, http://dbpedia.org/class/yago/AustralianCityCouncils, http://dbpedia.org/class/yago/OrientalOrthodoxChurchCouncils, http://dbpedia.org/class/yago/YouthCouncils, http://dbpedia.org/class/yago/ChristianChurchCouncils, http://dbpedia.org/class/yago/ArtsCouncils, http://dbpedia.org/class/yago/IrishLocalGovernmentCouncils, http://dbpedia.org/class/yago/UnitedKingdomCityCouncils, http://dbpedia.org/class/yago/WorldAffairsCouncils, http://dbpedia.org/class/yago/ResearchCouncils, http://dbpedia.org/class/yago/SectorSkillsCouncils, http://dbpedia.org/class/yago/Council108309409, http://dbpedia.org/class/yago/Council108312559, http://dbpedia.org/class/yago/CityCouncils, http://dbpedia.org/class/yago/Council108310949, http://dbpedia.org/class/yago/RomanCatholicChurchCouncils]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Council108310949]
+
+   NOME DO CONCEITO: city
+   OCORRENCIAS: 35
+   URLS: [http://dbpedia.org/class/yago/AustralianCapitalCities, http://dbpedia.org/class/yago/DestroyedCities, http://dbpedia.org/class/yago/SunkenCities, http://dbpedia.org/class/yago/PlannedCities, http://dbpedia.org/class/yago/IndianCapitalCities, http://dbpedia.org/class/yago/City108540903, http://dbpedia.org/class/yago/DividedCities, http://dbpedia.org/class/yago/City108226335, http://dbpedia.org/class/yago/ImperialFreeCities, http://dbpedia.org/class/yago/SamniteCities, http://dbpedia.org/class/yago/HinduHolyCities, http://dbpedia.org/class/yago/BiblicalCities, http://dbpedia.org/class/yago/ShiaHolyCities, http://dbpedia.org/class/yago/CoastalCities, http://dbpedia.org/class/yago/AncientIndianCities, http://dbpedia.org/class/yago/ForgottenRealmsCities, http://dbpedia.org/class/yago/AncientGreekCities, http://dbpedia.org/class/yago/LakeshoreCities, http://dbpedia.org/class/yago/UndergroundCities, http://dbpedia.org/class/yago/WikiProjectCities, http://dbpedia.org/class/yago/IndependentCities, http://dbpedia.org/class/yago/IndianCities, http://dbpedia.org/class/yago/AncientChineseCities, http://dbpedia.org/class/yago/ClosedCities, http://dbpedia.org/class/yago/HebrewBibleCities, http://dbpedia.org/class/yago/Cities, http://dbpedia.org/class/yago/SocialistPlannedCities, http://dbpedia.org/class/yago/QuadCities, http://dbpedia.org/class/yago/AncientCities, http://dbpedia.org/class/yago/HolyCities, http://dbpedia.org/class/yago/TwinCities, http://dbpedia.org/class/yago/SubprovincialCities, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/DefunctMichiganCities, http://dbpedia.org/class/yago/TorahCities]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/City108524735]
+###############################################################################
+FEATURE TYPE: Natural Heritage Sites
+
+   NOME DO CONCEITO: organization
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Organization108008335]
+
+   NOME DO CONCEITO: social group
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/SocialGroup107950920]
+
+   NOME DO CONCEITO: abstraction
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Abstraction100002137]
+
+   NOME DO CONCEITO: organisation based in Australia
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/EnvironmentalOrganisationsBasedInAustralia]
+
+   NOME DO CONCEITO: group
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Group100031264]
+###############################################################################
+FEATURE TYPE: ne_50m_boundary_lines_land
+
+   NOME DO CONCEITO: land
+   OCORRENCIAS: 5
+   URLS: [http://dbpedia.org/class/yago/AnishinaabeLands, http://dbpedia.org/class/yago/Kingdom114514805, http://dbpedia.org/class/yago/Land113250048, http://dbpedia.org/class/yago/Country108544813, http://dbpedia.org/class/yago/Domain108556491]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Land113250048]
+
+   NOME DO CONCEITO: Ne
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Neon114646152]
+
+   NOME DO CONCEITO: boundary
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries]
+
+   NOME DO CONCEITO: NE
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Northeast113831843]
+###############################################################################
+FEATURE TYPE: ne_50m_coastline
+
+   NOME DO CONCEITO: Ne
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Neon114646152]
+
+   NOME DO CONCEITO: coastline
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Coastline108613000]
+
+   NOME DO CONCEITO: NE
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Northeast113831843]
+###############################################################################
+FEATURE TYPE: Other Waste Areas
+
+   NOME DO CONCEITO: waste
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+###############################################################################
+FEATURE TYPE: Point Mine Features
+
+   NOME DO CONCEITO: mine
+   OCORRENCIAS: 17
+   URLS: [http://dbpedia.org/class/yago/ZincMines, http://dbpedia.org/class/yago/NuclearMines, http://dbpedia.org/class/yago/LandMines, http://dbpedia.org/class/yago/WorldWarIMines, http://dbpedia.org/class/yago/Mine103768346, http://dbpedia.org/class/yago/UraniumMines, http://dbpedia.org/class/yago/TungstenMines, http://dbpedia.org/class/yago/CopperMines, http://dbpedia.org/class/yago/SilverMines, http://dbpedia.org/class/yago/AntitankMines, http://dbpedia.org/class/yago/LeadMines, http://dbpedia.org/class/yago/Mine103768132, http://dbpedia.org/class/yago/NavalMines, http://dbpedia.org/class/yago/Mines, http://dbpedia.org/class/yago/TinMines, http://dbpedia.org/class/yago/NickelMines, http://dbpedia.org/class/yago/AntipersonnelMines]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Mine103768346]
+
+   NOME DO CONCEITO: feature
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/FacialFeatures, http://dbpedia.org/class/yago/TextEditorFeatures, http://dbpedia.org/class/yago/JapaneseArchitecturalFeatures, http://dbpedia.org/class/yago/YellowstoneGeothermalFeatures, http://dbpedia.org/class/yago/Feature103325769, http://dbpedia.org/class/yago/ArchaeologicalFeatures, http://dbpedia.org/class/yago/CallingFeatures, http://dbpedia.org/class/yago/TelephoneServiceEnhancedFeatures, http://dbpedia.org/class/yago/SesameStreetFeatures, http://dbpedia.org/class/yago/LinuxKernelFeatures]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Feature105849789]
+###############################################################################
+FEATURE TYPE: Point Waste Features
+
+   NOME DO CONCEITO: waste
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+   NOME DO CONCEITO: feature
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/FacialFeatures, http://dbpedia.org/class/yago/TextEditorFeatures, http://dbpedia.org/class/yago/JapaneseArchitecturalFeatures, http://dbpedia.org/class/yago/YellowstoneGeothermalFeatures, http://dbpedia.org/class/yago/Feature103325769, http://dbpedia.org/class/yago/ArchaeologicalFeatures, http://dbpedia.org/class/yago/CallingFeatures, http://dbpedia.org/class/yago/TelephoneServiceEnhancedFeatures, http://dbpedia.org/class/yago/SesameStreetFeatures, http://dbpedia.org/class/yago/LinuxKernelFeatures]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Feature105849789]
+###############################################################################
+FEATURE TYPE: Point Water Features
+
+   NOME DO CONCEITO: water
+   OCORRENCIAS: 8
+   URLS: [http://dbpedia.org/class/yago/Water114847357, http://dbpedia.org/class/yago/WaterSystem104562658, http://dbpedia.org/class/yago/SpaWaters, http://dbpedia.org/class/yago/OutstandingFloridaWaters, http://dbpedia.org/class/yago/Water107935504, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/DisputedWaters, http://dbpedia.org/class/yago/Urine114855724]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Water114845743]
+
+   NOME DO CONCEITO: feature
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/TextEditorFeatures, http://dbpedia.org/class/yago/JapaneseArchitecturalFeatures, http://dbpedia.org/class/yago/YellowstoneGeothermalFeatures, http://dbpedia.org/class/yago/ArchaeologicalFeatures, http://dbpedia.org/class/yago/CallingFeatures, http://dbpedia.org/class/yago/TelephoneServiceEnhancedFeatures, http://dbpedia.org/class/yago/FacialFeatures, http://dbpedia.org/class/yago/Feature103325769, http://dbpedia.org/class/yago/SesameStreetFeatures, http://dbpedia.org/class/yago/LinuxKernelFeatures]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Feature105849789]
+###############################################################################
+FEATURE TYPE: Polling Districts
+
+   NOME DO CONCEITO: precinct
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/GovernmentPrecincts, http://dbpedia.org/class/yago/Precinct108538426]
+
+   NOME DO CONCEITO: poll
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Poll105539012, http://dbpedia.org/class/yago/Poll100653811, http://dbpedia.org/class/yago/Poll105539012, http://dbpedia.org/class/yago/Poll100653811]
+
+   NOME DO CONCEITO: district
+   OCORRENCIAS: 92
+   URLS: [http://dbpedia.org/class/yago/CentralBusinessDistricts, http://dbpedia.org/class/yago/NovaScotiaFederalElectoralDistricts, http://dbpedia.org/class/yago/OttawaElectoralDistricts, http://dbpedia.org/class/yago/DefunctYukonFederalElectoralDistricts, http://dbpedia.org/class/yago/YukonFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctSaskatchewanFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctNovaScotiaFederalElectoralDistricts, http://dbpedia.org/class/yago/Brampton,OntarioElectoralDistricts, http://dbpedia.org/class/yago/GreaterVancouverElectoralDistricts, http://dbpedia.org/class/yago/DefunctNorthwestTerritoriesFederalElectoralDistricts, http://dbpedia.org/class/yago/HistoricDistricts, http://dbpedia.org/class/yago/LondonPostcodeDistricts, http://dbpedia.org/class/yago/RuralDistricts, http://dbpedia.org/class/yago/SchoolDistricts, http://dbpedia.org/class/yago/BritishColumbiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/ShireDistricts, http://dbpedia.org/class/yago/AucklandUrbanDistricts, http://dbpedia.org/class/yago/TexasSenateDistricts, http://dbpedia.org/class/yago/CanadianElectoralDistricts, http://dbpedia.org/class/yago/CaliforniaStateAssemblyDistricts, http://dbpedia.org/class/yago/NorthwestTerritoriesElectoralDistricts, http://dbpedia.org/class/yago/OntarioProvincialElectoralDistricts, http://dbpedia.org/class/yago/WesternCapeDistricts, http://dbpedia.org/class/yago/NewBrunswickFederalElectoralDistricts, http://dbpedia.org/class/yago/BelfastPostalDistricts, http://dbpedia.org/class/yago/LibraryDistricts, http://dbpedia.org/class/yago/SaskatchewanProvincialElectoralDistricts, http://dbpedia.org/class/yago/WarehouseDistricts, http://dbpedia.org/class/yago/NewYorkStateSenateDistricts, http://dbpedia.org/class/yago/CoquitlamElectoralDistricts, http://dbpedia.org/class/yago/BarcelonaDistricts, http://dbpedia.org/class/yago/FormerAlbertaProvincialElectoralDistricts, http://dbpedia.org/class/yago/PrinceEdwardIslandProvincialElectoralDistricts, http://dbpedia.org/class/yago/ObsoleteUnitedStatesCongressionalDistricts, http://dbpedia.org/class/yago/Red-lightDistricts, http://dbpedia.org/class/yago/DefunctPrinceEdwardIslandFederalElectoralDistricts, http://dbpedia.org/class/yago/YukonElectoralDistricts, http://dbpedia.org/class/yago/RotumanDistricts, http://dbpedia.org/class/yago/OntarioFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctOntarioProvincialElectoralDistricts, http://dbpedia.org/class/yago/ManitobaFederalElectoralDistricts, http://dbpedia.org/class/yago/SaskatchewanFederalElectoralDistricts, http://dbpedia.org/class/yago/EasternCapeDistricts, http://dbpedia.org/class/yago/NorthernCapeDistricts, http://dbpedia.org/class/yago/ArlingtonCountyHistoricDistricts, http://dbpedia.org/class/yago/UnitedStatesCongressionalDistricts, http://dbpedia.org/class/yago/DefunctBritishColumbiaFederalElectoralDistricts, http://dbpedia.org/class/yago/GautengDistricts, http://dbpedia.org/class/yago/DefunctOntarioFederalElectoralDistricts, http://dbpedia.org/class/yago/NorthwestTerritoriesFederalElectoralDistricts, http://dbpedia.org/class/yago/QuebecProvincialElectoralDistricts, http://dbpedia.org/class/yago/NorthWestDistricts, http://dbpedia.org/class/yago/ChristchurchUrbanDistricts, http://dbpedia.org/class/yago/FormerNorthwestTerritoriesElectoralDistricts, http://dbpedia.org/class/yago/FinancialDistricts, http://dbpedia.org/class/yago/DefunctAlbertaFederalElectoralDistricts, http://dbpedia.org/class/yago/KwaZulu-NatalDistricts, http://dbpedia.org/class/yago/MpumalangaDistricts, http://dbpedia.org/class/yago/NewBrunswickProvincialElectoralDistricts, http://dbpedia.org/class/yago/DefunctBritishColumbiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/AlbertaProvincialElectoralDistricts, http://dbpedia.org/class/yago/AlbertaFederalElectoralDistricts, http://dbpedia.org/class/yago/High-technologyBusinessDistricts, http://dbpedia.org/class/yago/FormerNon-metropolitanDistricts, http://dbpedia.org/class/yago/CopenhagenCityDistricts, http://dbpedia.org/class/yago/NunavutFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctPrinceEdwardIslandProvincialElectoralDistricts, http://dbpedia.org/class/yago/QuebecCityFederalElectoralDistricts, http://dbpedia.org/class/yago/FreeStateDistricts, http://dbpedia.org/class/yago/QuebecFederalElectoralDistricts, http://dbpedia.org/class/yago/PrinceEdwardIslandFederalElectoralDistricts, http://dbpedia.org/class/yago/FormerNovaScotiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/Districts, http://dbpedia.org/class/yago/DiplomaticDistricts, http://dbpedia.org/class/yago/LimpopoDistricts, http://dbpedia.org/class/yago/TorontoElectoralDistricts, http://dbpedia.org/class/yago/WellingtonUrbanDistricts, http://dbpedia.org/class/yago/DefunctQuebecFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctManitobaProvincialElectoralDistricts, http://dbpedia.org/class/yago/NovaScotiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/QuebecCityAreaFederalElectoralDistricts, http://dbpedia.org/class/yago/NewJerseyAbbottDistricts, http://dbpedia.org/class/yago/FormerSaskatchewanProvincialElectoralDistricts, http://dbpedia.org/class/yago/SuburbanMinneapolisSchoolDistricts, http://dbpedia.org/class/yago/DefunctNewBrunswickFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctManitobaFederalElectoralDistricts, http://dbpedia.org/class/yago/UtahStateSenateDistricts, http://dbpedia.org/class/yago/BritishColumbiaFederalElectoralDistricts, http://dbpedia.org/class/yago/BritishColumbiaElectoralDistricts, http://dbpedia.org/class/yago/DefunctNewBrunswickProvincialElectoralDistricts, http://dbpedia.org/class/yago/JewelleryDistricts, http://dbpedia.org/class/yago/FormerQuebecProvincialElectoralDistricts]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/District108552138]
+###############################################################################
+FEATURE TYPE: Polling Places
+
+   NOME DO CONCEITO: precinct
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/GovernmentPrecincts, http://dbpedia.org/class/yago/Precinct108538426]
+
+   NOME DO CONCEITO: poll
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Poll105539012, http://dbpedia.org/class/yago/Poll100653811, http://dbpedia.org/class/yago/Poll105539012, http://dbpedia.org/class/yago/Poll100653811]
+
+   NOME DO CONCEITO: place
+   OCORRENCIAS: 35
+   URLS: [http://dbpedia.org/class/yago/NewTestamentPlaces, http://dbpedia.org/class/yago/ParanormalPlaces, http://dbpedia.org/class/yago/NorwegianPlaces, http://dbpedia.org/class/yago/TheDarkTowerPlaces, http://dbpedia.org/class/yago/SecretPlaces, http://dbpedia.org/class/yago/Stead100721431, http://dbpedia.org/class/yago/IslamicHolyPlaces, http://dbpedia.org/class/yago/MuseumPlaces, http://dbpedia.org/class/yago/GaeltachtPlaces, http://dbpedia.org/class/yago/HebrewBiblePlaces, http://dbpedia.org/class/yago/Place113947645, http://dbpedia.org/class/yago/BioniclePlaces, http://dbpedia.org/class/yago/CrusadePlaces, http://dbpedia.org/class/yago/BiblicalPlaces, http://dbpedia.org/class/yago/CanberraUrbanPlaces, http://dbpedia.org/class/yago/Seat108647616, http://dbpedia.org/class/yago/SikhPlaces, http://dbpedia.org/class/yago/GreyhawkPlaces, http://dbpedia.org/class/yago/TorahPlaces, http://dbpedia.org/class/yago/OldTestamentApocryphaPlaces, http://dbpedia.org/class/yago/Place108642037, http://dbpedia.org/class/yago/EponymousPlaces, http://dbpedia.org/class/yago/Place106401107, http://dbpedia.org/class/yago/ArtGalleryPlaces, http://dbpedia.org/class/yago/ChessPlaces, http://dbpedia.org/class/yago/StanfordUniversityPlaces, http://dbpedia.org/class/yago/FormerCensus-designatedPlaces, http://dbpedia.org/class/yago/TopographicPoint108664443, http://dbpedia.org/class/yago/ReligiousPlaces, http://dbpedia.org/class/yago/Place105611822, http://dbpedia.org/class/yago/Home108559508, http://dbpedia.org/class/yago/TalmudPlaces, http://dbpedia.org/class/yago/MythologicalPlaces, http://dbpedia.org/class/yago/PresidentialPlaces, http://dbpedia.org/class/yago/Double-namedPlaces]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Site108651247]
+###############################################################################
+FEATURE TYPE: Radiation Monitoring
+
+   NOME DO CONCEITO: radiation
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Radiation101252918, http://dbpedia.org/class/yago/Radiation107439883, http://dbpedia.org/class/yago/Radiation105503555, http://dbpedia.org/class/yago/Radiation111499284]
+
+   NOME DO CONCEITO: monitoring
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Monitoring100880046]
+
+   NOME DO CONCEITO: monitor
+   OCORRENCIAS: 9
+   URLS: [http://dbpedia.org/class/yago/Monitor103781787, http://dbpedia.org/class/yago/UnitedStatesNavyMonitors, http://dbpedia.org/class/yago/Admonisher109771855, http://dbpedia.org/class/yago/Monitor103782006, http://dbpedia.org/class/yago/AbercrombieClassMonitors, http://dbpedia.org/class/yago/Proctor110478960, http://dbpedia.org/class/yago/Monitor101694709, http://dbpedia.org/class/yago/Monitor103782190, http://dbpedia.org/class/yago/RoyalNavyMonitors]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Proctor110478960]
+###############################################################################
+FEATURE TYPE: Radon Map
+
+   NOME DO CONCEITO: map
+   OCORRENCIAS: 12
+   URLS: [http://dbpedia.org/class/yago/Function113783816, http://dbpedia.org/class/yago/WorldMaps, http://dbpedia.org/class/yago/RailroadMaps, http://dbpedia.org/class/yago/LipschitzMaps, http://dbpedia.org/class/yago/CaliforniaMaps, http://dbpedia.org/class/yago/DemographicMaps, http://dbpedia.org/class/yago/HistoryMaps, http://dbpedia.org/class/yago/Maps, http://dbpedia.org/class/yago/IllinoisMaps, http://dbpedia.org/class/yago/ChaoticMaps, http://dbpedia.org/class/yago/Map103720163, http://dbpedia.org/class/yago/WarcraftIIICustomMaps]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Map103720163]
+###############################################################################
+FEATURE TYPE: River Basin District
+
+   NOME DO CONCEITO: basin
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/OceanBasins, http://dbpedia.org/class/yago/AnoxicBasins, http://dbpedia.org/class/yago/RiverBasin108518940, http://dbpedia.org/class/yago/EndorheicBasins, http://dbpedia.org/class/yago/Washbasin104553920, http://dbpedia.org/class/yago/Basin109215437, http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/SedimentaryBasins, http://dbpedia.org/class/yago/CatalanCoastalBasins, http://dbpedia.org/class/yago/Basin113765086]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Basin102801525]
+
+   NOME DO CONCEITO: district
+   OCORRENCIAS: 92
+   URLS: [http://dbpedia.org/class/yago/CentralBusinessDistricts, http://dbpedia.org/class/yago/NovaScotiaFederalElectoralDistricts, http://dbpedia.org/class/yago/OttawaElectoralDistricts, http://dbpedia.org/class/yago/DefunctYukonFederalElectoralDistricts, http://dbpedia.org/class/yago/YukonFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctSaskatchewanFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctNovaScotiaFederalElectoralDistricts, http://dbpedia.org/class/yago/Brampton,OntarioElectoralDistricts, http://dbpedia.org/class/yago/GreaterVancouverElectoralDistricts, http://dbpedia.org/class/yago/DefunctNorthwestTerritoriesFederalElectoralDistricts, http://dbpedia.org/class/yago/HistoricDistricts, http://dbpedia.org/class/yago/LondonPostcodeDistricts, http://dbpedia.org/class/yago/RuralDistricts, http://dbpedia.org/class/yago/SchoolDistricts, http://dbpedia.org/class/yago/BritishColumbiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/ShireDistricts, http://dbpedia.org/class/yago/AucklandUrbanDistricts, http://dbpedia.org/class/yago/TexasSenateDistricts, http://dbpedia.org/class/yago/CanadianElectoralDistricts, http://dbpedia.org/class/yago/CaliforniaStateAssemblyDistricts, http://dbpedia.org/class/yago/NorthwestTerritoriesElectoralDistricts, http://dbpedia.org/class/yago/OntarioProvincialElectoralDistricts, http://dbpedia.org/class/yago/WesternCapeDistricts, http://dbpedia.org/class/yago/NewBrunswickFederalElectoralDistricts, http://dbpedia.org/class/yago/BelfastPostalDistricts, http://dbpedia.org/class/yago/LibraryDistricts, http://dbpedia.org/class/yago/SaskatchewanProvincialElectoralDistricts, http://dbpedia.org/class/yago/WarehouseDistricts, http://dbpedia.org/class/yago/NewYorkStateSenateDistricts, http://dbpedia.org/class/yago/CoquitlamElectoralDistricts, http://dbpedia.org/class/yago/BarcelonaDistricts, http://dbpedia.org/class/yago/FormerAlbertaProvincialElectoralDistricts, http://dbpedia.org/class/yago/PrinceEdwardIslandProvincialElectoralDistricts, http://dbpedia.org/class/yago/ObsoleteUnitedStatesCongressionalDistricts, http://dbpedia.org/class/yago/Red-lightDistricts, http://dbpedia.org/class/yago/DefunctPrinceEdwardIslandFederalElectoralDistricts, http://dbpedia.org/class/yago/YukonElectoralDistricts, http://dbpedia.org/class/yago/RotumanDistricts, http://dbpedia.org/class/yago/OntarioFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctOntarioProvincialElectoralDistricts, http://dbpedia.org/class/yago/ManitobaFederalElectoralDistricts, http://dbpedia.org/class/yago/SaskatchewanFederalElectoralDistricts, http://dbpedia.org/class/yago/EasternCapeDistricts, http://dbpedia.org/class/yago/NorthernCapeDistricts, http://dbpedia.org/class/yago/ArlingtonCountyHistoricDistricts, http://dbpedia.org/class/yago/UnitedStatesCongressionalDistricts, http://dbpedia.org/class/yago/DefunctBritishColumbiaFederalElectoralDistricts, http://dbpedia.org/class/yago/GautengDistricts, http://dbpedia.org/class/yago/DefunctOntarioFederalElectoralDistricts, http://dbpedia.org/class/yago/NorthwestTerritoriesFederalElectoralDistricts, http://dbpedia.org/class/yago/QuebecProvincialElectoralDistricts, http://dbpedia.org/class/yago/NorthWestDistricts, http://dbpedia.org/class/yago/ChristchurchUrbanDistricts, http://dbpedia.org/class/yago/FormerNorthwestTerritoriesElectoralDistricts, http://dbpedia.org/class/yago/FinancialDistricts, http://dbpedia.org/class/yago/DefunctAlbertaFederalElectoralDistricts, http://dbpedia.org/class/yago/KwaZulu-NatalDistricts, http://dbpedia.org/class/yago/MpumalangaDistricts, http://dbpedia.org/class/yago/NewBrunswickProvincialElectoralDistricts, http://dbpedia.org/class/yago/DefunctBritishColumbiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/AlbertaProvincialElectoralDistricts, http://dbpedia.org/class/yago/AlbertaFederalElectoralDistricts, http://dbpedia.org/class/yago/High-technologyBusinessDistricts, http://dbpedia.org/class/yago/FormerNon-metropolitanDistricts, http://dbpedia.org/class/yago/CopenhagenCityDistricts, http://dbpedia.org/class/yago/NunavutFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctPrinceEdwardIslandProvincialElectoralDistricts, http://dbpedia.org/class/yago/QuebecCityFederalElectoralDistricts, http://dbpedia.org/class/yago/FreeStateDistricts, http://dbpedia.org/class/yago/QuebecFederalElectoralDistricts, http://dbpedia.org/class/yago/PrinceEdwardIslandFederalElectoralDistricts, http://dbpedia.org/class/yago/FormerNovaScotiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/Districts, http://dbpedia.org/class/yago/DiplomaticDistricts, http://dbpedia.org/class/yago/LimpopoDistricts, http://dbpedia.org/class/yago/TorontoElectoralDistricts, http://dbpedia.org/class/yago/WellingtonUrbanDistricts, http://dbpedia.org/class/yago/DefunctQuebecFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctManitobaProvincialElectoralDistricts, http://dbpedia.org/class/yago/NovaScotiaProvincialElectoralDistricts, http://dbpedia.org/class/yago/QuebecCityAreaFederalElectoralDistricts, http://dbpedia.org/class/yago/NewJerseyAbbottDistricts, http://dbpedia.org/class/yago/FormerSaskatchewanProvincialElectoralDistricts, http://dbpedia.org/class/yago/SuburbanMinneapolisSchoolDistricts, http://dbpedia.org/class/yago/DefunctNewBrunswickFederalElectoralDistricts, http://dbpedia.org/class/yago/DefunctManitobaFederalElectoralDistricts, http://dbpedia.org/class/yago/UtahStateSenateDistricts, http://dbpedia.org/class/yago/BritishColumbiaFederalElectoralDistricts, http://dbpedia.org/class/yago/BritishColumbiaElectoralDistricts, http://dbpedia.org/class/yago/DefunctNewBrunswickProvincialElectoralDistricts, http://dbpedia.org/class/yago/JewelleryDistricts, http://dbpedia.org/class/yago/FormerQuebecProvincialElectoralDistricts]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/District108552138]
+
+   NOME DO CONCEITO: river
+   OCORRENCIAS: 14
+   URLS: [http://dbpedia.org/class/yago/AmericanHeritageRivers, http://dbpedia.org/class/yago/Middle-earthRivers, http://dbpedia.org/class/yago/HebrewBibleRivers, http://dbpedia.org/class/yago/MiddleEasternRivers, http://dbpedia.org/class/yago/FictionalRivers, http://dbpedia.org/class/yago/MythologicalRivers, http://dbpedia.org/class/yago/CanadianHeritageRivers, http://dbpedia.org/class/yago/FormerRivers, http://dbpedia.org/class/yago/ManchurianRivers, http://dbpedia.org/class/yago/Rivers, http://dbpedia.org/class/yago/River109411430, http://dbpedia.org/class/yago/SacredRivers, http://dbpedia.org/class/yago/RigvedicRivers, http://dbpedia.org/class/yago/AncientIndianRivers]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/River109411430]
+###############################################################################
+FEATURE TYPE: River Catchments
+
+   NOME DO CONCEITO: catchment
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Catchment102983357]
+
+   NOME DO CONCEITO: river
+   OCORRENCIAS: 14
+   URLS: [http://dbpedia.org/class/yago/AmericanHeritageRivers, http://dbpedia.org/class/yago/Middle-earthRivers, http://dbpedia.org/class/yago/HebrewBibleRivers, http://dbpedia.org/class/yago/MiddleEasternRivers, http://dbpedia.org/class/yago/FictionalRivers, http://dbpedia.org/class/yago/MythologicalRivers, http://dbpedia.org/class/yago/CanadianHeritageRivers, http://dbpedia.org/class/yago/FormerRivers, http://dbpedia.org/class/yago/ManchurianRivers, http://dbpedia.org/class/yago/Rivers, http://dbpedia.org/class/yago/River109411430, http://dbpedia.org/class/yago/SacredRivers, http://dbpedia.org/class/yago/RigvedicRivers, http://dbpedia.org/class/yago/AncientIndianRivers]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/River109411430]
+###############################################################################
+FEATURE TYPE: River Sub Basins
+
+   NOME DO CONCEITO: basin
+   OCORRENCIAS: 20
+   URLS: [http://dbpedia.org/class/yago/OceanBasins, http://dbpedia.org/class/yago/AnoxicBasins, http://dbpedia.org/class/yago/RiverBasin108518940, http://dbpedia.org/class/yago/EndorheicBasins, http://dbpedia.org/class/yago/Washbasin104553920, http://dbpedia.org/class/yago/Basin109215437, http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/SedimentaryBasins, http://dbpedia.org/class/yago/CatalanCoastalBasins, http://dbpedia.org/class/yago/Basin113765086, http://dbpedia.org/class/yago/OceanBasins, http://dbpedia.org/class/yago/AnoxicBasins, http://dbpedia.org/class/yago/RiverBasin108518940, http://dbpedia.org/class/yago/EndorheicBasins, http://dbpedia.org/class/yago/Washbasin104553920, http://dbpedia.org/class/yago/Basin109215437, http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/SedimentaryBasins, http://dbpedia.org/class/yago/CatalanCoastalBasins, http://dbpedia.org/class/yago/Basin113765086]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Basin102801525]
+
+   NOME DO CONCEITO: river
+   OCORRENCIAS: 14
+   URLS: [http://dbpedia.org/class/yago/AmericanHeritageRivers, http://dbpedia.org/class/yago/Middle-earthRivers, http://dbpedia.org/class/yago/HebrewBibleRivers, http://dbpedia.org/class/yago/MiddleEasternRivers, http://dbpedia.org/class/yago/FictionalRivers, http://dbpedia.org/class/yago/MythologicalRivers, http://dbpedia.org/class/yago/CanadianHeritageRivers, http://dbpedia.org/class/yago/FormerRivers, http://dbpedia.org/class/yago/ManchurianRivers, http://dbpedia.org/class/yago/Rivers, http://dbpedia.org/class/yago/River109411430, http://dbpedia.org/class/yago/SacredRivers, http://dbpedia.org/class/yago/RigvedicRivers, http://dbpedia.org/class/yago/AncientIndianRivers]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/River109411430]
+###############################################################################
+FEATURE TYPE: SAC CO Habitats - Area
+
+   NOME DO CONCEITO: habitat
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats, http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Habitat108580583]
+
+   NOME DO CONCEITO: sac
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/Sac105515670]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+###############################################################################
+FEATURE TYPE: SAC CO Habitats - Linear
+
+   NOME DO CONCEITO: habitat
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats, http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Habitat108580583]
+
+   NOME DO CONCEITO: sac
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/Sac105515670]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+###############################################################################
+FEATURE TYPE: SAC CO Habitats - Point
+
+   NOME DO CONCEITO: habitat
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats, http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Habitat108580583]
+
+   NOME DO CONCEITO: sac
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/Sac105515670]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+###############################################################################
+FEATURE TYPE: SAC CO Species - Area
+
+   NOME DO CONCEITO: species
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Species108110373, http://dbpedia.org/class/yago/Species105844881]
+
+   NOME DO CONCEITO: sac
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/Sac105515670]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+###############################################################################
+FEATURE TYPE: SAC CO Species - Linear
+
+   NOME DO CONCEITO: species
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Species108110373, http://dbpedia.org/class/yago/Species105844881]
+
+   NOME DO CONCEITO: sac
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/Sac105515670]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+###############################################################################
+FEATURE TYPE: SAC CO Species - Point
+
+   NOME DO CONCEITO: species
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Species108110373, http://dbpedia.org/class/yago/Species105844881]
+
+   NOME DO CONCEITO: sac
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/Sac105515670]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+###############################################################################
+FEATURE TYPE: Site Features
+
+   NOME DO CONCEITO: site
+   OCORRENCIAS: 50
+   URLS: [http://dbpedia.org/class/yago/WorldWarIISites, http://dbpedia.org/class/yago/VietnamWarSites, http://dbpedia.org/class/yago/MixtecSites, http://dbpedia.org/class/yago/RocketLaunchSites, http://dbpedia.org/class/yago/IndusValleySites, http://dbpedia.org/class/yago/BlackSites, http://dbpedia.org/class/yago/HellenisticSites, http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites, http://dbpedia.org/class/yago/EtruscanSites, http://dbpedia.org/class/yago/MesoamericanSites, http://dbpedia.org/class/yago/ZapotecSites, http://dbpedia.org/class/yago/TotonacSites, http://dbpedia.org/class/yago/IllinoisHistoricSites, http://dbpedia.org/class/yago/AmarnaSites, http://dbpedia.org/class/yago/BronzeAgeSites, http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites, http://dbpedia.org/class/yago/NewYorkStateHistoricSites, http://dbpedia.org/class/yago/WorldWarISites, http://dbpedia.org/class/yago/SupercomputerSites, http://dbpedia.org/class/yago/AbydosSites, http://dbpedia.org/class/yago/WorldHeritageSites, http://dbpedia.org/class/yago/StoneAgeSites, http://dbpedia.org/class/yago/NatureConservationReviewSites, http://dbpedia.org/class/yago/MayaSites, http://dbpedia.org/class/yago/IndianaStateHistoricSites, http://dbpedia.org/class/yago/KurdishHistoricalSites, http://dbpedia.org/class/yago/ArchaeologicalSites, http://dbpedia.org/class/yago/CentralAsianBuddhistSites, http://dbpedia.org/class/yago/OlmecSites, http://dbpedia.org/class/yago/DiveSites, http://dbpedia.org/class/yago/HinduPilgrimageSites, http://dbpedia.org/class/yago/ShockSites, http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites, http://dbpedia.org/class/yago/RamsarSites, http://dbpedia.org/class/yago/SuperfundSites, http://dbpedia.org/class/yago/WeaponsTestSites, http://dbpedia.org/class/yago/AmericanCivilWarSites, http://dbpedia.org/class/yago/NuclearTestSites, http://dbpedia.org/class/yago/SAGESites, http://dbpedia.org/class/yago/AztecSites, http://dbpedia.org/class/yago/TanzanianArcheologicalSites, http://dbpedia.org/class/yago/PaleontologicalSites, http://dbpedia.org/class/yago/ExecutionSites, http://dbpedia.org/class/yago/IronAgeSites, http://dbpedia.org/class/yago/CatholicPilgrimageSites, http://dbpedia.org/class/yago/ThracianSites, http://dbpedia.org/class/yago/AngkorianSites, http://dbpedia.org/class/yago/NeanderthalSites, http://dbpedia.org/class/yago/Click-to-donateSites, http://dbpedia.org/class/yago/UKTransmitterSites]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Site108651247]
+
+   NOME DO CONCEITO: feature
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/FacialFeatures, http://dbpedia.org/class/yago/TextEditorFeatures, http://dbpedia.org/class/yago/JapaneseArchitecturalFeatures, http://dbpedia.org/class/yago/YellowstoneGeothermalFeatures, http://dbpedia.org/class/yago/Feature103325769, http://dbpedia.org/class/yago/ArchaeologicalFeatures, http://dbpedia.org/class/yago/CallingFeatures, http://dbpedia.org/class/yago/TelephoneServiceEnhancedFeatures, http://dbpedia.org/class/yago/SesameStreetFeatures, http://dbpedia.org/class/yago/LinuxKernelFeatures]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Feature105849789]
+###############################################################################
+FEATURE TYPE: Small Towns
+
+   NOME DO CONCEITO: town
+   OCORRENCIAS: 23
+   URLS: [http://dbpedia.org/class/yago/BalochTowns, http://dbpedia.org/class/yago/AncientGreekTowns, http://dbpedia.org/class/yago/USTowns, http://dbpedia.org/class/yago/Town108665504, http://dbpedia.org/class/yago/Towns, http://dbpedia.org/class/yago/CoastalTowns, http://dbpedia.org/class/yago/NewTowns, http://dbpedia.org/class/yago/KhazarTowns, http://dbpedia.org/class/yago/DacianTowns, http://dbpedia.org/class/yago/ScottishCountyTowns, http://dbpedia.org/class/yago/MedievalFinnishTowns, http://dbpedia.org/class/yago/NeathPortTalbotTowns, http://dbpedia.org/class/yago/CherokeeTowns, http://dbpedia.org/class/yago/MexicanTowns, http://dbpedia.org/class/yago/ResortTowns, http://dbpedia.org/class/yago/TempleTowns, http://dbpedia.org/class/yago/DestroyedTowns, http://dbpedia.org/class/yago/UniversityTowns, http://dbpedia.org/class/yago/CompanyTowns, http://dbpedia.org/class/yago/GhostTowns, http://dbpedia.org/class/yago/Town108226514, http://dbpedia.org/class/yago/WelshCountyTowns, http://dbpedia.org/class/yago/HillTowns]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Town108665504]
+
+   NOME DO CONCEITO: small
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Small105097081, http://dbpedia.org/class/yago/Small105559023]
+###############################################################################
+FEATURE TYPE: Solid Waste Analyses
+
+   NOME DO CONCEITO: deed
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Act100030358]
+
+   NOME DO CONCEITO: utilisation
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Use100947128]
+
+   NOME DO CONCEITO: application
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Application100949134]
+
+   NOME DO CONCEITO: technology
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/PollutionControlTechnologies]
+
+   NOME DO CONCEITO: event
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Event100029378]
+
+   NOME DO CONCEITO: abstraction
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Abstraction100002137]
+
+   NOME DO CONCEITO: profession
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Profession100609953]
+
+   NOME DO CONCEITO: psychological feature
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/PsychologicalFeature100023100]
+
+   NOME DO CONCEITO: job
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Occupation100582388]
+
+   NOME DO CONCEITO: engineering
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Technology100949619]
+
+   NOME DO CONCEITO: activity
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Activity100407535]
+###############################################################################
+FEATURE TYPE: Solid Waste Heaps
+
+   NOME DO CONCEITO: solid
+   OCORRENCIAS: 6
+   URLS: [http://dbpedia.org/class/yago/CatalanSolids, http://dbpedia.org/class/yago/ArchimedeanSolids, http://dbpedia.org/class/yago/Solid113860793, http://dbpedia.org/class/yago/JohnsonSolids, http://dbpedia.org/class/yago/Solid115046900, http://dbpedia.org/class/yago/PlatonicSolids]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Solid115046900]
+
+   NOME DO CONCEITO: waste
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+###############################################################################
+FEATURE TYPE: SPA CO Habitats - Area
+
+   NOME DO CONCEITO: habitat
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats, http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/HumanHabitats, http://dbpedia.org/class/yago/Habitats, http://dbpedia.org/class/yago/UnderwaterHabitats, http://dbpedia.org/class/yago/RiparianHabitats]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Habitat108580583]
+
+   NOME DO CONCEITO: Co
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Cobalt114635290]
+
+   NOME DO CONCEITO: CO
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+
+   NOME DO CONCEITO: spa
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/WateringPlace108678615]
+###############################################################################
+FEATURE TYPE: Stream Sediment Analyses
+
+   NOME DO CONCEITO: written language
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/WrittenCommunication106349220]
+
+   NOME DO CONCEITO: software system
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Software106566077]
+
+   NOME DO CONCEITO: computer program
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Program106568978]
+
+   NOME DO CONCEITO: scheme
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/System108435388]
+
+   NOME DO CONCEITO: communication
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Communication100033020]
+
+   NOME DO CONCEITO: abstraction
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Abstraction100002137]
+
+   NOME DO CONCEITO: coding system
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/CodingSystem106353757]
+
+   NOME DO CONCEITO: writing
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Writing106359877]
+
+   NOME DO CONCEITO: web
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Network108434259]
+
+   NOME DO CONCEITO: code
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Code106355894]
+
+   NOME DO CONCEITO: group
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Group100031264]
+
+   NOME DO CONCEITO: application program
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Application106570110]
+
+   NOME DO CONCEITO: network
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Networks]
+###############################################################################
+FEATURE TYPE: Subsoils
+
+   NOME DO CONCEITO: subsoil
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Subsoil114695838]
+###############################################################################
+FEATURE TYPE: Transitional waterbodies
+
+   NOME DO CONCEITO: transit
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/AstronomicalTransits]
+###############################################################################
+FEATURE TYPE: Tree Preservation Order Areas
+
+   NOME DO CONCEITO: tree
+   OCORRENCIAS: 11
+   URLS: [http://dbpedia.org/class/yago/IndividualOakTrees, http://dbpedia.org/class/yago/ChristmasTrees, http://dbpedia.org/class/yago/MuslimFamilyTrees, http://dbpedia.org/class/yago/IndividualTrees, http://dbpedia.org/class/yago/SacredTrees, http://dbpedia.org/class/yago/FictionalFamilyTrees, http://dbpedia.org/class/yago/Trees, http://dbpedia.org/class/yago/AncientEgyptianFamilyTrees, http://dbpedia.org/class/yago/PlaneTrees, http://dbpedia.org/class/yago/FictionalTrees, http://dbpedia.org/class/yago/Tree113104059]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Tree113104059]
+
+   NOME DO CONCEITO: order
+   OCORRENCIAS: 72
+   URLS: [http://dbpedia.org/class/yago/Decree106539770, http://dbpedia.org/class/yago/FranciscanOrders, http://dbpedia.org/class/yago/RomanCatholicMissionaryOrders, http://dbpedia.org/class/yago/PostalOrders, http://dbpedia.org/class/yago/Order105091316, http://dbpedia.org/class/yago/Order108147794, http://dbpedia.org/class/yago/MonarchicalOrders, http://dbpedia.org/class/yago/Ordering108456993, http://dbpedia.org/class/yago/AssumptionistFemaleOrders, http://dbpedia.org/class/yago/GeneralOrders, http://dbpedia.org/class/yago/AugustinianOrders, http://dbpedia.org/class/yago/Order113968547, http://dbpedia.org/class/yago/FranciscanMissionaryOrders, http://dbpedia.org/class/yago/SufiOrders, http://dbpedia.org/class/yago/Orders, http://dbpedia.org/class/yago/Order106652878, http://dbpedia.org/class/yago/ChivalricOrders, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/MendicantOrders, http://dbpedia.org/class/yago/UnitedStatesExecutiveOrders, http://dbpedia.org/class/yago/ConfraternalOrders, http://dbpedia.org/class/yago/ChristianOrders, http://dbpedia.org/class/yago/BuddhistOrders, http://dbpedia.org/class/yago/MilitaryOrders, http://dbpedia.org/class/yago/ArchaeaTaxonomicOrders, http://dbpedia.org/class/yago/Order108106934, http://dbpedia.org/class/yago/Orderliness114496710, http://dbpedia.org/class/yago/TheravadaBuddhistOrders, http://dbpedia.org/class/yago/Order106529219, http://dbpedia.org/class/yago/MinorOrders, http://dbpedia.org/class/yago/CatholicChivalricOrders, http://dbpedia.org/class/yago/ReligiousOrders, http://dbpedia.org/class/yago/CourtOrders, http://dbpedia.org/class/yago/AlgaeTaxonomicOrders, http://dbpedia.org/class/yago/VotiveOrders, http://dbpedia.org/class/yago/ProtestantChivalricOrders, http://dbpedia.org/class/yago/Decree106539770, http://dbpedia.org/class/yago/ChivalricOrders, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/MendicantOrders, http://dbpedia.org/class/yago/FranciscanOrders, http://dbpedia.org/class/yago/RomanCatholicMissionaryOrders, http://dbpedia.org/class/yago/PostalOrders, http://dbpedia.org/class/yago/UnitedStatesExecutiveOrders, http://dbpedia.org/class/yago/ChristianOrders, http://dbpedia.org/class/yago/Order105091316, http://dbpedia.org/class/yago/ConfraternalOrders, http://dbpedia.org/class/yago/BuddhistOrders, http://dbpedia.org/class/yago/Order108147794, http://dbpedia.org/class/yago/MonarchicalOrders, http://dbpedia.org/class/yago/MilitaryOrders, http://dbpedia.org/class/yago/ArchaeaTaxonomicOrders, http://dbpedia.org/class/yago/Ordering108456993, http://dbpedia.org/class/yago/AssumptionistFemaleOrders, http://dbpedia.org/class/yago/GeneralOrders, http://dbpedia.org/class/yago/Order108106934, http://dbpedia.org/class/yago/Orderliness114496710, http://dbpedia.org/class/yago/TheravadaBuddhistOrders, http://dbpedia.org/class/yago/Order106529219, http://dbpedia.org/class/yago/MinorOrders, http://dbpedia.org/class/yago/AugustinianOrders, http://dbpedia.org/class/yago/Order113968547, http://dbpedia.org/class/yago/CatholicChivalricOrders, http://dbpedia.org/class/yago/ReligiousOrders, http://dbpedia.org/class/yago/FranciscanMissionaryOrders, http://dbpedia.org/class/yago/CourtOrders, http://dbpedia.org/class/yago/SufiOrders, http://dbpedia.org/class/yago/AlgaeTaxonomicOrders, http://dbpedia.org/class/yago/ProtestantChivalricOrders, http://dbpedia.org/class/yago/VotiveOrders, http://dbpedia.org/class/yago/Orders, http://dbpedia.org/class/yago/Order106652878]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Order107168623]
+
+   NOME DO CONCEITO: preservation
+   OCORRENCIAS: 6
+   URLS: [http://dbpedia.org/class/yago/Conservation107419599, http://dbpedia.org/class/yago/Preservation114578940, http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Conservation107419599, http://dbpedia.org/class/yago/Preservation114578940]
+   OCORRENCIAS CONCEITOS GERAIS: 2
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Preservation114578940]
+###############################################################################
+FEATURE TYPE: Tree Preservation Order Points
+
+   NOME DO CONCEITO: tree
+   OCORRENCIAS: 11
+   URLS: [http://dbpedia.org/class/yago/IndividualOakTrees, http://dbpedia.org/class/yago/ChristmasTrees, http://dbpedia.org/class/yago/MuslimFamilyTrees, http://dbpedia.org/class/yago/IndividualTrees, http://dbpedia.org/class/yago/SacredTrees, http://dbpedia.org/class/yago/FictionalFamilyTrees, http://dbpedia.org/class/yago/Trees, http://dbpedia.org/class/yago/AncientEgyptianFamilyTrees, http://dbpedia.org/class/yago/PlaneTrees, http://dbpedia.org/class/yago/FictionalTrees, http://dbpedia.org/class/yago/Tree113104059]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Tree113104059]
+
+   NOME DO CONCEITO: order
+   OCORRENCIAS: 72
+   URLS: [http://dbpedia.org/class/yago/Decree106539770, http://dbpedia.org/class/yago/FranciscanOrders, http://dbpedia.org/class/yago/RomanCatholicMissionaryOrders, http://dbpedia.org/class/yago/PostalOrders, http://dbpedia.org/class/yago/Order105091316, http://dbpedia.org/class/yago/Order108147794, http://dbpedia.org/class/yago/MonarchicalOrders, http://dbpedia.org/class/yago/Ordering108456993, http://dbpedia.org/class/yago/AssumptionistFemaleOrders, http://dbpedia.org/class/yago/GeneralOrders, http://dbpedia.org/class/yago/AugustinianOrders, http://dbpedia.org/class/yago/Order113968547, http://dbpedia.org/class/yago/FranciscanMissionaryOrders, http://dbpedia.org/class/yago/SufiOrders, http://dbpedia.org/class/yago/Orders, http://dbpedia.org/class/yago/Order106652878, http://dbpedia.org/class/yago/ChivalricOrders, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/MendicantOrders, http://dbpedia.org/class/yago/UnitedStatesExecutiveOrders, http://dbpedia.org/class/yago/ConfraternalOrders, http://dbpedia.org/class/yago/ChristianOrders, http://dbpedia.org/class/yago/BuddhistOrders, http://dbpedia.org/class/yago/MilitaryOrders, http://dbpedia.org/class/yago/ArchaeaTaxonomicOrders, http://dbpedia.org/class/yago/Order108106934, http://dbpedia.org/class/yago/Orderliness114496710, http://dbpedia.org/class/yago/TheravadaBuddhistOrders, http://dbpedia.org/class/yago/Order106529219, http://dbpedia.org/class/yago/MinorOrders, http://dbpedia.org/class/yago/CatholicChivalricOrders, http://dbpedia.org/class/yago/ReligiousOrders, http://dbpedia.org/class/yago/CourtOrders, http://dbpedia.org/class/yago/AlgaeTaxonomicOrders, http://dbpedia.org/class/yago/VotiveOrders, http://dbpedia.org/class/yago/ProtestantChivalricOrders, http://dbpedia.org/class/yago/Decree106539770, http://dbpedia.org/class/yago/ChivalricOrders, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/MendicantOrders, http://dbpedia.org/class/yago/FranciscanOrders, http://dbpedia.org/class/yago/RomanCatholicMissionaryOrders, http://dbpedia.org/class/yago/PostalOrders, http://dbpedia.org/class/yago/UnitedStatesExecutiveOrders, http://dbpedia.org/class/yago/ChristianOrders, http://dbpedia.org/class/yago/Order105091316, http://dbpedia.org/class/yago/ConfraternalOrders, http://dbpedia.org/class/yago/BuddhistOrders, http://dbpedia.org/class/yago/Order108147794, http://dbpedia.org/class/yago/MonarchicalOrders, http://dbpedia.org/class/yago/MilitaryOrders, http://dbpedia.org/class/yago/ArchaeaTaxonomicOrders, http://dbpedia.org/class/yago/Ordering108456993, http://dbpedia.org/class/yago/AssumptionistFemaleOrders, http://dbpedia.org/class/yago/GeneralOrders, http://dbpedia.org/class/yago/Order108106934, http://dbpedia.org/class/yago/Orderliness114496710, http://dbpedia.org/class/yago/TheravadaBuddhistOrders, http://dbpedia.org/class/yago/Order106529219, http://dbpedia.org/class/yago/MinorOrders, http://dbpedia.org/class/yago/AugustinianOrders, http://dbpedia.org/class/yago/Order113968547, http://dbpedia.org/class/yago/CatholicChivalricOrders, http://dbpedia.org/class/yago/ReligiousOrders, http://dbpedia.org/class/yago/FranciscanMissionaryOrders, http://dbpedia.org/class/yago/CourtOrders, http://dbpedia.org/class/yago/SufiOrders, http://dbpedia.org/class/yago/AlgaeTaxonomicOrders, http://dbpedia.org/class/yago/ProtestantChivalricOrders, http://dbpedia.org/class/yago/VotiveOrders, http://dbpedia.org/class/yago/Orders, http://dbpedia.org/class/yago/Order106652878]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Order107168623]
+
+   NOME DO CONCEITO: preservation
+   OCORRENCIAS: 6
+   URLS: [http://dbpedia.org/class/yago/Conservation107419599, http://dbpedia.org/class/yago/Preservation114578940, http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Conservation107419599, http://dbpedia.org/class/yago/Preservation114578940]
+   OCORRENCIAS CONCEITOS GERAIS: 2
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Preservation114578940]
+###############################################################################
+FEATURE TYPE: Vacant And Derelict Land
+
+   NOME DO CONCEITO: land
+   OCORRENCIAS: 5
+   URLS: [http://dbpedia.org/class/yago/AnishinaabeLands, http://dbpedia.org/class/yago/Kingdom114514805, http://dbpedia.org/class/yago/Land113250048, http://dbpedia.org/class/yago/Country108544813, http://dbpedia.org/class/yago/Domain108556491]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Land113250048]
+
+   NOME DO CONCEITO: derelict
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/AbandonedShip102666501, http://dbpedia.org/class/yago/Derelict110006081]
+###############################################################################
+FEATURE TYPE: Water Analyses (Summer)
+
+   NOME DO CONCEITO: written language
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/WrittenCommunication106349220]
+
+   NOME DO CONCEITO: communication
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Communication100033020]
+
+   NOME DO CONCEITO: psychological feature
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/PsychologicalFeature100023100]
+
+   NOME DO CONCEITO: game
+   OCORRENCIAS: 9
+   URLS: [http://dbpedia.org/class/yago/Game100430606, http://dbpedia.org/class/yago/Bish%C5%8DjoGames, http://dbpedia.org/class/yago/WindowsGames, http://dbpedia.org/class/yago/PlayStation2Games, http://dbpedia.org/class/yago/Game100456199, http://dbpedia.org/class/yago/DreamcastGames, http://dbpedia.org/class/yago/2001VideoGames, http://dbpedia.org/class/yago/RomanceVideoGames, http://dbpedia.org/class/yago/PlayStationGames]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Game100456199]
+
+   NOME DO CONCEITO: video game
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/ComputerGame100458890]
+
+   NOME DO CONCEITO: written material
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Writing106362953]
+
+   NOME DO CONCEITO: deed
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Act100030358]
+
+   NOME DO CONCEITO: social event
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/SocialEvent107288639]
+
+   NOME DO CONCEITO: diversion
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Diversion100426928]
+
+   NOME DO CONCEITO: event
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Event100029378]
+
+   NOME DO CONCEITO: abstraction
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Abstraction100002137]
+
+   NOME DO CONCEITO: literary work
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/LiteraryComposition106364329]
+
+   NOME DO CONCEITO: fiction
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Fiction106367107]
+
+   NOME DO CONCEITO: activity
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Activity100407535]
+
+   NOME DO CONCEITO: novel
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Novel106367879, http://dbpedia.org/class/yago/VisualNovels, http://dbpedia.org/class/yago/LightNovels]
+
+   NOME DO CONCEITO: competition
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Contest107456188]
+###############################################################################
+FEATURE TYPE: Water Analyses (Winter)
+
+   NOME DO CONCEITO: basin
+   OCORRENCIAS: 10
+   URLS: [http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/CatalanCoastalBasins, http://dbpedia.org/class/yago/EndorheicBasins, http://dbpedia.org/class/yago/RiverBasin108518940, http://dbpedia.org/class/yago/AnoxicBasins, http://dbpedia.org/class/yago/Basin109215437, http://dbpedia.org/class/yago/Washbasin104553920, http://dbpedia.org/class/yago/SedimentaryBasins, http://dbpedia.org/class/yago/Basin113765086, http://dbpedia.org/class/yago/OceanBasins]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Basin102801525]
+
+   NOME DO CONCEITO: america
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Americas, http://dbpedia.org/class/yago/TourDeLasAmericas]
+
+   NOME DO CONCEITO: broadcast
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Broadcast106254007]
+
+   NOME DO CONCEITO: thought
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Thought105954481]
+
+   NOME DO CONCEITO: analysis
+   OCORRENCIAS: 5
+   URLS: [http://dbpedia.org/class/yago/Analysis106014043, http://dbpedia.org/class/yago/Analysis106376014, http://dbpedia.org/class/yago/Analysis105772667, http://dbpedia.org/class/yago/Analysis100634276, http://dbpedia.org/class/yago/Analysis107067876]
+   OCORRENCIAS CONCEITOS GERAIS: 5
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Analysis100634276, http://dbpedia.org/class/yago/Analysis106376014, http://dbpedia.org/class/yago/Analysis106014043, http://dbpedia.org/class/yago/Analysis105772667, http://dbpedia.org/class/yago/Analysis107067876]
+
+   NOME DO CONCEITO: irrigation
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Irrigation100695448, http://dbpedia.org/class/yago/Irrigation101057631]
+
+   NOME DO CONCEITO: reservoir
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Reservoir104078574, http://dbpedia.org/class/yago/Reservoir113776854, http://dbpedia.org/class/yago/Reservoirs]
+
+   NOME DO CONCEITO: phylogenetic
+   OCORRENCIAS: 4
+   URLS: [http://dbpedia.org/class/yago/Phylogenetics, http://dbpedia.org/class/yago/ComputationalPhylogenetics, http://dbpedia.org/class/yago/ComputationalPhylogenetics, http://dbpedia.org/class/yago/Phylogenetics]
+
+   NOME DO CONCEITO: psychology
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Psychology106136258]
+
+   NOME DO CONCEITO: central
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Central102994858]
+
+   NOME DO CONCEITO: water
+   OCORRENCIAS: 8
+   URLS: [http://dbpedia.org/class/yago/WaterSystem104562658, http://dbpedia.org/class/yago/OutstandingFloridaWaters, http://dbpedia.org/class/yago/Urine114855724, http://dbpedia.org/class/yago/Water114847357, http://dbpedia.org/class/yago/SpaWaters, http://dbpedia.org/class/yago/Water107935504, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/DisputedWaters]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Water114845743]
+
+   NOME DO CONCEITO: hydrology
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Hydrology106119729]
+
+   NOME DO CONCEITO: migration
+   OCORRENCIAS: 6
+   URLS: [http://dbpedia.org/class/yago/Migration107966421, http://dbpedia.org/class/yago/Migration107312616, http://dbpedia.org/class/yago/Migration101123095, http://dbpedia.org/class/yago/Migration107312829, http://dbpedia.org/class/yago/GreatMigrations, http://dbpedia.org/class/yago/PoliticallyMotivatedMigrations]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Migration101123095]
+
+   NOME DO CONCEITO: drainage
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Drain100396029]
+
+   NOME DO CONCEITO: resource
+   OCORRENCIAS: 12
+   URLS: [http://dbpedia.org/class/yago/RenewableResources, http://dbpedia.org/class/yago/ComputationalResources, http://dbpedia.org/class/yago/Resources, http://dbpedia.org/class/yago/ConstructedLanguagesResources, http://dbpedia.org/class/yago/Resource113331778, http://dbpedia.org/class/yago/Non-renewableResources, http://dbpedia.org/class/yago/MassachusettsNaturalResources, http://dbpedia.org/class/yago/HumanResources, http://dbpedia.org/class/yago/KrioGenealogicalResources, http://dbpedia.org/class/yago/OpenSourceHealthCareResources, http://dbpedia.org/class/yago/NaturalResources, http://dbpedia.org/class/yago/Resource105154676]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Resource113331778]
+
+   NOME DO CONCEITO: lake
+   OCORRENCIAS: 22
+   URLS: [http://dbpedia.org/class/yago/ShrunkenLakes, http://dbpedia.org/class/yago/Lake109328904, http://dbpedia.org/class/yago/BurgasLakes, http://dbpedia.org/class/yago/Lake114991106, http://dbpedia.org/class/yago/SacredLakes, http://dbpedia.org/class/yago/EndorheicLakes, http://dbpedia.org/class/yago/RiftLakes, http://dbpedia.org/class/yago/MeromicticLakes, http://dbpedia.org/class/yago/FormerLakes, http://dbpedia.org/class/yago/CraterLakes, http://dbpedia.org/class/yago/Lakes, http://dbpedia.org/class/yago/WikiProjectLakes, http://dbpedia.org/class/yago/OxbowLakes, http://dbpedia.org/class/yago/GreatRiftValleyLakes, http://dbpedia.org/class/yago/SalineLakes, http://dbpedia.org/class/yago/FictionalLakes, http://dbpedia.org/class/yago/Lake114991004, http://dbpedia.org/class/yago/MountainLakes, http://dbpedia.org/class/yago/ArtificialLakes, http://dbpedia.org/class/yago/IntermittentLakes, http://dbpedia.org/class/yago/GreatLakes, http://dbpedia.org/class/yago/UndergroundLakes]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Lake109328904]
+
+   NOME DO CONCEITO: research
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Inquiry105797597, http://dbpedia.org/class/yago/Research100636921]
+
+   NOME DO CONCEITO: human
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Homo102472293]
+
+   NOME DO CONCEITO: history
+   OCORRENCIAS: 15
+   URLS: [http://dbpedia.org/class/yago/History106155567, http://dbpedia.org/class/yago/AmericanCivilWarHistories, http://dbpedia.org/class/yago/History106514093, http://dbpedia.org/class/yago/IlluminatedHistories, http://dbpedia.org/class/yago/NationalHistories, http://dbpedia.org/class/yago/LatinHistories, http://dbpedia.org/class/yago/ShakespeareanHistories, http://dbpedia.org/class/yago/WorldWarIIAlternateHistories, http://dbpedia.org/class/yago/WorldWarIINationalMilitaryHistories, http://dbpedia.org/class/yago/History115123996, http://dbpedia.org/class/yago/LanguageHistories, http://dbpedia.org/class/yago/History106156752, http://dbpedia.org/class/yago/MedievalLatinHistories, http://dbpedia.org/class/yago/CompanyHistories, http://dbpedia.org/class/yago/History115121406]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/History115121406]
+
+   NOME DO CONCEITO: genealogy
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Genealogy105998225, http://dbpedia.org/class/yago/Genealogy108102402]
+
+   NOME DO CONCEITO: peoples
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Peoples107943300]
+
+   NOME DO CONCEITO: method
+   OCORRENCIAS: 32
+   URLS: [http://dbpedia.org/class/yago/SelectionMethods, http://dbpedia.org/class/yago/EvaluationMethods, http://dbpedia.org/class/yago/SemiempiricalQuantumChemistryMethods, http://dbpedia.org/class/yago/EducationalPsychologyResearchMethods, http://dbpedia.org/class/yago/PaymentMethods, http://dbpedia.org/class/yago/MindControlMethods, http://dbpedia.org/class/yago/DetoxificationMethods, http://dbpedia.org/class/yago/ChannelAccessMethods, http://dbpedia.org/class/yago/NonparametricBayesianMethods, http://dbpedia.org/class/yago/DeliberativeMethods, http://dbpedia.org/class/yago/DatingMethods, http://dbpedia.org/class/yago/MethodActing100549766, http://dbpedia.org/class/yago/HeatingMethods, http://dbpedia.org/class/yago/CondorcetMethods, http://dbpedia.org/class/yago/DatabaseManagementMethods, http://dbpedia.org/class/yago/ResearchMethods, http://dbpedia.org/class/yago/LearningMethods, http://dbpedia.org/class/yago/ReadoutMethods, http://dbpedia.org/class/yago/ClusteringMethods, http://dbpedia.org/class/yago/ScientificMethods, http://dbpedia.org/class/yago/MonteCarloMethods, http://dbpedia.org/class/yago/FormalMethods, http://dbpedia.org/class/yago/AuthenticationMethods, http://dbpedia.org/class/yago/VideoGameControlMethods, http://dbpedia.org/class/yago/Non-monotonicCondorcetMethods, http://dbpedia.org/class/yago/BiochemistryMethods, http://dbpedia.org/class/yago/CurrencyProductionMethods, http://dbpedia.org/class/yago/MonotonicCondorcetMethods, http://dbpedia.org/class/yago/Method105660268, http://dbpedia.org/class/yago/ExecutionMethods, http://dbpedia.org/class/yago/StatisticalMethods, http://dbpedia.org/class/yago/ProteinMethods]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Method105660268]
+
+   NOME DO CONCEITO: bowling
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Bowling100041740, http://dbpedia.org/class/yago/Bowling100104976, http://dbpedia.org/class/yago/Bowling100461782]
+
+   NOME DO CONCEITO: management
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Management101133281, http://dbpedia.org/class/yago/Management108381165]
+
+   NOME DO CONCEITO: natural
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Natural101245950, http://dbpedia.org/class/yago/Natural110346392, http://dbpedia.org/class/yago/Natural106867218]
+
+   NOME DO CONCEITO: river
+   OCORRENCIAS: 14
+   URLS: [http://dbpedia.org/class/yago/MiddleEasternRivers, http://dbpedia.org/class/yago/FictionalRivers, http://dbpedia.org/class/yago/FormerRivers, http://dbpedia.org/class/yago/Rivers, http://dbpedia.org/class/yago/ManchurianRivers, http://dbpedia.org/class/yago/RigvedicRivers, http://dbpedia.org/class/yago/CanadianHeritageRivers, http://dbpedia.org/class/yago/SacredRivers, http://dbpedia.org/class/yago/River109411430, http://dbpedia.org/class/yago/AncientIndianRivers, http://dbpedia.org/class/yago/AmericanHeritageRivers, http://dbpedia.org/class/yago/Middle-earthRivers, http://dbpedia.org/class/yago/HebrewBibleRivers, http://dbpedia.org/class/yago/MythologicalRivers]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/River109411430]
+
+   NOME DO CONCEITO: critic
+   OCORRENCIAS: 123
+   URLS: [http://dbpedia.org/class/yago/BritishCritics, http://dbpedia.org/class/yago/AustrianMusicCritics, http://dbpedia.org/class/yago/SwedishArtCritics, http://dbpedia.org/class/yago/BritishTelevisionCritics, http://dbpedia.org/class/yago/EnglishLiteraryCritics, http://dbpedia.org/class/yago/CanadianFilmCritics, http://dbpedia.org/class/yago/MusicCritics, http://dbpedia.org/class/yago/GermanMusicCritics, http://dbpedia.org/class/yago/PakistaniMusicCritics, http://dbpedia.org/class/yago/CanadianLiteraryCritics, http://dbpedia.org/class/yago/NigerianLiteraryCritics, http://dbpedia.org/class/yago/JapaneseMusicCritics, http://dbpedia.org/class/yago/ScottishMusicCritics, http://dbpedia.org/class/yago/PolishLiteraryCritics, http://dbpedia.org/class/yago/VideoGameCritics, http://dbpedia.org/class/yago/EnglishMusicCritics, http://dbpedia.org/class/yago/AmericanArtCritics, http://dbpedia.org/class/yago/FinnishTheatreCritics, http://dbpedia.org/class/yago/AmericanCritics, http://dbpedia.org/class/yago/NicaraguanArtCritics, http://dbpedia.org/class/yago/RussianMusicCritics, http://dbpedia.org/class/yago/IranianArtCritics, http://dbpedia.org/class/yago/AmericanTelevisionCritics, http://dbpedia.org/class/yago/DutchArtCritics, http://dbpedia.org/class/yago/AustralianFilmCritics, http://dbpedia.org/class/yago/GermanTheatreCritics, http://dbpedia.org/class/yago/CanadianTelevisionCritics, http://dbpedia.org/class/yago/SouthAfricanLiteraryCritics, http://dbpedia.org/class/yago/AmericanMusicCritics, http://dbpedia.org/class/yago/SwissLiteraryCritics, http://dbpedia.org/class/yago/ItalianLiteraryCritics, http://dbpedia.org/class/yago/TheatreCritics, http://dbpedia.org/class/yago/GermanLiteraryCritics, http://dbpedia.org/class/yago/WomenCritics, http://dbpedia.org/class/yago/JapaneseLiteraryCritics, http://dbpedia.org/class/yago/PolishTheatreCritics, http://dbpedia.org/class/yago/DanishLiteraryCritics, http://dbpedia.org/class/yago/HungarianLiteraryCritics, http://dbpedia.org/class/yago/IndianMusicCritics, http://dbpedia.org/class/yago/BritishLiteraryCritics, http://dbpedia.org/class/yago/AustralianWineCritics, http://dbpedia.org/class/yago/SanskritCritics, http://dbpedia.org/class/yago/ItalianTelevisionCritics, http://dbpedia.org/class/yago/AustralianMusicCritics, http://dbpedia.org/class/yago/ArgentineArtCritics, http://dbpedia.org/class/yago/AzerbaijaniMusicCritics, http://dbpedia.org/class/yago/BrazilianLiteraryCritics, http://dbpedia.org/class/yago/ItalianArtCritics, http://dbpedia.org/class/yago/EnglishFilmCritics, http://dbpedia.org/class/yago/CanadianMusicCritics, http://dbpedia.org/class/yago/RussianArtCritics, http://dbpedia.org/class/yago/SwedishLiteraryCritics, http://dbpedia.org/class/yago/PhotographyCritics, http://dbpedia.org/class/yago/Critic109979072, http://dbpedia.org/class/yago/IndianLiteraryCritics, http://dbpedia.org/class/yago/AmericanDanceCritics, http://dbpedia.org/class/yago/PolishCritics, http://dbpedia.org/class/yago/IrishMusicCritics, http://dbpedia.org/class/yago/Critic109979589, http://dbpedia.org/class/yago/SwedishMusicCritics, http://dbpedia.org/class/yago/SwedishFilmCritics, http://dbpedia.org/class/yago/BritishFilmCritics, http://dbpedia.org/class/yago/RussianLiteraryCritics, http://dbpedia.org/class/yago/IndianTheatreCritics, http://dbpedia.org/class/yago/AmericanLiteraryCritics, http://dbpedia.org/class/yago/ScottishLiteraryCritics, http://dbpedia.org/class/yago/LiteraryCritics, http://dbpedia.org/class/yago/FilmCritics, http://dbpedia.org/class/yago/WineCritics, http://dbpedia.org/class/yago/BritishArtCritics, http://dbpedia.org/class/yago/SerbianTelevisionCritics, http://dbpedia.org/class/yago/MediaCritics, http://dbpedia.org/class/yago/ComicsCritics, http://dbpedia.org/class/yago/UkrainianLiteraryCritics, http://dbpedia.org/class/yago/ItalianFilmCritics, http://dbpedia.org/class/yago/FrenchArtCritics, http://dbpedia.org/class/yago/Critic109979321, http://dbpedia.org/class/yago/FinnishTelevisionCritics, http://dbpedia.org/class/yago/PakistaniLiteraryCritics, http://dbpedia.org/class/yago/JewishAmericanFilmCritics, http://dbpedia.org/class/yago/ScienceFictionCritics, http://dbpedia.org/class/yago/BritishMusicCritics, http://dbpedia.org/class/yago/ItalianMusicCritics, http://dbpedia.org/class/yago/ArtCritics, http://dbpedia.org/class/yago/FrenchFilmCritics, http://dbpedia.org/class/yago/HungarianArtCritics, http://dbpedia.org/class/yago/WelshLiteraryCritics, http://dbpedia.org/class/yago/BarbadianMusicCritics, http://dbpedia.org/class/yago/FrenchLiteraryCritics, http://dbpedia.org/class/yago/Critics, http://dbpedia.org/class/yago/CulturalCritics, http://dbpedia.org/class/yago/BritishTheatreCritics, http://dbpedia.org/class/yago/IranianFilmCritics, http://dbpedia.org/class/yago/DutchLiteraryCritics, http://dbpedia.org/class/yago/RomanianArtCritics, http://dbpedia.org/class/yago/LatvianMusicCritics, http://dbpedia.org/class/yago/AustralianArtCritics, http://dbpedia.org/class/yago/EnglishArtCritics, http://dbpedia.org/class/yago/TeluguCritics, http://dbpedia.org/class/yago/GermanArtCritics, http://dbpedia.org/class/yago/AmericanFilmCritics, http://dbpedia.org/class/yago/CzechMusicCritics, http://dbpedia.org/class/yago/SpanishLiteraryCritics, http://dbpedia.org/class/yago/PolishArtCritics, http://dbpedia.org/class/yago/MoroccanLiteraryCritics, http://dbpedia.org/class/yago/PolishMusicCritics, http://dbpedia.org/class/yago/NorwegianCritics, http://dbpedia.org/class/yago/AustralianLiteraryCritics, http://dbpedia.org/class/yago/FinnishLiteraryCritics, http://dbpedia.org/class/yago/IndianFilmCritics, http://dbpedia.org/class/yago/AustrianLiteraryCritics, http://dbpedia.org/class/yago/RomanianMusicCritics, http://dbpedia.org/class/yago/RomanianTheatreCritics, http://dbpedia.org/class/yago/RussianFilmCritics, http://dbpedia.org/class/yago/AmericanTheaterCritics, http://dbpedia.org/class/yago/DanceCritics, http://dbpedia.org/class/yago/LithuanianArtCritics, http://dbpedia.org/class/yago/IrishLiteraryCritics, http://dbpedia.org/class/yago/RussianCritics, http://dbpedia.org/class/yago/BelgianMusicCritics, http://dbpedia.org/class/yago/RomanianLiteraryCritics, http://dbpedia.org/class/yago/IranianLiteraryCritics, http://dbpedia.org/class/yago/FrenchMusicCritics]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Critic109979321]
+###############################################################################
+FEATURE TYPE: Water Areas
+
+   NOME DO CONCEITO: water
+   OCORRENCIAS: 8
+   URLS: [http://dbpedia.org/class/yago/Water114847357, http://dbpedia.org/class/yago/WaterSystem104562658, http://dbpedia.org/class/yago/OutstandingFloridaWaters, http://dbpedia.org/class/yago/SpaWaters, http://dbpedia.org/class/yago/Water107935504, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/DisputedWaters, http://dbpedia.org/class/yago/Urine114855724]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Water114845743]
+###############################################################################
+FEATURE TYPE: Water Linear
+
+   NOME DO CONCEITO: water
+   OCORRENCIAS: 8
+   URLS: [http://dbpedia.org/class/yago/Water114847357, http://dbpedia.org/class/yago/WaterSystem104562658, http://dbpedia.org/class/yago/OutstandingFloridaWaters, http://dbpedia.org/class/yago/SpaWaters, http://dbpedia.org/class/yago/Water107935504, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/DisputedWaters, http://dbpedia.org/class/yago/Urine114855724]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Water114845743]
+###############################################################################
+FEATURE TYPE: Water Management Units
+
+   NOME DO CONCEITO: water
+   OCORRENCIAS: 8
+   URLS: [http://dbpedia.org/class/yago/Water114847357, http://dbpedia.org/class/yago/WaterSystem104562658, http://dbpedia.org/class/yago/OutstandingFloridaWaters, http://dbpedia.org/class/yago/SpaWaters, http://dbpedia.org/class/yago/Water107935504, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/DisputedWaters, http://dbpedia.org/class/yago/Urine114855724]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Water114845743]
+
+   NOME DO CONCEITO: unit
+   OCORRENCIAS: 104
+   URLS: [http://dbpedia.org/class/yago/Iarnr%C3%B3d%C3%89ireannMultipleUnits, http://dbpedia.org/class/yago/ProtectiveSecurityUnits, http://dbpedia.org/class/yago/MetropolitanPoliceUnits, http://dbpedia.org/class/yago/JapaneseElectricMultipleUnits, http://dbpedia.org/class/yago/IsraeliCombatCorpsSpecialUnits, http://dbpedia.org/class/yago/TheBananaWarsMilitaryUnits, http://dbpedia.org/class/yago/JewishArmyUnits, http://dbpedia.org/class/yago/UnitOfMeasurement113583724, http://dbpedia.org/class/yago/ParmalatUnits, http://dbpedia.org/class/yago/EffectsUnits, http://dbpedia.org/class/yago/B-17Units, http://dbpedia.org/class/yago/Whole100003553, http://dbpedia.org/class/yago/ChineseElectricMultipleUnits, http://dbpedia.org/class/yago/Non-SIMetricUnits, http://dbpedia.org/class/yago/RAFMarhamUnits, http://dbpedia.org/class/yago/BlackHillsWarMilitaryUnits, http://dbpedia.org/class/yago/FictionalUSMarineUnits, http://dbpedia.org/class/yago/GermanDieselMultipleUnits, http://dbpedia.org/class/yago/PropagandaFilmUnits, http://dbpedia.org/class/yago/MultipleUnits, http://dbpedia.org/class/yago/AustralianElectricalMultipleUnits, http://dbpedia.org/class/yago/AustralianDieselMultipleUnits, http://dbpedia.org/class/yago/IsraeliGeneralStaffSpecialUnits, http://dbpedia.org/class/yago/CGSUnits, http://dbpedia.org/class/yago/GermanElectricMultipleUnits, http://dbpedia.org/class/yago/WisconsinNationalGuardUnits, http://dbpedia.org/class/yago/UnitedStatesMarineCorpsLowAltitudeAirDefenseUnits, http://dbpedia.org/class/yago/RoyalAirForceUnits, http://dbpedia.org/class/yago/IsraeliSeaCorpsSpecialUnits, http://dbpedia.org/class/yago/PKPElectricMultipleUnits, http://dbpedia.org/class/yago/SIBaseUnits, http://dbpedia.org/class/yago/LateRomanMilitaryUnits, http://dbpedia.org/class/yago/SNCBMultipleUnits, http://dbpedia.org/class/yago/LawEnforcementUnits, http://dbpedia.org/class/yago/Unit113810323, http://dbpedia.org/class/yago/Unit105869857, http://dbpedia.org/class/yago/BritishCeremonialUnits, http://dbpedia.org/class/yago/ImperialUnits, http://dbpedia.org/class/yago/SIUnits, http://dbpedia.org/class/yago/SNCFMultipleUnits, http://dbpedia.org/class/yago/RomanianArmyUnits, http://dbpedia.org/class/yago/BritishRailElectricMultipleUnits, http://dbpedia.org/class/yago/LondonUndergroundElectricMultipleUnits, http://dbpedia.org/class/yago/RoyalAirForceGroundSupportUnits, http://dbpedia.org/class/yago/FictionalBritishArmyUnits, http://dbpedia.org/class/yago/SamurauUnits, http://dbpedia.org/class/yago/IsraeliAirForceSpecialUnits, http://dbpedia.org/class/yago/SIDerivedUnits, http://dbpedia.org/class/yago/AustralianArmouredUnits, http://dbpedia.org/class/yago/BritishRailDieselMultipleUnits, http://dbpedia.org/class/yago/BritishRailDepartmentalUnits, http://dbpedia.org/class/yago/NaturalUnits, http://dbpedia.org/class/yago/Iarnr%C3%B3d%C3%89ireannMultipleUnits, http://dbpedia.org/class/yago/ProtectiveSecurityUnits, http://dbpedia.org/class/yago/MetropolitanPoliceUnits, http://dbpedia.org/class/yago/JapaneseElectricMultipleUnits, http://dbpedia.org/class/yago/IsraeliCombatCorpsSpecialUnits, http://dbpedia.org/class/yago/TheBananaWarsMilitaryUnits, http://dbpedia.org/class/yago/JewishArmyUnits, http://dbpedia.org/class/yago/UnitOfMeasurement113583724, http://dbpedia.org/class/yago/ParmalatUnits, http://dbpedia.org/class/yago/EffectsUnits, http://dbpedia.org/class/yago/B-17Units, http://dbpedia.org/class/yago/Whole100003553, http://dbpedia.org/class/yago/ChineseElectricMultipleUnits, http://dbpedia.org/class/yago/Non-SIMetricUnits, http://dbpedia.org/class/yago/RAFMarhamUnits, http://dbpedia.org/class/yago/BlackHillsWarMilitaryUnits, http://dbpedia.org/class/yago/FictionalUSMarineUnits, http://dbpedia.org/class/yago/GermanDieselMultipleUnits, http://dbpedia.org/class/yago/PropagandaFilmUnits, http://dbpedia.org/class/yago/MultipleUnits, http://dbpedia.org/class/yago/AustralianElectricalMultipleUnits, http://dbpedia.org/class/yago/AustralianDieselMultipleUnits, http://dbpedia.org/class/yago/IsraeliGeneralStaffSpecialUnits, http://dbpedia.org/class/yago/CGSUnits, http://dbpedia.org/class/yago/GermanElectricMultipleUnits, http://dbpedia.org/class/yago/WisconsinNationalGuardUnits, http://dbpedia.org/class/yago/UnitedStatesMarineCorpsLowAltitudeAirDefenseUnits, http://dbpedia.org/class/yago/RoyalAirForceUnits, http://dbpedia.org/class/yago/IsraeliSeaCorpsSpecialUnits, http://dbpedia.org/class/yago/PKPElectricMultipleUnits, http://dbpedia.org/class/yago/SIBaseUnits, http://dbpedia.org/class/yago/LateRomanMilitaryUnits, http://dbpedia.org/class/yago/SNCBMultipleUnits, http://dbpedia.org/class/yago/LawEnforcementUnits, http://dbpedia.org/class/yago/Unit113810323, http://dbpedia.org/class/yago/Unit105869857, http://dbpedia.org/class/yago/BritishCeremonialUnits, http://dbpedia.org/class/yago/ImperialUnits, http://dbpedia.org/class/yago/SIUnits, http://dbpedia.org/class/yago/SNCFMultipleUnits, http://dbpedia.org/class/yago/RomanianArmyUnits, http://dbpedia.org/class/yago/BritishRailElectricMultipleUnits, http://dbpedia.org/class/yago/LondonUndergroundElectricMultipleUnits, http://dbpedia.org/class/yago/RoyalAirForceGroundSupportUnits, http://dbpedia.org/class/yago/FictionalBritishArmyUnits, http://dbpedia.org/class/yago/SamurauUnits, http://dbpedia.org/class/yago/IsraeliAirForceSpecialUnits, http://dbpedia.org/class/yago/SIDerivedUnits, http://dbpedia.org/class/yago/AustralianArmouredUnits, http://dbpedia.org/class/yago/BritishRailDieselMultipleUnits, http://dbpedia.org/class/yago/BritishRailDepartmentalUnits, http://dbpedia.org/class/yago/NaturalUnits]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/UnitOfMeasurement113583724]
+
+   NOME DO CONCEITO: management
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/Management101133281, http://dbpedia.org/class/yago/Management108381165]
+###############################################################################
+FEATURE TYPE: Wind Turbines
+
+   NOME DO CONCEITO: unit
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Whole100003553]
+
+   NOME DO CONCEITO: physical object
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Object100002684]
+
+   NOME DO CONCEITO: artifact
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Artifact100021939]
+
+   NOME DO CONCEITO: instrumentality
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Instrumentality103575240]
+
+   NOME DO CONCEITO: wind turbine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/WindTurbine104591517]
+
+   NOME DO CONCEITO: turbine
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/WindTurbines, http://dbpedia.org/class/yago/Turbine104498523]
+
+   NOME DO CONCEITO: heat engine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/HeatEngine103507963]
+
+   NOME DO CONCEITO: rotary engine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/RotaryEngine104110654]
+
+   NOME DO CONCEITO: physical entity
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/PhysicalEntity100001930]
+
+   NOME DO CONCEITO: engine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Engine103287733]
+
+   NOME DO CONCEITO: motor
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Motor103789946]
+
+   NOME DO CONCEITO: device
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Device103183080]
+
+   NOME DO CONCEITO: ICE
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Internal-combustionEngine103579982]
+
+   NOME DO CONCEITO: machine
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Machine103699975]
+###############################################################################
+FEATURE TYPE: Windfarm Broad Area Of Search
+
+   NOME DO CONCEITO: broad
+   OCORRENCIAS: 2
+   URLS: [http://dbpedia.org/class/yago/NorfolkBroads, http://dbpedia.org/class/yago/Broad109875663]
+
+   NOME DO CONCEITO: search
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/Search100637354, http://dbpedia.org/class/yago/Search100644366, http://dbpedia.org/class/yago/Search105770058]
+###############################################################################
+FEATURE TYPE: Zone of Subsidence
+
+   NOME DO CONCEITO: subsidence
+   OCORRENCIAS: 3
+   URLS: [http://dbpedia.org/class/yago/CaveIn107361416, http://dbpedia.org/class/yago/Settling107362218, http://dbpedia.org/class/yago/Remission107419960]
+
+   NOME DO CONCEITO: zone
+   OCORRENCIAS: 9
+   URLS: [http://dbpedia.org/class/yago/SpecialEconomicZones, http://dbpedia.org/class/yago/LosAngelesHistoricPreservationOverlayZones, http://dbpedia.org/class/yago/EconomicZones, http://dbpedia.org/class/yago/Zone108688247, http://dbpedia.org/class/yago/Nuclear-freeZones, http://dbpedia.org/class/yago/Zones, http://dbpedia.org/class/yago/MarylandEnterpriseZones, http://dbpedia.org/class/yago/TimeZones, http://dbpedia.org/class/yago/Zone108509442]
+   OCORRENCIAS CONCEITOS GERAIS: 1
+   URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Zone108688247]

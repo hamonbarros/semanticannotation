@@ -1,0 +1,96 @@
+------------------------------------------------------------------------------------
+Título do Feature Type: AIR EMEP Monitoring Sites
+
+Token: Site Monitor
+Categorias: 
+Categorias similares: 
+Conceitos: Site Monitor
+Conceitos similares: 
+
+Token: air Monitoring
+Categorias: 
+Categorias similares: 
+Conceitos: air Monitoring
+Conceitos similares: 
+
+Token: Sites
+Categorias: 
+Categorias similares: 
+Conceitos: Sites
+Conceitos similares: 
+
+Token: EMEP
+Categorias: 
+Categorias similares: 
+Conceitos: EMEP
+Conceitos similares: 
+
+Token: AIR
+Categorias: 
+Categorias similares: 
+Conceitos: AIR
+Conceitos similares: 
+
+------ NÃO ENCONTROU CONCEITOS VIA LOD! -----
+------------------------------------------------------------------------------------
+Título do Feature Type: AIR EMEP Monitoring Sites
+
+Token: Site Monitor
+Categorias: 
+Categorias similares: 
+Conceitos: site Monitor, Site Monitor
+Conceitos similares: http://dbpedia.org/class/yago/WorldWarIISites, http://dbpedia.org/class/yago/VietnamWarSites, http://dbpedia.org/class/yago/MixtecSites, http://dbpedia.org/class/yago/RocketLaunchSites, http://dbpedia.org/class/yago/IndusValleySites, http://dbpedia.org/class/yago/Monitor103782006, http://dbpedia.org/class/yago/BlackSites, http://dbpedia.org/class/yago/HellenisticSites, http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites, http://dbpedia.org/class/yago/EtruscanSites, http://dbpedia.org/class/yago/MesoamericanSites, http://dbpedia.org/class/yago/IllinoisHistoricSites, http://dbpedia.org/class/yago/TotonacSites, http://dbpedia.org/class/yago/ZapotecSites, http://dbpedia.org/class/yago/AmarnaSites, http://dbpedia.org/class/yago/BronzeAgeSites, http://dbpedia.org/class/yago/UnitedStatesNavyMonitors, http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites, http://dbpedia.org/class/yago/NewYorkStateHistoricSites, http://dbpedia.org/class/yago/WorldWarISites, http://dbpedia.org/class/yago/Admonisher109771855, http://dbpedia.org/class/yago/SupercomputerSites, http://dbpedia.org/class/yago/Monitor101694709, http://dbpedia.org/class/yago/AbydosSites, http://dbpedia.org/class/yago/WorldHeritageSites, http://dbpedia.org/class/yago/StoneAgeSites, http://dbpedia.org/class/yago/NatureConservationReviewSites, http://dbpedia.org/class/yago/MayaSites, http://dbpedia.org/class/yago/IndianaStateHistoricSites, http://dbpedia.org/class/yago/ArchaeologicalSites, http://dbpedia.org/class/yago/KurdishHistoricalSites, http://dbpedia.org/class/yago/AbercrombieClassMonitors, http://dbpedia.org/class/yago/CentralAsianBuddhistSites, http://dbpedia.org/class/yago/Proctor110478960, http://dbpedia.org/class/yago/OlmecSites, http://dbpedia.org/class/yago/HinduPilgrimageSites, http://dbpedia.org/class/yago/DiveSites, http://dbpedia.org/class/yago/ShockSites, http://dbpedia.org/class/yago/RamsarSites, http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites, http://dbpedia.org/class/yago/SuperfundSites, http://dbpedia.org/class/yago/AmericanCivilWarSites, http://dbpedia.org/class/yago/WeaponsTestSites, http://dbpedia.org/class/yago/NuclearTestSites, http://dbpedia.org/class/yago/SAGESites, http://dbpedia.org/class/yago/AztecSites, http://dbpedia.org/class/yago/Monitor103781787, http://dbpedia.org/class/yago/TanzanianArcheologicalSites, http://dbpedia.org/class/yago/PaleontologicalSites, http://dbpedia.org/class/yago/IronAgeSites, http://dbpedia.org/class/yago/ExecutionSites, http://dbpedia.org/class/yago/CatholicPilgrimageSites, http://dbpedia.org/class/yago/AngkorianSites, http://dbpedia.org/class/yago/ThracianSites, http://dbpedia.org/class/yago/NeanderthalSites, http://dbpedia.org/class/yago/Click-to-donateSites, http://dbpedia.org/class/yago/Monitor103782190, http://dbpedia.org/class/yago/UKTransmitterSites, http://dbpedia.org/class/yago/RoyalNavyMonitors
+
+Token: air Monitoring
+Categorias: 
+Categorias similares: 
+Conceitos: Monitor air, air Monitoring
+Conceitos similares: http://dbpedia.org/class/yago/Monitor103781787, http://dbpedia.org/class/yago/UnitedStatesNavyMonitors, http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Monitor101694709, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Atmosphere108499057, http://dbpedia.org/class/yago/Monitor103782006, http://dbpedia.org/class/yago/Admonisher109771855, http://dbpedia.org/class/yago/Monitor103782190, http://dbpedia.org/class/yago/Monitoring100880046, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214, http://dbpedia.org/class/yago/AbercrombieClassMonitors, http://dbpedia.org/class/yago/RoyalNavyMonitors, http://dbpedia.org/class/yago/Proctor110478960
+
+Token: Sites
+Categorias: 
+Categorias similares: 
+Conceitos: site, Sites
+Conceitos similares: http://dbpedia.org/class/yago/WorldWarIISites, http://dbpedia.org/class/yago/VietnamWarSites, http://dbpedia.org/class/yago/MixtecSites, http://dbpedia.org/class/yago/MayaSites, http://dbpedia.org/class/yago/RocketLaunchSites, http://dbpedia.org/class/yago/IndianaStateHistoricSites, http://dbpedia.org/class/yago/IndusValleySites, http://dbpedia.org/class/yago/ArchaeologicalSites, http://dbpedia.org/class/yago/KurdishHistoricalSites, http://dbpedia.org/class/yago/CentralAsianBuddhistSites, http://dbpedia.org/class/yago/BlackSites, http://dbpedia.org/class/yago/HellenisticSites, http://dbpedia.org/class/yago/NationalFootballLeagueSummerCampSites, http://dbpedia.org/class/yago/OlmecSites, http://dbpedia.org/class/yago/ShockSites, http://dbpedia.org/class/yago/DiveSites, http://dbpedia.org/class/yago/HinduPilgrimageSites, http://dbpedia.org/class/yago/Bah%C3%A1'%C3%ADHolySites, http://dbpedia.org/class/yago/RamsarSites, http://dbpedia.org/class/yago/SuperfundSites, http://dbpedia.org/class/yago/EtruscanSites, http://dbpedia.org/class/yago/WeaponsTestSites, http://dbpedia.org/class/yago/AmericanCivilWarSites, http://dbpedia.org/class/yago/MesoamericanSites, http://dbpedia.org/class/yago/ZapotecSites, http://dbpedia.org/class/yago/TotonacSites, http://dbpedia.org/class/yago/IllinoisHistoricSites, http://dbpedia.org/class/yago/AmarnaSites, http://dbpedia.org/class/yago/NuclearTestSites, http://dbpedia.org/class/yago/BronzeAgeSites, http://dbpedia.org/class/yago/SAGESites, http://dbpedia.org/class/yago/AztecSites, http://dbpedia.org/class/yago/AmericanRevolutionaryWarSites, http://dbpedia.org/class/yago/NewYorkStateHistoricSites, http://dbpedia.org/class/yago/WorldWarISites, http://dbpedia.org/class/yago/TanzanianArcheologicalSites, http://dbpedia.org/class/yago/PaleontologicalSites, http://dbpedia.org/class/yago/ExecutionSites, http://dbpedia.org/class/yago/IronAgeSites, http://dbpedia.org/class/yago/CatholicPilgrimageSites, http://dbpedia.org/class/yago/ThracianSites, http://dbpedia.org/class/yago/AngkorianSites, http://dbpedia.org/class/yago/SupercomputerSites, http://dbpedia.org/class/yago/AbydosSites, http://dbpedia.org/class/yago/WorldHeritageSites, http://dbpedia.org/class/yago/Click-to-donateSites, http://dbpedia.org/class/yago/NeanderthalSites, http://dbpedia.org/class/yago/StoneAgeSites, http://dbpedia.org/class/yago/UKTransmitterSites, http://dbpedia.org/class/yago/NatureConservationReviewSites
+
+Token: EMEP
+Categorias: 
+Categorias similares: 
+Conceitos: EMEP
+Conceitos similares: 
+
+Token: AIR
+Categorias: 
+Categorias similares: 
+Conceitos: air, AIR
+Conceitos similares: http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Atmosphere108499057, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214
+
+--------------------------------------
+Features anotados: 1
+Features não anotados: 0
+--------------------------------------
+
+------------------------------------------------------------------------------------
+Título do Feature Type: AQINDEXREGIONS 4326
+
+Token: 4326
+Categorias: 
+Categorias similares: 
+Conceitos: 4326
+Conceitos similares: 
+
+------ NÃO ENCONTROU CONCEITOS VIA LOD! -----
+------------------------------------------------------------------------------------
+Título do Feature Type: AQINDEXREGIONS 4326
+
+Token: 4326
+Categorias: 
+Categorias similares: 
+Conceitos: , 4326
+Conceitos similares: 
+
+--------------------------------------
+Features anotados: 1
+Features não anotados: 1
+--------------------------------------
+

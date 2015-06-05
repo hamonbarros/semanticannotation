@@ -1,0 +1,759 @@
+---------------------------------------------------
+Título: Allotment Locations - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [allotment-165141, allotment-165142, location-214539]
+Conceitos recuperados: [location-128024, location-7655, location-123537, location-75919, location-82808, location-114585, location-88831, location-101663, location-90391, location-214539, location-19590, location-91285, location-151238, location-73187, location-47976, location-55415, location-25050, location-61232, location-92767, location-73372, location-128063, location-86354, location-21352, location-60982, location-55121, location-143532, location-87443, location-66510, location-89789, location-72416, location-25368, location-70842, location-76519, location-136841, location-121149, location-161734, location-66694, location-39101, location-103809, location-8292, location-36901, location-8022, location-133683, location-47279, location-30046, location-41295, location-91551, location-87989, location-11764, location-98665, allotment-165142, location-120490, location-30102, location-49641, location-144682, location-51118, allotment-165141, location-79661, location-93367, location-14690, location-17636, location-44878, location-9965, location-105239, location-50566, location-16391, location-5123, location-7230, location-120363, location-214540, location-134293, location-154695]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Allotment113289467, http://dbpedia.org/class/yago/Location100027167, http://dbpedia.org/class/yago/Allotment101083645]
+
+Precisão: 0.041666666666666664
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Community Council Boundaries - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [community-168609, council-229437, boundary-29602]
+Conceitos recuperados: [boundary-29602, council-121220, community-35148, community-31285, community-110465, community-110464, council-229438, community-14770, council-229439, community-110466, community-110469, community-110468, community-10559, council-229437, community-95757, community-79133, council-42422, community-168609, council-56489, community-138738, community-106181, council-95779, community-60733, community-26362, community-9238, community-90443, community-168610, community-168611, community-52494, community-110470, community-90447, community-46936, council-58179, council-8972, community-168614, council-100573, council-10849, community-168612, community-57027, community-168613, council-15872, community-12152, community-103022, community-161599, community-50295, community-54515, council-73700, community-103184, council-155690, council-68055, community-110341, council-12033, council-57751, community-97133, council-9268, community-20087, community-29911, community-6467, community-29912, community-110451, council-32726, council-11083, community-31303, community-91835, community-45806, community-156296, community-84914, community-31252, community-18989, community-98286, community-67137, community-142615, council-70190, community-63720]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries, http://dbpedia.org/class/yago/Community108223802, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.04054054054054054
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Conservation Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [conservation-207319, conservation-207320]
+Conceitos recuperados: [conservation-207319, conservation-207320]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Conservation100819274, http://dbpedia.org/class/yago/Conservation106104073]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Core Path Network - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [midpoint-198486, way-203906, web-203807]
+Conceitos recuperados: [network-116193, network-112832, network-42303, network-93048, network-46361, network-67585, network-55519, network-132934, network-53145, network-140555, network-38573, network-64438, network-66455, network-106429, path-157422, network-45800, network-115756, path-223166, network-27702, network-98123, path-100572, network-77437, network-143688, network-10589, network-8529, network-91629, network-10587, network-209440, network-58697, network-27714, network-14589, network-107801, path-127721, network-48250, network-68582, network-147420, network-27716, network-50931, network-36967, path-86165, network-59805, network-110053, network-103441, path-121028, network-79351, network-43368, network-61456, network-11072, network-114696, network-100441, network-65817, network-66070, network-119697, network-119223, network-71612, network-53841, path-8945, network-15092, network-44953, network-60566, network-7188, network-43684, network-58062, network-106471, network-61206, path-141433, network-71225, path-111450, network-68242, network-156969, network-69257, network-35996, path-112123, network-10806, network-113520, network-14287, network-19962, core-166166, core-166165, core-166164, core-166163, core-166162, core-166161, core-166160, core-166158, core-166159, network-136242, network-118835, path-140776, network-209439, network-33411, network-54053, network-48090, network-48091, network-75854, path-141598, network-104731, path-79895, network-54441, network-79110, network-6746, network-18157, network-6747, network-12072, network-12070, network-6745, network-82336, network-52653, network-40664, network-12368, network-10278, network-89755]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Defined Policy Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [policy-190409, federal agency-191468, intelligence-177101]
+Conceitos recuperados: [policy-13392, policy-20820, policy-9839, policy-45761, policy-190410, policy-190409, policy-190411]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Policy105901508]
+
+Precisão: 0.14285714285714285
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: Development Proposals Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [development-219699, proposal-212886]
+Conceitos recuperados: [development-219701, development-219702, development-219703, development-56369, proposal-212886, development-219699, development-219700, development-65907]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Proposal107162194, http://dbpedia.org/class/yago/Development100250259]
+
+Precisão: 0.25
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Development Proposals Line - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [development-219699, proposal-212886]
+Conceitos recuperados: [development-219701, development-219702, development-219703, development-56369, proposal-212886, development-219699, development-219700, development-65907]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Proposal107162194, http://dbpedia.org/class/yago/Development100250259]
+
+Precisão: 0.25
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Employment Land Audit - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [land-42661, land-204511, land-204512, land-204513, land-204514, audit-206831]
+Conceitos recuperados: [organ-137991, organ-91095, organ-171049, audit-206831, organ-38689, land-204511, land-204512, land-204513, land-204514, organ-94271, organ-68250, land-42661, organ-171050, organ-171051, organ-171052, organ-171053, organ-65803]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/AnishinaabeLands, http://dbpedia.org/class/yago/Kingdom114514805, http://dbpedia.org/class/yago/Audit100141176, http://dbpedia.org/class/yago/Land113250048, http://dbpedia.org/class/yago/Country108544813, http://dbpedia.org/class/yago/Domain108556491]
+
+Precisão: 0.35294117647058826
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife Common Good Land - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [group-195516, order-173030, party in the United Kingdom-7696, party established in 1919-15158, polity in the Netherlands-22326, organization-163340, state-220785, polity-190297, political party-181987, social group-225580]
+Conceitos recuperados: [work-104631, work-104770, work-79120, work-152702, work-86589, work-80264, work-133636, work-110388, work-101733, work-110387, law-57340, work-83090, work-110386, work-97246, work-86387, work-54457, work-95386, work-65017, law-23069, work-40557, property-24050, work-114906, law-102447, work-184216, work-123407, work-184215, unit-71821, law-57339, work-97115, work-184214, work-184213, work-142635, work-184212, work-184211, work-71315, work-71314, unit-47328, work-106063, work-50965, work-70781, work-97111, work-12916, work-46839, unit-98603, work-63976, work-93146, work-153065, work-44954, work-122477, work-58470, work-79458, unit-37013, work-50596, work-60793, work-113363, law-18113, work-117443, work-107828, work-159313, work-60845, work-80287, work-107026, unit-43222, work-95262, work-78985, work-78984, work-151161, work-89745, work-124937, work-79969, unit-7708, work-90272, work-51849, work-79823, work-79119, work-149288, work-86559, work-139776, work-91838, work-29302, work-102509, work-86549, work-54342, work-92132, work-110131, work-106241, unit-22347, unit-158817, unit-101704, work-106452, good-24194, work-116310, unit-87715, work-134833, work-133145, work-96167, work-113384, work-96168, work-142601, work-154376, property-9058, work-83697, work-73522, work-136876, work-140407, work-149970, work-128280, work-152074, good-21053, work-59986, work-117068, work-128383, work-108522, work-110349, law-69688, work-113780, work-149967, law-40806, work-79046, work-110969, work-79042, work-142770, work-79328, work-52343, unit-100515, work-83170, work-104697, law-20623, work-79737, work-97327, work-75795, work-79041, work-130596, work-86007, work-83559, work-152153, land-204511, unit-24038, land-204512, land-204513, property-12153, land-204514, work-70292, work-97336, work-70293, law-20432, law-20431, work-29483, work-114232, law-201989, law-201988, work-65022, work-29485, work-147801, work-147800, work-98767, work-141167, work-36781, work-162184, work-16447, work-99721, work-103989, law-201992, work-105233, work-157525, work-69858, law-201991, work-75630, law-201990, work-37703, work-37702, work-158510, work-74266, work-88806, work-88807, work-137181, unit-9937, work-100680, property-87076, work-102476, work-78795, work-53922, law-21249, work-96855, work-91380, work-110483, law-7194, work-133172, work-157654, unit-85661, work-69598, work-68586, work-161913, work-139800, unit-110416, work-81407, work-92653, work-55278, work-123372, work-74695, unit-139900, work-69587, work-111319, work-103981, work-94082, work-88049, work-124299, work-63355, work-27116, work-125636, work-28611, work-125230, work-28741, work-106238, unit-118359, law-20998, work-145140, work-145242, work-4570, work-82069, work-49733, work-145247, work-51138, unit-102323, property-163655, work-124362, work-82361, work-104525, work-43869, unit-16580, work-43565, good-229645, work-72337, work-122118, work-77619, unit-161014, property-163652, property-163651, property-163654, property-163653, work-52190, unit-67382, work-118393, work-115684, work-132341, work-158355, work-90721, work-87660, work-63065, work-112599, work-80698, work-103921, law-6649, work-15450, work-103923, work-28766, law-8819, work-82630, work-15942, work-46422, work-112177, work-35243, work-122008, work-139935, work-112565, work-141578, law-23457, work-91059, work-89980, work-104310, work-158415, unit-134374, law-18050, unit-204236, work-35454, work-45775, land-42661, law-6650, work-49404, work-81658, work-125092, fife-194402, unit-204234, unit-204235, work-116870, unit-204233, unit-69554, work-61707, work-127127, work-119783, work-102254, work-74609, work-74958, work-149754, work-71927, work-74606, work-95631, work-38789, work-74613, work-74611, work-130607, work-80994, work-94767, work-94766, work-104377, common-90647, work-140105, work-100164, work-129057, unit-19022, work-112761, work-137009, work-84957, work-91646, work-142014, work-102244, work-108198, work-135749, work-94376, work-149567, work-95618, work-143412, work-75186, work-75316, work-84618, property-16921, work-104110, work-94501, common-185409, work-75461, work-135376, property-53374, work-93685, law-20016, work-56000, law-23449, work-119968, unit-98389, unit-79489, work-131893, work-119758, work-146404, work-93692, common land-175371, work-46325, law-33873, work-4916, unit-26755, work-130381, work-80969, work-75335, work-74537, work-112777, work-65794, work-146551, work-42440, unit-133468, work-55244, work-86862, work-123036, unit-105375, work-86861, work-111120, work-69626, work-58984, unit-79810, work-81216, work-81217, work-151790, work-89013, unit-33518, work-74790, unit-56627, work-32966, unit-51456, work-137337, work-60213, work-150004, work-24956, work-47404, work-37548, unit-9116, work-20038, unit-119392, work-52660, work-126922, work-130726, work-146249, work-55364, unit-9047, work-84873, work-42524, work-18806, work-33782, work-42520, work-33781, work-111232, work-59291, good-145210, work-114642, work-94763, work-94206, unit-33102, work-16243, work-104384, work-58715, law-60157, work-33655, work-97817, work-141068, work-115230, work-67009, work-10368, work-75284, work-102304, unit-44375, work-152877, work-80500, unit-152267, work-79359, work-136107, work-122508, work-154183, good-91956, work-94580, work-77252, unit-72736, work-48908, work-104191, work-86524, work-114381, work-95322, work-65477, work-87318, work-142375, work-81009, unit-22404, work-47372, work-13650, work-134046, work-110303, work-60711, work-98005, work-97416, work-39348, unit-146441, work-47373, work-45953, work-18984, unit-128089, work-39288, work-36192, work-129139, unit-35983, work-88311, work-44112, unit-105054, work-107387, work-120793, work-129241, work-4716, work-120792, work-64839, work-87544, work-64835, work-72620, work-140284, work-161303, work-70095, work-47297, work-150086, work-59913, work-115803, work-95975, work-96546, work-142329, work-137538, work-96544, work-41840, work-53637, work-95466, work-121148, work-50255, work-86668, work-140097, work-140096, work-66961, work-105594, work-114830, work-58519, work-134793, work-87523, work-142333, work-152999, work-76086, work-153567, work-98105, property-161435, work-79274, work-67949, work-153019, work-50388, work-41337, unit-88279, work-29530, work-48553, law-15899, work-115970, work-87439, work-76764, unit-112385, work-159139, unit-121196, work-80532, work-114164, work-77134, work-123517, work-42393, work-107489]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife Primary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [location-214539, region-174274, administrative division-181954, school district-196025, physical entity-178778, territory-187055, physical object-185182]
+Conceitos recuperados: [school-41812, area-140592, school-94933, area-77639, school-69986, school-146070, school-18812, school-112898, school-76562, school-143391, school-151076, school-149256, school-126244, area-38465, school-47817, school-78424, school-44056, school-37294, school-157457, primary-121475, school-158902, school-83376, school-88897, school-32163, school-78008, area-142474, school-94918, area-50982, area-101140, school-144675, school-17702, school-143470, school-17703, catchment-199323, school-122279, school-73754, school-69403, area-58089, school-141783, school-122661, school-83288, school-151577, school-61837, school-89847, school-47984, school-106634, school-47985, school-106082, school-39516, school-99618, school-64269, school-132941, school-66497, school-98486, school-75194, school-35375, school-76013, school-47120, school-100281, school-155438, school-147886, school-39541, school-104552, school-113176, school-99007, school-183474, school-148064, school-114359, school-183475, school-117159, school-183472, area-37118, school-183473, school-97835, school-97904, school-123300, school-183471, school-42467, primary-38742, school-51983, school-125303, area-10766, school-62230, school-111516, school-162513, school-97131, school-94606, school-104229, area-29055, school-99298, school-80765, school-82197, area-130669, school-51386, area-148450, area-130124, school-107503, school-44873, school-150588, school-150491, school-97260, school-103497, school-49667, school-53909, school-110244, school-60724, school-154190, school-103167, school-62352, school-144362, school-90558, school-70544, area-26878, school-15642, area-92838, school-119168, school-41864, school-34543, school-137893, school-110251, school-20997, school-151166, school-39135, school-49745, school-154382, school-64168, school-121015, school-94437, school-88021, school-80671, school-32974, school-114884, school-146924, school-129407, area-88413, primary-62752, school-123061, school-86602, primary-213886, school-83800, school-42431, school-111554, school-112137, school-36303, school-49194, school-32306, school-141321, school-96963, area-7228, school-159422, school-161060, school-82740, area-52912, school-58698, area-102333, school-85941, school-108565, school-70108, school-49490, school-82229, school-55860, area-159839, school-106210, school-139058, school-135401, school-37564, school-26543, school-137347, school-159743, school-63806, school-85337, school-72565, school-36851, area-30495, school-55353, school-53102, school-29016, school-82214, school-114253, school-85334, school-42340, school-114114, area-223655, area-223654, area-223653, school-141174, area-132102, school-42754, school-68965, school-55061, school-110685, area-33128, school-72644, school-108055, school-100587, school-99953, school-140328, school-100069, school-55700, school-139248, school-126736, school-72209, area-138214, school-112165, school-111318, school-119484, school-146003, school-139938, school-120099, school-90601, school-110066, school-118347, school-162283, school-98659, school-95725, school-69302, area-96339, school-7134, school-152741, area-73979, school-43905, school-115335, school-120173, school-118098, school-120172, school-120569, school-94954, school-119058, school-18102, school-156498, school-136245, school-91304, school-136966, school-73711, school-67601, school-43542, school-158441, school-102026, school-53095, school-64821, school-92460, school-73089, school-84366, primary-50873, school-79776, school-64157, school-11769, school-102577, school-65201, school-90201, school-50606, school-25437, school-94830, school-150112, fife-194402, school-128474]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife RC Primary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [location-214539, region-174274, administrative division-181954, school district-196025, physical entity-178778, territory-187055, physical object-185182]
+Conceitos recuperados: [school-41812, school-94933, school-69986, school-146070, school-18812, school-112898, school-76562, school-143391, school-151076, school-149256, school-126244, school-47817, school-78424, school-44056, school-37294, school-157457, primary-121475, school-158902, school-83376, school-32163, school-88897, school-78008, school-94918, school-144675, school-17702, school-143470, school-17703, school-122279, catchment-199323, school-73754, school-69403, school-141783, school-122661, school-83288, school-151577, school-61837, school-89847, school-47984, school-106634, school-47985, school-39516, school-106082, school-99618, school-64269, school-132941, school-66497, school-98486, school-75194, school-35375, school-76013, school-47120, school-100281, school-155438, school-39541, school-147886, school-104552, school-113176, school-99007, school-183474, school-183475, school-114359, school-148064, school-117159, school-183472, school-183473, school-97835, school-97904, school-123300, school-183471, school-42467, primary-38742, school-51983, school-125303, school-62230, school-111516, school-162513, school-97131, school-94606, school-104229, school-99298, school-80765, school-82197, school-51386, school-107503, school-44873, school-150588, school-150491, school-97260, school-103497, school-49667, school-53909, school-110244, school-60724, school-154190, school-103167, school-62352, school-144362, school-90558, school-70544, school-15642, school-119168, school-41864, school-34543, school-137893, school-110251, school-20997, school-151166, school-39135, school-49745, school-154382, school-121015, school-64168, school-94437, school-88021, school-80671, school-32974, school-114884, school-146924, school-129407, primary-62752, school-123061, school-86602, primary-213886, school-83800, school-42431, school-111554, school-112137, school-36303, school-49194, school-141321, school-32306, school-96963, school-159422, school-161060, school-82740, school-58698, school-108565, school-85941, school-70108, school-49490, school-82229, school-55860, school-106210, school-139058, school-135401, school-37564, school-26543, school-137347, school-159743, school-63806, school-85337, school-72565, school-36851, school-55353, school-53102, school-29016, school-82214, school-114253, school-85334, school-42340, school-114114, school-141174, school-42754, school-68965, school-55061, school-110685, school-72644, school-108055, school-100587, school-99953, school-140328, school-100069, school-55700, school-139248, school-126736, school-72209, school-112165, school-111318, school-119484, school-146003, school-139938, school-120099, school-90601, school-110066, school-118347, school-162283, school-98659, school-95725, school-69302, school-7134, school-152741, school-43905, school-115335, school-120173, school-118098, school-120172, school-94954, school-120569, school-119058, school-18102, school-156498, school-136245, school-91304, school-136966, school-73711, school-67601, school-43542, school-64821, school-102026, school-53095, school-158441, school-92460, school-73089, school-84366, primary-50873, school-79776, school-64157, school-11769, school-102577, school-65201, school-90201, school-50606, school-25437, school-94830, school-150112, fife-194402, school-128474]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife RC Secondary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [fife-194402, secondary-214269, school-183471, catchment-199323, management-201913, management-201914, say-so-176818]
+Conceitos recuperados: [school-41812, school-94933, school-69986, school-146070, teacher-17626, school-18812, teacher-45875, school-112898, school-76562, school-143391, teacher-92932, school-151076, school-149256, school-126244, teacher-71359, school-47817, school-78424, school-44056, school-37294, school-157457, school-158902, school-83376, school-32163, school-88897, school-78008, teacher-39275, teacher-121718, teacher-133174, school-94918, teacher-40928, school-144675, school-17702, school-143470, school-17703, school-122279, catchment-199323, school-73754, school-69403, school-141783, school-122661, school-83288, school-151577, school-61837, school-89847, teacher-118862, school-47984, school-106634, school-47985, school-39516, school-106082, school-99618, teacher-26484, school-64269, school-132941, school-66497, school-98486, school-75194, school-35375, school-76013, school-47120, school-100281, school-155438, school-39541, school-147886, school-104552, school-113176, school-99007, school-183474, school-183475, school-114359, school-148064, school-117159, school-183472, school-183473, school-97835, school-97904, school-123300, school-183471, school-42467, school-51983, school-125303, school-62230, head-226921, school-111516, school-162513, school-97131, school-94606, school-104229, teacher-66066, school-99298, school-80765, school-82197, school-51386, head-226924, head-226925, head-226922, head-226923, head-226926, school-107503, school-44873, school-150588, school-150491, school-97260, teacher-71679, school-103497, school-49667, school-53909, school-110244, school-60724, school-154190, teacher-34517, teacher-14913, school-103167, school-62352, school-144362, school-90558, school-70544, school-15642, secondary-214269, school-119168, school-41864, school-34543, school-137893, school-110251, school-20997, school-151166, school-39135, teacher-37831, school-49745, school-154382, school-121015, school-64168, school-94437, school-88021, school-80671, school-32974, school-114884, teacher-43412, school-146924, school-129407, school-123061, school-86602, school-83800, school-42431, school-111554, school-112137, school-36303, school-49194, school-141321, school-32306, school-96963, school-159422, school-161060, school-82740, school-58698, school-108565, school-85941, school-70108, school-49490, school-82229, school-55860, school-106210, school-139058, school-135401, school-37564, school-26543, school-137347, school-159743, school-63806, school-85337, school-72565, school-36851, teacher-15463, school-55353, school-53102, school-29016, school-82214, school-114253, school-85334, school-42340, school-114114, school-141174, teacher-26284, school-42754, teacher-91447, school-68965, school-55061, school-110685, school-72644, school-108055, school-100587, school-99953, school-140328, school-100069, teacher-145322, teacher-24775, school-55700, teacher-101417, school-139248, school-126736, teacher-58936, school-72209, school-112165, school-111318, teacher-96320, school-119484, school-146003, school-139938, school-120099, school-90601, school-110066, school-118347, school-162283, school-98659, teacher-179458, school-95725, school-69302, teacher-43900, school-7134, school-152741, school-43905, school-115335, school-120173, school-118098, school-120172, teacher-179459, school-94954, school-120569, school-119058, teacher-151718, school-18102, school-156498, school-136245, school-91304, school-136966, school-73711, school-67601, school-43542, school-64821, school-102026, school-53095, school-158441, school-92460, school-73089, school-84366, teacher-158893, school-79776, school-64157, school-11769, school-102577, teacher-126554, school-65201, school-90201, school-50606, school-25437, teacher-121745, school-94830, head-146835, school-150112, teacher-15621, fife-194402, school-128474]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Fife103334492, http://dbpedia.org/class/yago/Catchment102983357, http://dbpedia.org/class/yago/School108276720, http://dbpedia.org/class/yago/Secondary108429899]
+
+Precisão: 0.015267175572519083
+Cobertura: 0.5714285714285714
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife Secondary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [fife-194402, secondary-214269, school-183471, catchment-199323, management-201913, management-201914, say-so-176818]
+Conceitos recuperados: [school-41812, area-140592, school-94933, area-77639, school-69986, school-146070, teacher-17626, school-18812, teacher-45875, school-112898, school-76562, school-143391, teacher-92932, school-151076, school-149256, school-126244, teacher-71359, area-38465, school-47817, school-78424, school-44056, school-37294, school-157457, school-158902, school-83376, school-88897, school-32163, school-78008, teacher-39275, area-142474, teacher-121718, teacher-133174, school-94918, teacher-40928, area-50982, area-101140, school-144675, school-17702, school-143470, school-17703, catchment-199323, school-122279, school-73754, school-69403, area-58089, school-141783, school-122661, school-83288, school-151577, school-61837, school-89847, teacher-118862, school-47984, school-106634, school-47985, school-106082, school-39516, school-99618, teacher-26484, school-64269, school-132941, school-66497, school-98486, school-75194, school-35375, school-76013, school-47120, school-100281, school-155438, school-147886, school-39541, school-104552, school-113176, school-99007, school-183474, school-148064, school-114359, school-183475, school-117159, school-183472, area-37118, school-183473, school-97835, school-97904, school-123300, school-183471, school-42467, school-51983, school-125303, area-10766, school-62230, head-226921, school-111516, school-162513, school-97131, school-94606, school-104229, area-29055, teacher-66066, school-99298, school-80765, school-82197, area-130669, school-51386, head-226924, area-148450, head-226925, head-226922, head-226923, head-226926, area-130124, school-107503, school-44873, school-150588, school-150491, school-97260, teacher-71679, school-103497, school-49667, school-53909, school-110244, school-60724, school-154190, teacher-34517, teacher-14913, school-103167, school-62352, school-144362, school-90558, school-70544, area-26878, school-15642, secondary-214269, area-92838, school-119168, school-41864, school-34543, school-137893, school-110251, school-20997, school-151166, school-39135, teacher-37831, school-49745, school-154382, school-64168, school-121015, school-94437, school-88021, school-80671, school-32974, school-114884, teacher-43412, school-146924, school-129407, area-88413, school-123061, school-86602, school-83800, school-42431, school-111554, school-112137, school-36303, school-49194, school-32306, school-141321, school-96963, area-7228, school-159422, school-161060, school-82740, area-52912, school-58698, area-102333, school-85941, school-108565, school-70108, school-49490, school-82229, school-55860, area-159839, school-106210, school-139058, school-135401, school-37564, school-26543, school-137347, school-159743, school-63806, school-85337, school-72565, school-36851, area-30495, teacher-15463, school-55353, school-53102, school-29016, school-82214, school-114253, school-85334, school-42340, school-114114, area-223655, area-223654, area-223653, school-141174, area-132102, teacher-26284, school-42754, teacher-91447, school-68965, school-55061, school-110685, area-33128, school-72644, school-108055, school-100587, school-99953, school-140328, school-100069, teacher-145322, teacher-24775, school-55700, teacher-101417, school-139248, school-126736, teacher-58936, school-72209, area-138214, school-112165, school-111318, teacher-96320, school-119484, school-146003, school-139938, school-120099, school-90601, school-110066, school-118347, school-162283, school-98659, teacher-179458, school-95725, school-69302, teacher-43900, area-96339, school-7134, school-152741, area-73979, school-43905, school-115335, school-120173, school-118098, school-120172, teacher-179459, school-120569, school-94954, school-119058, teacher-151718, school-18102, school-156498, school-136245, school-91304, school-136966, school-73711, school-67601, school-43542, school-158441, school-102026, school-53095, school-64821, school-92460, school-73089, school-84366, teacher-158893, school-79776, school-64157, school-11769, school-102577, teacher-126554, school-65201, school-90201, school-50606, school-25437, teacher-121745, school-94830, head-146835, school-150112, teacher-15621, fife-194402, school-128474]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Fife103334492, http://dbpedia.org/class/yago/Catchment102983357, http://dbpedia.org/class/yago/School108276720, http://dbpedia.org/class/yago/Secondary108429899]
+
+Precisão: 0.013745704467353952
+Cobertura: 0.5714285714285714
+---------------------------------------------------
+---------------------------------------------------
+Título: Housing Land Audit 2014 - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [housing-212986, land-204511, audit-206831]
+Conceitos recuperados: [hous-33524, hous-63467, hous-141894, hous-54210, hous-138899, hous-147497, hous-47508, hous-46475, hous-74301, hous-82598, hous-52191, hous-19779, hous-71945, hous-150174, hous-71946, hous-26812, hous-74933, hous-94998, hous-109449, hous-121969, hous-12028, hous-109450, hous-146138, hous-73886, hous-27027, hous-162333, hous-142883, hous-53028, hous-50605, hous-93767, hous-18013, hous-160388, hous-77038, hous-64608, hous-12017, hous-113867, hous-12018, hous-89601, hous-153851, hous-34733, hous-94052, hous-91772, hous-94051, hous-34732, hous-59932, hous-63483, hous-116751, hous-151131, hous-58030, hous-125908, audit-206831, land-204511, hous-25049, land-204512, land-204513, land-204514, hous-81816, hous-59980, land-42661, hous-66200, hous-131903, hous-130431, hous-146921]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Audit100141176, http://dbpedia.org/class/yago/Land113250048]
+
+Precisão: 0.031746031746031744
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Listed Buildings - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [edifice-164488]
+Conceitos recuperados: [building-33723, building-41157, building-125128, building-142361, building-148024, building-65459, building-54004, building-143248, building-28107, building-19669, building-57350, building-25577, building-71680, building-15792, building-65394, building-102915, building-63487, building-50308, building-128296, building-112019, building-157501, building-65458, building-7791, building-62150, building-118718, building-100882, building-86084, building-52413, building-52414, building-83049, building-120540, building-144765, building-140417, building-99440, building-36496, building-150854, building-110492, building-58532, building-142504, building-126005, building-126004, building-26075, building-8828, building-63981, building-65067, building-138859, building-106003, building-5316, building-31591, building-50326, building-57163, building-82887, building-53824, building-70007, building-60819, building-157438, building-52049, building-26286, building-112779, building-65410, building-69906, building-28915, building-28916, building-5228, building-107620, building-70945, building-95355, building-62933, building-20451, building-38791, building-113234, building-52702, building-31948, building-31949, building-52051, building-67451, building-98382, building-7892, building-99027, building-7893, building-31576, building-35762, building-125821, building-100301, building-67760, building-144927, building-83309, building-44019, building-21989, building-56800, building-50563, building-135653, building-98873, building-64437, building-56925, building-84141, building-50365, building-49986, building-88978, building-150193, building-70860, building-34655, building-137030, building-20629, building-70768, building-8669, building-33085, building-35246, building-94374, building-68352, building-148981, building-103073, building-26435, building-28918, building-52771, building-18204, building-18205, building-160207, building-218008, building-29326, building-114454, building-79285, building-31042, building-33886, building-72648, building-63676, building-153808, building-110380, building-55030, building-25742]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Local Landscape Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [local-227354, landscape-99002, landscape-208725, landscape-208726, landscape-208727, landscape-208728]
+Conceitos recuperados: [landscape-208727, landscape-208728, landscape-208725, landscape-208726, landscape-99002, local-227354]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Landscape106209940, http://dbpedia.org/class/yago/Landscape103640166, http://dbpedia.org/class/yago/Landscape103640011, http://dbpedia.org/class/yago/Landscape108646902, http://dbpedia.org/class/yago/Local103680942, http://dbpedia.org/class/yago/CulturalLandscapes]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Natural Heritage Sites - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [natural-203432, natural-203433, natural-203434, heritage-175853, land site-202900, group-195516, organization-163340, social group-225580]
+Conceitos recuperados: [group-195516, abstraction-207942, organization-163340, organisation based in Australia-83039, social group-225580]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/SocialGroup107950920, http://dbpedia.org/class/yago/Organization108008335, http://dbpedia.org/class/yago/Group100031264]
+
+Precisão: 0.6
+Cobertura: 0.375
+---------------------------------------------------
+---------------------------------------------------
+Título: Polling Districts - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [poll-227649, poll-227650, territory-187055, election-15582, constituency-65556, group action-214836, election-228467, vote-170881, constituency-222660, group-195516, voting system-182092, legal system-214667, social group-225580]
+Conceitos recuperados: [district-103912, district-98270, district-108295, poll-227649, district-83447, district-61100, district-68528, district-68565, district-125216, district-61101, district-92392, district-68566, district-127275, district-84933, district-127377, district-96985, district-151099, district-68560, district-96989, district-61085, district-68561, district-34170, district-96988, district-142617, district-19982, district-49409, district-65431, district-106531, district-79232, district-70270, district-23454, district-10247, district-81656, district-115751, district-35700, district-8929, district-8928, district-149627, district-68556, district-19626, district-68555, district-69158, district-126985, district-69159, district-97028, district-121856, district-126991, district-81894, district-67523, district-120595, district-135813, district-13399, district-53910, district-68546, district-106079, district-144035, district-99385, district-77000, district-127394, district-79010, precinct-207906, district-92292, district-132342, district-52084, district-81405, district-135586, district-145019, district-125738, district-110531, district-19455, district-76233, district-59249, district-88740, district-94018, district-68534, district-44598, district-151051, district-90249, district-87214, district-72101, district-81481, district-69165, district-73479, district-87211, district-69160, district-96998, district-88141, district-127590, district-97331, district-160659, district-96994, district-115334, district-52228, poll-227650, district-110910, precinct-100476]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Poll105539012, http://dbpedia.org/class/yago/Poll100653811]
+
+Precisão: 0.020833333333333332
+Cobertura: 0.15384615384615385
+---------------------------------------------------
+---------------------------------------------------
+Título: Polling Places - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [poll-227649, poll-227650, land site-202900, election-15582, election-228467, vote-170881]
+Conceitos recuperados: [place-203382, place-203383, place-89360, poll-227649, place-96981, place-156033, place-59819, place-23946, place-31035, place-33786, precinct-207906, place-27293, place-65934, place-106439, place-153928, place-11745, place-6293, place-85360, place-142846, place-6759, place-18859, place-36509, place-29545, place-133808, place-62388, place-123919, place-50791, poll-227650, place-203389, place-203388, place-203387, precinct-100476, place-5957, place-203386, place-34202, place-203385, place-63893, place-89660, place-203384]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Poll105539012, http://dbpedia.org/class/yago/Poll100653811]
+
+Precisão: 0.05128205128205128
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: Tree Preservation Order Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [tree-197323, preservation-172293, preservation-172294, preservation-172295, order-173028]
+Conceitos recuperados: [order-153295, order-87011, order-30644, tree-48511, order-54920, order-52972, tree-92461, order-66651, order-132154, order-13446, tree-43352, order-130929, order-13447, tree-54681, order-127923, tree-197323, tree-53220, tree-113950, order-137190, order-64591, order-79527, order-88922, tree-61381, tree-13812, order-45047, tree-24773, preservation-172294, preservation-172295, preservation-172293, order-54927, order-27037, order-156266, order-18886, order-173030, order-173033, order-173034, order-173031, order-173032, order-32930, order-173037, order-173035, order-30510, order-90549, order-173036, order-38609, order-173029, order-173028, order-10190, tree-83059, order-39735]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/Conservation107419599, http://dbpedia.org/class/yago/Tree113104059, http://dbpedia.org/class/yago/Preservation114578940]
+
+Precisão: 0.1
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Tree Preservation Order Points - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [tree-197323, preservation-172293, preservation-172294, preservation-172295, order-173028]
+Conceitos recuperados: [order-153295, order-87011, order-30644, tree-48511, order-54920, order-52972, tree-92461, order-66651, order-132154, order-13446, tree-43352, order-130929, order-13447, tree-54681, order-127923, tree-197323, tree-53220, tree-113950, order-137190, order-64591, order-79527, order-88922, tree-61381, tree-13812, order-45047, tree-24773, preservation-172294, preservation-172295, preservation-172293, order-54927, order-27037, order-156266, order-18886, order-173030, order-173033, order-173034, order-173031, order-173032, order-32930, order-173037, order-173035, order-30510, order-90549, order-173036, order-38609, order-173029, order-173028, order-10190, tree-83059, order-39735]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/Conservation107419599, http://dbpedia.org/class/yago/Tree113104059, http://dbpedia.org/class/yago/Preservation114578940]
+
+Precisão: 0.1
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Vacant And Derelict Land - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [derelict-200415, derelict-200416, land-204511, Lot-192336, lot-202088]
+Conceitos recuperados: [land-42661, derelict-200416, land-204511, derelict-200415, land-204512, land-204513, land-204514]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land113250048, http://dbpedia.org/class/yago/AbandonedShip102666501, http://dbpedia.org/class/yago/Derelict110006081]
+
+Precisão: 0.42857142857142855
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Título: Wind Turbines - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [rotary engine-226895, turbine-111002, wind turbine-229417, device-217656, heat engine-209406, instrumentality-172251, machine-220890, engine-167912, motor-225125, turbine-187087]
+Conceitos recuperados: [rotary engine-226895, turbine-111002, wind turbine-229417, device-217656, heat engine-209406, instrumentality-172251, machine-220890, engine-167912, unit-204236, motor-225125, physical entity-178778, physical object-185182, turbine-187087, ICE-188414, artifact-173633]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Engine103287733, http://dbpedia.org/class/yago/Motor103789946, http://dbpedia.org/class/yago/WindTurbines, http://dbpedia.org/class/yago/HeatEngine103507963, http://dbpedia.org/class/yago/Device103183080, http://dbpedia.org/class/yago/WindTurbine104591517, http://dbpedia.org/class/yago/Turbine104498523, http://dbpedia.org/class/yago/RotaryEngine104110654, http://dbpedia.org/class/yago/Machine103699975, http://dbpedia.org/class/yago/Instrumentality103575240]
+
+Precisão: 0.6666666666666666
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Windfarm Broad Area Of Search - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [broad-30394, broad-180783, search-212824, search-212825, search-212826]
+Conceitos recuperados: [broad-30394, broad-180783, search-212825, search-212824, search-212826]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Search100637354, http://dbpedia.org/class/yago/NorfolkBroads, http://dbpedia.org/class/yago/Search100644366, http://dbpedia.org/class/yago/Search105770058, http://dbpedia.org/class/yago/Broad109875663]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: AIR EMEP Monitoring Sites - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196190, monitoring-179574, land site-202900]
+Conceitos recuperados: [site-53701, site-24477, site-53700, site-52263, site-13160, site-41868, site-16747, site-19255, site-118439, site-34399, monitor-39594, site-149235, site-39985, site-120539, site-141524, site-53599, site-14363, site-149483, site-38628, site-22432, site-5324, monitoring-179574, site-101885, site-17448, site-157495, site-123398, site-73363, site-17379, site-88388, site-17867, site-18172, site-43104, site-57211, site-29097, site-14347, site-125061, site-126790, site-12161, site-98599, site-81661, site-30208, site-21508, site-22886, site-31292, monitor-136326, monitor-136327, site-59958, air-196188, monitor-163809, air-196189, air-196186, monitor-163807, air-196187, monitor-163808, site-97303, site-21286, site-26936, monitor-163812, air-196190, site-16818, monitor-163811, monitor-163810, site-106412, site-6989, site-28246]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Monitoring100880046, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214]
+
+Precisão: 0.07692307692307693
+Cobertura: 0.8333333333333334
+---------------------------------------------------
+---------------------------------------------------
+Título: Air Monitoring Sites - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196190, monitoring-179574, land site-202900]
+Conceitos recuperados: [site-53701, site-24477, site-53700, site-52263, site-13160, site-41868, site-16747, site-19255, site-118439, site-34399, monitor-39594, site-149235, site-39985, site-120539, site-141524, site-53599, site-14363, site-149483, site-38628, site-22432, site-5324, monitoring-179574, site-101885, site-17448, site-157495, site-123398, site-73363, site-17379, site-88388, site-17867, site-18172, site-43104, site-57211, site-29097, site-14347, site-125061, site-126790, site-12161, site-98599, site-81661, site-30208, site-21508, site-22886, site-31292, monitor-136326, monitor-136327, site-59958, air-196188, monitor-163809, air-196189, air-196186, monitor-163807, air-196187, monitor-163808, site-97303, site-21286, site-26936, monitor-163812, air-196190, site-16818, monitor-163811, monitor-163810, site-106412, site-6989, site-28246]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Monitoring100880046, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214]
+
+Precisão: 0.07692307692307693
+Cobertura: 0.8333333333333334
+---------------------------------------------------
+---------------------------------------------------
+Título: Air Zones - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196190, zone-216608]
+Conceitos recuperados: [zone-10065, zone-153249, air-196188, air-196189, air-196186, air-196187, zone-216609, zone-216608, zone-52659, air-196190, zone-120679, zone-23639, zone-43850, zone-11511]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Air108653314, http://dbpedia.org/class/yago/Zone108688247, http://dbpedia.org/class/yago/Air114842703, http://dbpedia.org/class/yago/Air114841267, http://dbpedia.org/class/yago/Air104727214]
+
+Precisão: 0.35714285714285715
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Bathing Water Quality - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [bathing-203009, water-174706, quality-208326, quality-208327, quality-208328]
+Conceitos recuperados: [bath-181430, bath-181431, bath-181432, bath-181429, water-174710, water-73745, bath-58956, water-174709, water-48243, quality-208326, quality-208327, water-174706, quality-208328, water-174708, water-15021, water-174707]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Quality113948026, http://dbpedia.org/class/yago/Quality104728068, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/Quality104723816]
+
+Precisão: 0.25
+Cobertura: 0.8
+---------------------------------------------------
+---------------------------------------------------
+Título: Coal Restricted Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [coal-165852, coal-165853, ship-219009]
+Conceitos recuperados: [coal-165853, coal-165852]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Coal114814616, http://dbpedia.org/class/yago/Ember109273130]
+
+Precisão: 1.0
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Coastal waterbodies - Tipo de Anotação: Não anotado
+Conceitos relevantes: [body of water-25322, body of water-25544, body of water-164612]
+Conceitos recuperados: []
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: EPA Offices - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [EPA-189976, office-217062, administration-171886]
+Conceitos recuperados: [office-217062, office-217064, office-60224, office-217063, administration-67372, administration-171888, administration-171889, office-217065, office-118174, office-26931, administration-171886, administration-171887, office-15938, office-6638, office-14980, EPA-189976]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Administration101135952, http://dbpedia.org/class/yago/Office103841666, http://dbpedia.org/class/yago/EnvironmentalProtectionAgency108122960]
+
+Precisão: 0.1875
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Geological Linear Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [characteristic-209671]
+Conceitos recuperados: [feature-58753, feature-226199, feature-23477, feature-35133, feature-46690, feature-36274, feature-19942, feature-39714, feature-19948, feature-46563]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Ground waterbodies - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [solid ground-173137, body of water-25322, body of water-25544, body of water-164612]
+Conceitos recuperados: [ground-94317, ground-201867, ground-201868, ground-201869, ground-67657, ground-127773, ground-201865, ground-108818, ground-201871, ground-201866, ground-201870]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Historical Groundwater Quality - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [quality-208326, quality-208327, quality-208328]
+Conceitos recuperados: [quality-208326, quality-208327, quality-208328]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Quality113948026, http://dbpedia.org/class/yago/Quality104728068, http://dbpedia.org/class/yago/Quality104723816]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Large Towns - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [large-207914, town-195491]
+Conceitos recuperados: [town-23171, town-148655, town-93844, town-17013, town-80299, town-8493, town-23831, town-21731, town-195491, town-24772, town-70564, town-195492, town-76554, town-32036, town-30209, town-105904, large-207914, town-94105, town-21653, town-152078, town-6454, town-156750, town-33188, town-100999]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Town108665504, http://dbpedia.org/class/yago/Large105096191]
+
+Precisão: 0.08333333333333333
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Licenced IPPC Facilities - Tipo de Anotação: Não anotado
+Conceitos relevantes: [facility-206003]
+Conceitos recuperados: []
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Licenced Waste Facilities - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, facility-206003, management-201913, management-201914]
+Conceitos recuperados: [waste-175274, waste-175273, waste-175272]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Linear Mine Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, characteristic-209671]
+Conceitos recuperados: [feature-58753, mine-157570, mine-159281, mine-40830, mine-159282, mine-174917, mine-49165, mine-174916, feature-23477, mine-60663, feature-35133, feature-39714, mine-104371, feature-46563, mine-137911, mine-18183, mine-80125, feature-226199, mine-137910, mine-161982, mine-18991, mine-83173, feature-46690, feature-36274, feature-19942, feature-19948, mine-84613]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 0.037037037037037035
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Linear Waste Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, characteristic-209671, management-201913, management-201914]
+Conceitos recuperados: [feature-58753, feature-23477, feature-35133, waste-175274, feature-39714, waste-175273, waste-175272, feature-46563, feature-226199, feature-46690, feature-19942, feature-36274, feature-19948]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+Precisão: 0.23076923076923078
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Medium Towns - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [town-195491, medium-159989]
+Conceitos recuperados: [medium-12444, medium-53019, medium-99543, medium-100206, medium-160794, town-156750, medium-70641, medium-153792, medium-93093, medium-79529, medium-82817, medium-117582, medium-104095, medium-92223, medium-87460, medium-86622, medium-20935, medium-149582, medium-139802, medium-8853, medium-125043, medium-100986, medium-10147, medium-159209, medium-44617, medium-79651, medium-130250, medium-85350, medium-137576, medium-142007, medium-84088, medium-49732, medium-130262, medium-74479, medium-67992, medium-67993, medium-119525, medium-79664, medium-124396, medium-69860, medium-117149, medium-85361, medium-130361, town-6454, medium-58272, medium-86858, medium-69863, medium-79111, medium-69861, medium-69862, medium-19938, medium-93856, medium-130234, medium-79904, medium-129732, medium-80720, medium-136543, medium-126741, medium-58243, medium-84809, medium-130747, medium-140806, town-100999, medium-65750, medium-118368, medium-129724, medium-65752, medium-117542, medium-101390, medium-24173, medium-150780, medium-139507, medium-70673, medium-131224, medium-85236, medium-85237, town-21653, medium-14358, medium-12359, medium-51426, medium-65747, medium-144721, town-33188, medium-58111, medium-10691, medium-127750, medium-19145, medium-113923, medium-63793, medium-23698, medium-144831, medium-51044, medium-17861, medium-100211, medium-52983, town-21731, medium-143193, medium-130880, medium-70017, medium-159989, medium-120347, medium-130924, medium-100209, medium-37084, medium-53307, town-17013, medium-43024, medium-111831, medium-46903, medium-91195, medium-34862, medium-93002, medium-83111, medium-123883, medium-153301, medium-131842, medium-117807, medium-157278, medium-27926, medium-63254, medium-57749, medium-130812, medium-45136, medium-83488, medium-152454, medium-81261, medium-73325, medium-110301, medium-43321, medium-43320, medium-147496, medium-131292, medium-83224, medium-112271, town-148655, medium-46508, medium-152540, medium-130827, town-195491, town-195492, medium-157244, medium-133126, medium-89633, medium-36080, medium-45929, medium-43746, medium-162225, medium-25429, medium-40541, medium-133527, medium-42304, medium-46110, medium-63857, medium-117825, medium-25447, medium-113968, medium-110319, medium-118083, medium-158794, medium-82879, medium-90206, medium-115189, medium-131183, medium-96545, medium-93502, medium-122325, medium-16838, medium-81154, medium-131416, medium-132268, medium-149148, medium-71273, medium-63964, medium-142330, medium-142331, medium-121994, medium-149689, medium-98479, medium-66173, medium-64163, medium-92644, medium-64162, medium-86444, medium-149572, medium-42570, medium-82201, medium-109439, medium-162376, medium-81469, medium-81468, medium-114769, medium-99896, medium-46608, medium-66910, medium-94789, medium-158659, medium-99170, medium-89177, medium-19722, medium-134178, medium-9677, medium-118998, medium-142249, medium-140093, medium-68198, medium-33064, medium-102460, medium-89580, medium-35411, medium-115439, medium-91381, medium-112643, medium-161513, medium-158591, medium-61348, medium-78131, medium-161312, medium-115022, medium-120185, medium-16181, medium-31214, medium-115537, medium-33469, medium-35599, medium-119786, medium-157444, medium-89846, town-80299, medium-157448, medium-42751, medium-61158, medium-71760, medium-128236, medium-18251, medium-29725, medium-89850, medium-80304, medium-114675, medium-65338, medium-58787, medium-102201, medium-9941, medium-65246, town-30209, medium-82552, medium-115950, medium-75338, medium-55019, medium-89198, medium-82413, medium-15987, medium-82412, medium-48367, medium-88732, medium-160603, medium-135604, medium-28495, medium-115110, medium-160260, medium-98541, town-24772, town-32036, medium-69476, medium-15044, medium-102733, medium-87057, medium-129430, medium-7572, medium-153465, medium-98531, medium-68841, town-8493, medium-121327, medium-50320, medium-88434, medium-38440, medium-84429, medium-103629, medium-42501, medium-68853, medium-120764, medium-35147, medium-68852, medium-38518, medium-100399, medium-123231, medium-141811, town-76554, medium-115917, medium-15511, medium-52312, medium-88030, medium-75555, medium-138258, medium-55961, medium-120279, medium-91327, medium-134242, medium-54569, medium-136012, medium-68847, medium-92487, medium-68376, medium-88627, medium-78357, medium-135284, medium-87776, medium-18261, medium-98795, medium-54438, medium-53591, medium-75156, medium-54452, medium-54451, medium-58656, medium-68834, medium-11503, medium-87981, medium-62264, medium-125213, medium-121205, medium-29707, medium-49537, medium-192819, medium-79093, medium-192817, medium-192818, medium-64200, medium-96184, medium-108219, medium-67268, town-23171, medium-111305, medium-124525, medium-53950, medium-155696, medium-137926, medium-45665, medium-120919, medium-47898, medium-157503, medium-134400, medium-150701, medium-118315, medium-61003, medium-158116, medium-45521, medium-97229, medium-105149, medium-58317, medium-84299, town-93844, medium-120123, medium-123487, medium-22027, medium-111330, medium-66477, medium-136439, medium-136570, medium-79784, town-94105, medium-67669, medium-107971, medium-6653, medium-130577, medium-139890, medium-120114, medium-127223, medium-95809, medium-88916, town-105904, medium-88384, medium-117454, town-152078, medium-145069, town-23831, medium-106173, medium-64542, medium-132336, medium-117421, medium-127542, medium-78709, medium-67417, medium-102150, medium-124662, medium-92981, medium-101422, medium-145624, medium-67427, medium-144783, medium-132510, medium-109999, medium-136338, medium-59518, medium-145631, medium-192824, medium-121386, town-70564, medium-192821, medium-192820, medium-192823, medium-95840, medium-192822, medium-76613, medium-119673, medium-126549, medium-92969, medium-47873, medium-18464, medium-137709, medium-121585]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Town108665504, http://dbpedia.org/class/yago/Mediums]
+
+Precisão: 0.004866180048661801
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Mine District - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, territory-187055]
+Conceitos recuperados: [district-61100, district-68528, district-61101, district-92392, district-127377, district-84933, district-151099, district-142617, district-49409, district-19982, district-79232, district-70270, district-10247, district-35700, district-8929, district-8928, district-19626, district-126985, district-69158, district-69159, district-97028, district-126991, district-67523, district-81894, mine-83173, district-120595, district-135813, district-13399, district-53910, district-68546, district-106079, mine-159281, district-144035, mine-159282, district-99385, mine-49165, mine-174917, mine-174916, district-79010, district-92292, district-52084, district-81405, district-110531, district-76233, district-88740, district-68534, district-90249, district-87214, district-72101, district-81481, district-87211, district-160659, district-52228, district-103912, district-98270, district-108295, district-83447, district-68565, district-125216, district-68566, district-127275, mine-80125, mine-18183, district-96985, district-68560, district-68561, district-96989, district-61085, district-34170, district-96988, district-65431, district-106531, district-23454, mine-40830, district-81656, district-115751, district-149627, district-68556, district-68555, district-121856, mine-161982, mine-18991, mine-157570, district-77000, mine-60663, district-127394, mine-104371, district-132342, district-145019, district-135586, district-125738, district-19455, district-59249, district-94018, mine-84613, district-44598, district-151051, district-73479, district-69165, district-69160, mine-137911, district-88141, district-96998, district-127590, district-97331, mine-137910, district-96994, district-115334, district-110910]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 0.009174311926605505
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Mine Site Boundaries - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, land site-202900, boundary-29602]
+Conceitos recuperados: [site-53701, boundary-29602, site-24477, site-53700, site-52263, site-13160, site-41868, site-16747, site-19255, site-118439, mine-80125, mine-18183, site-34399, site-149235, site-39985, site-120539, site-141524, site-53599, site-14363, site-149483, site-38628, site-22432, mine-40830, site-5324, site-101885, site-157495, site-17448, site-123398, site-73363, mine-161982, site-17379, mine-18991, mine-83173, mine-157570, site-88388, mine-159281, mine-159282, site-17867, mine-174917, mine-49165, site-18172, mine-174916, site-43104, mine-60663, site-57211, site-29097, site-14347, mine-104371, site-125061, site-126790, site-12161, site-98599, site-81661, site-30208, site-21508, mine-84613, site-22886, site-31292, site-59958, site-97303, mine-137911, site-21286, mine-137910, site-26936, site-16818, site-106412, site-6989, site-28246]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 0.029411764705882353
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Mine Site Location - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, land site-202900, location-214539]
+Conceitos recuperados: [location-128024, location-123537, site-52263, site-118439, site-19255, location-19590, site-149235, location-151238, location-91285, location-73187, location-55415, site-120539, site-53599, location-73372, site-38628, site-22432, site-5324, location-55121, location-143532, location-87443, location-66510, site-157495, location-72416, location-25368, site-123398, location-70842, site-17379, location-136841, mine-83173, location-161734, location-121149, location-66694, location-103809, location-8292, location-36901, location-47279, site-88388, mine-159281, mine-159282, site-17867, mine-174917, mine-49165, mine-174916, site-43104, site-14347, site-125061, location-87989, site-12161, location-98665, site-30208, site-22886, site-31292, site-59958, location-9965, location-105239, location-5123, site-21286, location-214540, site-16818, location-134293, site-106412, site-6989, site-53701, location-7655, site-24477, location-75919, site-53700, location-82808, location-114585, location-88831, location-101663, location-90391, site-41868, site-13160, site-16747, location-214539, mine-80125, mine-18183, site-34399, location-47976, location-25050, site-39985, location-61232, location-92767, site-141524, site-14363, site-149483, location-128063, mine-40830, location-86354, location-21352, location-60982, site-101885, location-89789, site-17448, site-73363, mine-161982, location-76519, mine-18991, location-39101, location-8022, location-133683, mine-157570, site-18172, location-30046, location-41295, mine-60663, site-29097, site-57211, mine-104371, site-126790, location-91551, location-11764, site-98599, site-81661, location-120490, location-30102, location-49641, location-144682, location-51118, site-21508, location-79661, location-93367, mine-84613, location-14690, location-17636, location-44878, location-50566, location-16391, site-97303, mine-137911, mine-137910, location-7230, location-120363, site-26936, location-154695, site-28246]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Location100027167, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 0.014598540145985401
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Other Waste Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, management-201913, management-201914]
+Conceitos recuperados: [waste-175274, waste-175273, waste-175272]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+Precisão: 1.0
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Título: Point Mine Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, characteristic-209671]
+Conceitos recuperados: [feature-58753, mine-157570, mine-159281, mine-40830, mine-159282, mine-174917, mine-49165, mine-174916, feature-23477, mine-60663, feature-35133, feature-39714, mine-104371, feature-46563, mine-137911, mine-18183, mine-80125, feature-226199, mine-137910, mine-161982, mine-18991, mine-83173, feature-46690, feature-36274, feature-19942, feature-19948, mine-84613]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 0.037037037037037035
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Point Waste Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, characteristic-209671, management-201913, management-201914]
+Conceitos recuperados: [feature-58753, feature-23477, feature-35133, feature-39714, waste-175274, waste-175273, waste-175272, feature-46563, feature-226199, feature-46690, feature-19942, feature-36274, feature-19948]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+Precisão: 0.23076923076923078
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Radiation Monitoring - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [radiation-198698, radiation-198699, radiation-198700, radiation-198701, monitoring-179574]
+Conceitos recuperados: [radiation-198698, monitor-136326, radiation-198700, radiation-198699, monitor-136327, radiation-198701, monitoring-179574, monitor-163809, monitor-163807, monitor-163808, monitor-39594, monitor-163812, monitor-163811, monitor-163810]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Radiation107439883, http://dbpedia.org/class/yago/Radiation101252918, http://dbpedia.org/class/yago/Radiation111499284, http://dbpedia.org/class/yago/Radiation105503555, http://dbpedia.org/class/yago/Monitoring100880046]
+
+Precisão: 0.35714285714285715
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Radon Map - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [map-202234]
+Conceitos recuperados: [map-158530, map-47932, map-96125, map-115701, map-17449, map-22468, map-202234, map-202235, map-14011, map-162645, map-96107, map-96108]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Map103720163]
+
+Precisão: 0.08333333333333333
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: River Basin District - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [river-164393, basin-176201, territory-187055]
+Conceitos recuperados: [basin-176201, district-61100, basin-176204, district-68528, district-92392, basin-176205, district-61101, basin-176202, basin-176203, district-84933, district-127377, district-151099, district-142617, district-49409, district-19982, district-79232, district-70270, district-10247, river-6295, district-8929, district-35700, district-8928, district-19626, district-126985, district-69158, river-164393, district-69159, river-6364, district-97028, district-126991, district-67523, district-81894, district-135813, district-120595, district-13399, district-53910, district-68546, district-106079, district-144035, district-99385, river-65217, river-13927, district-79010, district-92292, district-52084, district-81405, river-9981, river-9980, district-110531, district-76233, river-11382, district-88740, river-11383, district-68534, river-26731, district-90249, district-72101, district-87214, district-81481, river-21596, district-87211, river-29908, district-160659, district-52228, district-98270, district-103912, district-108295, district-83447, district-68565, district-125216, river-23875, district-127275, district-68566, district-96985, district-68560, district-96989, district-68561, district-61085, district-96988, district-34170, district-65431, district-106531, district-23454, district-81656, river-94897, district-115751, district-149627, basin-107338, district-68556, district-68555, district-121856, district-77000, district-127394, district-132342, district-145019, district-135586, basin-115289, district-125738, district-19455, district-59249, district-94018, basin-6968, district-44598, district-151051, district-73479, basin-25362, district-69165, district-69160, district-96998, district-88141, basin-63337, district-97331, district-127590, district-96994, district-115334, district-110910]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/River109411430]
+
+Precisão: 0.017241379310344827
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: River Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [river-164393, catchment-199323, say-so-176818]
+Conceitos recuperados: [river-26731, river-6295, river-94897, river-65217, river-13927, river-21596, catchment-199323, river-29908, river-23875, river-164393, river-9981, river-6364, river-9980, river-11382, river-11383]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Catchment102983357, http://dbpedia.org/class/yago/River109411430]
+
+Precisão: 0.13333333333333333
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: River Sub Basins - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [river-164393, basin-176201, drainage-191400]
+Conceitos recuperados: [river-26731, river-6295, basin-176201, river-94897, river-65217, basin-176204, basin-176205, river-13927, basin-25362, basin-176202, basin-107338, basin-176203, river-21596, river-29908, river-23875, river-164393, river-9981, river-6364, basin-63337, basin-115289, river-9980, river-11382, river-11383, basin-6968]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/River109411430]
+
+Precisão: 0.08333333333333333
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: SAC CO Habitats - Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [sac-200477, sac-200478, habitat-188116, Co-163711, CO-163884, CO-163885]
+Conceitos recuperados: [habitat-6057, CO-163884, sac-200478, habitat-188116, habitat-91498, sac-200477, habitat-158608, Co-163711, CO-163885, habitat-50913]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/Sac105515670]
+
+Precisão: 0.6
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: SAC CO Species - Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [sac-200477, sac-200478, species-194057, species-194058, Co-163711, CO-163884, CO-163885]
+Conceitos recuperados: [CO-163884, species-194058, sac-200478, sac-200477, species-194057, Co-163711, CO-163885]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Species108110373, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/Species105844881, http://dbpedia.org/class/yago/Sac105515670]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: SPA CO Habitats - Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [spa-200651, habitat-188116, Co-163711, CO-163884, CO-163885]
+Conceitos recuperados: [CO-163884, habitat-6057, habitat-188116, habitat-91498, spa-200651, habitat-158608, Co-163711, CO-163885, habitat-50913]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/Habitat108580583, http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/WateringPlace108678615, http://dbpedia.org/class/yago/ConscientiousObjector109957013]
+
+Precisão: 0.5555555555555556
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Site Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [land site-202900, characteristic-209671]
+Conceitos recuperados: [site-53701, site-24477, site-53700, site-52263, site-13160, site-41868, site-16747, site-118439, site-19255, site-34399, feature-226199, site-149235, site-39985, site-120539, site-141524, site-14363, site-53599, site-149483, site-38628, site-22432, site-5324, site-101885, site-17448, site-157495, site-123398, site-73363, site-17379, feature-36274, site-88388, site-17867, site-18172, site-43104, site-57211, site-14347, site-29097, feature-39714, site-126790, site-125061, feature-46563, site-12161, site-98599, site-81661, site-30208, feature-46690, site-21508, feature-19942, feature-19948, site-22886, feature-58753, site-31292, site-59958, feature-23477, feature-35133, site-97303, site-21286, site-26936, site-16818, site-106412, site-6989, site-28246]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Small Towns - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [small-214122, small-214123, town-195491]
+Conceitos recuperados: [town-23171, town-148655, town-93844, town-17013, town-80299, town-8493, town-23831, town-21731, town-195491, town-24772, town-70564, town-195492, town-76554, town-32036, town-30209, town-105904, town-94105, town-21653, small-214122, small-214123, town-152078, town-6454, town-156750, town-33188, town-100999]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Small105097081, http://dbpedia.org/class/yago/Town108665504, http://dbpedia.org/class/yago/Small105559023]
+
+Precisão: 0.12
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Solid Waste Analyses - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [solid-194111, waste-175272, waste-175273, waste-175274, utilisation-165326, activity-177185, event-202486, technology-32127, application-214552, engineering-206919, job-197783, profession-192651]
+Conceitos recuperados: [utilisation-165326, deed-171069, activity-177185, event-202486, technology-32127, abstraction-207942, application-214552, psychological feature-169617, engineering-206919, job-197783, profession-192651]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Technology100949619, http://dbpedia.org/class/yago/Occupation100582388, http://dbpedia.org/class/yago/PollutionControlTechnologies, http://dbpedia.org/class/yago/Application100949134, http://dbpedia.org/class/yago/Use100947128, http://dbpedia.org/class/yago/Profession100609953, http://dbpedia.org/class/yago/Event100029378, http://dbpedia.org/class/yago/Activity100407535]
+
+Precisão: 0.7272727272727273
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Solid Waste Heaps - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [solid-194111, waste-175272, waste-175273, waste-175274, accumulation-167171, construct-213645]
+Conceitos recuperados: [solid-67419, solid-70816, solid-194111, solid-94188, solid-8652, solid-194112, waste-175274, waste-175273, waste-175272]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594, http://dbpedia.org/class/yago/Solid115046900]
+
+Precisão: 0.4444444444444444
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Stream Sediment Analyses - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [stream-202700, sediment-50395, scheme-179792, computer program-190471, software system-174221, coding system-205900]
+Conceitos recuperados: [web-203807, scheme-179792, computer program-190471, code-165839, group-195516, written language-174918, writing-206218, application program-181864, abstraction-207942, network-12072, software system-174221, coding system-205900, communication-206827]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/System108435388, http://dbpedia.org/class/yago/Software106566077, http://dbpedia.org/class/yago/CodingSystem106353757, http://dbpedia.org/class/yago/Program106568978]
+
+Precisão: 0.3076923076923077
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Subsoils - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [subsoil-179935]
+Conceitos recuperados: [subsoil-179935]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Subsoil114695838]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Transitional waterbodies - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [body of water-25322, body of water-25544, body of water-164612]
+Conceitos recuperados: [transit-68682]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Analyses (Summer) - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [water-174706, summer-215044, method-194690, event-202486, social event-197970, literary work-187469, activity-177185]
+Conceitos recuperados: [event-202486, competition-185865, psychological feature-169617, fiction-205686, novel-48128, game-16551, deed-171069, game-221908, game-48127, game-221907, social event-197970, diversion-175456, novel-214526, communication-206827, game-45793, game-16074, game-9696, novel-17148, literary work-187469, written language-174918, activity-177185, video game-194523, abstraction-207942, written material-179083, game-4684, game-4685]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/LiteraryComposition106364329, http://dbpedia.org/class/yago/Event100029378, http://dbpedia.org/class/yago/SocialEvent107288639, http://dbpedia.org/class/yago/Activity100407535]
+
+Precisão: 0.15384615384615385
+Cobertura: 0.5714285714285714
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Analyses (Winter) - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [water-174706]
+Conceitos recuperados: [critic-155137, critic-136229, lake-63191, method-8288, central-199359, migration-35864, lake-129445, america-146575, lake-9739, critic-19318, resource-21567, critic-18059, lake-9741, method-155046, critic-87357, water-48243, critic-70534, method-14491, critic-162460, critic-41954, critic-34104, critic-104806, history-55498, resource-65193, critic-8454, critic-16129, critic-8458, critic-91462, river-164393, critic-143825, river-6364, method-24863, critic-66241, critic-70545, lake-69121, critic-131438, resource-174365, method-44497, resource-174364, critic-27587, river-65217, lake-126728, river-13927, critic-145531, irrigation-227860, irrigation-227861, river-9981, critic-127708, river-9980, critic-142470, history-21132, method-19157, thought-225547, critic-193432, critic-193431, method-24990, critic-29420, method-13345, critic-193430, critic-76279, migration-24388, lake-22811, river-21596, history-20934, management-201913, management-201914, history-35958, genealogy-170577, hydrology-200242, critic-92722, genealogy-170578, method-38744, critic-94810, lake-204490, critic-42159, method-150200, critic-37443, lake-204491, method-85741, method-86604, river-23875, critic-9555, history-190468, critic-37031, history-190467, history-190466, critic-32398, history-190465, history-190464, method-194690, bowling-167069, critic-158481, method-194691, resource-161098, water-15021, critic-34350, critic-68770, method-13502, critic-97025, critic-14430, migration-222408, critic-34676, migration-222407, migration-222409, critic-41094, basin-107338, critic-121152, critic-152143, method-70029, critic-16981, america-39761, history-117303, critic-18185, critic-148558, method-11469, critic-114193, analysis-208724, critic-134858, critic-14205, resource-96839, critic-79018, basin-115289, phylogenetic-33686, analysis-208721, analysis-208720, analysis-208723, critic-14144, analysis-208722, critic-136317, lake-204489, resource-21169, lake-25323, critic-11118, critic-73752, basin-25362, lake-122538, critic-16669, method-6345, basin-63337, resource-88301, critic-101993, critic-146146, broadcast-225798, lake-14098, bowling-167070, critic-134185, bowling-167071, critic-139346, critic-153917, critic-114841, critic-144308, critic-144307, critic-13429, method-9992, basin-176201, lake-8307, basin-176204, basin-176205, lake-8309, basin-176202, critic-94104, basin-176203, critic-135669, method-10360, critic-59537, method-146557, critic-22933, critic-62742, resource-69027, critic-58616, critic-86162, resource-53025, critic-44980, history-23335, critic-10812, river-6295, critic-143076, critic-69966, critic-69967, critic-108429, critic-46415, reservoir-85462, critic-142383, critic-17256, lake-46712, history-13953, critic-75064, method-41018, history-104698, critic-132640, lake-31194, critic-148292, critic-51296, water-73745, method-100905, history-13417, critic-127191, lake-69057, lake-13890, lake-13906, migration-222410, method-79098, critic-91899, critic-147136, lake-13897, critic-62573, critic-52856, river-11382, river-11383, critic-123911, critic-149280, river-26731, critic-159987, critic-159988, critic-7103, drainage-191400, critic-147902, critic-66577, critic-7101, river-29908, critic-119851, critic-120895, psychology-211349, peoples-190189, critic-12764, human-184695, critic-123983, critic-38772, method-151713, method-9041, critic-22254, critic-130145, critic-143690, phylogenetic-15874, critic-11852, critic-10716, method-21090, river-94897, water-174710, water-174709, reservoir-226179, resource-69805, critic-61392, water-174706, water-174708, water-174707, critic-107390, method-16988, critic-11692, critic-153169, critic-11595, critic-15880, natural-203433, natural-203432, history-11540, resource-61987, method-25089, critic-62929, reservoir-226180, basin-6968, natural-203434, critic-131249, method-141704, critic-7146, critic-36501, critic-31976, critic-53299, critic-17501, lake-30169, research-187518, research-187519, method-124691, method-124692, critic-36608, critic-54359, critic-48468]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 0.0036231884057971015
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [water-174706]
+Conceitos recuperados: [water-174709, water-48243, water-174710, water-73745, water-174706, water-174708, water-15021, water-174707]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 0.125
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Management Units - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [water-174706, management-201913, management-201914, unit-204233]
+Conceitos recuperados: [unit-69554, unit-133468, unit-118359, unit-87715, unit-105375, unit-79810, unit-44375, unit-102323, water-48243, unit-152267, unit-33518, water-15021, unit-16580, unit-19022, unit-71821, unit-56627, water-174710, unit-9937, unit-72736, unit-161014, unit-51456, unit-47328, water-174709, unit-67382, unit-98603, water-174706, water-174708, unit-9116, water-174707, unit-37013, unit-119392, unit-22404, water-73745, unit-85661, unit-100515, unit-43222, unit-146441, unit-98389, unit-9047, unit-110416, unit-128089, unit-79489, unit-7708, unit-88279, unit-35983, unit-134374, unit-139900, unit-24038, unit-105054, management-201913, management-201914, unit-112385, unit-33102, unit-204236, unit-121196, unit-26755, unit-22347, unit-158817, unit-204234, unit-101704, unit-204235, unit-204233]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/UnitOfMeasurement113583724, http://dbpedia.org/class/yago/Management101133281, http://dbpedia.org/class/yago/Water114845743, http://dbpedia.org/class/yago/Management108381165]
+
+Precisão: 0.06451612903225806
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Zone of Subsidence - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [zone-216608, subsidence-181234, subsidence-181235, subsidence-181236]
+Conceitos recuperados: [zone-216609, zone-216608, zone-10065, zone-52659, zone-153249, zone-120679, zone-23639, subsidence-181236, subsidence-181235, zone-43850, subsidence-181234, zone-11511]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/CaveIn107361416, http://dbpedia.org/class/yago/Zone108688247, http://dbpedia.org/class/yago/Settling107362218, http://dbpedia.org/class/yago/Remission107419960]
+
+Precisão: 0.3333333333333333
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Napier City Council Election Wards - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [ward-176925, city council-216404, election-228467, physical entity-178778, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [ward-176925, unit-204236, mortal-178060, physical entity-178778, organism-200385, physical object-185182, animate thing-188825, causal agent-165664]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/PhysicalEntity100001930, http://dbpedia.org/class/yago/Ward110767020]
+
+Precisão: 0.25
+Cobertura: 0.2857142857142857
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncil1mContours - Tipo de Anotação: Não anotado
+Conceitos relevantes: [city council-216404, city-168208, council-229437, contour-219400, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: []
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilAddressPoints - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, address-217712, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, city-160242, city-8934, city-23689, council-121220, council-229438, council-229439, city-59592, city-15131, council-229437, city-43496, council-42422, city-40692, council-56489, council-95779, city-27912, city-5452, city-5453, city-5116, city-146567, city-9612, council-58179, city-20109, council-8972, council-100573, council-10849, council-15872, city-10169, city-56544, city-7555, council-73700, city-11430, council-155690, council-68055, council-12033, city-168210, council-57751, address-65749, city-159155, city-18173, council-9268, city-84236, city-168208, council-11083, council-32726, city-168209, address-217712, address-217714, address-217713, address-217716, address-217715, address-217717, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, council-70190, city-23519, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Address106356515, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.047619047619047616
+Cobertura: 0.42857142857142855
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilCadastralParcels - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, parcel-175766, parcel-175767, parcel-175768, parcel-175769, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, city-160242, city-8934, city-23689, council-121220, council-229438, council-229439, city-59592, city-15131, council-229437, city-43496, council-42422, city-40692, council-56489, council-95779, city-27912, city-5452, city-5453, city-5116, city-146567, city-9612, council-58179, city-20109, council-8972, council-100573, council-10849, council-15872, city-10169, city-56544, city-7555, parcel-175766, parcel-175767, council-73700, parcel-175768, parcel-175769, city-11430, council-155690, council-68055, council-12033, city-168210, council-57751, city-159155, city-18173, council-9268, city-84236, city-168208, council-11083, council-32726, city-168209, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, council-70190, city-23519, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Tract108673395, http://dbpedia.org/class/yago/Package103871083, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Package108008017, http://dbpedia.org/class/yago/Parcel101085098, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.1
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilCarParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, car-196073, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [car-114031, city-160242, car-114032, car-114033, city-8934, city-23689, park-47748, car-114034, car-88960, city-43496, car-88961, park-69304, car-132757, car-88962, car-121370, car-87193, city-40692, car-87192, city-27912, park-64702, park-46780, park-79272, council-8972, park-83034, car-158234, park-83435, park-76002, car-128883, car-126780, park-53690, car-138302, park-80588, park-45311, city-7555, car-150653, car-137844, car-139813, park-53689, car-43487, car-132454, car-148514, park-46348, city-159155, park-60959, park-56531, park-10899, car-114061, car-55797, park-87596, car-138183, car-147098, car-137956, park-133990, car-140231, city-4415, city-5174, park-109979, city-23519, car-115118, park-80164, park-76125, car-115117, city-7554, park-58206, city-7553, city-20111, park-51320, car-155334, city-59592, park-76526, car-142882, park-124152, car-159195, council-42422, car-145605, car-159196, car-144166, park-144033, city-5452, city-5453, city-146567, car-127461, park-69232, car-138640, car-145148, city-20109, car-51845, car-35223, park-57075, park-59869, car-125753, park-94871, park-42886, car-60375, council-68055, park-12340, city-168210, car-22915, council-57751, park-139343, car-128853, car-109465, car-131456, car-144959, city-168208, council-11083, city-168209, park-53141, park-36453, car-46808, car-145419, car-157480, car-138328, car-138464, council-70190, park-60640, car-64369, car-148498, car-148497, car-161257, council-121220, car-128338, council-229438, council-229439, car-139632, council-229437, car-58881, council-56489, park-83615, car-137773, city-5116, park-61963, city-9612, park-59613, park-223367, park-108512, park-223368, park-64452, park-151320, council-15872, city-10169, car-124088, park-97470, park-115309, park-98144, city-56544, park-18838, car-139611, car-11161, park-121876, car-11160, park-118830, park-83779, council-12033, park-45484, park-78307, car-78838, council-9268, car-138233, council-32726, park-55345, park-65704, park-57725, park-86793, car-128221, park-135689, park-42548, park-145888, park-40698, city-25226, city-27058, park-54230, park-43999, park-27394, car-64667, car-32556, park-78939, park-87582, park-149850, city-15131, car-140552, car-40138, car-122864, car-46078, car-135774, council-95779, car-126746, park-68637, car-126748, car-126747, car-105747, park-29400, council-58179, car-137212, council-100573, council-10849, car-138297, car-196075, car-196074, car-28995, car-196076, car-44516, park-155569, car-15953, car-196073, council-73700, park-83292, car-128359, car-104706, car-104705, city-11430, council-155690, car-104707, car-159203, park-35128, car-126750, car-115131, car-159205, park-31075, car-159204, park-58816, park-19069, car-155287, city-18173, car-126749, car-53740, car-142171, city-84236, car-95682, car-16811, car-33532, park-41669, park-84402, park-54768, car-132771, car-123724, car-123725, car-128360, park-67772, city-145370, city-6056, city-13778]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Car102958343, http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.01652892561983471
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilDogExerciseAreas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, dog-200111, exercise-218702, neighbourhood-59600, neighbourhood-133698, neighbourhood-151398, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, dog-27892, city-160242, city-8934, city-23689, council-121220, council-229438, dog-44907, council-229439, city-59592, city-15131, council-229437, city-43496, council-42422, dog-105440, dog-38799, city-40692, council-56489, council-95779, city-27912, city-5452, city-5453, city-5116, city-146567, city-9612, council-58179, city-20109, council-8972, council-100573, council-10849, council-15872, city-10169, exercise-218702, dog-27612, dog-18974, dog-122544, dog-200111, dog-200112, city-56544, city-7555, council-73700, city-11430, council-155690, council-68055, council-12033, city-168210, council-57751, dog-90825, city-159155, city-18173, council-9268, dog-47347, city-84236, city-168208, council-11083, council-32726, dog-63290, city-168209, dog-27833, dog-27834, dog-27832, dog-110321, city-4415, dog-32894, city-5174, city-145370, city-6056, city-13778, city-25226, council-70190, city-23519, dog-10792, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Exercise107454452, http://dbpedia.org/class/yago/Dog102084071, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.05333333333333334
+Cobertura: 0.36363636363636365
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilHeritageBuildingDatabase - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [city council-216404, city-168208, council-229437, heritage-175853, heritage-175854, heritage-175855, heritage-175856, edifice-164488, database-165975, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [administrative division-181954, device-217656, organization-163340, institution-207382, institution established in 1964-37329, machine-220890, location-214539, group-195516, engine-167912, aircraft engine-201066, university-210586, physical entity-178778, district-49409, territory-187055, physical object-185182, city in New Zealand-6660, artifact-173633, social group-225580, educational institution-215423, municipality-226359, geographic region-172177, region-174274, urban area-182976, city-168208, instrumentality-172251, unit-204236, motor-225125, abstraction-207942]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/AdministrativeDistrict108491826, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/UrbanArea108675967, http://dbpedia.org/class/yago/Municipality108626283]
+
+Precisão: 0.14285714285714285
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilLeasedParking - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, parking-225691, parking-225692, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-160242, council-121220, city-23689, city-8934, park-47748, council-229438, council-229439, council-229437, city-43496, park-69304, city-40692, council-56489, city-27912, park-83615, city-5116, park-64702, park-61963, city-9612, park-59613, park-223367, park-46780, park-108512, park-223368, park-64452, park-79272, council-8972, park-83034, park-151320, city-10169, council-15872, park-83435, park-76002, park-53690, park-97470, park-115309, park-98144, park-80588, park-45311, city-56544, city-7555, park-18838, park-121876, park-53689, park-83779, park-118830, council-12033, park-45484, park-78307, park-46348, city-159155, council-9268, park-60959, council-32726, park-56531, park-10899, park-55345, park-65704, park-87596, park-57725, park-86793, park-133990, park-135689, park-42548, city-4415, city-5174, park-109979, park-145888, park-40698, city-25226, city-23519, city-27058, park-76125, park-80164, lea-202178, city-7554, park-58206, city-7553, park-54230, park-43999, city-20111, park-27394, park-51320, park-78939, park-87582, park-149850, city-59592, park-76526, city-15131, park-124152, council-42422, park-144033, city-5452, council-95779, city-5453, city-146567, park-68637, park-29400, park-69232, council-58179, city-20109, council-10849, council-100573, park-57075, park-59869, park-155569, park-94871, council-73700, park-83292, park-42886, council-155690, city-11430, council-68055, park-35128, park-12340, park-31075, city-168210, park-58816, park-19069, council-57751, park-139343, city-18173, city-84236, city-168208, council-11083, city-168209, park-53141, park-36453, park-41669, park-84402, park-54768, park-67772, city-145370, city-6056, city-13778, council-70190, park-60640]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.014705882352941176
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilLiquorBan - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, liquor-225448, ban-75093, ban-195928, ban-195929, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, city-160242, city-8934, city-23689, council-121220, council-229438, council-229439, city-59592, city-15131, council-229437, city-43496, council-42422, city-40692, council-56489, council-95779, city-5452, city-27912, city-5453, city-146567, city-5116, city-9612, council-58179, council-8972, city-20109, council-100573, council-10849, city-10169, council-15872, ban-195928, ban-195929, city-56544, city-7555, council-73700, city-11430, council-155690, council-68055, council-12033, ban-75093, city-168210, council-57751, liquor-225448, city-18173, city-159155, council-9268, city-84236, city-168208, council-11083, council-32726, city-168209, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, city-23519, council-70190, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Ban113702315, http://dbpedia.org/class/yago/Liquor114941230, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Bans, http://dbpedia.org/class/yago/Council108310949, http://dbpedia.org/class/yago/Ban113685578]
+
+Precisão: 0.1
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilMobilityParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, mobility-205688, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-160242, council-121220, city-23689, city-8934, park-47748, council-229438, council-229439, council-229437, city-43496, park-69304, mobility-205688, city-40692, council-56489, city-27912, park-83615, city-5116, park-64702, park-61963, city-9612, park-59613, park-223367, park-46780, park-108512, park-223368, park-64452, park-79272, council-8972, park-83034, park-151320, city-10169, council-15872, park-83435, park-76002, park-53690, park-97470, park-115309, park-98144, park-80588, park-45311, city-56544, city-7555, park-18838, park-121876, park-53689, park-83779, park-118830, council-12033, park-45484, park-78307, park-46348, city-159155, council-9268, park-60959, council-32726, park-56531, park-10899, park-55345, park-65704, park-87596, park-57725, park-86793, park-133990, park-135689, park-42548, city-4415, city-5174, park-109979, park-145888, park-40698, city-25226, city-23519, city-27058, park-76125, park-80164, city-7554, park-58206, city-7553, park-54230, park-43999, city-20111, park-27394, park-51320, park-78939, park-87582, park-149850, city-59592, park-76526, city-15131, park-124152, council-42422, park-144033, city-5452, council-95779, city-5453, city-146567, park-68637, park-29400, park-69232, council-58179, city-20109, council-10849, council-100573, park-57075, park-59869, park-155569, park-94871, council-73700, park-83292, park-42886, council-155690, city-11430, council-68055, park-35128, park-12340, park-31075, city-168210, park-58816, park-19069, council-57751, park-139343, city-18173, city-84236, city-168208, council-11083, city-168209, park-53141, park-36453, park-41669, park-84402, park-54768, park-67772, city-145370, city-6056, city-13778, council-70190, park-60640]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Mobility104773351, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.029411764705882353
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilMotorcycleParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, bike-179187, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-160242, council-121220, city-23689, city-8934, park-47748, council-229438, council-229439, council-229437, city-43496, park-69304, city-40692, council-56489, city-27912, park-83615, city-5116, park-64702, park-61963, city-9612, park-59613, motorcycle-153804, park-223367, park-46780, park-108512, park-223368, park-64452, park-79272, council-8972, park-83034, park-151320, city-10169, council-15872, park-83435, park-76002, park-53690, park-97470, park-115309, park-98144, park-80588, park-45311, city-56544, city-7555, motorcycle-128235, park-18838, park-121876, motorcycle-159301, park-53689, park-83779, park-118830, motorcycle-88266, motorcycle-142100, council-12033, park-45484, park-78307, motorcycle-97079, park-46348, city-159155, motorcycle-139713, council-9268, park-60959, council-32726, park-56531, park-10899, park-55345, motorcycle-150740, park-65704, park-87596, motorcycle-81107, park-57725, park-86793, motorcycle-100982, park-133990, park-135689, park-42548, city-4415, city-5174, park-109979, park-145888, park-40698, city-25226, city-23519, motorcycle-61099, city-27058, park-76125, park-80164, city-7554, park-58206, city-7553, park-54230, park-43999, motorcycle-144467, city-20111, park-27394, park-51320, motorcycle-92427, park-78939, park-87582, park-149850, motorcycle-159418, city-59592, park-76526, motorcycle-138772, city-15131, park-124152, council-42422, motorcycle-68083, motorcycle-107876, motorcycle-112144, park-144033, city-5452, council-95779, city-5453, city-146567, park-68637, park-29400, park-69232, council-58179, motorcycle-94673, city-20109, motorcycle-140140, council-10849, council-100573, park-57075, park-59869, park-155569, motorcycle-106753, park-94871, motorcycle-85486, council-73700, park-83292, park-42886, council-155690, city-11430, council-68055, park-35128, park-12340, park-31075, city-168210, park-58816, park-19069, council-57751, park-139343, motorcycle-88339, city-18173, city-84236, motorcycle-53261, city-168208, motorcycle-83425, council-11083, city-168209, park-53141, park-36453, motorcycle-60943, park-41669, park-84402, park-54768, motorcycle-139245, park-67772, motorcycle-77287, motorcycle-93514, city-145370, city-6056, city-13778, motorcycle-84964, council-70190, motorcycle-136542, park-60640, motorcycle-117057]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.017964071856287425
+Cobertura: 0.375
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilOnStreetParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, street-204365, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-160242, council-121220, city-23689, city-8934, park-47748, council-229438, council-229439, council-229437, city-43496, park-69304, city-40692, council-56489, city-27912, park-83615, city-5116, park-64702, park-61963, city-9612, street-86779, park-59613, park-223367, park-46780, street-204366, park-108512, street-204365, park-223368, street-204368, park-64452, street-204367, park-79272, street-204369, council-8972, park-83034, park-151320, park-83435, council-15872, city-10169, park-76002, park-53690, park-97470, park-115309, park-98144, park-80588, park-45311, city-56544, city-7555, park-18838, park-121876, park-53689, park-118830, park-83779, council-12033, park-45484, park-78307, park-46348, city-159155, street-21505, council-9268, park-60959, council-32726, park-56531, park-10899, park-55345, park-65704, park-87596, park-57725, park-86793, park-133990, park-135689, park-42548, city-4415, city-5174, park-109979, park-145888, park-40698, city-25226, city-23519, city-27058, park-80164, park-76125, city-7554, park-58206, city-7553, park-54230, park-43999, city-20111, park-27394, park-51320, park-78939, park-87582, park-149850, city-59592, park-76526, city-15131, park-124152, council-42422, park-144033, council-95779, city-5452, city-5453, city-146567, park-68637, park-29400, park-69232, council-58179, city-20109, council-10849, council-100573, park-57075, park-59869, park-155569, park-94871, council-73700, park-83292, park-42886, council-155690, city-11430, council-68055, park-35128, park-12340, park-31075, city-168210, park-58816, park-19069, council-57751, park-139343, city-18173, city-84236, city-168208, council-11083, city-168209, park-53141, park-36453, park-41669, park-84402, park-54768, park-67772, city-145370, city-6056, city-13778, council-70190, park-60640]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/Street104334599, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.028169014084507043
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilOperativePlanZones - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, operative-55942, plan-103398, zone-216608, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, city-160242, city-8934, council-121220, city-23689, council-229438, council-229439, city-59592, city-15131, council-229437, city-43496, zone-52659, council-42422, city-40692, council-56489, zone-120679, city-27912, city-5452, council-95779, city-5453, city-5116, city-146567, city-9612, zone-153249, council-58179, city-20109, council-8972, council-10849, council-100573, council-15872, city-10169, zone-216609, zone-216608, city-56544, city-7555, council-73700, plan-103398, city-11430, council-155690, council-68055, council-12033, city-168210, council-57751, city-18173, city-159155, zone-43850, council-9268, operative-55942, city-84236, zone-10065, city-168208, council-32726, council-11083, city-168209, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, council-70190, city-23519, city-27058, zone-23639, city-7554, city-7553, zone-11511]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/BritishIntelligenceOperatives, http://dbpedia.org/class/yago/Zone108688247, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/SeatingPlans, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.07462686567164178
+Cobertura: 0.5555555555555556
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilPayandDisplayCarparks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, display-37616, display-210874, display-210875, display-210876, display-210877, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, display-37616, city-160242, council-121220, city-23689, city-8934, council-229438, council-229439, city-59592, city-15131, council-229437, city-43496, council-42422, city-40692, council-56489, council-95779, city-5452, city-27912, city-5453, city-5116, city-146567, city-9612, council-58179, council-8972, city-20109, council-100573, council-10849, council-15872, city-10169, city-56544, city-7555, council-73700, council-155690, city-11430, council-68055, display-210874, council-12033, city-168210, council-57751, display-210875, display-210876, display-210877, city-159155, city-18173, council-9268, city-84236, city-168208, council-11083, council-32726, city-168209, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, city-23519, council-70190, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Display106887726, http://dbpedia.org/class/yago/Display107213717, http://dbpedia.org/class/yago/Display106879521, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/LiquidCrystalDisplays, http://dbpedia.org/class/yago/Display103210940, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.11475409836065574
+Cobertura: 0.6363636363636364
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilSubdivisionApplications - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, subdivision-196805, application program-181864, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-20111, city-160242, city-8934, city-23689, council-121220, application-10217, council-229438, council-229439, city-59592, city-15131, subdivision-196805, council-229437, application-214554, subdivision-196807, subdivision-196806, city-43496, subdivision-29185, council-42422, application-214552, application-147403, application-214553, city-40692, council-56489, application-49082, council-95779, city-27912, city-5452, city-5453, city-5116, city-146567, application-20317, city-9612, council-58179, city-20109, council-8972, subdivision-25402, council-100573, council-10849, council-15872, city-10169, subdivision-43489, application-75113, application-68484, application-92726, city-56544, city-7555, council-73700, subdivision-43490, application-151083, city-11430, council-155690, council-68055, council-12033, city-168210, application-146136, council-57751, application-141420, city-159155, city-18173, council-9268, subdivision-10696, city-84236, city-168208, council-11083, council-32726, city-168209, application-47462, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, council-70190, city-23519, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Subdivision108674251, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.038461538461538464
+Cobertura: 0.375
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilTitleParcels - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, parcel-175766, parcel-175767, parcel-175768, parcel-175769, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [title-167471, title-167470, city-20111, city-160242, city-8934, city-23689, council-121220, council-229438, council-229439, city-59592, city-15131, council-229437, city-43496, council-42422, city-40692, council-56489, council-95779, city-27912, city-5452, city-5453, city-5116, city-146567, city-9612, title-167466, title-167465, title-167464, title-167463, title-167469, title-167468, council-58179, title-167467, city-20109, council-8972, council-100573, council-10849, council-15872, city-10169, city-56544, city-7555, parcel-175766, parcel-175767, council-73700, parcel-175768, parcel-175769, city-11430, council-155690, council-68055, council-12033, city-168210, council-57751, city-159155, city-18173, council-9268, city-84236, city-168208, council-11083, council-32726, city-168209, city-4415, city-5174, city-145370, city-6056, city-13778, city-25226, council-70190, city-23519, city-27058, city-7554, city-7553]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Tract108673395, http://dbpedia.org/class/yago/Package103871083, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Package108008017, http://dbpedia.org/class/yago/Parcel101085098, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.08695652173913043
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Título: ne_50m_boundary_lines_land - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [boundary-29602, land-204511]
+Conceitos recuperados: [boundary-29602, land-42661, Ne-163956, NE-163937, land-204511, land-204512, land-204513, land-204514]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries, http://dbpedia.org/class/yago/Land113250048]
+
+Precisão: 0.25
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: ne_50m_coastline - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [coastline-229729, Ne-163956, NE-163937]
+Conceitos recuperados: [Ne-163956, NE-163937, coastline-229729]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Neon114646152, http://dbpedia.org/class/yago/Coastline108613000, http://dbpedia.org/class/yago/Northeast113831843]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+Precisão: 0.046052631578947366
+Cobertura: 0.5753424657534246
+Percentual anotado: 0.96

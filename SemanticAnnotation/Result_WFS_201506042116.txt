@@ -1,0 +1,759 @@
+---------------------------------------------------
+Título: Allotment Locations - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [allotment-165141, allotment-165142, location-214539]
+Conceitos recuperados: [location-214539]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Location100027167]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: Community Council Boundaries - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [community-168609, council-229437, boundary-29602]
+Conceitos recuperados: [community-168609, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Community108223802, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Conservation Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [conservation-207319, conservation-207320]
+Conceitos recuperados: [conservation-207319, conservation-207320]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Conservation100819274, http://dbpedia.org/class/yago/Conservation106104073]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Core Path Network - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [midpoint-198486, way-203906, web-203807]
+Conceitos recuperados: [web-203807, way-203906, midpoint-198486]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Network108434259, http://dbpedia.org/class/yago/Center108521816, http://dbpedia.org/class/yago/Way100415676]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Defined Policy Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [policy-190409, federal agency-191468, intelligence-177101]
+Conceitos recuperados: [policy-190409]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Policy105901508]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: Development Proposals Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [development-219699, proposal-212886]
+Conceitos recuperados: [development-219699]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Development100250259]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Development Proposals Line - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [development-219699, proposal-212886]
+Conceitos recuperados: [development-219699]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Development100250259]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Employment Land Audit - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [land-204511, audit-206831]
+Conceitos recuperados: [organ-171049, land-204511, organ-171052]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land113250048]
+
+Precisão: 0.3333333333333333
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife Common Good Land - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [organization-163340, property-163651, fife-194402, good-229645, land-204511]
+Conceitos recuperados: [good-229645, work-184216, law-201988, land-204511, property-163651, unit-204233]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land113250048, http://dbpedia.org/class/yago/Property113244109, http://dbpedia.org/class/yago/Good105159725]
+
+Precisão: 0.5
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife Primary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [fife-194402, primary-213886, school-183471, catchment-199323, primary election-188634]
+Conceitos recuperados: [primary election-188634, school-183471, area-223653]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/School108276720, http://dbpedia.org/class/yago/Primary100182571]
+
+Precisão: 0.6666666666666666
+Cobertura: 0.4
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife RC Primary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [fife-194402, primary-213886, school-183471, catchment-199323, primary election-188634]
+Conceitos recuperados: [primary election-188634, school-183471]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/School108276720, http://dbpedia.org/class/yago/Primary100182571]
+
+Precisão: 1.0
+Cobertura: 0.4
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife RC Secondary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [fife-194402, secondary-214269, school-183471, catchment-199323, teacher-179458]
+Conceitos recuperados: [head-226921, teacher-179458, school-183471, head-226924, head-226925, head-226922, head-226923, head-226926]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Teacher110694258, http://dbpedia.org/class/yago/School108276720]
+
+Precisão: 0.25
+Cobertura: 0.4
+---------------------------------------------------
+---------------------------------------------------
+Título: Fife Secondary School Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [fife-194402, secondary-214269, school-183471, catchment-199323, teacher-179458]
+Conceitos recuperados: [head-226921, teacher-179458, school-183471, head-226924, head-226925, area-223653, head-226922, head-226923, head-226926]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Teacher110694258, http://dbpedia.org/class/yago/School108276720]
+
+Precisão: 0.2222222222222222
+Cobertura: 0.4
+---------------------------------------------------
+---------------------------------------------------
+Título: Housing Land Audit 2014 - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [housing-212986, land-204511, audit-206831, entity-213433]
+Conceitos recuperados: [land-204511, entity-213433]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land113250048, http://dbpedia.org/class/yago/Entity100001740]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Listed Buildings - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [edifice-164488]
+Conceitos recuperados: [edifice-164488]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Building102913152]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Local Landscape Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [local-227354, landscape-208725]
+Conceitos recuperados: [landscape-208725]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Landscape108646902]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Natural Heritage Sites - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [natural-203432, natural-203433, natural-203434, heritage-175853, land site-202900, group-195516, organization-163340, social group-225580]
+Conceitos recuperados: [group-195516, abstraction-207942, organization-163340, social group-225580, organisation based in Australia-83039]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/SocialGroup107950920, http://dbpedia.org/class/yago/Organization108008335, http://dbpedia.org/class/yago/Group100031264]
+
+Precisão: 0.6
+Cobertura: 0.375
+---------------------------------------------------
+---------------------------------------------------
+Título: Polling Districts - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [poll-227649, poll-227650, territory-187055, election-15582, election-228467, vote-170881, voting system-182092, legal system-214667]
+Conceitos recuperados: [territory-187055]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/District108552138]
+
+Precisão: 1.0
+Cobertura: 0.125
+---------------------------------------------------
+---------------------------------------------------
+Título: Polling Places - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [poll-227649, poll-227650, land site-202900, election-15582, election-228467, vote-170881]
+Conceitos recuperados: [land site-202900]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Site108651247]
+
+Precisão: 1.0
+Cobertura: 0.16666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Tree Preservation Order Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [tree-197323, preservation-172293, preservation-172294, order-173028]
+Conceitos recuperados: [order-173028, preservation-172294, preservation-172293, tree-197323]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/Tree113104059, http://dbpedia.org/class/yago/Preservation114578940]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Tree Preservation Order Points - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [tree-197323, preservation-172293, preservation-172294, order-173028]
+Conceitos recuperados: [order-173028, preservation-172294, preservation-172293, tree-197323]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Preservation113540610, http://dbpedia.org/class/yago/Order107168623, http://dbpedia.org/class/yago/Tree113104059, http://dbpedia.org/class/yago/Preservation114578940]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Vacant And Derelict Land - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [derelict-200415, derelict-200416, land-204511]
+Conceitos recuperados: [land-204511]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land113250048]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: Wind Turbines - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [rotary engine-226895, turbine-111002, wind turbine-229417, device-217656, heat engine-209406, instrumentality-172251, machine-220890, engine-167912, motor-225125, turbine-187087]
+Conceitos recuperados: [rotary engine-226895, turbine-111002, wind turbine-229417, device-217656, instrumentality-172251, heat engine-209406, machine-220890, engine-167912, unit-204236, motor-225125, physical entity-178778, physical object-185182, turbine-187087, ICE-188414, artifact-173633]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Engine103287733, http://dbpedia.org/class/yago/Motor103789946, http://dbpedia.org/class/yago/WindTurbines, http://dbpedia.org/class/yago/HeatEngine103507963, http://dbpedia.org/class/yago/Device103183080, http://dbpedia.org/class/yago/WindTurbine104591517, http://dbpedia.org/class/yago/Turbine104498523, http://dbpedia.org/class/yago/RotaryEngine104110654, http://dbpedia.org/class/yago/Machine103699975, http://dbpedia.org/class/yago/Instrumentality103575240]
+
+Precisão: 0.6666666666666666
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Windfarm Broad Area Of Search - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [broad-30394, broad-180783, search-212824, search-212825, search-212826]
+Conceitos recuperados: [broad-30394, broad-180783, search-212825, search-212824, search-212826]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Search100637354, http://dbpedia.org/class/yago/NorfolkBroads, http://dbpedia.org/class/yago/Search100644366, http://dbpedia.org/class/yago/Search105770058, http://dbpedia.org/class/yago/Broad109875663]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: AIR EMEP Monitoring Sites - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196190, monitoring-179574, land site-202900, region-174272]
+Conceitos recuperados: [land site-202900, region-174272, monitor-163807]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Region108630039, http://dbpedia.org/class/yago/Site108651247]
+
+Precisão: 0.6666666666666666
+Cobertura: 0.2857142857142857
+---------------------------------------------------
+---------------------------------------------------
+Título: Air Monitoring Sites - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196190, monitoring-179574, land site-202900, region-174272]
+Conceitos recuperados: [land site-202900, region-174272, monitor-163807]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Region108630039, http://dbpedia.org/class/yago/Site108651247]
+
+Precisão: 0.6666666666666666
+Cobertura: 0.2857142857142857
+---------------------------------------------------
+---------------------------------------------------
+Título: Air Zones - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196190, zone-216608]
+Conceitos recuperados: [region-174272, zone-216608]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Zone108688247]
+
+Precisão: 0.5
+Cobertura: 0.2
+---------------------------------------------------
+---------------------------------------------------
+Título: Bathing Water Quality - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [bath-181429, water-174706, quality-208326, quality-208327, quality-208328]
+Conceitos recuperados: [bath-181429, water-174706]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Bath102806530, http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 1.0
+Cobertura: 0.4
+---------------------------------------------------
+---------------------------------------------------
+Título: Coal Restricted Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [coal-165852, coal-165853]
+Conceitos recuperados: [coal-165853, coal-165852]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Coal114814616, http://dbpedia.org/class/yago/Ember109273130]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Coastal waterbodies - Tipo de Anotação: Não anotado
+Conceitos relevantes: [body of water-25322, body of water-25544, body of water-164612]
+Conceitos recuperados: []
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: EPA Offices - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [EPA-189976, office-217062, administration-171886]
+Conceitos recuperados: [office-217062, administration-171886]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Administration101135952, http://dbpedia.org/class/yago/Office103841666]
+
+Precisão: 1.0
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Geological Linear Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [characteristic-209671]
+Conceitos recuperados: [characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Feature105849789]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Ground waterbodies - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [solid ground-173137, body of water-25322, body of water-25544, body of water-164612]
+Conceitos recuperados: [solid ground-173137]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land109334396]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: Historical Groundwater Quality - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [quality-208326, quality-208327, quality-208328]
+Conceitos recuperados: [quality-208326, quality-208327, quality-208328]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Quality113948026, http://dbpedia.org/class/yago/Quality104728068, http://dbpedia.org/class/yago/Quality104723816]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Large Towns - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [large-207914, town-195491]
+Conceitos recuperados: [town-195491]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Town108665504]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Licenced IPPC Facilities - Tipo de Anotação: Não anotado
+Conceitos relevantes: [facility-206003]
+Conceitos recuperados: []
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Licenced Waste Facilities - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, facility-206003]
+Conceitos recuperados: [waste-175274, waste-175273, waste-175272]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+Precisão: 1.0
+Cobertura: 0.75
+---------------------------------------------------
+---------------------------------------------------
+Título: Linear Mine Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, characteristic-209671]
+Conceitos recuperados: [mine-174916, characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Feature105849789, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Linear Waste Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, characteristic-209671]
+Conceitos recuperados: [characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Feature105849789]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: Medium Towns - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [town-195491, medium-192817]
+Conceitos recuperados: [medium-192817, town-195491]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Town108665504, http://dbpedia.org/class/yago/Medium106254669]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Mine District - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, territory-187055]
+Conceitos recuperados: [mine-174916, territory-187055]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/District108552138, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Mine Site Boundaries - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, land site-202900, boundary-29602]
+Conceitos recuperados: [land site-202900, mine-174916]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Site108651247, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 1.0
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Mine Site Location - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, land site-202900, location-214539]
+Conceitos recuperados: [location-214539, land site-202900, mine-174916]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Location100027167, http://dbpedia.org/class/yago/Site108651247, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Other Waste Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274]
+Conceitos recuperados: [waste-175274, waste-175273, waste-175272]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Waste114856263, http://dbpedia.org/class/yago/Waste101252124, http://dbpedia.org/class/yago/Barren108504594]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Point Mine Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [mine-174916, characteristic-209671]
+Conceitos recuperados: [mine-174916, characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Feature105849789, http://dbpedia.org/class/yago/Mine103768346]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Point Waste Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [waste-175272, waste-175273, waste-175274, characteristic-209671]
+Conceitos recuperados: [characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Feature105849789]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: Radiation Monitoring - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [radiation-198698, radiation-198699, radiation-198700, radiation-198701, monitor-163807]
+Conceitos recuperados: [monitor-163807]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Proctor110478960]
+
+Precisão: 1.0
+Cobertura: 0.2
+---------------------------------------------------
+---------------------------------------------------
+Título: Radon Map - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [map-202234]
+Conceitos recuperados: [map-202234]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Map103720163]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: River Basin District - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [river-164393, basin-176201, territory-187055]
+Conceitos recuperados: [basin-176201, territory-187055, river-164393]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/District108552138, http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/River109411430]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: River Catchments - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [river-164393, catchment-199323]
+Conceitos recuperados: [river-164393]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/River109411430]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: River Sub Basins - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [river-164393, basin-176201]
+Conceitos recuperados: [basin-176201, river-164393]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Basin102801525, http://dbpedia.org/class/yago/River109411430]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: SAC CO Habitats - Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [sac-200477, sac-200478, habitat-188116, Co-163711, CO-163884, CO-163885]
+Conceitos recuperados: [habitat-188116]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Habitat108580583]
+
+Precisão: 1.0
+Cobertura: 0.16666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: SAC CO Species - Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [sac-200477, sac-200478, species-194057, species-194058, Co-163711, CO-163884, CO-163885]
+Conceitos recuperados: [CO-163884, sac-200478, species-194058, sac-200477, Co-163711, species-194057, CO-163885]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Species108110373, http://dbpedia.org/class/yago/CarbonMonoxide114797641, http://dbpedia.org/class/yago/Cobalt114635290, http://dbpedia.org/class/yago/Theca113092722, http://dbpedia.org/class/yago/ConscientiousObjector109957013, http://dbpedia.org/class/yago/Species105844881, http://dbpedia.org/class/yago/Sac105515670]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: SPA CO Habitats - Area - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [spa-200651, habitat-188116, Co-163711, CO-163884, CO-163885]
+Conceitos recuperados: [habitat-188116]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Habitat108580583]
+
+Precisão: 1.0
+Cobertura: 0.2
+---------------------------------------------------
+---------------------------------------------------
+Título: Site Features - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [land site-202900, characteristic-209671]
+Conceitos recuperados: [land site-202900, characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Site108651247, http://dbpedia.org/class/yago/Feature105849789]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Small Towns - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [small-214122, small-214123, town-195491]
+Conceitos recuperados: [town-195491]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Town108665504]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: Solid Waste Analyses - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [solid-194111, waste-175272, waste-175273, waste-175274, utilisation-165326, activity-177185, event-202486, technology-32127, application-214552, engineering-206919, job-197783, profession-192651]
+Conceitos recuperados: [deed-171069, utilisation-165326, activity-177185, event-202486, technology-32127, abstraction-207942, application-214552, psychological feature-169617, engineering-206919, profession-192651, job-197783]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Technology100949619, http://dbpedia.org/class/yago/Occupation100582388, http://dbpedia.org/class/yago/PollutionControlTechnologies, http://dbpedia.org/class/yago/Application100949134, http://dbpedia.org/class/yago/Use100947128, http://dbpedia.org/class/yago/Profession100609953, http://dbpedia.org/class/yago/Event100029378, http://dbpedia.org/class/yago/Activity100407535]
+
+Precisão: 0.7272727272727273
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Solid Waste Heaps - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [solid-194111, waste-175272, waste-175273, waste-175274]
+Conceitos recuperados: [solid-194111]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Solid115046900]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: Stream Sediment Analyses - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [stream-202700, sediment-50395, scheme-179792, computer program-190471, software system-174221, coding system-205900]
+Conceitos recuperados: [web-203807, scheme-179792, computer program-190471, code-165839, written language-174918, group-195516, writing-206218, application program-181864, abstraction-207942, network-12072, software system-174221, coding system-205900, communication-206827]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/System108435388, http://dbpedia.org/class/yago/Software106566077, http://dbpedia.org/class/yago/CodingSystem106353757, http://dbpedia.org/class/yago/Program106568978]
+
+Precisão: 0.3076923076923077
+Cobertura: 0.6666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Título: Subsoils - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [subsoil-179935]
+Conceitos recuperados: [subsoil-179935]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Subsoil114695838]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Transitional waterbodies - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [body of water-25322, body of water-25544, body of water-164612, transit-68682]
+Conceitos recuperados: [transit-68682]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/AstronomicalTransits]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Analyses (Summer) - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [water-174706, summer-215044, method-194690, event-202486, activity-177185]
+Conceitos recuperados: [game-221907]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Analyses (Winter) - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [water-174706, method-194690, event-202486, activity-177185]
+Conceitos recuperados: [analysis-208724, basin-176201, migration-222407, lake-204489, river-164393, method-194690, history-190464, resource-174364, analysis-208721, water-174706, analysis-208720, critic-193431, analysis-208723, analysis-208722]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Method105660268, http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 0.14285714285714285
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Areas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [water-174706]
+Conceitos recuperados: [water-174706]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Título: Water Management Units - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [water-174706, management-201913, management-201914, unit-204233]
+Conceitos recuperados: [water-174706, unit-204233]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/UnitOfMeasurement113583724, http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: Zone of Subsidence - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [zone-216608, subsidence-181234, subsidence-181235, subsidence-181236]
+Conceitos recuperados: [zone-216608]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Zone108688247]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: Napier City Council Election Wards - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [ward-176925, city council-216404, election-228467, physical entity-178778, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [unit-204236, ward-176925, mortal-178060, physical entity-178778, physical object-185182, organism-200385, causal agent-165664, animate thing-188825]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/PhysicalEntity100001930, http://dbpedia.org/class/yago/Ward110767020]
+
+Precisão: 0.25
+Cobertura: 0.2857142857142857
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncil1mContours - Tipo de Anotação: Não anotado
+Conceitos relevantes: [city council-216404, city-168208, council-229437, contour-219400, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: []
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilAddressPoints - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, address-217712, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, address-217712, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Address106356515, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.42857142857142855
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilCadastralParcels - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, parcel-175766, parcel-175767, parcel-175768, parcel-175769, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, parcel-175767, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Parcel101085098, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.3
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilCarParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, car-196073, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, park-223367, car-196073, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Car102958343, http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilDogExerciseAreas - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, dog-200111, exercise-218702, neighbourhood-59600, neighbourhood-133698, neighbourhood-151398, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, dog-200111, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Dog102084071, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.2727272727272727
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilHeritageBuildingDatabase - Tipo de Anotação: Anotação via LOD
+Conceitos relevantes: [city council-216404, city-168208, council-229437, heritage-175853, heritage-175854, heritage-175855, heritage-175856, edifice-164488, database-165975, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [administrative division-181954, device-217656, organization-163340, institution-207382, institution established in 1964-37329, machine-220890, location-214539, group-195516, engine-167912, aircraft engine-201066, university-210586, physical entity-178778, district-49409, territory-187055, physical object-185182, city in New Zealand-6660, artifact-173633, social group-225580, educational institution-215423, municipality-226359, geographic region-172177, region-174274, urban area-182976, city-168208, instrumentality-172251, unit-204236, motor-225125, abstraction-207942]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/AdministrativeDistrict108491826, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/UrbanArea108675967, http://dbpedia.org/class/yago/Municipality108626283]
+
+Precisão: 0.14285714285714285
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilLeasedParking - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, parking-225691, parking-225692, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, park-223367, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.6666666666666666
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilLiquorBan - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, liquor-225448, ban-75093, ban-195928, ban-195929, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.2
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilMobilityParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, mobility-205688, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, park-223367, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.375
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilMotorcycleParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, bike-179187, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, bike-179187, park-223367, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Motorcycle103790512, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilOnStreetParks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, street-204365, park-223367, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [city-168208, park-223367, street-204365, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Park108615149, http://dbpedia.org/class/yago/Street104334599, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilOperativePlanZones - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, operative-55942, plan-103398, zone-216608, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [zone-216608, city-168208, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Zone108688247, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilPayandDisplayCarparks - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, display-37616, display-210874, display-210875, display-210876, display-210877, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [display-210875, display-210876, display-210877, city-168208, display-210874, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Display106887726, http://dbpedia.org/class/yago/Display107213717, http://dbpedia.org/class/yago/Display106879521, http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Display103210940, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.5454545454545454
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilSubdivisionApplications - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, subdivision-196805, application program-181864, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [application program-181864, city-168208, subdivision-196805, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Subdivision108674251, http://dbpedia.org/class/yago/Application106570110, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: NapierCityCouncilTitleParcels - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [city council-216404, city-168208, council-229437, parcel-175766, parcel-175767, parcel-175768, parcel-175769, municipality-226359, urban area-182976, administrative division-181954]
+Conceitos recuperados: [title-167470, city-168208, parcel-175767, title-167465, title-167464, title-167463, title-167469, title-167468, council-229437]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/City108524735, http://dbpedia.org/class/yago/Parcel101085098, http://dbpedia.org/class/yago/Council108310949]
+
+Precisão: 0.3333333333333333
+Cobertura: 0.3
+---------------------------------------------------
+---------------------------------------------------
+Título: ne_50m_boundary_lines_land - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [boundary-29602, land-204511]
+Conceitos recuperados: [land-204511]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Land113250048]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Título: ne_50m_coastline - Tipo de Anotação: Anotação via Casamento de Strings
+Conceitos relevantes: [coastline-229729, Ne-163956, NE-163937]
+Conceitos recuperados: [Ne-163956, NE-163937, coastline-229729]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Neon114646152, http://dbpedia.org/class/yago/Coastline108613000, http://dbpedia.org/class/yago/Northeast113831843]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+Precisão: 0.675
+Cobertura: 0.4725
+Percentual anotado: 0.96

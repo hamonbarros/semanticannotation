@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------------
+Título do Feature Type: AIR EMEP Monitoring Sites
+
+Token: Site Monitor
+Categorias: 
+Categorias similares: 
+Conceitos: Site Monitor
+Conceitos similares: 
+
+Token: air Monitoring
+Categorias: 
+Categorias similares: 
+Conceitos: air Monitoring
+Conceitos similares: 
+
+Token: Sites
+Categorias: 
+Categorias similares: 
+Conceitos: Sites
+Conceitos similares: 
+
+Token: EMEP
+Categorias: 
+Categorias similares: 
+Conceitos: EMEP
+Conceitos similares: 
+
+Token: AIR
+Categorias: 
+Categorias similares: 
+Conceitos: AIR
+Conceitos similares: 
+
+--------------------- SUMÁRIO ---------------------
+Quantidade de Títulos de Feature Types: 0
+Quantidade de Títulos não anotados:     0
+Percentual anotado:                     0.00
+Quantidade de conceitos:                27
+Quantidade de conceitos similares:      5
+Quantidade de conceitos anotados:       0
+Quantidade de categorias:               52
+Quantidade de categorias similares:     0
+Quantidade de categorias anotadas:      0
+

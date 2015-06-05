@@ -1,0 +1,58 @@
+###############################################################################
+FEATURE TYPE: AIR EMEP Monitoring Sites
+
+   NOME DO CONCEITO: region
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Region108630039]
+
+   NOME DO CONCEITO: monitor
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Proctor110478960]
+
+   NOME DO CONCEITO: land site
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Site108651247]
+
+   	NOME DO ATRIBUTO: ref
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Referee110514429]
+
+   	NOME DO ATRIBUTO: name
+   	OCORRENCIAS: 6
+   	URLS: [http://dbpedia.org/class/yago/Name106720964, http://dbpedia.org/class/yago/Name101139636, http://dbpedia.org/class/yago/Name110344443, http://dbpedia.org/class/yago/Name114438788, http://dbpedia.org/class/yago/Name107972279, http://dbpedia.org/class/yago/Name106333653]
+   	OCORRENCIAS CONCEITOS GERAIS: 6
+   	URLS CONCEITOS GERAIS: [http://dbpedia.org/class/yago/Name114438788, http://dbpedia.org/class/yago/Name106720964, http://dbpedia.org/class/yago/Name106333653, http://dbpedia.org/class/yago/Name101139636, http://dbpedia.org/class/yago/Name107972279, http://dbpedia.org/class/yago/Name110344443]
+
+   	NOME DO ATRIBUTO: status
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Condition113920835]
+
+   	NOME DO ATRIBUTO: altitude
+   	OCORRENCIAS: 2
+   	URLS: [http://dbpedia.org/class/yago/Altitude105131647, http://dbpedia.org/class/yago/Altitude113897657]
+
+   	NOME DO ATRIBUTO: latitude
+   	OCORRENCIAS: 3
+   	URLS: [http://dbpedia.org/class/yago/Latitude108595531, http://dbpedia.org/class/yago/Latitude105127640, http://dbpedia.org/class/yago/Latitude113995148]
+
+   	NOME DO ATRIBUTO: longitude
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Longitude108596668]
+
+   	NOME DO ATRIBUTO: shape
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Shape105064037]
+
+   	NOME DO ATRIBUTO: status
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Condition113920835]
+###############################################################################
+FEATURE TYPE: Air Monitoring Sites
+
+   NOME DO CONCEITO: region
+   OCORRENCIAS: 1
+   URLS: [http://dbpedia.org/class/yago/Region108630039]
+
+   	NOME DO ATRIBUTO: code
+   	OCORRENCIAS: 1
+   	URLS: [http://dbpedia.org/class/yago/Code106667317]
