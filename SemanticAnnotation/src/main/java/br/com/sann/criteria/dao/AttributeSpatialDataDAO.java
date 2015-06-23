@@ -41,5 +41,14 @@ public interface AttributeSpatialDataDAO {
 	 * @param attributeService O atributo do serviço a ser atualizado.
 	 */
 	void updateAttributeService(AttributeSpatialData attributeService);
+
+	/**
+	 * Recupera os atributos a partir do nome.
+	 * 
+	 * @param nameAttr
+	 *            O nome dos atributos a serem recuperados.
+	 * @return Os AttributeSpatialData solicitados.
+	 */
+	List<AttributeSpatialData> recoverySpatialDataByTitle(String nameAttr);
 	
 }

@@ -19,28 +19,28 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import br.com.sann.domain.AttributeSpatialData;
 import br.com.sann.domain.OntologyConcept;
-import br.com.sann.domain.SemanticAnnotation;
-import br.com.sann.domain.SpatialData;
+import br.com.sann.domain.SemanticAnnotationAttribute;
 import br.com.sann.main.Main;
-import br.com.sann.service.FeatureService;
+import br.com.sann.service.AttributeSpatialDataService;
 import br.com.sann.service.OntologyConceptService;
-import br.com.sann.service.SemanticAnnotationService;
-import br.com.sann.service.impl.FeatureServiceImpl;
+import br.com.sann.service.SemanticAnnotationAttrService;
+import br.com.sann.service.impl.AttributeSpatialDataServiceImpl;
 import br.com.sann.service.impl.OntologyConceptServiceImpl;
-import br.com.sann.service.impl.SemanticAnnotationServiceImpl;
+import br.com.sann.service.impl.SemanticAnnotationAttrServiceImpl;
 
-public class ExtractResultPosAnnotation {
+public class ExtractResultPosAnnotationAttr {
 
 	private OntologyConceptService conceptService;
-	private FeatureService featureService;
-	private SemanticAnnotationService sannService;
+	private AttributeSpatialDataService attributeService;
+	private SemanticAnnotationAttrService sannService;
 	public static Logger log;
 	
-	public ExtractResultPosAnnotation() {
+	public ExtractResultPosAnnotationAttr() {
 		conceptService = new OntologyConceptServiceImpl();
-		featureService = new FeatureServiceImpl();
-		sannService = new SemanticAnnotationServiceImpl();
+		attributeService = new AttributeSpatialDataServiceImpl();
+		sannService = new SemanticAnnotationAttrServiceImpl();
 	}
 	
 	public List<ExpectedResult> populatedExpectedResult() {
@@ -53,31 +53,30 @@ public class ExtractResultPosAnnotation {
 			
 			DateFormat df = new SimpleDateFormat("YYYYMMddHHmm");
 			String dateFormated = df.format(new Date());
-			result = new PrintWriter(new FileWriter(new File("Result_WFS_" + dateFormated + ".txt")));
+			result = new PrintWriter(new FileWriter(new File("Result_WFS_Attr_" + dateFormated + ".txt")));
 			
 			List<OntologyConcept> relevantConceptsGeneral = new ArrayList<OntologyConcept>();
 			List<String> retrievedConceptsGeneral = new ArrayList<String>();
 			List<String> retrievedRelevantConceptsGeneral = new ArrayList<String>();
 			
-			Scanner scanner = new Scanner(new FileReader("Baseline_FT.txt")).useDelimiter("\\n");
+			Scanner scanner = new Scanner(new FileReader("Baseline_Atributos.txt")).useDelimiter("\\n");
 			String line = scanner.next();
 			int countConcepts = 0;
 			int countAnnotatedConcepts = 0;
 			while (scanner.hasNext()) {
 				  line = scanner.next();
 				  String[] lineSplit = line.split("\\|");
-				  String title = lineSplit[0];
-				  log.info("[INICIO] Início do processamento para o título: " + title);
+				  String nameAttr = lineSplit[0];
+				  log.info("[INICIO] Início do processamento para o atributo: " + nameAttr);
 				  String[] idsOntology = lineSplit[1].split(",");
 				  List<OntologyConcept> relevantConcepts = recoveryOntolgyConcept(idsOntology);
 				  
 				  ExpectedResult eResult = new ExpectedResult();
-				  eResult.setTitle(title);
+				  eResult.setTitle(nameAttr);
 				  eResult.setRelevantConcepts(relevantConcepts);
 				  
-				  SpatialData featureType = featureService.recoverySpatialDataByTitle(title).get(0);
-				  eResult.convertAnnotationType(featureType.getTypeAnnotation());
-				  List<SemanticAnnotation> sanns = sannService.recoveryAnnotations(featureType.getId());
+				  AttributeSpatialData attr = attributeService.recoverySpatialDataByTitle(nameAttr).get(0);
+				  List<SemanticAnnotationAttribute> sanns = sannService.recoveryAnnotations(attr.getId());
 				  eResult.setRetrievedConcepts(extractRetrievedConcepts(sanns));
 				  extractRetrievedRelevantConcepts(eResult);
 				  expectedResult.add(eResult);		
@@ -92,7 +91,7 @@ public class ExtractResultPosAnnotation {
 				  }
 				  
 				  result.println("---------------------------------------------------");
-				  result.println("Título: " + title + " - Tipo de Anotação: " + eResult.getAnnotationType());
+				  result.println("Atributo: " + nameAttr);
 				  result.println("Conceitos relevantes: " + eResult.getConceptNames(relevantConcepts));
 				  result.println("Conceitos recuperados: " + extractRetrievedConceptNames(sanns));
 				  result.println("Conceitos relevantes recuperados: " + eResult.getRelevantRetrievedConcepts());	
@@ -101,7 +100,7 @@ public class ExtractResultPosAnnotation {
 				  result.println("---------------------------------------------------");
 				  result.flush();
 				  
-				  log.info("[FIM] Fim do processamento para o título: " + title);
+				  log.info("[FIM] Fim do processamento para o atributo: " + nameAttr);
 			}
 			
 			extractMetrics(relevantConceptsGeneral, retrievedConceptsGeneral, retrievedRelevantConceptsGeneral, result);
@@ -124,20 +123,20 @@ public class ExtractResultPosAnnotation {
 		return expectedResult;
 	}
 	
-	private Set<String> extractRetrievedConcepts(List<SemanticAnnotation> sanns) {
+	private Set<String> extractRetrievedConcepts(List<SemanticAnnotationAttribute> sanns) {
 
 		Set<String> retrievedConcepts = new HashSet<String>();
-		for (SemanticAnnotation sann : sanns) {
-			retrievedConcepts.add(sann.getConceptid().getConcept());
+		for (SemanticAnnotationAttribute sann : sanns) {
+			retrievedConcepts.add(sann.getOntologyConcept().getConcept());
 		}
 		return retrievedConcepts;
 	}
 
-	private Set<String> extractRetrievedConceptNames(List<SemanticAnnotation> sanns) {
+	private Set<String> extractRetrievedConceptNames(List<SemanticAnnotationAttribute> sanns) {
 
 		Set<String> retrievedConcepts = new HashSet<String>();
-		for (SemanticAnnotation sann : sanns) {
-			retrievedConcepts.add(sann.getConceptid().getConceptName() + "-" + sann.getConceptid().getId());
+		for (SemanticAnnotationAttribute sann : sanns) {
+			retrievedConcepts.add(sann.getOntologyConcept().getConceptName() + "-" + sann.getOntologyConcept().getId());
 		}
 		return retrievedConcepts;
 	}
@@ -185,7 +184,7 @@ public class ExtractResultPosAnnotation {
 		log.info("Iniciando o processamento...");
 		log.info("Data Inicial: " + df.format(new Date()));
 		
-		ExtractResultPosAnnotation performanceTest = new ExtractResultPosAnnotation();
+		ExtractResultPosAnnotationAttr performanceTest = new ExtractResultPosAnnotationAttr();
 		performanceTest.populatedExpectedResult();
 		
 		log.info("Fim do processamento!");

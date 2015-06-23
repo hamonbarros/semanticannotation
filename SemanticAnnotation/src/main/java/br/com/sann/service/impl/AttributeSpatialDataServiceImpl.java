@@ -51,4 +51,8 @@ public class AttributeSpatialDataServiceImpl implements AttributeSpatialDataServ
 		return dao.recoverAttributesBySpatialData(idSpatialData);
 	}
 
+	public List<AttributeSpatialData> recoverySpatialDataByTitle(String nameAttr) {
+		return dao.recoverySpatialDataByTitle(nameAttr);
+	}
+
 }

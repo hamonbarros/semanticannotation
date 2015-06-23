@@ -56,4 +56,16 @@ public class AttributeSpatialDataDAOImpl implements AttributeSpatialDataDAO{
 		em.close();		
 	}
 	
+	public List<AttributeSpatialData> recoverySpatialDataByTitle(String nameAttr) {
+		EntityManager em = JPAUtil.getEntityManager();
+		String jpql = "SELECT n FROM AttributeSpatialData n " +
+				"      WHERE UPPER(n.name) LIKE :name ";
+		Query q = em.createQuery(jpql);
+		q.setParameter("name", nameAttr);
+
+		List<AttributeSpatialData> attrs = q.getResultList();
+		em.close();
+		return attrs;
+	}
+	
 }

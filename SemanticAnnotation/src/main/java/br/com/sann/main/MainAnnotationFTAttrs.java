@@ -32,9 +32,9 @@ public class MainAnnotationFTAttrs {
 		log.info("Data Inicial: " + df.format(new Date()));
 		log.info("Realizando a leitura das feature types... ");
 		FeatureService service = new FeatureServiceImpl();
-		List<SpatialData> spatialDataList = service.recoverAllSpatialDataNotAnnotated();
-//		String ids = "7180";
-//		List<SpatialData> spatialDataList = service.recoverySpatialDataByIDs(ids);
+//		List<SpatialData> spatialDataList = service.recoverAllSpatialDataNotAnnotated();
+		String ids = "7187";
+		List<SpatialData> spatialDataList = service.recoverySpatialDataByIDs(ids);
 		log.info("Leitura das feature types realizada com sucesso!");
 		
 //		SpatialDataListProcess process = new SpatialDataListProcess();

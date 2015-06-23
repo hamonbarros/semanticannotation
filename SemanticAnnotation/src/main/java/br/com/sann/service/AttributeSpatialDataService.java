@@ -4,6 +4,7 @@ import java.util.List;
 
 import br.com.sann.domain.AttributeSpatialData;
 import br.com.sann.domain.SpatialData;
+import br.com.sann.performance.test.ExpectedResult;
 
 /**
  * Interface de negócio relacionada com {@link AttributeSpatialData}.
@@ -40,4 +41,13 @@ public interface AttributeSpatialDataService {
 	 * @param attributeService O atributo do serviço a ser atualizado.
 	 */
 	void updateAttributeService(AttributeSpatialData attributeService);
+
+	/**
+	 * Recupera os atributos a partir do nome.
+	 * 
+	 * @param nameAttr
+	 *            O nome dos atributos a serem recuperados.
+	 * @return Os AttributeSpatialData solicitados.
+	 */
+	List<AttributeSpatialData> recoverySpatialDataByTitle(String nameAttr);
 }
