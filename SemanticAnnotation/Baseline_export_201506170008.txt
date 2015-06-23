@@ -1,0 +1,100 @@
+ \multirow{1}{*}{ACTION} &action &http://dbpedia.org/class/yago/Action100037396 \\\hline
+ \multirow{1}{*}{ADDRESS} &address &http://dbpedia.org/class/yago/Address106356515 \\\hline
+ \multirow{1}{*}{ADVICE} &advice &http://dbpedia.org/class/yago/Advice106671484 \\\hline
+ \multirow{1}{*}{AGENT} &agent &http://dbpedia.org/class/yago/Agent109190918 \\\hline
+ \multirow{6}{*}{AIRZONE} &air &http://dbpedia.org/class/yago/Air114841267 \\ &air &http://dbpedia.org/class/yago/Air108653314 \\ &air &http://dbpedia.org/class/yago/Air104727214 \\ &air &http://dbpedia.org/class/yago/Atmosphere108499057 \\ &air &http://dbpedia.org/class/yago/Air114842703 \\ &zone &http://dbpedia.org/class/yago/Zone108688247 \\\hline
+ \multirow{1}{*}{APPLICANT} &applicant &http://dbpedia.org/class/yago/Applicant109607280 \\\hline
+ \multirow{2}{*}{APPLICATION\_NUMBER} &application program &http://dbpedia.org/class/yago/Application106570110 \\ &figure &http://dbpedia.org/class/yago/Number105121418 \\\hline
+ \multirow{4}{*}{AQUATIC\_TERRESTRIAL\_WETLAND} &aquatic &http://dbpedia.org/class/yago/Aquatic111536673 \\ &wetland &http://dbpedia.org/class/yago/Wetlands \\ &wetland &http://dbpedia.org/class/yago/FictionalWetlands \\ &wetland &http://dbpedia.org/class/yago/Wetland109477890 \\\hline
+ \multirow{2}{*}{AREAHECTARE} &area &http://dbpedia.org/class/yago/Area108497294 \\ &hectare &http://dbpedia.org/class/yago/Hectare113613985 \\\hline
+ \multirow{5}{*}{AUDIT\_YEAR} &audit &http://dbpedia.org/class/yago/Audit100141176 \\ &year &http://dbpedia.org/class/yago/EducationalYears \\ &year &http://dbpedia.org/class/yago/Years \\ &year &http://dbpedia.org/class/yago/Year115204297 \\ &year &http://dbpedia.org/class/yago/Year115201505 \\\hline
+ \multirow{1}{*}{BEACHPHOTO} &beach &http://dbpedia.org/class/yago/Beach109217230 \\\hline
+ \multirow{2}{*}{BOUNDARYSOURCE} &boundary &http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries \\ &source &http://dbpedia.org/class/yago/Beginning108507558 \\\hline
+ \multirow{1}{*}{BUILDCOUNT} &count &http://dbpedia.org/class/yago/Count109969218 \\\hline
+ \multirow{1}{*}{BYLAW} &bylaw &http://dbpedia.org/class/yago/Bylaw106537951 \\\hline
+ \multirow{5}{*}{CAPACITY} &capacity &http://dbpedia.org/class/yago/Capacity105203397 \\ &capacity &http://dbpedia.org/class/yago/Capacity100914795 \\ &capacity &http://dbpedia.org/class/yago/Capacity100720951 \\ &capacity &http://dbpedia.org/class/yago/Capacity113755053 \\ &capacity &http://dbpedia.org/class/yago/Capacity105033569 \\\hline
+ \multirow{1}{*}{CASE\_OFFICER} &case officer &http://dbpedia.org/class/yago/CaseOfficer109899134 \\\hline
+ \multirow{1}{*}{CATCHMENT} &catchment &http://dbpedia.org/class/yago/Catchment102983357 \\\hline
+ \multirow{1}{*}{CATEGORY} &category &http://dbpedia.org/class/yago/Class107997703 \\\hline
+ \multirow{1}{*}{CHANGE} &change &http://dbpedia.org/class/yago/PhaseChanges \\\hline
+ \multirow{1}{*}{CLASSIFICATION} &compartmentalization &http://dbpedia.org/class/yago/Categorization101012712 \\\hline
+ \multirow{1}{*}{CODE} &code &http://dbpedia.org/class/yago/Code106667317 \\\hline
+ \multirow{3}{*}{COMMENT} &comment &http://dbpedia.org/class/yago/Remark106765044 \\ &comment &http://dbpedia.org/class/yago/Comment106762711 \\ &comment &http://dbpedia.org/class/yago/Gossip107223170 \\\hline
+ \multirow{1}{*}{COMMODITY\_PRODUCED} &commodity &http://dbpedia.org/class/yago/Commodity103076708 \\\hline
+ \multirow{4}{*}{CONFIRMATION\_DATE} &confirmation &http://dbpedia.org/class/yago/Confirmation106650070 \\ &confirmation &http://dbpedia.org/class/yago/Confirmation101038895 \\ &confirmation &http://dbpedia.org/class/yago/Confirmation101038761 \\ &date &http://dbpedia.org/class/yago/Date115159583 \\\hline
+ \multirow{4}{*}{COST} &cost &http://dbpedia.org/class/yago/Costs \\ &cost &http://dbpedia.org/class/yago/Cost113275847 \\ &cost &http://dbpedia.org/class/yago/MonetaryValue105145118 \\ &cost &http://dbpedia.org/class/yago/Price105163807 \\\hline
+ \multirow{1}{*}{COUNTY} &county &http://dbpedia.org/class/yago/County108546183 \\\hline
+ \multirow{1}{*}{COVERAGE} &coverage &http://dbpedia.org/class/yago/Coverage105123760 \\\hline
+ \multirow{2}{*}{DATE\_DATA\_REFRESHED} &date &http://dbpedia.org/class/yago/Date115159583 \\ &data &http://dbpedia.org/class/yago/Data108462320 \\\hline
+ \multirow{1}{*}{DEPTH} &depth &http://dbpedia.org/class/yago/Depth105134547 \\\hline
+ \multirow{4}{*}{DESCRIPTION} &description &http://dbpedia.org/class/yago/LogoDescriptions \\ &description &http://dbpedia.org/class/yago/Description106724763 \\ &description &http://dbpedia.org/class/yago/Description107201365 \\ &description &http://dbpedia.org/class/yago/Description105840076 \\\hline
+ \multirow{4}{*}{DISPLAY} &display &http://dbpedia.org/class/yago/Display106879521 \\ &display &http://dbpedia.org/class/yago/Display103210940 \\ &display &http://dbpedia.org/class/yago/Display107213717 \\ &display &http://dbpedia.org/class/yago/Display106887726 \\\hline
+ \multirow{3}{*}{EDENMONENTITY} &Mon &http://dbpedia.org/class/yago/Mon110327696 \\ &Mon &http://dbpedia.org/class/yago/Mon106937441 \\ &entity &http://dbpedia.org/class/yago/Entity100001740 \\\hline
+ \multirow{1}{*}{FEATURE} &characteristic &http://dbpedia.org/class/yago/Feature105849789 \\\hline
+ \multirow{4}{*}{FINISH\_DAT} &finish &http://dbpedia.org/class/yago/Finish107353376 \\ &finish &http://dbpedia.org/class/yago/Finish107333162 \\ &finish &http://dbpedia.org/class/yago/Finish105717747 \\ &DAT &http://dbpedia.org/class/yago/DigitalAudiotape103195959 \\\hline
+ \multirow{3}{*}{FURTHER\_INFO\_PUBLIC} &info &http://dbpedia.org/class/yago/Information106634376 \\ &public &http://dbpedia.org/class/yago/MinistreFran%C3%A7aisDesTravauxPublics \\ &public &http://dbpedia.org/class/yago/Public107965817 \\\hline
+ \multirow{3}{*}{GROUNDWATER\_DEPENDENT} &solid ground &http://dbpedia.org/class/yago/Land109334396 \\ &water &http://dbpedia.org/class/yago/Water114845743 \\ &dependent &http://dbpedia.org/class/yago/Dependant110004804 \\\hline
+ \multirow{3}{*}{HABITAT\_SPECIES} &habitat &http://dbpedia.org/class/yago/Habitat108580583 \\ &species &http://dbpedia.org/class/yago/Species108110373 \\ &species &http://dbpedia.org/class/yago/Species105844881 \\\hline
+ \multirow{6}{*}{HIGH\_SCHOOL\_CLUSTER} &high &http://dbpedia.org/class/yago/High105097536 \\ &high &http://dbpedia.org/class/yago/High114520670 \\ &high &http://dbpedia.org/class/yago/High114405621 \\ &high &http://dbpedia.org/class/yago/High114405452 \\ &school &http://dbpedia.org/class/yago/School108276720 \\ &cluster &http://dbpedia.org/class/yago/Bunch107959943 \\\hline
+ \multirow{5}{*}{HOUSING\_MARKET\_AREA} &housing &http://dbpedia.org/class/yago/Housing103546766 \\ &market &http://dbpedia.org/class/yago/Market101097292 \\ &market &http://dbpedia.org/class/yago/GroceryStore103461385 \\ &market &http://dbpedia.org/class/yago/Marketplace103722288 \\ &area &http://dbpedia.org/class/yago/Area108497294 \\\hline
+ \multirow{1}{*}{HYPERLINK} &hyperlink &http://dbpedia.org/class/yago/Hyperlink106586672 \\\hline
+ \multirow{3}{*}{INSPECTION\_MONTH} &month &http://dbpedia.org/class/yago/Months \\ &month &http://dbpedia.org/class/yago/BlackMonths \\ &month &http://dbpedia.org/class/yago/Month115206296 \\\hline
+ \multirow{2}{*}{INTERIOR} &interior &http://dbpedia.org/class/yago/Inside108588294 \\ &interior &http://dbpedia.org/class/yago/Inside108588152 \\\hline
+ \multirow{1}{*}{LABEL} &label &http://dbpedia.org/class/yago/Label107202579 \\\hline
+ \multirow{3}{*}{LATITUDE} &latitude &http://dbpedia.org/class/yago/Latitude108595531 \\ &latitude &http://dbpedia.org/class/yago/Latitude113995148 \\ &latitude &http://dbpedia.org/class/yago/Latitude105127640 \\\hline
+ \multirow{5}{*}{LICENCESTATUSDESCRIPTION} &status &http://dbpedia.org/class/yago/Condition113920835 \\ &description &http://dbpedia.org/class/yago/LogoDescriptions \\ &description &http://dbpedia.org/class/yago/Description106724763 \\ &description &http://dbpedia.org/class/yago/Description107201365 \\ &description &http://dbpedia.org/class/yago/Description105840076 \\\hline
+ \multirow{2}{*}{LOCALPLAN\_REFERENCE} &reference &http://dbpedia.org/class/yago/MediaWikiReferences \\ &reference &http://dbpedia.org/class/yago/Reference105923314 \\\hline
+ \multirow{1}{*}{LOCATION} &location &http://dbpedia.org/class/yago/Location100027167 \\\hline
+ \multirow{3}{*}{MARINEWATER\_DEPENDENT} &marine &http://dbpedia.org/class/yago/Marines \\ &water &http://dbpedia.org/class/yago/Water114845743 \\ &dependent &http://dbpedia.org/class/yago/Dependant110004804 \\\hline
+ \multirow{1}{*}{NATIONAL\_PARK} &national park &http://dbpedia.org/class/yago/NationalPark108600992 \\\hline
+ \multirow{1}{*}{NUMBER\_OF\_TURBINES} &figure &http://dbpedia.org/class/yago/Number105121418 \\\hline
+ \multirow{5}{*}{OFFICIAL\_GRID\_REFERENCE} &official &http://dbpedia.org/class/yago/Official110372373 \\ &grid &http://dbpedia.org/class/yago/Grid105931512 \\ &grid &http://dbpedia.org/class/yago/Grid103458753 \\ &reference &http://dbpedia.org/class/yago/MediaWikiReferences \\ &reference &http://dbpedia.org/class/yago/Reference105923314 \\\hline
+ \multirow{1}{*}{OPERATOR} &operator &http://dbpedia.org/class/yago/Operator113786413 \\\hline
+ \multirow{2}{*}{PERIMETER} &perimeter &http://dbpedia.org/class/yago/Perimeter113871452 \\ &perimeter &http://dbpedia.org/class/yago/Circumference105101261 \\\hline
+ \multirow{2}{*}{POLICY\_TYPE} &policy &http://dbpedia.org/class/yago/Policy105901508 \\ &type &http://dbpedia.org/class/yago/Type105840188 \\\hline
+ \multirow{2}{*}{PREVIOUS\_MINERAL\_WORKINGS} &workings &http://dbpedia.org/class/yago/Working104601473 \\ &mineral &http://dbpedia.org/class/yago/Mineral114662574 \\\hline
+ \multirow{2}{*}{PROCESSINGSTATUS} &processing &http://dbpedia.org/class/yago/Processing113541167 \\ &status &http://dbpedia.org/class/yago/Condition113920835 \\\hline
+ \multirow{1}{*}{PROPOSAL} &proposal &http://dbpedia.org/class/yago/Proposal107162194 \\\hline
+ \multirow{3}{*}{PUBLIC\_FURTHER\_INFO} &public &http://dbpedia.org/class/yago/MinistreFran%C3%A7aisDesTravauxPublics \\ &public &http://dbpedia.org/class/yago/Public107965817 \\ &info &http://dbpedia.org/class/yago/Information106634376 \\\hline
+ \multirow{6}{*}{RAIL\_ROAD\_VISIBILITY} &rail &http://dbpedia.org/class/yago/Rail104046810 \\ &rail &http://dbpedia.org/class/yago/Rail104046590 \\ &rail &http://dbpedia.org/class/yago/Rail102014941 \\ &route &http://dbpedia.org/class/yago/Road104096066 \\ &visibility &http://dbpedia.org/class/yago/Visibility114434329 \\ &visibility &http://dbpedia.org/class/yago/Visibility104702545 \\\hline
+ \multirow{2}{*}{RECOMMENDED\_USAGE} &usage &http://dbpedia.org/class/yago/Custom100413239 \\ &usage &http://dbpedia.org/class/yago/Usage106283459 \\\hline
+ \multirow{2}{*}{RECORD\_STATUS} &record &http://dbpedia.org/class/yago/Record106647206 \\ &status &http://dbpedia.org/class/yago/Condition113920835 \\\hline
+ \multirow{2}{*}{REFERENCE} &reference &http://dbpedia.org/class/yago/MediaWikiReferences \\ &reference &http://dbpedia.org/class/yago/Reference105923314 \\\hline
+ \multirow{1}{*}{REGION} &region &http://dbpedia.org/class/yago/Region108630039 \\\hline
+ \multirow{1}{*}{REMARK} &remark &http://dbpedia.org/class/yago/Remark105710573 \\\hline
+ \multirow{3}{*}{REVIEW\_DATE} &review &http://dbpedia.org/class/yago/Reviews \\ &date &http://dbpedia.org/class/yago/Date115159583 \\ &revaluation &http://dbpedia.org/class/yago/Reappraisal105747582 \\\hline
+ \multirow{1}{*}{RINGS\_NOK} &rings &http://dbpedia.org/class/yago/Rings104093223 \\\hline
+ \multirow{2}{*}{SALINITY} &salinity &http://dbpedia.org/class/yago/Salt105717342 \\ &salinity &http://dbpedia.org/class/yago/Brininess104993604 \\\hline
+ \multirow{1}{*}{SCALE} &scale of measurement &http://dbpedia.org/class/yago/Scale113850304 \\\hline
+ \multirow{7}{*}{SCHOOL\_NAME} &school &http://dbpedia.org/class/yago/School108276720 \\ &name &http://dbpedia.org/class/yago/Name106333653 \\ &name &http://dbpedia.org/class/yago/Name114438788 \\ &name &http://dbpedia.org/class/yago/Name107972279 \\ &name &http://dbpedia.org/class/yago/Name110344443 \\ &name &http://dbpedia.org/class/yago/Name101139636 \\ &name &http://dbpedia.org/class/yago/Name106720964 \\\hline
+ \multirow{1}{*}{SETTLEMENT} &administrative division &http://dbpedia.org/class/yago/AdministrativeDistrict108491826 \\\hline
+ \multirow{1}{*}{SHAPE} &shape &http://dbpedia.org/class/yago/Shape105064037 \\\hline
+ \multirow{6}{*}{SITE\_CAPACITY} &land site &http://dbpedia.org/class/yago/Site108651247 \\ &capacity &http://dbpedia.org/class/yago/Capacity105203397 \\ &capacity &http://dbpedia.org/class/yago/Capacity100914795 \\ &capacity &http://dbpedia.org/class/yago/Capacity100720951 \\ &capacity &http://dbpedia.org/class/yago/Capacity113755053 \\ &capacity &http://dbpedia.org/class/yago/Capacity105033569 \\\hline
+ \multirow{1}{*}{SITE\_CHARACTERISTICS} &land site &http://dbpedia.org/class/yago/Site108651247 \\\hline
+ \multirow{4}{*}{SIZE} &size &http://dbpedia.org/class/yago/Size105098942 \\ &size &http://dbpedia.org/class/yago/Size105095691 \\ &size &http://dbpedia.org/class/yago/Size113937727 \\ &size &http://dbpedia.org/class/yago/Size105099231 \\\hline
+ \multirow{1}{*}{SOIL\_GROUP} &group &http://dbpedia.org/class/yago/Group100031264 \\\hline
+ \multirow{1}{*}{SOURCE} &source &http://dbpedia.org/class/yago/Beginning108507558 \\\hline
+ \multirow{2}{*}{SPECIES} &species &http://dbpedia.org/class/yago/Species108110373 \\ &species &http://dbpedia.org/class/yago/Species105844881 \\\hline
+ \multirow{4}{*}{START\_DATE} &start &http://dbpedia.org/class/yago/Start107325190 \\ &start &http://dbpedia.org/class/yago/Start100241699 \\ &start &http://dbpedia.org/class/yago/StartingSignal106792188 \\ &date &http://dbpedia.org/class/yago/Date115159583 \\\hline
+ \multirow{2}{*}{STATIONPOSITION} &station &http://dbpedia.org/class/yago/Station104306080 \\ &position &http://dbpedia.org/class/yago/Position108621598 \\\hline
+ \multirow{1}{*}{STATUS} &status &http://dbpedia.org/class/yago/Condition113920835 \\\hline
+ \multirow{1}{*}{STRUCTURE} &structure &http://dbpedia.org/class/yago/Structure104341686 \\\hline
+ \multirow{1}{*}{STYLE} &mode &http://dbpedia.org/class/yago/Manner104928903 \\\hline
+ \multirow{1}{*}{SUBCLASS} &subclass &http://dbpedia.org/class/yago/Subclass108106661 \\\hline
+ \multirow{3}{*}{SUBSITEPREFIX} &prefix &http://dbpedia.org/class/yago/Prefixes \\ &prefix &http://dbpedia.org/class/yago/SIPrefixes \\ &prefix &http://dbpedia.org/class/yago/Prefix106308304 \\\hline
+ \multirow{3}{*}{SURFACEWATER\_DEPENDENT} &surface &http://dbpedia.org/class/yago/Surface104362025 \\ &water &http://dbpedia.org/class/yago/Water114845743 \\ &dependent &http://dbpedia.org/class/yago/Dependant110004804 \\\hline
+ \multirow{2}{*}{SURROUNDING\_USE\_1} &use &http://dbpedia.org/class/yago/Use105149978 \\ &use &http://dbpedia.org/class/yago/Habit100414179 \\\hline
+ \multirow{3}{*}{SURVEY} &survey &http://dbpedia.org/class/yago/AstronomicalSurveys \\ &survey &http://dbpedia.org/class/yago/Survey100644503 \\ &survey &http://dbpedia.org/class/yago/Sketch106469694 \\\hline
+ \multirow{1}{*}{SYSTEM} &system &http://dbpedia.org/class/yago/System104377057 \\\hline
+ \multirow{1}{*}{TIME\_LIMIT} &time limit &http://dbpedia.org/class/yago/TimeLimit115224156 \\\hline
+ \multirow{2}{*}{TREE\_NUMBER} &tree &http://dbpedia.org/class/yago/Tree113104059 \\ &figure &http://dbpedia.org/class/yago/Number105121418 \\\hline
+ \multirow{1}{*}{TYPE} &type &http://dbpedia.org/class/yago/Type105840188 \\\hline
+ \multirow{1}{*}{URL} &URL &http://dbpedia.org/class/yago/URL106358747 \\\hline
+ \multirow{2}{*}{VERSION} &version &http://dbpedia.org/class/yago/Version107173585 \\ &version &http://dbpedia.org/class/yago/Version101267901 \\\hline
+ \multirow{3}{*}{VOLUME} &volume &http://dbpedia.org/class/yago/Volume113779032 \\ &volume &http://dbpedia.org/class/yago/Volume106413666 \\ &volume &http://dbpedia.org/class/yago/Volume113779244 \\\hline
+ \multirow{1}{*}{WARD} &ward &http://dbpedia.org/class/yago/Ward110767020 \\\hline
+ \multirow{1}{*}{WATER\_DEPENDANCY} &water &http://dbpedia.org/class/yago/Water114845743 \\\hline
+ \multirow{2}{*}{WATERTYPE} &water &http://dbpedia.org/class/yago/Water114845743 \\ &type &http://dbpedia.org/class/yago/Type105840188 \\\hline
+ \multirow{4}{*}{WISEREFERENCEDATA} &wise &http://dbpedia.org/class/yago/Wise104931733 \\ &reference &http://dbpedia.org/class/yago/MediaWikiReferences \\ &reference &http://dbpedia.org/class/yago/Reference105923314 \\ &data &http://dbpedia.org/class/yago/Data108462320 \\\hline
+ \multirow{4}{*}{YEAR\_REVIEWED} &year &http://dbpedia.org/class/yago/EducationalYears \\ &year &http://dbpedia.org/class/yago/Years \\ &year &http://dbpedia.org/class/yago/Year115204297 \\ &year &http://dbpedia.org/class/yago/Year115201505 \\\hline
+ \multirow{1}{*}{ZONE\_DOCS} &zone &http://dbpedia.org/class/yago/Zone108688247 \\\hline

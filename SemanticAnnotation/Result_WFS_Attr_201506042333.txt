@@ -1,0 +1,903 @@
+---------------------------------------------------
+Atributo: ACTION
+Conceitos relevantes: [action-203626]
+Conceitos recuperados: [action-203626]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Action100037396]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: ADDRESS
+Conceitos relevantes: [address-217712]
+Conceitos recuperados: [address-217712]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Address106356515]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: ADVICE
+Conceitos relevantes: [advice-204648]
+Conceitos recuperados: [advice-204648]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Advice106671484]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: AGENT
+Conceitos relevantes: [agent-173456]
+Conceitos recuperados: [agent-173456]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Agent109190918]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: AIRZONE
+Conceitos relevantes: [air-196186, air-196187, air-196188, air-196189, air-196190, zone-216608]
+Conceitos recuperados: [zone-216608]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Zone108688247]
+
+Precisão: 1.0
+Cobertura: 0.16666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Atributo: APPLICANT
+Conceitos relevantes: [applicant-202045]
+Conceitos recuperados: [applicant-202045]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Applicant109607280]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: APPLICATION_NUMBER
+Conceitos relevantes: [application program-181864, figure-188086]
+Conceitos recuperados: [figure-188086]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Number105121418]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: AQUATIC_TERRESTRIAL_WETLAND
+Conceitos relevantes: [aquatic-186266, wetland-25481, wetland-106475, wetland-170959]
+Conceitos recuperados: [wetland-106475, wetland-170959, aquatic-186266, wetland-25481]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Wetland109477890, http://dbpedia.org/class/yago/Wetlands, http://dbpedia.org/class/yago/Aquatic111536673, http://dbpedia.org/class/yago/FictionalWetlands]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: AREAHECTARE
+Conceitos relevantes: [area-223653, hectare-227971]
+Conceitos recuperados: [area-223653]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Area108497294]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: AUDIT_YEAR
+Conceitos relevantes: [audit-206831, year-35935, year-122281, year-224952, year-224953]
+Conceitos recuperados: [year-224952, year-224953, audit-206831, year-122281, year-35935]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Year115201505, http://dbpedia.org/class/yago/EducationalYears, http://dbpedia.org/class/yago/Audit100141176, http://dbpedia.org/class/yago/Years, http://dbpedia.org/class/yago/Year115204297]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: BEACHPHOTO
+Conceitos relevantes: [beach-211062]
+Conceitos recuperados: [beach-211062]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Beach109217230]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: BOUNDARYSOURCE
+Conceitos relevantes: [boundary-29602, source-169200]
+Conceitos recuperados: [source-169200]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Beginning108507558]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: BUILDCOUNT
+Conceitos relevantes: [count-209422]
+Conceitos recuperados: [count-209422]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Count109969218]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: BYLAW
+Conceitos relevantes: [bylaw-221172]
+Conceitos recuperados: [bylaw-221172]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Bylaw106537951]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CAPACITY
+Conceitos relevantes: [capacity-219605, capacity-219606, capacity-219607, capacity-219608, capacity-219609]
+Conceitos recuperados: [capacity-219606, capacity-219605, capacity-219608, capacity-219607, capacity-219609]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Capacity100914795, http://dbpedia.org/class/yago/Capacity113755053, http://dbpedia.org/class/yago/Capacity100720951, http://dbpedia.org/class/yago/Capacity105033569, http://dbpedia.org/class/yago/Capacity105203397]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CASE_OFFICER
+Conceitos relevantes: [case officer-206362]
+Conceitos recuperados: [case officer-206362]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/CaseOfficer109899134]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CATCHMENT
+Conceitos relevantes: [catchment-199323]
+Conceitos recuperados: [catchment-199323]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Catchment102983357]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CATEGORY
+Conceitos relevantes: [category-179343]
+Conceitos recuperados: [category-179343]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Class107997703]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CHANGE
+Conceitos relevantes: [change-8552]
+Conceitos recuperados: [hard cash-181238]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CLASSIFICATION
+Conceitos relevantes: [compartmentalization-169276]
+Conceitos recuperados: [compartmentalization-169276]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Categorization101012712]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CODE
+Conceitos relevantes: [code-165837]
+Conceitos recuperados: [code-165837]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Code106667317]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: COMMENT
+Conceitos relevantes: [comment-193646, comment-193647, comment-193648]
+Conceitos recuperados: [comment-193647, comment-193648, comment-193646]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Remark106765044, http://dbpedia.org/class/yago/Gossip107223170, http://dbpedia.org/class/yago/Comment106762711]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: COMMODITY_PRODUCED
+Conceitos relevantes: [commodity-216684]
+Conceitos recuperados: [commodity-216684]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Commodity103076708]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: CONFIRMATION_DATE
+Conceitos relevantes: [confirmation-219688, confirmation-219689, confirmation-219690, date-172862]
+Conceitos recuperados: [date-172862]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Date115159583]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Atributo: COST
+Conceitos relevantes: [cost-20173, cost-166116, cost-166117, cost-166118]
+Conceitos recuperados: [cost-20173, cost-166116, cost-166117, cost-166118]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Price105163807, http://dbpedia.org/class/yago/Costs, http://dbpedia.org/class/yago/MonetaryValue105145118, http://dbpedia.org/class/yago/Cost113275847]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: COUNTY
+Conceitos relevantes: [county-209848]
+Conceitos recuperados: [county-209848]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/County108546183]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: COVERAGE
+Conceitos relevantes: [coverage-180255]
+Conceitos recuperados: [coverage-180255]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Coverage105123760]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: DATE_DATA_REFRESHED
+Conceitos relevantes: [date-172862, data-172860]
+Conceitos recuperados: [date-172862]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Date115159583]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: DEPTH
+Conceitos relevantes: [depth-186993]
+Conceitos recuperados: [depth-186993]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Depth105134547]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: DESCRIPTION
+Conceitos relevantes: [description-75532, description-200270, description-200271, description-200272]
+Conceitos recuperados: [description-200272, description-200270, description-200271, description-75532]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Description107201365, http://dbpedia.org/class/yago/Description106724763, http://dbpedia.org/class/yago/Description105840076, http://dbpedia.org/class/yago/LogoDescriptions]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: DISPLAY
+Conceitos relevantes: [display-210874, display-210875, display-210876, display-210877]
+Conceitos recuperados: [display-210875, display-210876, display-210877, display-210874]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Display106887726, http://dbpedia.org/class/yago/Display107213717, http://dbpedia.org/class/yago/Display106879521, http://dbpedia.org/class/yago/Display103210940]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: EDENMONENTITY
+Conceitos relevantes: [Mon-192511, Mon-192512, entity-213433]
+Conceitos recuperados: [entity-213433]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Entity100001740]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Atributo: FEATURE
+Conceitos relevantes: [characteristic-209671]
+Conceitos recuperados: [characteristic-209671]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Feature105849789]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: FINISH_DAT
+Conceitos relevantes: [finish-218972, finish-218973, finish-218974, DAT-189306]
+Conceitos recuperados: [DAT-189306, finish-218974, finish-218973, finish-218972]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Finish107333162, http://dbpedia.org/class/yago/Finish105717747, http://dbpedia.org/class/yago/DigitalAudiotape103195959, http://dbpedia.org/class/yago/Finish107353376]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: FURTHER_INFO_PUBLIC
+Conceitos relevantes: [info-207617, public-138404, public-199666]
+Conceitos recuperados: [info-207617, public-199666, public-138404]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/MinistreFran%C3%A7aisDesTravauxPublics, http://dbpedia.org/class/yago/Information106634376, http://dbpedia.org/class/yago/Public107965817]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: GROUNDWATER_DEPENDENT
+Conceitos relevantes: [solid ground-173137, water-174706, dependent-165802]
+Conceitos recuperados: [dependent-165802]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Dependant110004804]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Atributo: HABITAT_SPECIES
+Conceitos relevantes: [habitat-188116, species-194057, species-194058]
+Conceitos recuperados: [habitat-188116]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Habitat108580583]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Atributo: HIGH_SCHOOL_CLUSTER
+Conceitos relevantes: [high-227586, high-227587, high-227588, high-227589, school-183471, cluster-173047]
+Conceitos recuperados: [cluster-173047]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Bunch107959943]
+
+Precisão: 1.0
+Cobertura: 0.16666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Atributo: HOUSING_MARKET_AREA
+Conceitos relevantes: [housing-212986, market-166672, market-166674, market-166676, area-223653]
+Conceitos recuperados: [market-166672, market-166674, market-166676]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Marketplace103722288, http://dbpedia.org/class/yago/GroceryStore103461385, http://dbpedia.org/class/yago/Market101097292]
+
+Precisão: 1.0
+Cobertura: 0.6
+---------------------------------------------------
+---------------------------------------------------
+Atributo: HYPERLINK
+Conceitos relevantes: [hyperlink-183361]
+Conceitos recuperados: [hyperlink-183361]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Hyperlink106586672]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: INSPECTION_MONTH
+Conceitos relevantes: [month-4974, month-83165, month-224710]
+Conceitos recuperados: [month-83165, month-224710, month-4974]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/BlackMonths, http://dbpedia.org/class/yago/Months, http://dbpedia.org/class/yago/Month115206296]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: INTERIOR
+Conceitos relevantes: [interior-198367, interior-198368]
+Conceitos recuperados: [interior-198367, interior-198368]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Inside108588294, http://dbpedia.org/class/yago/Inside108588152]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: LABEL
+Conceitos relevantes: [label-217536]
+Conceitos recuperados: [label-217536]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Label107202579]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: LATITUDE
+Conceitos relevantes: [latitude-223723, latitude-223724, latitude-223725]
+Conceitos recuperados: [latitude-223725, latitude-223724, latitude-223723]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Latitude105127640, http://dbpedia.org/class/yago/Latitude113995148, http://dbpedia.org/class/yago/Latitude108595531]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: LICENCESTATUSDESCRIPTION
+Conceitos relevantes: [status-187185, description-75532, description-200270, description-200271, description-200272]
+Conceitos recuperados: [description-200272, description-200270, description-200271, description-75532, status-187185]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Description107201365, http://dbpedia.org/class/yago/Description106724763, http://dbpedia.org/class/yago/Description105840076, http://dbpedia.org/class/yago/LogoDescriptions, http://dbpedia.org/class/yago/Condition113920835]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: LOCALPLAN_REFERENCE
+Conceitos relevantes: [reference-118412, reference-224617]
+Conceitos recuperados: [reference-118412, reference-224617]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/MediaWikiReferences, http://dbpedia.org/class/yago/Reference105923314]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: LOCATION
+Conceitos relevantes: [location-214539]
+Conceitos recuperados: [location-214539]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Location100027167]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: MARINEWATER_DEPENDENT
+Conceitos relevantes: [marine-56514, water-174706, dependent-165802]
+Conceitos recuperados: [dependent-165802]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Dependant110004804]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Atributo: NATIONAL_PARK
+Conceitos relevantes: [national park-208814]
+Conceitos recuperados: [national park-208814]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/NationalPark108600992]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: NUMBER_OF_TURBINES
+Conceitos relevantes: [figure-188086]
+Conceitos recuperados: [figure-188086]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Number105121418]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: OFFICIAL_GRID_REFERENCE
+Conceitos relevantes: [official-199413, grid-229320, grid-229321, reference-118412, reference-224617]
+Conceitos recuperados: [official-199413]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Official110372373]
+
+Precisão: 1.0
+Cobertura: 0.2
+---------------------------------------------------
+---------------------------------------------------
+Atributo: OPERATOR
+Conceitos relevantes: [operator-207230]
+Conceitos recuperados: [operator-207230]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Operator113786413]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: PERIMETER
+Conceitos relevantes: [perimeter-205080, perimeter-205081]
+Conceitos recuperados: [perimeter-205080, perimeter-205081]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Perimeter113871452, http://dbpedia.org/class/yago/Circumference105101261]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: POLICY_TYPE
+Conceitos relevantes: [policy-190409, type-198373]
+Conceitos recuperados: [type-198373]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Type105840188]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: PREVIOUS_MINERAL_WORKINGS
+Conceitos relevantes: [workings-186316, mineral-230367]
+Conceitos recuperados: [mineral-230367]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Mineral114662574]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: PROCESSINGSTATUS
+Conceitos relevantes: [processing-223471, status-187185]
+Conceitos recuperados: [processing-223471, status-187185]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Processing113541167, http://dbpedia.org/class/yago/Condition113920835]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: PROPOSAL
+Conceitos relevantes: [proposal-212886]
+Conceitos recuperados: [proposal-212886]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Proposal107162194]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: PUBLIC_FURTHER_INFO
+Conceitos relevantes: [public-138404, public-199666, info-207617]
+Conceitos recuperados: [info-207617, public-199666, public-138404]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/MinistreFran%C3%A7aisDesTravauxPublics, http://dbpedia.org/class/yago/Information106634376, http://dbpedia.org/class/yago/Public107965817]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: RAIL_ROAD_VISIBILITY
+Conceitos relevantes: [rail-212960, rail-212961, rail-212962, route-198722, visibility-190750, visibility-190751]
+Conceitos recuperados: [route-198722]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Road104096066]
+
+Precisão: 1.0
+Cobertura: 0.16666666666666666
+---------------------------------------------------
+---------------------------------------------------
+Atributo: RECOMMENDED_USAGE
+Conceitos relevantes: [usage-192268, usage-192269]
+Conceitos recuperados: [usage-192268, usage-192269]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Custom100413239, http://dbpedia.org/class/yago/Usage106283459]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: RECORD_STATUS
+Conceitos relevantes: [record-218243, status-187185]
+Conceitos recuperados: [record-218243]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Record106647206]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: REFERENCE
+Conceitos relevantes: [reference-118412, reference-224617]
+Conceitos recuperados: [reference-118412, reference-224617]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/MediaWikiReferences, http://dbpedia.org/class/yago/Reference105923314]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: REGION
+Conceitos relevantes: [region-174272]
+Conceitos recuperados: [region-174272]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Region108630039]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: REMARK
+Conceitos relevantes: [remark-215224]
+Conceitos recuperados: [remark-215224]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Remark105710573]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: REVIEW_DATE
+Conceitos relevantes: [review-82926, date-172862, revaluation-189356]
+Conceitos recuperados: [revaluation-189356]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Reappraisal105747582]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Atributo: RINGS_NOK
+Conceitos relevantes: [rings-168248]
+Conceitos recuperados: [rings-168248]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Rings104093223]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SALINITY
+Conceitos relevantes: [salinity-177433, salinity-177434]
+Conceitos recuperados: [salinity-177434, salinity-177433]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Salt105717342, http://dbpedia.org/class/yago/Brininess104993604]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SCALE
+Conceitos relevantes: [scale of measurement-199773]
+Conceitos recuperados: [scale of measurement-199773]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Scale113850304]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SCHOOL_NAME
+Conceitos relevantes: [school-183471, name-167624, name-167625, name-167626, name-167627, name-167628, name-167629]
+Conceitos recuperados: [name-167629, name-167628, name-167625, name-167624, name-167627, name-167626]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Name114438788, http://dbpedia.org/class/yago/Name106720964, http://dbpedia.org/class/yago/Name106333653, http://dbpedia.org/class/yago/Name101139636, http://dbpedia.org/class/yago/Name107972279, http://dbpedia.org/class/yago/Name110344443]
+
+Precisão: 1.0
+Cobertura: 0.8571428571428571
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SETTLEMENT
+Conceitos relevantes: [administrative division-181954]
+Conceitos recuperados: [village-185002]
+Conceitos relevantes recuperados: []
+
+Precisão: 0.0
+Cobertura: 0.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SHAPE
+Conceitos relevantes: [shape-176098]
+Conceitos recuperados: [shape-176098]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Shape105064037]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SITE_CAPACITY
+Conceitos relevantes: [land site-202900, capacity-219605, capacity-219606, capacity-219607, capacity-219608, capacity-219609]
+Conceitos recuperados: [capacity-219606, capacity-219605, capacity-219608, capacity-219607, capacity-219609]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Capacity100914795, http://dbpedia.org/class/yago/Capacity113755053, http://dbpedia.org/class/yago/Capacity100720951, http://dbpedia.org/class/yago/Capacity105033569, http://dbpedia.org/class/yago/Capacity105203397]
+
+Precisão: 1.0
+Cobertura: 0.8333333333333334
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SITE_CHARACTERISTICS
+Conceitos relevantes: [land site-202900]
+Conceitos recuperados: [land site-202900]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Site108651247]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SIZE
+Conceitos relevantes: [size-217870, size-217871, size-217872, size-217873]
+Conceitos recuperados: [size-217870, size-217871, size-217872, size-217873]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Size105099231, http://dbpedia.org/class/yago/Size113937727, http://dbpedia.org/class/yago/Size105095691, http://dbpedia.org/class/yago/Size105098942]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SOIL_GROUP
+Conceitos relevantes: [group-195516]
+Conceitos recuperados: [group-195516]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Group100031264]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SOURCE
+Conceitos relevantes: [source-169200]
+Conceitos recuperados: [source-169200]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Beginning108507558]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SPECIES
+Conceitos relevantes: [species-194057, species-194058]
+Conceitos recuperados: [species-194058, species-194057]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Species108110373, http://dbpedia.org/class/yago/Species105844881]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: START_DATE
+Conceitos relevantes: [start-220758, start-220759, start-220760, date-172862]
+Conceitos recuperados: [date-172862]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Date115159583]
+
+Precisão: 1.0
+Cobertura: 0.25
+---------------------------------------------------
+---------------------------------------------------
+Atributo: STATIONPOSITION
+Conceitos relevantes: [station-224176, position-175300]
+Conceitos recuperados: [station-224176]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Station104306080]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: STATUS
+Conceitos relevantes: [status-187185]
+Conceitos recuperados: [status-187185]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Condition113920835]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: STRUCTURE
+Conceitos relevantes: [structure-193013]
+Conceitos recuperados: [structure-193013]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Structure104341686]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: STYLE
+Conceitos relevantes: [mode-174508]
+Conceitos recuperados: [mode-174508]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Manner104928903]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SUBCLASS
+Conceitos relevantes: [subclass-177010]
+Conceitos recuperados: [subclass-177010]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Subclass108106661]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SUBSITEPREFIX
+Conceitos relevantes: [prefix-7346, prefix-11464, prefix-211356]
+Conceitos recuperados: [prefix-211356, prefix-7346, prefix-11464]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Prefixes, http://dbpedia.org/class/yago/Prefix106308304, http://dbpedia.org/class/yago/SIPrefixes]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SURFACEWATER_DEPENDENT
+Conceitos relevantes: [surface-229948, water-174706, dependent-165802]
+Conceitos recuperados: [dependent-165802]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Dependant110004804]
+
+Precisão: 1.0
+Cobertura: 0.3333333333333333
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SURROUNDING_USE_1
+Conceitos relevantes: [use-204187, use-204188]
+Conceitos recuperados: [use-204187, use-204188]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Habit100414179, http://dbpedia.org/class/yago/Use105149978]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SURVEY
+Conceitos relevantes: [survey-41630, survey-167866, survey-167867]
+Conceitos recuperados: [survey-41630, survey-167866, survey-167867]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/AstronomicalSurveys, http://dbpedia.org/class/yago/Sketch106469694, http://dbpedia.org/class/yago/Survey100644503]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: SYSTEM
+Conceitos relevantes: [system-229337]
+Conceitos recuperados: [system-229337]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/System104377057]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: TIME_LIMIT
+Conceitos relevantes: [time limit-228571]
+Conceitos recuperados: [time limit-228571]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/TimeLimit115224156]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: TREE_NUMBER
+Conceitos relevantes: [tree-197323, figure-188086]
+Conceitos recuperados: [figure-188086]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Number105121418]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: TYPE
+Conceitos relevantes: [type-198373]
+Conceitos recuperados: [type-198373]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Type105840188]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: URL
+Conceitos relevantes: [URL-195145]
+Conceitos recuperados: [URL-195145]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/URL106358747]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: VERSION
+Conceitos relevantes: [version-219800, version-219801]
+Conceitos recuperados: [version-219801, version-219800]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Version101267901, http://dbpedia.org/class/yago/Version107173585]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: VOLUME
+Conceitos relevantes: [volume-222604, volume-222605, volume-222606]
+Conceitos recuperados: [volume-222604, volume-222605, volume-222606]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Volume113779032, http://dbpedia.org/class/yago/Volume106413666, http://dbpedia.org/class/yago/Volume113779244]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: WARD
+Conceitos relevantes: [ward-176925]
+Conceitos recuperados: [ward-176925]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Ward110767020]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: WATER_DEPENDANCY
+Conceitos relevantes: [water-174706]
+Conceitos recuperados: [water-174706]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Water114845743]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: WATERTYPE
+Conceitos relevantes: [water-174706, type-198373]
+Conceitos recuperados: [type-198373]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Type105840188]
+
+Precisão: 1.0
+Cobertura: 0.5
+---------------------------------------------------
+---------------------------------------------------
+Atributo: WISEREFERENCEDATA
+Conceitos relevantes: [wise-179944, reference-118412, reference-224617, data-172860]
+Conceitos recuperados: [reference-118412, data-172860, reference-224617, wise-179944]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Wise104931733, http://dbpedia.org/class/yago/MediaWikiReferences, http://dbpedia.org/class/yago/Data108462320, http://dbpedia.org/class/yago/Reference105923314]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: YEAR_REVIEWED
+Conceitos relevantes: [year-35935, year-122281, year-224952, year-224953]
+Conceitos recuperados: [year-224952, year-224953, year-35935, year-122281]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Year115201505, http://dbpedia.org/class/yago/EducationalYears, http://dbpedia.org/class/yago/Years, http://dbpedia.org/class/yago/Year115204297]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+---------------------------------------------------
+Atributo: ZONE_DOCS
+Conceitos relevantes: [zone-216608]
+Conceitos recuperados: [zone-216608]
+Conceitos relevantes recuperados: [http://dbpedia.org/class/yago/Zone108688247]
+
+Precisão: 1.0
+Cobertura: 1.0
+---------------------------------------------------
+Precisão: 0.9884393063583815
+Cobertura: 0.7633928571428571
+Percentual anotado: 1.00

@@ -1,0 +1,170 @@
+BAG OF WORDS = GeoServ includ support waterbody ope Coastal WFD EPA Transact COASTALWATERBODIES Web Thi implementation Servic featur WFS FeaturCoastal waterbodies
+
+CLASS: Water body
+Similaridade: 0.01957400731715672
+
+CLASS: Body of water
+Similaridade: 0.01957400731715672
+
+CLASS: Waterbodies
+Similaridade: 0.0222717701593687
+
+CLASS: Waterbody
+Similaridade: 0.01957400731715672
+
+CLASS: List of waterbodies in Schleswig-Holstein
+Similaridade: 0.013301448074460414
+
+CATEGORY: Bodies of water
+Similaridade: 0.019506857866021732
+
+CATEGORY: Waterbodies in Schleswig-Holstein
+Similaridade: 0.0
+
+CATEGORY: Geography of Schleswig-Holstein
+Similaridade: 0.0
+
+CATEGORY: Rivers of Schleswig-Holstein
+Similaridade: 0.0
+
+CLASS: Body of water
+Similaridade: 0.01957400731715672
+
+CLASS: Waterbody
+Similaridade: 0.019557154961628603
+
+CATEGORY: Bodies of water
+Similaridade: 0.019557154961628603
+
+CLASS: Ecology
+Similaridade: 0.025556297336402082
+
+CLASS: Marsh
+Similaridade: 0.03966427448724858
+
+CLASS: Trade
+Similaridade: 0.04245934730606582
+
+CLASS: Dune
+Similaridade: 0.031463346728793376
+
+CLASS: Steamboat
+Similaridade: 0.02569276733242549
+
+CATEGORY: Trade
+Similaridade: 0.04250158841812644
+
+CATEGORY: Coastal geography
+Similaridade: 0.03553345272593499
+
+CATEGORY: Marshes
+Similaridade: 0.03966427448724858
+
+CATEGORY: Fluvial landforms
+Similaridade: 0.02564102564102567
+
+CATEGORY: Greek loanwords
+Similaridade: 0.008385910090443859
+
+CATEGORY: Coastal and oceanic landforms
+Similaridade: 0.0
+
+CATEGORY: Philosophy of biology
+Similaridade: 0.030970589426965338
+
+CATEGORY: Ecology
+Similaridade: 0.025547104974494653
+
+CATEGORY: Aeolian landforms
+Similaridade: 0.0
+
+CATEGORY: Steamboats
+Similaridade: 0.02576019448896592
+
+CATEGORY: Ship types
+Similaridade: 0.0
+
+CATEGORY: Dunes
+Similaridade: 0.031485796497420816
+
+CATEGORY: Sedimentology
+Similaridade: 0.019506857866021694
+
+CATEGORY: Steamships
+Similaridade: 0.03288904324849389
+
+CATEGORY: Pedology
+Similaridade: 0.0502518907629606
+
+CATEGORY: Boat types
+Similaridade: 0.0
+
+CATEGORY: Biology
+Similaridade: 0.02076752504515533
+
+CLASS: Ecology
+Similaridade: 0.025547104974494653
+
+CLASS: Marsh
+Similaridade: 0.03966427448724858
+
+CLASS: Trade
+Similaridade: 0.04250158841812644
+
+CLASS: Dune
+Similaridade: 0.03149703941743536
+
+CLASS: Steamboat
+Similaridade: 0.025711104030845276
+
+CATEGORY: Trade
+Similaridade: 0.04250158841812644
+
+CATEGORY: Coastal geography
+Similaridade: 0.03544406025041672
+
+CATEGORY: Marshes
+Similaridade: 0.03973466367214334
+
+CATEGORY: Fluvial landforms
+Similaridade: 0.025717224993681936
+
+CATEGORY: Greek loanwords
+Similaridade: 0.008380607585904552
+
+CATEGORY: Coastal and oceanic landforms
+Similaridade: 0.0
+
+CATEGORY: Philosophy of biology
+Similaridade: 0.030992000137733428
+
+CATEGORY: Ecology
+Similaridade: 0.0255318063893909
+
+CATEGORY: Aeolian landforms
+Similaridade: 0.0
+
+CATEGORY: Steamboats
+Similaridade: 0.025747895517394023
+
+CATEGORY: Ship types
+Similaridade: 0.0
+
+CATEGORY: Dunes
+Similaridade: 0.031463346728793376
+
+CATEGORY: Sedimentology
+Similaridade: 0.019440394783993512
+
+CATEGORY: Steamships
+Similaridade: 0.032825193366398324
+
+CATEGORY: Pedology
+Similaridade: 0.0502518907629606
+
+CATEGORY: Boat types
+Similaridade: 0.0
+
+CATEGORY: Biology
+Similaridade: 0.02077256509499185
+

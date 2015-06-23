@@ -1,0 +1,85 @@
+TITULO;PRECISAO;COBERTURA
+Allotment Locations;1.0;0.33
+Community Council Boundaries;1.0;0.66
+Conservation Areas;1.0;1.0
+Core Path Network;1.0;1.0
+Defined Policy Areas;1.0;0.33
+Development Proposals Area;1.0;0.5
+Development Proposals Line;1.0;0.5
+Employment Land Audit;1.0;0.75
+Fife Common Good Land;0.66;0.66
+Fife Primary School Catchments;1.0;0.5
+Fife RC Primary School Catchments;1.0;0.4
+Fife RC Secondary School Catchments;0.25;0.4
+Fife Secondary School Catchments;0.33;0.5
+Housing Land Audit 2014;1.0;0.5
+Listed Buildings;1.0;1.0
+Local Landscape Areas;1.0;0.5
+Natural Heritage Sites;0.6;0.375
+Polling Districts;1.0;0.125
+Polling Places;1.0;0.17
+Tree Preservation Order Areas;1.0;1.0
+Tree Preservation Order Points;1.0;1.0
+Vacant And Derelict Land;1.0;0.33
+Wind Turbines;0.66;1.0
+Windfarm Broad Area Of Search;1.0;1.0
+AIR EMEP Monitoring Sites;1.0;0.37
+Air Monitoring Sites;1.0;0.37
+Air Zones;1.0;0.33
+Bathing Water Quality;1.0;0.4
+Coal Restricted Areas;1.0;1.0
+Coastal waterbodies;0.0;0.0
+EPA Offices;1.0;0.66
+Geological Linear Features;1.0;1.0
+Ground waterbodies;1.0;0.25
+Historical Groundwater Quality;1.0;1.0
+Large Towns;1.0;0.5
+Licenced IPPC Facilities;0.0;0.0
+Licenced Waste Facilities;1.0;0.75
+Linear Mine Features;1.0;1.0
+Linear Waste Features;1.0;0.25
+Medium Towns;1.0;1.0
+Mine District;1.0;1.0
+Mine Site Boundaries;1.0;0.66
+Mine Site Location;1.0;1.0
+Other Waste Areas;1.0;1.0
+Point Mine Features;1.0;1.0
+Point Waste Features;1.0;0.25
+Radiation Monitoring;1.0;0.2
+Radon Map;1.0;1.0
+River Basin District;1.0;1.0
+River Catchments;1.0;0.5
+River Sub Basins;1.0;1.0
+SAC CO Habitats;1.0;0.17
+SAC CO Species;1.0;1.0
+SPA CO Habitats;1.0;0.2
+Site Features;1.0;1.0
+Small Towns;1.0;0.33
+Solid Waste Analyses;0.72;0.66
+Solid Waste Heaps;1.0;0.25
+Stream Sediment Analyses;0.31;0.66
+Subsoils;1.0;1.0
+Transitional waterbodies;1.0;0.25
+Water Analyses (Summer);0.0;0.0
+Water Analyses (Winter);0.78;0.85
+Water Areas;1.0;1.0
+Water Management Units;1.0;0.5
+Zone of Subsidence;1.0;0.25
+Napier City Council Election Wards;0.25;0.28
+NapierCityCouncil1mContours;0.0;0.0
+NapierCityCouncilAddressPoints;1.0;0.43
+NapierCityCouncilCadastralParcels;1.0;0.43
+NapierCityCouncilCarParks;1.0;0.5
+NapierCityCouncilDogExerciseAreas;1.0;0.27
+NapierCityCouncilHeritageBuildingDatabase;0.14;0.33
+NapierCityCouncilLeasedParking;1.0;0.33
+NapierCityCouncilLiquorBan;1.0;0.2
+NapierCityCouncilMobilityParks;1.0;0.375
+NapierCityCouncilMotorcycleParks;1.0;0.5
+NapierCityCouncilOnStreetParks;1.0;0.5
+NapierCityCouncilOperativePlanZones;1.0;0.33
+NapierCityCouncilPayandDisplayCarparks;1.0;0.54
+NapierCityCouncilSubdivisionApplications;1.0;0.5
+NapierCityCouncilTitleParcels;1.0;0.69
+ne_50m_boundary_lines_land;1.0;0.5
+ne_50m_coastline;1.0;1.0

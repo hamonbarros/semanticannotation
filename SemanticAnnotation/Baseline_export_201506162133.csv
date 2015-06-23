@@ -1,0 +1,428 @@
+TITULO,NOME_CONCEITO,CONCEITO
+Allotment Locations,allotment,http://dbpedia.org/class/yago/Allotment113289467
+Allotment Locations,allotment,http://dbpedia.org/class/yago/Allotment101083645
+Allotment Locations,location,http://dbpedia.org/class/yago/Location100027167
+Community Council Boundaries,community,http://dbpedia.org/class/yago/Community108223802
+Community Council Boundaries,council,http://dbpedia.org/class/yago/Council108310949
+Community Council Boundaries,boundary,http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries
+Conservation Areas,conservation,http://dbpedia.org/class/yago/Conservation100819274
+Conservation Areas,conservation,http://dbpedia.org/class/yago/Conservation106104073
+Core Path Network,midpoint,http://dbpedia.org/class/yago/Center108521816
+Core Path Network,way,http://dbpedia.org/class/yago/Way100415676
+Core Path Network,web,http://dbpedia.org/class/yago/Network108434259
+Defined Policy Areas,policy,http://dbpedia.org/class/yago/Policy105901508
+Defined Policy Areas,federal agency,http://dbpedia.org/class/yago/Agency108337324
+Defined Policy Areas,intelligence,http://dbpedia.org/class/yago/Intelligence108339454
+Development Proposals Area,development,http://dbpedia.org/class/yago/Development100250259
+Development Proposals Area,proposal,http://dbpedia.org/class/yago/Proposal107162194
+Development Proposals Line,development,http://dbpedia.org/class/yago/Development100250259
+Development Proposals Line,proposal,http://dbpedia.org/class/yago/Proposal107162194
+Employment Land Audit,land,http://dbpedia.org/class/yago/Land113250048
+Employment Land Audit,audit,http://dbpedia.org/class/yago/Audit100141176
+Employment Land Audit,organ,http://dbpedia.org/class/yago/Organ105297523
+Employment Land Audit,organ,http://dbpedia.org/class/yago/Organ103854065
+Fife Common Good Land,organization,http://dbpedia.org/class/yago/Organization108008335
+Fife Common Good Land,property,http://dbpedia.org/class/yago/Property113244109
+Fife Common Good Land,fife,http://dbpedia.org/class/yago/Fife103334492
+Fife Common Good Land,good,http://dbpedia.org/class/yago/Good105159725
+Fife Common Good Land,land,http://dbpedia.org/class/yago/Land113250048
+Fife Common Good Land,work,http://dbpedia.org/class/yago/Oeuvre103841417
+Fife Primary School Catchments,fife,http://dbpedia.org/class/yago/Fife103334492
+Fife Primary School Catchments,primary,http://dbpedia.org/class/yago/Primary109398769
+Fife Primary School Catchments,school,http://dbpedia.org/class/yago/School108276720
+Fife Primary School Catchments,catchment,http://dbpedia.org/class/yago/Catchment102983357
+Fife Primary School Catchments,primary election,http://dbpedia.org/class/yago/Primary100182571
+Fife Primary School Catchments,area,http://dbpedia.org/class/yago/Area108497294
+Fife RC Primary School Catchments,fife,http://dbpedia.org/class/yago/Fife103334492
+Fife RC Primary School Catchments,primary,http://dbpedia.org/class/yago/Primary109398769
+Fife RC Primary School Catchments,school,http://dbpedia.org/class/yago/School108276720
+Fife RC Primary School Catchments,catchment,http://dbpedia.org/class/yago/Catchment102983357
+Fife RC Primary School Catchments,primary election,http://dbpedia.org/class/yago/Primary100182571
+Fife RC Secondary School Catchments,fife,http://dbpedia.org/class/yago/Fife103334492
+Fife RC Secondary School Catchments,secondary,http://dbpedia.org/class/yago/Secondary108429899
+Fife RC Secondary School Catchments,school,http://dbpedia.org/class/yago/School108276720
+Fife RC Secondary School Catchments,catchment,http://dbpedia.org/class/yago/Catchment102983357
+Fife RC Secondary School Catchments,teacher,http://dbpedia.org/class/yago/Teacher110694258
+Fife Secondary School Catchments,fife,http://dbpedia.org/class/yago/Fife103334492
+Fife Secondary School Catchments,secondary,http://dbpedia.org/class/yago/Secondary108429899
+Fife Secondary School Catchments,school,http://dbpedia.org/class/yago/School108276720
+Fife Secondary School Catchments,catchment,http://dbpedia.org/class/yago/Catchment102983357
+Fife Secondary School Catchments,teacher,http://dbpedia.org/class/yago/Teacher110694258
+Fife Secondary School Catchments,area,http://dbpedia.org/class/yago/Area108497294
+Housing Land Audit 2014,housing,http://dbpedia.org/class/yago/Housing103546766
+Housing Land Audit 2014,land,http://dbpedia.org/class/yago/Land113250048
+Housing Land Audit 2014,audit,http://dbpedia.org/class/yago/Audit100141176
+Housing Land Audit 2014,entity,http://dbpedia.org/class/yago/Entity100001740
+Listed Buildings,edifice,http://dbpedia.org/class/yago/Building102913152
+Local Landscape Areas,local,http://dbpedia.org/class/yago/Local103680942
+Local Landscape Areas,landscape,http://dbpedia.org/class/yago/Landscape108646902
+Natural Heritage Sites,natural,http://dbpedia.org/class/yago/Natural110346392
+Natural Heritage Sites,natural,http://dbpedia.org/class/yago/Natural106867218
+Natural Heritage Sites,natural,http://dbpedia.org/class/yago/Natural101245950
+Natural Heritage Sites,heritage,http://dbpedia.org/class/yago/Heritage105669797
+Natural Heritage Sites,land site,http://dbpedia.org/class/yago/Site108651247
+Natural Heritage Sites,group,http://dbpedia.org/class/yago/Group100031264
+Natural Heritage Sites,organization,http://dbpedia.org/class/yago/Organization108008335
+Natural Heritage Sites,social group,http://dbpedia.org/class/yago/SocialGroup107950920
+Polling Districts,poll,http://dbpedia.org/class/yago/Poll105539012
+Polling Districts,poll,http://dbpedia.org/class/yago/Poll100653811
+Polling Districts,territory,http://dbpedia.org/class/yago/District108552138
+Polling Districts,election,http://dbpedia.org/class/yago/Elections
+Polling Districts,election,http://dbpedia.org/class/yago/Election100181781
+Polling Districts,vote,http://dbpedia.org/class/yago/Vote100182213
+Polling Districts,voting system,http://dbpedia.org/class/yago/VotingSystem105904135
+Polling Districts,legal system,http://dbpedia.org/class/yago/LegalSystem105903229
+Polling Places,poll,http://dbpedia.org/class/yago/Poll105539012
+Polling Places,poll,http://dbpedia.org/class/yago/Poll100653811
+Polling Places,land site,http://dbpedia.org/class/yago/Site108651247
+Polling Places,election,http://dbpedia.org/class/yago/Elections
+Polling Places,election,http://dbpedia.org/class/yago/Election100181781
+Polling Places,vote,http://dbpedia.org/class/yago/Vote100182213
+Tree Preservation Order Areas,tree,http://dbpedia.org/class/yago/Tree113104059
+Tree Preservation Order Areas,preservation,http://dbpedia.org/class/yago/Preservation114578940
+Tree Preservation Order Areas,preservation,http://dbpedia.org/class/yago/Preservation113540610
+Tree Preservation Order Areas,order,http://dbpedia.org/class/yago/Order107168623
+Tree Preservation Order Points,tree,http://dbpedia.org/class/yago/Tree113104059
+Tree Preservation Order Points,preservation,http://dbpedia.org/class/yago/Preservation114578940
+Tree Preservation Order Points,preservation,http://dbpedia.org/class/yago/Preservation113540610
+Tree Preservation Order Points,order,http://dbpedia.org/class/yago/Order107168623
+Vacant And Derelict Land,derelict,http://dbpedia.org/class/yago/Derelict110006081
+Vacant And Derelict Land,derelict,http://dbpedia.org/class/yago/AbandonedShip102666501
+Vacant And Derelict Land,land,http://dbpedia.org/class/yago/Land113250048
+Wind Turbines,rotary engine,http://dbpedia.org/class/yago/RotaryEngine104110654
+Wind Turbines,turbine,http://dbpedia.org/class/yago/WindTurbines
+Wind Turbines,wind turbine,http://dbpedia.org/class/yago/WindTurbine104591517
+Wind Turbines,device,http://dbpedia.org/class/yago/Device103183080
+Wind Turbines,heat engine,http://dbpedia.org/class/yago/HeatEngine103507963
+Wind Turbines,instrumentality,http://dbpedia.org/class/yago/Instrumentality103575240
+Wind Turbines,machine,http://dbpedia.org/class/yago/Machine103699975
+Wind Turbines,engine,http://dbpedia.org/class/yago/Engine103287733
+Wind Turbines,motor,http://dbpedia.org/class/yago/Motor103789946
+Wind Turbines,turbine,http://dbpedia.org/class/yago/Turbine104498523
+Windfarm Broad Area Of Search,broad,http://dbpedia.org/class/yago/NorfolkBroads
+Windfarm Broad Area Of Search,broad,http://dbpedia.org/class/yago/Broad109875663
+Windfarm Broad Area Of Search,search,http://dbpedia.org/class/yago/Search100637354
+Windfarm Broad Area Of Search,search,http://dbpedia.org/class/yago/Search105770058
+Windfarm Broad Area Of Search,search,http://dbpedia.org/class/yago/Search100644366
+AIR EMEP Monitoring Sites,air,http://dbpedia.org/class/yago/Air114841267
+AIR EMEP Monitoring Sites,air,http://dbpedia.org/class/yago/Air108653314
+AIR EMEP Monitoring Sites,air,http://dbpedia.org/class/yago/Air104727214
+AIR EMEP Monitoring Sites,air,http://dbpedia.org/class/yago/Air114842703
+AIR EMEP Monitoring Sites,monitoring,http://dbpedia.org/class/yago/Monitoring100880046
+AIR EMEP Monitoring Sites,land site,http://dbpedia.org/class/yago/Site108651247
+AIR EMEP Monitoring Sites,region,http://dbpedia.org/class/yago/Region108630039
+AIR EMEP Monitoring Sites,monitor,http://dbpedia.org/class/yago/Proctor110478960
+Air Monitoring Sites,air,http://dbpedia.org/class/yago/Air114841267
+Air Monitoring Sites,air,http://dbpedia.org/class/yago/Air108653314
+Air Monitoring Sites,air,http://dbpedia.org/class/yago/Air104727214
+Air Monitoring Sites,air,http://dbpedia.org/class/yago/Air114842703
+Air Monitoring Sites,monitoring,http://dbpedia.org/class/yago/Monitoring100880046
+Air Monitoring Sites,land site,http://dbpedia.org/class/yago/Site108651247
+Air Monitoring Sites,region,http://dbpedia.org/class/yago/Region108630039
+Air Monitoring Sites,monitor,http://dbpedia.org/class/yago/Proctor110478960
+Air Zones,air,http://dbpedia.org/class/yago/Air114841267
+Air Zones,air,http://dbpedia.org/class/yago/Air108653314
+Air Zones,air,http://dbpedia.org/class/yago/Air104727214
+Air Zones,air,http://dbpedia.org/class/yago/Air114842703
+Air Zones,zone,http://dbpedia.org/class/yago/Zone108688247
+Air Zones,region,http://dbpedia.org/class/yago/Region108630039
+Bathing Water Quality,bath,http://dbpedia.org/class/yago/Bath102806530
+Bathing Water Quality,water,http://dbpedia.org/class/yago/Water114845743
+Bathing Water Quality,quality,http://dbpedia.org/class/yago/Quality104723816
+Bathing Water Quality,quality,http://dbpedia.org/class/yago/Quality104728068
+Bathing Water Quality,quality,http://dbpedia.org/class/yago/Quality113948026
+Coal Restricted Areas,coal,http://dbpedia.org/class/yago/Coal114814616
+Coal Restricted Areas,coal,http://dbpedia.org/class/yago/Ember109273130
+Coastal waterbodies,body of water,http://dbpedia.org/class/yago/Middle-earthBodiesOfWater
+Coastal waterbodies,body of water,http://dbpedia.org/class/yago/BodiesOfWater
+Coastal waterbodies,body of water,http://dbpedia.org/class/yago/BodyOfWater109225146
+EPA Offices,EPA,http://dbpedia.org/class/yago/EnvironmentalProtectionAgency108122960
+EPA Offices,office,http://dbpedia.org/class/yago/Office103841666
+EPA Offices,administration,http://dbpedia.org/class/yago/Administration101135952
+Geological Linear Features,characteristic,http://dbpedia.org/class/yago/Feature105849789
+Ground waterbodies,solid ground,http://dbpedia.org/class/yago/Land109334396
+Ground waterbodies,body of water,http://dbpedia.org/class/yago/Middle-earthBodiesOfWater
+Ground waterbodies,body of water,http://dbpedia.org/class/yago/BodiesOfWater
+Ground waterbodies,body of water,http://dbpedia.org/class/yago/BodyOfWater109225146
+Historical Groundwater Quality,quality,http://dbpedia.org/class/yago/Quality104723816
+Historical Groundwater Quality,quality,http://dbpedia.org/class/yago/Quality104728068
+Historical Groundwater Quality,quality,http://dbpedia.org/class/yago/Quality113948026
+Large Towns,large,http://dbpedia.org/class/yago/Large105096191
+Large Towns,town,http://dbpedia.org/class/yago/Town108665504
+Licenced IPPC Facilities,facility,http://dbpedia.org/class/yago/Facility103315023
+Licenced Waste Facilities,waste,http://dbpedia.org/class/yago/Waste114856263
+Licenced Waste Facilities,waste,http://dbpedia.org/class/yago/Barren108504594
+Licenced Waste Facilities,waste,http://dbpedia.org/class/yago/Waste101252124
+Licenced Waste Facilities,facility,http://dbpedia.org/class/yago/Facility103315023
+Linear Mine Features,mine,http://dbpedia.org/class/yago/Mine103768346
+Linear Mine Features,characteristic,http://dbpedia.org/class/yago/Feature105849789
+Linear Waste Features,waste,http://dbpedia.org/class/yago/Waste114856263
+Linear Waste Features,waste,http://dbpedia.org/class/yago/Barren108504594
+Linear Waste Features,waste,http://dbpedia.org/class/yago/Waste101252124
+Linear Waste Features,characteristic,http://dbpedia.org/class/yago/Feature105849789
+Medium Towns,town,http://dbpedia.org/class/yago/Town108665504
+Medium Towns,medium,http://dbpedia.org/class/yago/Medium106254669
+Mine District,mine,http://dbpedia.org/class/yago/Mine103768346
+Mine District,territory,http://dbpedia.org/class/yago/District108552138
+Mine Site Boundaries,mine,http://dbpedia.org/class/yago/Mine103768346
+Mine Site Boundaries,land site,http://dbpedia.org/class/yago/Site108651247
+Mine Site Boundaries,boundary,http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries
+Mine Site Location,mine,http://dbpedia.org/class/yago/Mine103768346
+Mine Site Location,land site,http://dbpedia.org/class/yago/Site108651247
+Mine Site Location,location,http://dbpedia.org/class/yago/Location100027167
+Other Waste Areas,waste,http://dbpedia.org/class/yago/Waste114856263
+Other Waste Areas,waste,http://dbpedia.org/class/yago/Barren108504594
+Other Waste Areas,waste,http://dbpedia.org/class/yago/Waste101252124
+Point Mine Features,mine,http://dbpedia.org/class/yago/Mine103768346
+Point Mine Features,characteristic,http://dbpedia.org/class/yago/Feature105849789
+Point Waste Features,waste,http://dbpedia.org/class/yago/Waste114856263
+Point Waste Features,waste,http://dbpedia.org/class/yago/Barren108504594
+Point Waste Features,waste,http://dbpedia.org/class/yago/Waste101252124
+Point Waste Features,characteristic,http://dbpedia.org/class/yago/Feature105849789
+Radiation Monitoring,radiation,http://dbpedia.org/class/yago/Radiation111499284
+Radiation Monitoring,radiation,http://dbpedia.org/class/yago/Radiation101252918
+Radiation Monitoring,radiation,http://dbpedia.org/class/yago/Radiation107439883
+Radiation Monitoring,radiation,http://dbpedia.org/class/yago/Radiation105503555
+Radiation Monitoring,monitor,http://dbpedia.org/class/yago/Proctor110478960
+Radon Map,map,http://dbpedia.org/class/yago/Map103720163
+River Basin District,river,http://dbpedia.org/class/yago/River109411430
+River Basin District,basin,http://dbpedia.org/class/yago/Basin102801525
+River Basin District,territory,http://dbpedia.org/class/yago/District108552138
+River Catchments,river,http://dbpedia.org/class/yago/River109411430
+River Catchments,catchment,http://dbpedia.org/class/yago/Catchment102983357
+River Sub Basins,river,http://dbpedia.org/class/yago/River109411430
+River Sub Basins,basin,http://dbpedia.org/class/yago/Basin102801525
+SAC CO Habitats - Area,sac,http://dbpedia.org/class/yago/Theca113092722
+SAC CO Habitats - Area,sac,http://dbpedia.org/class/yago/Sac105515670
+SAC CO Habitats - Area,habitat,http://dbpedia.org/class/yago/Habitat108580583
+SAC CO Habitats - Area,Co,http://dbpedia.org/class/yago/Cobalt114635290
+SAC CO Habitats - Area,CO,http://dbpedia.org/class/yago/CarbonMonoxide114797641
+SAC CO Habitats - Area,CO,http://dbpedia.org/class/yago/ConscientiousObjector109957013
+SAC CO Species - Area,sac,http://dbpedia.org/class/yago/Theca113092722
+SAC CO Species - Area,sac,http://dbpedia.org/class/yago/Sac105515670
+SAC CO Species - Area,species,http://dbpedia.org/class/yago/Species108110373
+SAC CO Species - Area,species,http://dbpedia.org/class/yago/Species105844881
+SAC CO Species - Area,Co,http://dbpedia.org/class/yago/Cobalt114635290
+SAC CO Species - Area,CO,http://dbpedia.org/class/yago/CarbonMonoxide114797641
+SAC CO Species - Area,CO,http://dbpedia.org/class/yago/ConscientiousObjector109957013
+SPA CO Habitats - Area,spa,http://dbpedia.org/class/yago/WateringPlace108678615
+SPA CO Habitats - Area,habitat,http://dbpedia.org/class/yago/Habitat108580583
+SPA CO Habitats - Area,Co,http://dbpedia.org/class/yago/Cobalt114635290
+SPA CO Habitats - Area,CO,http://dbpedia.org/class/yago/CarbonMonoxide114797641
+SPA CO Habitats - Area,CO,http://dbpedia.org/class/yago/ConscientiousObjector109957013
+Site Features,land site,http://dbpedia.org/class/yago/Site108651247
+Site Features,characteristic,http://dbpedia.org/class/yago/Feature105849789
+Small Towns,small,http://dbpedia.org/class/yago/Small105559023
+Small Towns,small,http://dbpedia.org/class/yago/Small105097081
+Small Towns,town,http://dbpedia.org/class/yago/Town108665504
+Solid Waste Analyses,solid,http://dbpedia.org/class/yago/Solid115046900
+Solid Waste Analyses,waste,http://dbpedia.org/class/yago/Waste114856263
+Solid Waste Analyses,waste,http://dbpedia.org/class/yago/Barren108504594
+Solid Waste Analyses,waste,http://dbpedia.org/class/yago/Waste101252124
+Solid Waste Analyses,utilisation,http://dbpedia.org/class/yago/Use100947128
+Solid Waste Analyses,activity,http://dbpedia.org/class/yago/Activity100407535
+Solid Waste Analyses,event,http://dbpedia.org/class/yago/Event100029378
+Solid Waste Analyses,technology,http://dbpedia.org/class/yago/PollutionControlTechnologies
+Solid Waste Analyses,application,http://dbpedia.org/class/yago/Application100949134
+Solid Waste Analyses,engineering,http://dbpedia.org/class/yago/Technology100949619
+Solid Waste Analyses,job,http://dbpedia.org/class/yago/Occupation100582388
+Solid Waste Analyses,profession,http://dbpedia.org/class/yago/Profession100609953
+Solid Waste Heaps,solid,http://dbpedia.org/class/yago/Solid115046900
+Solid Waste Heaps,waste,http://dbpedia.org/class/yago/Waste114856263
+Solid Waste Heaps,waste,http://dbpedia.org/class/yago/Barren108504594
+Solid Waste Heaps,waste,http://dbpedia.org/class/yago/Waste101252124
+Stream Sediment Analyses,stream,http://dbpedia.org/class/yago/Stream109448361
+Stream Sediment Analyses,sediment,http://dbpedia.org/class/yago/Sediments
+Stream Sediment Analyses,scheme,http://dbpedia.org/class/yago/System108435388
+Stream Sediment Analyses,computer program,http://dbpedia.org/class/yago/Program106568978
+Stream Sediment Analyses,software system,http://dbpedia.org/class/yago/Software106566077
+Stream Sediment Analyses,coding system,http://dbpedia.org/class/yago/CodingSystem106353757
+Subsoils,subsoil,http://dbpedia.org/class/yago/Subsoil114695838
+Transitional waterbodies,body of water,http://dbpedia.org/class/yago/Middle-earthBodiesOfWater
+Transitional waterbodies,body of water,http://dbpedia.org/class/yago/BodiesOfWater
+Transitional waterbodies,body of water,http://dbpedia.org/class/yago/BodyOfWater109225146
+Transitional waterbodies,transit,http://dbpedia.org/class/yago/AstronomicalTransits
+Water Analyses (Summer),water,http://dbpedia.org/class/yago/Water114845743
+Water Analyses (Summer),summer,http://dbpedia.org/class/yago/Summer115145012
+Water Analyses (Summer),method,http://dbpedia.org/class/yago/Method105660268
+Water Analyses (Summer),event,http://dbpedia.org/class/yago/Event100029378
+Water Analyses (Summer),activity,http://dbpedia.org/class/yago/Activity100407535
+Water Analyses (Summer),analysis,http://dbpedia.org/class/yago/Analysis106014043
+Water Analyses (Summer),basin,http://dbpedia.org/class/yago/Basin102801525
+Water Analyses (Summer),lake,http://dbpedia.org/class/yago/Lake109328904
+Water Analyses (Summer),river,http://dbpedia.org/class/yago/River109411430
+Water Analyses (Summer),resource,http://dbpedia.org/class/yago/Resource113331778
+Water Analyses (Summer),analysis,http://dbpedia.org/class/yago/Analysis105772667
+Water Analyses (Summer),analysis,http://dbpedia.org/class/yago/Analysis100634276
+Water Analyses (Summer),analysis,http://dbpedia.org/class/yago/Analysis107067876
+Water Analyses (Summer),analysis,http://dbpedia.org/class/yago/Analysis106376014
+Water Analyses (Winter),water,http://dbpedia.org/class/yago/Water114845743
+Water Analyses (Winter),method,http://dbpedia.org/class/yago/Method105660268
+Water Analyses (Winter),event,http://dbpedia.org/class/yago/Event100029378
+Water Analyses (Winter),activity,http://dbpedia.org/class/yago/Activity100407535
+Water Analyses (Winter),analysis,http://dbpedia.org/class/yago/Analysis106014043
+Water Analyses (Winter),basin,http://dbpedia.org/class/yago/Basin102801525
+Water Analyses (Winter),lake,http://dbpedia.org/class/yago/Lake109328904
+Water Analyses (Winter),river,http://dbpedia.org/class/yago/River109411430
+Water Analyses (Winter),resource,http://dbpedia.org/class/yago/Resource113331778
+Water Analyses (Winter),analysis,http://dbpedia.org/class/yago/Analysis105772667
+Water Analyses (Winter),analysis,http://dbpedia.org/class/yago/Analysis100634276
+Water Analyses (Winter),analysis,http://dbpedia.org/class/yago/Analysis107067876
+Water Analyses (Winter),analysis,http://dbpedia.org/class/yago/Analysis106376014
+Water Areas,water,http://dbpedia.org/class/yago/Water114845743
+Water Management Units,water,http://dbpedia.org/class/yago/Water114845743
+Water Management Units,management,http://dbpedia.org/class/yago/Management101133281
+Water Management Units,management,http://dbpedia.org/class/yago/Management108381165
+Water Management Units,unit,http://dbpedia.org/class/yago/UnitOfMeasurement113583724
+Zone of Subsidence,zone,http://dbpedia.org/class/yago/Zone108688247
+Zone of Subsidence,subsidence,http://dbpedia.org/class/yago/Remission107419960
+Zone of Subsidence,subsidence,http://dbpedia.org/class/yago/Settling107362218
+Zone of Subsidence,subsidence,http://dbpedia.org/class/yago/CaveIn107361416
+Napier City Council Election Wards,ward,http://dbpedia.org/class/yago/Ward110767020
+Napier City Council Election Wards,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+Napier City Council Election Wards,election,http://dbpedia.org/class/yago/Election100181781
+Napier City Council Election Wards,physical entity,http://dbpedia.org/class/yago/PhysicalEntity100001930
+Napier City Council Election Wards,municipality,http://dbpedia.org/class/yago/Municipality108626283
+Napier City Council Election Wards,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+Napier City Council Election Wards,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncil1mContours,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncil1mContours,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncil1mContours,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncil1mContours,contour,http://dbpedia.org/class/yago/Contour105851517
+NapierCityCouncil1mContours,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncil1mContours,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncil1mContours,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilAddressPoints,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilAddressPoints,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilAddressPoints,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilAddressPoints,address,http://dbpedia.org/class/yago/Address106356515
+NapierCityCouncilAddressPoints,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilAddressPoints,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilAddressPoints,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilCadastralParcels,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilCadastralParcels,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilCadastralParcels,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilCadastralParcels,parcel,http://dbpedia.org/class/yago/Parcel101085098
+NapierCityCouncilCadastralParcels,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilCadastralParcels,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilCadastralParcels,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilCarParks,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilCarParks,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilCarParks,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilCarParks,car,http://dbpedia.org/class/yago/Car102958343
+NapierCityCouncilCarParks,park,http://dbpedia.org/class/yago/Park108615149
+NapierCityCouncilCarParks,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilCarParks,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilCarParks,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilDogExerciseAreas,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilDogExerciseAreas,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilDogExerciseAreas,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilDogExerciseAreas,dog,http://dbpedia.org/class/yago/Dog102084071
+NapierCityCouncilDogExerciseAreas,exercise,http://dbpedia.org/class/yago/Exercise107454452
+NapierCityCouncilDogExerciseAreas,neighbourhood,http://dbpedia.org/class/yago/OttawaNeighbourhoods
+NapierCityCouncilDogExerciseAreas,neighbourhood,http://dbpedia.org/class/yago/AgartalaNeighbourhoods
+NapierCityCouncilDogExerciseAreas,neighbourhood,http://dbpedia.org/class/yago/EdmontonNeighbourhoods
+NapierCityCouncilDogExerciseAreas,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilDogExerciseAreas,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilDogExerciseAreas,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilHeritageBuildingDatabase,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilHeritageBuildingDatabase,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilHeritageBuildingDatabase,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilHeritageBuildingDatabase,heritage,http://dbpedia.org/class/yago/Heritage105669797
+NapierCityCouncilHeritageBuildingDatabase,heritage,http://dbpedia.org/class/yago/Inheritance104921011
+NapierCityCouncilHeritageBuildingDatabase,heritage,http://dbpedia.org/class/yago/Inheritance113262913
+NapierCityCouncilHeritageBuildingDatabase,heritage,http://dbpedia.org/class/yago/Inheritance100083585
+NapierCityCouncilHeritageBuildingDatabase,edifice,http://dbpedia.org/class/yago/Building102913152
+NapierCityCouncilHeritageBuildingDatabase,database,http://dbpedia.org/class/yago/Database106637824
+NapierCityCouncilHeritageBuildingDatabase,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilHeritageBuildingDatabase,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilHeritageBuildingDatabase,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilLeasedParking,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilLeasedParking,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilLeasedParking,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilLeasedParking,parking,http://dbpedia.org/class/yago/Parking113778671
+NapierCityCouncilLeasedParking,parking,http://dbpedia.org/class/yago/Parking100168505
+NapierCityCouncilLeasedParking,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilLeasedParking,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilLeasedParking,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilLeasedParking,park,http://dbpedia.org/class/yago/Park108615149
+NapierCityCouncilLiquorBan,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilLiquorBan,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilLiquorBan,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilLiquorBan,liquor,http://dbpedia.org/class/yago/Liquor114941230
+NapierCityCouncilLiquorBan,ban,http://dbpedia.org/class/yago/Bans
+NapierCityCouncilLiquorBan,ban,http://dbpedia.org/class/yago/Ban113702315
+NapierCityCouncilLiquorBan,ban,http://dbpedia.org/class/yago/Ban113685578
+NapierCityCouncilLiquorBan,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilLiquorBan,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilLiquorBan,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilMobilityParks,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilMobilityParks,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilMobilityParks,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilMobilityParks,mobility,http://dbpedia.org/class/yago/Mobility104773351
+NapierCityCouncilMobilityParks,park,http://dbpedia.org/class/yago/Park108615149
+NapierCityCouncilMobilityParks,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilMobilityParks,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilMobilityParks,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilMotorcycleParks,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilMotorcycleParks,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilMotorcycleParks,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilMotorcycleParks,bike,http://dbpedia.org/class/yago/Motorcycle103790512
+NapierCityCouncilMotorcycleParks,park,http://dbpedia.org/class/yago/Park108615149
+NapierCityCouncilMotorcycleParks,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilMotorcycleParks,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilMotorcycleParks,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilOnStreetParks,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilOnStreetParks,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilOnStreetParks,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilOnStreetParks,street,http://dbpedia.org/class/yago/Street104334599
+NapierCityCouncilOnStreetParks,park,http://dbpedia.org/class/yago/Park108615149
+NapierCityCouncilOnStreetParks,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilOnStreetParks,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilOnStreetParks,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilOperativePlanZones,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilOperativePlanZones,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilOperativePlanZones,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilOperativePlanZones,operative,http://dbpedia.org/class/yago/BritishIntelligenceOperatives
+NapierCityCouncilOperativePlanZones,plan,http://dbpedia.org/class/yago/SeatingPlans
+NapierCityCouncilOperativePlanZones,zone,http://dbpedia.org/class/yago/Zone108688247
+NapierCityCouncilOperativePlanZones,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilOperativePlanZones,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilOperativePlanZones,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilPayandDisplayCarparks,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilPayandDisplayCarparks,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilPayandDisplayCarparks,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilPayandDisplayCarparks,display,http://dbpedia.org/class/yago/LiquidCrystalDisplays
+NapierCityCouncilPayandDisplayCarparks,display,http://dbpedia.org/class/yago/Display106879521
+NapierCityCouncilPayandDisplayCarparks,display,http://dbpedia.org/class/yago/Display103210940
+NapierCityCouncilPayandDisplayCarparks,display,http://dbpedia.org/class/yago/Display107213717
+NapierCityCouncilPayandDisplayCarparks,display,http://dbpedia.org/class/yago/Display106887726
+NapierCityCouncilPayandDisplayCarparks,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilPayandDisplayCarparks,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilPayandDisplayCarparks,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilSubdivisionApplications,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilSubdivisionApplications,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilSubdivisionApplications,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilSubdivisionApplications,subdivision,http://dbpedia.org/class/yago/Subdivision108674251
+NapierCityCouncilSubdivisionApplications,application program,http://dbpedia.org/class/yago/Application106570110
+NapierCityCouncilSubdivisionApplications,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilSubdivisionApplications,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilSubdivisionApplications,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilTitleParcels,city council,http://dbpedia.org/class/yago/CityCouncil108311282
+NapierCityCouncilTitleParcels,city,http://dbpedia.org/class/yago/City108524735
+NapierCityCouncilTitleParcels,council,http://dbpedia.org/class/yago/Council108310949
+NapierCityCouncilTitleParcels,parcel,http://dbpedia.org/class/yago/Parcel101085098
+NapierCityCouncilTitleParcels,municipality,http://dbpedia.org/class/yago/Municipality108626283
+NapierCityCouncilTitleParcels,urban area,http://dbpedia.org/class/yago/UrbanArea108675967
+NapierCityCouncilTitleParcels,administrative division,http://dbpedia.org/class/yago/AdministrativeDistrict108491826
+NapierCityCouncilTitleParcels,title,http://dbpedia.org/class/yago/Title106343117
+NapierCityCouncilTitleParcels,title,http://dbpedia.org/class/yago/Title106346461
+NapierCityCouncilTitleParcels,title,http://dbpedia.org/class/yago/Title106343520
+NapierCityCouncilTitleParcels,title,http://dbpedia.org/class/yago/Title106345993
+NapierCityCouncilTitleParcels,title,http://dbpedia.org/class/yago/Title106346220
+NapierCityCouncilTitleParcels,title,http://dbpedia.org/class/yago/Title105181199
+ne_50m_boundary_lines_land,boundary,http://dbpedia.org/class/yago/WritingSystemsWithoutWordBoundaries
+ne_50m_boundary_lines_land,land,http://dbpedia.org/class/yago/Land113250048
+ne_50m_coastline,coastline,http://dbpedia.org/class/yago/Coastline108613000
+ne_50m_coastline,Ne,http://dbpedia.org/class/yago/Neon114646152
+ne_50m_coastline,NE,http://dbpedia.org/class/yago/Northeast113831843
